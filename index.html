@@ -1,0 +1,369 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Start Line Weekly</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+:root{
+  --bg:#F4F6F1; --surface:#FFFFFF; --ink:#12201A; --muted:#55655C; --line:#D5DDD6;
+  --pine:#1D5A3E; --pine-soft:#E3EEE7; --flag:#E4570F; --flag-soft:#FCE9DE;
+  --live:#C81E3A; --chip:#EEF2EE;
+  --display:"Barlow Condensed","Arial Narrow",Impact,sans-serif;
+  --body:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1813; --surface:#16241D; --ink:#E8EFEA; --muted:#98AAA0; --line:#2A3B32;
+    --pine:#6CC497; --pine-soft:#1C3328; --flag:#FF7A33; --flag-soft:#3A2418;
+    --live:#FF5C74; --chip:#1E2E26; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E1813; --surface:#16241D; --ink:#E8EFEA; --muted:#98AAA0; --line:#2A3B32;
+  --pine:#6CC497; --pine-soft:#1C3328; --flag:#FF7A33; --flag-soft:#3A2418;
+  --live:#FF5C74; --chip:#1E2E26; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:16px/1.5 var(--body);padding:0 16px}
+.wrap{max-width:1080px;margin:0 auto;padding-block:28px 56px;display:grid;gap:40px}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--flag);outline-offset:2px}
+
+/* masthead */
+.mast{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px;border-bottom:3px solid var(--ink);padding-bottom:14px}
+.brand{font-family:var(--display);font-weight:800;font-size:clamp(40px,7vw,64px);line-height:.9;letter-spacing:.01em;text-transform:uppercase;margin:0}
+.brand span{color:var(--flag)}
+.week{font-family:var(--mono);font-size:13px;color:var(--muted);text-align:right}
+.week b{display:block;color:var(--ink);font-size:15px}
+
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.filters button{font:600 14px var(--body);border:1.5px solid var(--line);background:var(--surface);color:var(--ink);padding:7px 14px;border-radius:999px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+
+h2{font-family:var(--display);font-weight:700;font-size:28px;text-transform:uppercase;letter-spacing:.03em;margin:0 0 14px;display:flex;align-items:baseline;gap:10px;text-wrap:balance}
+h2 small{font:500 13px var(--mono);color:var(--muted);text-transform:none;letter-spacing:0}
+
+/* featured matchup */
+.feature{background:var(--ink);color:var(--bg);border-radius:6px;padding:24px;display:grid;gap:18px}
+.feature .eyebrow{font:700 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--flag)}
+.feature h3{font-family:var(--display);font-size:clamp(30px,5vw,44px);line-height:1;margin:4px 0 6px;text-transform:uppercase}
+.feature p{margin:0;max-width:62ch;opacity:.85}
+.startline{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.lane{border:1.5px solid color-mix(in srgb,var(--bg) 30%,transparent);border-radius:4px;padding:10px 12px;display:flex;align-items:center;gap:10px}
+.lane .rk{font:700 22px var(--mono);color:var(--flag);min-width:2.2ch}
+.lane .tm{font-weight:700;line-height:1.2}
+.lane .tm small{display:block;font-weight:400;opacity:.7;font-size:12px}
+.feature .actions a{border-color:var(--bg);color:var(--bg)}
+
+/* meets */
+.meets{display:grid;gap:12px}
+.meet{background:var(--surface);border:1px solid var(--line);border-radius:6px;display:grid;grid-template-columns:78px 1fr auto;gap:16px;padding:16px;align-items:center}
+.groups{display:grid;gap:28px}
+.group h3.gh{font:700 13px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 10px;display:flex;align-items:center;gap:10px}
+.group h3.gh::after{content:"";flex:1;height:1px;background:var(--line)}
+.group h3.gh b{color:var(--ink);font-family:var(--display);font-size:20px;letter-spacing:.04em}
+.tag.xo{background:transparent;border:1px dashed var(--muted);color:var(--muted)}
+.date{text-align:center;border-right:1px dashed var(--line);padding-right:12px}
+.date .d{font:800 34px/1 var(--display)}
+.date .m{font:600 12px var(--mono);color:var(--muted);text-transform:uppercase}
+.meet h3{margin:0;font-size:19px;line-height:1.25}
+.meta{font-size:14px;color:var(--muted);margin-top:2px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.tag{font:600 12px var(--body);padding:2px 8px;border-radius:3px;background:var(--chip);color:var(--ink)}
+.tag.lvl-col{background:var(--pine-soft);color:var(--pine)}
+.tag.lvl-hs{background:var(--flag-soft);color:var(--flag)}
+.why{font-size:14px;margin-top:6px}
+.actions{display:flex;flex-direction:column;gap:6px;min-width:140px}
+.actions a{display:flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;font:700 13px var(--body);padding:8px 12px;border-radius:4px;border:1.5px solid var(--ink);white-space:nowrap}
+.actions a.res{background:var(--flag);border-color:var(--flag);color:#fff}
+.dot{width:8px;height:8px;border-radius:50%;background:currentColor;display:inline-block}
+.actions .na{font-size:12px;color:var(--muted);text-align:center}
+
+/* rankings */
+.rgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.poll{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:16px}
+.poll h3{margin:0 0 2px;font:700 16px var(--body)}
+.poll .src{font:500 12px var(--mono);color:var(--muted);margin-bottom:10px}
+.poll ol{list-style:none;margin:0;padding:0}
+.poll li{display:grid;grid-template-columns:2.4ch 1fr auto;gap:10px;padding:6px 0;border-top:1px solid var(--line);font-variant-numeric:tabular-nums}
+.poll li .n{font:700 14px var(--mono);color:var(--pine)}
+.poll li .chg{font:500 12px var(--mono);color:var(--muted)}
+.poll li .chg.up{color:var(--pine)}
+.poll li .chg.dn{color:var(--live)}
+.poll .more{display:inline-block;margin-top:10px;font-size:14px;font-weight:600;color:var(--pine)}
+
+/* athletes */
+.agrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.ath{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:14px 16px;display:grid;gap:4px}
+.ath .bib{font:700 12px var(--mono);color:var(--flag);letter-spacing:.06em;text-transform:uppercase}
+.ath .nm{font:700 18px var(--body)}
+.ath .tm2{font-size:14px;color:var(--muted)}
+.ath .mark{font:700 15px var(--mono)}
+.ath p{margin:4px 0 0;font-size:14px}
+
+.hubs{display:flex;flex-wrap:wrap;gap:8px}
+.hubs a{font-weight:600;font-size:14px;padding:8px 12px;background:var(--surface);border:1px solid var(--line);border-radius:4px;text-decoration:none}
+.hubs a:hover{border-color:var(--pine)}
+footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+
+@media (max-width:640px){
+  .meet{grid-template-columns:56px 1fr}
+  .actions{grid-column:1/-1;flex-direction:row;flex-wrap:wrap}
+  .actions a{flex:1}
+  .date .d{font-size:28px}
+}
+</style>
+
+<div class="wrap">
+  <header class="mast">
+    <h1 class="brand">Start<span>/</span>Line<br>Weekly</h1>
+    <div class="week"><b>Race Week · Sept 21–27, 2026</b>College + High School Cross Country<br>by Connor Andrews</div>
+  </header>
+
+  <nav class="filters" aria-label="Filter by level">
+    <button type="button" id="f-all" data-f="all" aria-pressed="true">All</button>
+    <button type="button" id="f-col" data-f="col" aria-pressed="false">All College</button>
+    <button type="button" id="f-d1" data-f="d1" aria-pressed="false">D-I</button>
+    <button type="button" id="f-d2" data-f="d2" aria-pressed="false">D-II</button>
+    <button type="button" id="f-d3" data-f="d3" aria-pressed="false">D-III</button>
+    <button type="button" id="f-hs" data-f="hs" aria-pressed="false">High School</button>
+  </nav>
+
+  <section class="feature" data-lvl="d1" aria-labelledby="ft">
+    <div>
+      <div class="eyebrow">Matchup of the week · Sat Sept 26 · Stillwater, OK</div>
+      <h3 id="ft">Cowboy Jamboree: #1 vs #2 vs #5</h3>
+      <p>Top-ranked Oklahoma State hosts No. 2 New Mexico and No. 5 Oregon on the men's side. BYU's third-ranked women also get an early look at the course where the Big 12 Championships will be held on Oct. 31.</p>
+    </div>
+    <div class="startline" aria-label="Ranked men's teams entered">
+      <div class="lane"><span class="rk">1</span><span class="tm">Oklahoma State<small>Men · Big 12 · host</small></span></div>
+      <div class="lane"><span class="rk">2</span><span class="tm">New Mexico<small>Men · Mountain West</small></span></div>
+      <div class="lane"><span class="rk">5</span><span class="tm">Oregon<small>Men · Big Ten</small></span></div>
+      <div class="lane"><span class="rk">3</span><span class="tm">BYU<small>Women · Big 12</small></span></div>
+    </div>
+    <div class="actions" style="flex-direction:row;flex-wrap:wrap">
+      <a class="res" href="https://www.athletic.net/CrossCountry/meet/274016" target="_blank" rel="noopener"><span class="dot"></span>Results (Athletic.net)</a>
+      <a href="https://web4.ustfccca.org/meets-results/broadcast-schedule" target="_blank" rel="noopener">Broadcast schedule</a>
+    </div>
+  </section>
+
+  <section class="feature" data-lvl="hs" aria-labelledby="ft-hs">
+    <div>
+      <div class="eyebrow">High school matchup of the week · Fri Sept 25 · Mesa, AZ</div>
+      <h3 id="ft-hs">Desert Twilight: Horton vs. van Meerten</h3>
+      <p>Oliver Horton and Yohanes van Meerten meet again under the lights at Toka Sticks. Last year Horton ran 14:23.9 to hold off van Meerten by 1.8 seconds in the boys sweepstakes race. Horton comes in off a 15:02.65 win at the Coronado Classic.</p>
+    </div>
+    <div class="startline" aria-label="Featured boys">
+      <div class="lane"><span class="rk">1</span><span class="tm">Oliver Horton<small>Coronado (CO) · Senior · 14:23.9 in 2025</small></span></div>
+      <div class="lane"><span class="rk">2</span><span class="tm">Yohanes van Meerten<small>Flagstaff (AZ) · 14:25.7 in 2025</small></span></div>
+    </div>
+    <div class="actions" style="flex-direction:row;flex-wrap:wrap">
+      <a class="res" href="https://desert-twilight-xc-festival.runnerspace.com/eprofile.php?do=info&amp;event_id=4930" target="_blank" rel="noopener"><span class="dot"></span>Live results (RunnerSpace)</a>
+    </div>
+  </section>
+
+  <section aria-labelledby="mh">
+    <h2 id="mh">Meets this weekend <small id="count"></small></h2>
+    <div class="groups" id="meets"></div>
+  </section>
+
+  <section aria-labelledby="rh">
+    <h2 id="rh">Top teams <small>USTFCCCA coaches' polls + DyeStat HS · top 10</small></h2>
+    <div class="rgrid" id="polls">
+    </div>
+  </section>
+
+  <section aria-labelledby="ah">
+    <h2 id="ah">Individuals to watch</h2>
+    <div class="agrid" id="aths"></div>
+  </section>
+
+  <section aria-labelledby="hh">
+    <h2 id="hh">Live results hubs</h2>
+    <div class="hubs">
+      <a href="https://www.tfrrs.org/" target="_blank" rel="noopener">TFRRS (college)</a>
+      <a href="https://www.athletic.net/" target="_blank" rel="noopener">Athletic.net</a>
+      <a href="https://www.milesplit.com/calendar/united%20states-cc-meet-calendar" target="_blank" rel="noopener">MileSplit meet calendar</a>
+      <a href="https://web4.ustfccca.org/meets-results" target="_blank" rel="noopener">USTFCCCA meets this weekend</a>
+      <a href="https://web4.ustfccca.org/meets-results/broadcast-schedule" target="_blank" rel="noopener">College broadcast schedule</a>
+      <a href="https://www.flotrack.org/" target="_blank" rel="noopener">FloTrack</a>
+    </div>
+  </section>
+
+  <footer>Start Line Weekly is built and edited by Connor Andrews. Rankings from USTFCCCA (D-I Sept 22; D-II Sept 16; D-III Sept 23, 2026) and DyeStat (Sept 17, 2026). Results and streams link out to the meet's official timer or broadcaster. College meets are listed under the host school&rsquo;s division, except that any meet with a nationally ranked D-I team moves to D-I. Updated weekly.</footer>
+</div>
+
+<script>
+// ---- Weekly data: edit these arrays each week ----
+// div: the HOST school's division ("d1" | "d2" | "d3" | "hs").
+// d1Ranked: true  -> a nationally ranked D-I team is entered, so the meet is listed under D-I
+//                    no matter who hosts (it keeps a "D-II host" / "D-III host" tag).
+// xo: crossover teams worth calling out.
+const TFRRS="https://www.tfrrs.org/", ATH="https://www.athletic.net/", MS="https://www.milesplit.com/calendar/united%20states-cc-meet-calendar", BC="https://web4.ustfccca.org/meets-results/broadcast-schedule";
+const MEETS = [
+  // D-I
+  {d:"26",m:"Sep",div:"d1",name:"Cowboy Jamboree",where:"Stillwater, OK · host Oklahoma State",
+   why:"#1 Oklahoma State, #2 New Mexico and #5 Oregon in the men's race; #3 BYU in the women's.",
+   tags:["Men 8K","Women 6K","Ranked showdown"], xo:"D-II #3 Adams State",
+   results:"https://www.athletic.net/CrossCountry/meet/274016", watch:BC, watchNote:"BYU says its women's race won't be streamed"},
+  {d:"25",m:"Sep",div:"d1",name:"Gans Creek Classic",where:"Columbia, MO · host Missouri",
+   why:"Missouri hosts on its championship course. The men are No. 28 and the women No. 26.",
+   tags:["SEC host"], results:"https://www.athletic.net/CrossCountry/meet/285625", watch:BC},
+  {d:"26",m:"Sep",div:"d1",name:"Princeton Meadows Challenge",where:"Princeton, NJ · host Princeton",
+   why:"No. 25 Princeton men and women at home, with Columbia and other Northeast programs in the field.",
+   tags:["Ivy League"], results:"https://www.athletic.net/CrossCountry/meet/285646", watch:null},
+  {d:"25",m:"Sep",div:"d1",name:"Winthrop/Adidas Invitational",where:"Rock Hill, SC · host Winthrop",
+   why:"A Southeast Friday meet with a mostly Division I field.",
+   tags:["Southeast"], results:"https://www.athletic.net/CrossCountry/meet/285666", watch:null},
+  {d:"25",m:"Sep",div:"d1",name:"Jim Allen Classic",where:"Milwaukee, WI · host Marquette",
+   why:"A Friday tune-up for Big East and Midwest programs.",
+   tags:["Big East host"], results:"https://www.athletic.net/CrossCountry/meet/285636", watch:null},
+  // D-II
+  {d:"26",m:"Sep",div:"d2",d1Ranked:true,name:"Mike Johnson Classic",where:"Monmouth, OR · host Western Oregon",
+   why:"The No. 5 Oregon women open their season, more than three weeks into the fall.",
+   tags:["Season debut"], xo:"#5 Oregon women", results:"https://www.athletic.net/CrossCountry/meet/273598", watch:null},
+  {d:"26",m:"Sep",div:"d2",name:"WWU Bill Roe Classic",where:"Ferndale, WA · host Western Washington",
+   why:"The No. 9 D-II Western Washington men race at home.",
+   tags:["GNAC"], results:"https://pntfo.trackscoreboard.com/meets/9262026/events", watch:null},
+  {d:"25",m:"Sep",div:"d2",name:"Rams DII Atlantic Region Preview",where:"Kernersville, NC · host Winston-Salem State",
+   why:"An early look at the Atlantic Region field before the NCAA regionals in November.",
+   tags:["Regional preview"], results:"https://www.athletic.net/CrossCountry/meet/282402", watch:null},
+  {d:"25",m:"Sep",div:"d2",name:"Tiffin G-MAC XC Preview",where:"Tiffin, OH · host Tiffin",
+   why:"A preview of the G-MAC conference championship course.",
+   tags:["Conference preview"], results:"https://www.athletic.net/CrossCountry/meet/276340", watch:null},
+  {d:"25",m:"Sep",div:"d2",name:"Peach Belt Preview",where:"Macon, GA · host Middle Georgia State",
+   why:"Peach Belt teams race on the conference championship course.",
+   tags:["Conference preview"], results:"https://www.athletic.net/CrossCountry/meet/285645", watch:null},
+  {d:"26",m:"Sep",div:"d2",name:"Michael Pretorius Invite",where:"Nashville, TN · host Trevecca Nazarene",
+   why:"The featured FloTrack broadcast on this weekend's USTFCCCA meet schedule, hosted by D-II Trevecca Nazarene.",
+   tags:["Streamed"], results:"https://www.athletic.net/CrossCountry/meet/285643", watch:"https://www.flotrack.org/events/16186348-2026-michael-pretorius-invitational", watchNote:"FloTrack subscription"},
+  // D-III
+  {d:"26",m:"Sep",div:"d3",name:"RPI Fairgrounds Showdown",where:"Greenwich, NY · host RPI",
+   why:"The No. 8 D-III RPI men host, with Northeast teams in the field.",
+   tags:["Liberty League"], results:"https://www.athletic.net/CrossCountry/meet/285648", watch:null},
+  {d:"25",m:"Sep",div:"d3",name:"Dutch Open",where:"Pella, IA · host Central (Iowa)",
+   why:"The No. 25 D-III Central men race at home against Midwest teams.",
+   tags:["American Rivers"], results:"https://www.athletic.net/CrossCountry/meet/285623", watch:null},
+  {d:"26",m:"Sep",div:"d3",name:"Adrian Invitational",where:"Adrian, MI · host Adrian",
+   why:"Michigan D-III programs line up ahead of conference season.",
+   tags:["MIAA"], results:"https://live.a2racemanagement.com/meets/76270", watch:null},
+  {d:"25",m:"Sep",div:"d3",name:"Green Knight Open",where:"Green Bay, WI · host St. Norbert",
+   why:"A Friday meet for Wisconsin D-III teams. WIAC programs regularly rank nationally.",
+   tags:["Upper Midwest"], results:"https://www.athletic.net/CrossCountry/meet/285627", watch:null},
+  // High school
+  {d:"25",m:"Sep",div:"hs",name:"Desert Twilight XC Festival",where:"Mesa, AZ · Toka Sticks Golf Course",
+   why:"Oliver Horton vs. Yohanes van Meerten, a rematch of last year's boys sweepstakes race, which Horton won 14:23.9 to 14:25.7.",
+   tags:["Twilight","NXR Southwest preview"], results:"https://desert-twilight-xc-festival.runnerspace.com/eprofile.php?do=info&event_id=4930", watch:null},
+  {d:"26",m:"Sep",div:"hs",name:"Ocean State Invitational & HS Championship Race",where:"Warwick, RI",
+   why:"One of New England's biggest fields, with a separate championship race.",
+   tags:["New England"], results:"https://www.milesplit.com/meets/728059-ocean-state-high-school-championship-race-2026", watch:null},
+  {d:"26",m:"Sep",div:"hs",name:"Carlisle Invitational",where:"Carlisle, PA",
+   why:"A classic Mid-Atlantic meet. Teams from PA, NJ, NY and MD all have it on their calendars.",
+   tags:["Mid-Atlantic"], results:"https://www.milesplit.com/meets/768069-carlisle-invitational-2026", watch:null},
+  {d:"26",m:"Sep",div:"hs",name:"On Twilight at PR'ville",where:"Huntsville, AL",
+   why:"A Southeast night race. Huntsville is one of MileSplit's preseason top-50 boys teams.",
+   tags:["Twilight","Southeast"], results:"https://www.milesplit.com/meets/719061-on-twilight-at-prville-2026", watch:null},
+  {d:"26",m:"Sep",div:"hs",name:"Oatlands Invitational",where:"Leesburg, VA",
+   why:"A big Northern Virginia invitational held on a historic estate course.",
+   tags:["Mid-Atlantic"], results:"https://www.milesplit.com/meets/719471-oatlands-invitational-2026", watch:null},
+  {d:"26",m:"Sep",div:"hs",name:"Six Flags Wild Safari Invitational",where:"Jackson, NJ",
+   why:"A large New Jersey invitational held at the Six Flags Wild Safari grounds.",
+   tags:["New Jersey"], results:"https://www.milesplit.com/meets/760181-six-flags-wild-safari-invitational-high-school-2026", watch:null},
+  {d:"26",m:"Sep",div:"hs",name:"Bellarmine-Sacred Heart Invitational",where:"Griffith Park, Los Angeles",
+   why:"A Southern California tradition held in Griffith Park on the last Saturday of September.",
+   tags:["SoCal"], results:"https://www.finishedresults.com/schedule", watch:null},
+];
+
+const U="https://www.ustfccca.org/2026/09/featured/";
+const POLLS = [
+  {div:"d1",t:"D-I Men",src:"Week 1 · Sept 22",url:U+"2026-ncaa-di-mens-cross-country-national-coaches-poll-week-1",
+   rows:[["Oklahoma State",""],["New Mexico",""],["Iowa State",""],["Alabama",""],["Oregon",""],["Colorado",""],["BYU","+2"],["Wake Forest",""],["Syracuse","+4"],["Florida","+11"]]},
+  {div:"d1",t:"D-I Women",src:"Week 1 · Sept 22",url:U+"2026-ncaa-di-womens-cross-country-national-coaches-poll-week-1",
+   rows:[["NC State",""],["New Mexico",""],["BYU","+1"],["Iowa State","-1"],["Oregon",""],["Northern Arizona","+2"],["Notre Dame","-1"],["West Virginia","-1"],["Stanford",""],["Alabama","+1"]]},
+  {div:"d2",t:"D-II Men",src:"Week 1 · Sept 16",url:U+"2026-ncaa-dii-mens-cross-country-national-coaches-poll-week-1",
+   rows:[["Wingate",""],["Colorado School of Mines",""],["Adams State",""],["Grand Valley State",""],["Western Colorado",""],["Lee (Tenn.)",""],["Chico State",""],["West Texas A&M",""],["Western Washington",""],["Lewis",""]]},
+  {div:"d2",t:"D-II Women",src:"Week 1 · Sept 16",url:U+"2026-ncaa-dii-womens-cross-country-national-coaches-poll-week-1",
+   rows:[["Adams State","+1"],["Grand Valley State","-1"],["Wingate",""],["Colorado School of Mines",""],["Western Colorado",""],["Chico State",""],["UC-Colorado Springs",""],["West Texas A&M",""],["Pittsburg State",""],["Cedarville",""]]},
+  {div:"d3",t:"D-III Men",src:"Week 2 · Sept 23",url:U+"2026-ncaa-diii-mens-cross-country-national-coaches-poll-week-2",
+   rows:[["UW-La Crosse","+1"],["Johns Hopkins","-1"],["NYU",""],["SUNY Geneseo (T-4)","+1"],["Wartburg (T-4)",""],["Pomona-Pitzer","+1"],["Chicago","-1"],["RPI",""],["UW-Stevens Point","+1"],["Tufts","-1"]]},
+  {div:"d3",t:"D-III Women",src:"Week 2 · Sept 23",url:U+"2026-ncaa-diii-womens-cross-country-national-coaches-poll-week-2",
+   rows:[["NYU",""],["Williams",""],["Johns Hopkins",""],["Claremont-Mudd-Scripps",""],["Chicago","+2"],["Tufts",""],["UW-La Crosse","+1"],["Middlebury","-3"],["Pomona-Pitzer",""],["Washington (Mo.)",""]]},
+  {div:"hs",t:"HS Boys",src:"DyeStat early season · Sept 17",url:"https://www.runnerspace.com/gprofile.php?mgroup_id=46052&do=news&news_id=675414",
+   rows:[["Christ School (NC)",""],["Southlake Carroll (TX)",""],["American Fork (UT)",""],["Summit (OR)",""],["Crater (OR)",""],["Belen Jesuit (FL)",""],["State College (PA)",""],["Niwot (CO)",""],["Coeur d'Alene (ID)",""],["Campolindo (CA)",""]]},
+  {div:"hs",t:"HS Girls",src:"DyeStat early season · Sept 17",url:"https://www.runnerspace.com/gprofile.php?mgroup_id=46052&do=news&news_id=675412",
+   rows:[["Union Catholic (NJ)",""],["Lone Peak (UT)",""],["Buchanan (CA)",""],["J Serra Catholic (CA)",""],["St. Francis (CA)",""],["Niwot (CO)",""],["American Fork (UT)",""],["Sehome (WA)",""],["Flower Mound (TX)",""],["Crater (OR)",""]]},
+];
+
+const ATHS = [
+  {div:"d1",bib:"Racing Saturday",nm:"Jane Hedengren",tm:"BYU",mark:"CR · UVU Invitational",p:"Set the course record as No. 3 BYU took seven of the top 10 at UVU. She leads the Cougars at the Cowboy Jamboree 6K on Saturday."},
+  {div:"d1",bib:"Athlete of the Week",nm:"Kelvin Cheruiyot",tm:"Florida · Sophomore",mark:"23:20.7 · 8K",p:"Won the John McNichols Invitational in Terre Haute. Florida jumped 11 spots to No. 10."},
+  {div:"d1",bib:"Last weekend",nm:"Tayvon Kitchen",tm:"BYU · Sophomore",mark:"23:23.1 · 8K",p:"Placed 3rd at McNichols, 2.4 seconds behind the winner, as No. 7 BYU won the team title. Only Conner Mantz has run faster for BYU on the LaVern Gibson course. Named Big 12 Runner of the Week; next up is Nuttycombe on Oct. 9."},
+  {div:"d1",bib:"Athlete of the Week",nm:"Brighter Jepchumba",tm:"Eastern Kentucky · Freshman",mark:"19:14.0 · 6K",p:"Won McNichols in a course record, breaking Sally Kipyego's 18-year-old mark by 14.1 seconds."},
+  {div:"d2",bib:"Racing Saturday",nm:"Thibault Tauziede",tm:"Adams State · Sophomore",mark:"1st · Joe I. Vigil Open",p:"Won the individual title and led the No. 3 D-II Grizzlies to the team win. He faces a loaded D-I field at the Cowboy Jamboree."},
+  {div:"d2",bib:"Athlete of the Week",nm:"Ruth Chemutai",tm:"Missouri Southern · Freshman",mark:"17:04.5 · 6K",p:"Won the Missouri Southern Stampede at home and led her team past ranked Pittsburg State."},
+  {div:"d3",bib:"Athlete of the Week",nm:"Kate Tuttle",tm:"Williams · Junior",mark:"14:49.7 · 4K",p:"Won the Little Three Championships and was named National Athlete of the Week on Sept. 8. She placed 8th at the 2024 NCAA D-III Championships. The No. 2 Ephs are off until Oct. 3 at Carleton."},
+  {div:"d3",bib:"Last week",nm:"Owen Clark",tm:"UW-La Crosse · Junior",mark:"24:05.5 · 8K",p:"Placed 7th at the Roy Griak Invitational, leading UW-La Crosse to third behind D-I Iowa State and Boise State. The Eagles moved back to No. 1 in D-III."},
+  {div:"hs",bib:"Last weekend",nm:"Abdinasir Hassan",tm:"Northfield (CO)",mark:"1st · Woodbridge",p:"Won the Woodbridge XC Classic sweepstakes race, the biggest early-season stage in California."},
+];
+
+const LABEL = {d1:"Division I",d2:"Division II",d3:"Division III",hs:"High School"};
+const SHORT = {d1:"D-I",d2:"D-II",d3:"D-III",hs:"High School"};
+const $ = s => document.querySelector(s);
+const listDiv = m => (m.d1Ranked && m.div!=="hs") ? "d1" : m.div;
+const match = (div,f) => f==="all" || f===div || (f==="col" && div!=="hs");
+
+function meetCard(m){
+  return `<article class="meet">
+    <div class="date"><div class="d">${m.d}</div><div class="m">${m.m}</div></div>
+    <div>
+      <h3>${m.name}</h3>
+      <div class="meta">${m.where}</div>
+      <div class="why">${m.why}</div>
+      <div class="tags"><span class="tag ${m.div==="hs"?"lvl-hs":"lvl-col"}">${SHORT[listDiv(m)]}</span>${listDiv(m)!==m.div?`<span class="tag">${SHORT[m.div]} host</span>`:""}${m.tags.map(t=>`<span class="tag">${t}</span>`).join("")}${m.xo?`<span class="tag xo">Crossover: ${m.xo}</span>`:""}</div>
+    </div>
+    <div class="actions">
+      <a class="res" href="${m.results}" target="_blank" rel="noopener"><span class="dot"></span>Live results</a>
+      ${m.watch?`<a href="${m.watch}" target="_blank" rel="noopener">Watch</a>`:`<span class="na">No stream listed</span>`}
+      ${m.watchNote?`<span class="na">${m.watchNote}</span>`:""}
+    </div>
+  </article>`;
+}
+
+function render(f){
+  const list = MEETS.filter(m=>match(listDiv(m),f)).sort((a,b)=>a.d-b.d);
+  $("#count").textContent = list.length + (list.length===1?" meet":" meets");
+  $("#meets").innerHTML = ["d1","d2","d3","hs"].map(dv=>{
+    const g = list.filter(m=>listDiv(m)===dv); if(!g.length) return "";
+    return `<div class="group"><h3 class="gh"><b>${LABEL[dv]}</b>${g.length}</h3><div class="meets">${g.map(meetCard).join("")}</div></div>`;
+  }).join("");
+  document.querySelectorAll("#polls .poll").forEach(p=>p.hidden = !match(p.dataset.lvl,f));
+  $("#aths").innerHTML = ATHS.filter(a=>match(a.div,f)).map(a=>`
+    <div class="ath"><span class="bib">${a.bib} · ${SHORT[a.div]}</span><span class="nm">${a.nm}</span><span class="tm2">${a.tm}</span><span class="mark">${a.mark}</span><p>${a.p}</p></div>`).join("");
+  document.querySelectorAll(".feature").forEach(el=>el.hidden = !match(el.dataset.lvl,f));
+}
+
+// build poll cards
+POLLS.forEach(p=>{
+  const el = document.createElement("div"); el.className="poll"; el.dataset.lvl=p.div;
+  el.innerHTML = `<h3>${p.t}</h3><div class="src">${p.src}</div><ol>${p.rows.map((r,i)=>{
+      const c=r[1], cls=c.startsWith("+")?"up":c.startsWith("-")?"dn":"";
+      return `<li><span class="n">${i+1}</span><span>${r[0]}</span><span class="chg ${cls}">${c}</span></li>`;}).join("")}</ol>
+    <a class="more" href="${p.url}" target="_blank" rel="noopener">Full poll →</a>`;
+  $("#polls").append(el);
+});
+
+let cur="all";
+try{ const s = localStorage.getItem("slw-filter"); if(s && document.querySelector(`.filters [data-f="${s}"]`)) cur=s; }catch(e){}
+document.querySelectorAll(".filters button").forEach(b=>{
+  b.setAttribute("aria-pressed", b.dataset.f===cur);
+  b.addEventListener("click",()=>{
+    cur=b.dataset.f;
+    document.querySelectorAll(".filters button").forEach(x=>x.setAttribute("aria-pressed", x===b));
+    try{ localStorage.setItem("slw-filter",cur); }catch(e){}
+    render(cur);
+  });
+});
+render(cur);
+</script>
+
+</body></html>
