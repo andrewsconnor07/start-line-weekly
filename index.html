@@ -149,6 +149,38 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
     </div>
   </section>
 
+  <section class="feature" data-lvl="d2" aria-labelledby="ft-d2">
+    <div>
+      <div class="eyebrow">D-II matchup of the week · Fri Sept 25 · Columbia, MO</div>
+      <h3 id="ft-d2">Gans Creek Classic: #2 Mines vs. the SEC</h3>
+      <p>No. 2 D-II Colorado School of Mines takes on a 25-team Division I field in the men's 8K Gold race, including No. 16 Arkansas, No. 28 Missouri (the host) and No. 30 Kansas. Six of Mines' eight entrants ran on its 2024 national championship team, led by Dawson Gunn, the 2025 NCAA D-II runner-up at 5,000m indoors and outdoors.</p>
+    </div>
+    <div class="startline" aria-label="Ranked men's teams entered">
+      <div class="lane"><span class="rk">2</span><span class="tm">Colorado School of Mines<small>D-II men · RMAC</small></span></div>
+      <div class="lane"><span class="rk">16</span><span class="tm">Arkansas<small>D-I men · SEC</small></span></div>
+      <div class="lane"><span class="rk">28</span><span class="tm">Missouri<small>D-I men · SEC · host</small></span></div>
+      <div class="lane"><span class="rk">30</span><span class="tm">Kansas<small>D-I men · Big 12</small></span></div>
+    </div>
+    <div class="actions" style="flex-direction:row;flex-wrap:wrap">
+      <a class="res" href="https://www.athletic.net/CrossCountry/meet/285625" target="_blank" rel="noopener"><span class="dot"></span>Results (Athletic.net)</a>
+    </div>
+  </section>
+
+  <section class="feature" data-lvl="d3" aria-labelledby="ft-d3">
+    <div>
+      <div class="eyebrow">D-III matchup of the week · Sat Sept 26 · Greenwich, NY</div>
+      <h3 id="ft-d3">Fairgrounds Showdown: Undefeated #8 RPI hosts #17 WPI</h3>
+      <p>Undefeated No. 8 RPI (2-0, wins at the Fred Pavlich and George Suitor Invitationals) hosts No. 17 WPI, which jumped 11 spots in this week's poll, at the Washington County Fairgrounds.</p>
+    </div>
+    <div class="startline" aria-label="Ranked men's teams entered">
+      <div class="lane"><span class="rk">8</span><span class="tm">RPI<small>D-III men · Liberty League · host</small></span></div>
+      <div class="lane"><span class="rk">17</span><span class="tm">WPI<small>D-III men · NEWMAC</small></span></div>
+    </div>
+    <div class="actions" style="flex-direction:row;flex-wrap:wrap">
+      <a class="res" href="https://www.athletic.net/CrossCountry/meet/285648" target="_blank" rel="noopener"><span class="dot"></span>Results (Athletic.net)</a>
+    </div>
+  </section>
+
   <section class="feature" data-lvl="hs" aria-labelledby="ft-hs">
     <div>
       <div class="eyebrow">High school matchup of the week · Fri Sept 25 · Mesa, AZ</div>
@@ -209,8 +241,8 @@ const MEETS = [
    tags:["Men 8K","Women 6K","Ranked showdown"], xo:"D-II #3 Adams State",
    results:"https://www.athletic.net/CrossCountry/meet/274016", watch:BC, watchNote:"BYU says its women's race won't be streamed"},
   {d:"25",m:"Sep",div:"d1",name:"Gans Creek Classic",where:"Columbia, MO · host Missouri",
-   why:"Missouri hosts on its championship course. The men are No. 28 and the women No. 26.",
-   tags:["SEC host"], results:"https://www.athletic.net/CrossCountry/meet/285625", watch:BC},
+   why:"No. 2 D-II Colorado School of Mines takes on No. 16 Arkansas, host No. 28 Missouri and No. 30 Kansas in the men's 8K Gold race. The Missouri women are No. 26.",
+   tags:["SEC host"], xo:"D-II #2 Colorado School of Mines", results:"https://www.athletic.net/CrossCountry/meet/285625", watch:BC},
   {d:"26",m:"Sep",div:"d1",name:"Princeton Meadows Challenge",where:"Princeton, NJ · host Princeton",
    why:"No. 25 Princeton men and women at home, with Columbia and other Northeast programs in the field.",
    tags:["Ivy League"], results:"https://www.athletic.net/CrossCountry/meet/285646", watch:null},
@@ -241,7 +273,7 @@ const MEETS = [
    tags:["Streamed"], results:"https://www.athletic.net/CrossCountry/meet/285643", watch:"https://www.flotrack.org/events/16186348-2026-michael-pretorius-invitational", watchNote:"FloTrack subscription"},
   // D-III
   {d:"26",m:"Sep",div:"d3",name:"RPI Fairgrounds Showdown",where:"Greenwich, NY · host RPI",
-   why:"The No. 8 D-III RPI men host, with Northeast teams in the field.",
+   why:"The undefeated No. 8 D-III RPI men host No. 17 WPI.",
    tags:["Liberty League"], results:"https://www.athletic.net/CrossCountry/meet/285648", watch:null},
   {d:"25",m:"Sep",div:"d3",name:"Dutch Open",where:"Pella, IA · host Central (Iowa)",
    why:"The No. 25 D-III Central men race at home against Midwest teams.",
