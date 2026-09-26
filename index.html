@@ -164,7 +164,7 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
     <div>
       <div class="eyebrow">D-II matchup of the week · Fri Sept 25 · Columbia, MO</div>
       <h3 id="ft-d2">Gans Creek Classic: #2 Mines vs. the SEC</h3>
-      <p>No. 2 D-II Colorado School of Mines takes on a 25-team Division I field in the men's 8K Gold race, including No. 16 Arkansas, No. 28 Missouri (the host) and No. 30 Kansas. Six of Mines' eight entrants ran on its 2024 national championship team, led by Dawson Gunn, the 2025 NCAA D-II runner-up at 5,000m indoors and outdoors. <b>Final:</b> Mines placed 4th (175) in the Gold field, ahead of Ole Miss, Missouri, Florida State, Colorado State and Illinois, with Gunn 10th overall in 22:52.7; Arkansas (69) won the men's team title over Tennessee (75).</p>
+      <p><b>Final:</b> Mines placed 4th (175) in the Gold field, ahead of Ole Miss, Missouri, Florida State, Colorado State and Illinois, with Gunn 10th overall in 22:52.7; Arkansas (69) won the men's team title over Tennessee (75).</p>
     </div>
     <div class="startline" aria-label="Ranked men's teams entered">
       <div class="lane"><span class="rk">2</span><span class="tm">Colorado School of Mines<small>D-II men · RMAC</small></span></div>
@@ -354,8 +354,7 @@ function meetCard(m){
     <div>
       <h3>${m.name}</h3>
       <div class="meta">${m.where}</div>
-      <div class="why">${m.why}</div>
-      ${m.recap?`<div class="why"><b>Final:</b> ${m.recap}</div>`:""}
+      ${m.recap?`<div class="why"><b>Final:</b> ${m.recap}</div>`:`<div class="why">${m.why}</div>`}
       <div class="tags"><span class="tag ${m.div==="hs"?"lvl-hs":"lvl-col"}">${SHORT[listDiv(m)]}</span>${listDiv(m)!==m.div?`<span class="tag">${SHORT[m.div]} host</span>`:""}${m.tags.map(t=>`<span class="tag">${t}</span>`).join("")}${m.xo?`<span class="tag xo">Crossover: ${m.xo}</span>`:""}</div>
     </div>
     <div class="actions">
