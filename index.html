@@ -164,7 +164,7 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
     <div>
       <div class="eyebrow">D-II matchup of the week · Fri Sept 25 · Columbia, MO</div>
       <h3 id="ft-d2">Gans Creek Classic: #2 Mines vs. the SEC</h3>
-      <p>No. 2 D-II Colorado School of Mines takes on a 25-team Division I field in the men's 8K Gold race, including No. 16 Arkansas, No. 28 Missouri (the host) and No. 30 Kansas. Six of Mines' eight entrants ran on its 2024 national championship team, led by Dawson Gunn, the 2025 NCAA D-II runner-up at 5,000m indoors and outdoors.</p>
+      <p>No. 2 D-II Colorado School of Mines takes on a 25-team Division I field in the men's 8K Gold race, including No. 16 Arkansas, No. 28 Missouri (the host) and No. 30 Kansas. Six of Mines' eight entrants ran on its 2024 national championship team, led by Dawson Gunn, the 2025 NCAA D-II runner-up at 5,000m indoors and outdoors. <b>Final:</b> Mines placed 4th (175) in the Gold field, ahead of Ole Miss, Missouri, Florida State, Colorado State and Illinois, with Gunn 10th overall in 22:52.7; Arkansas (69) won the men's team title over Tennessee (75).</p>
     </div>
     <div class="startline" aria-label="Ranked men's teams entered">
       <div class="lane"><span class="rk">2</span><span class="tm">Colorado School of Mines<small>D-II men · RMAC</small></span></div>
@@ -251,14 +251,16 @@ const MEETS = [
   // D-I
   {d:"25",m:"Sep",div:"d1",name:"Sean Earl Loyola Lakefront Invitational",where:"Chicago, IL · host Loyola Chicago",
    why:"No. 11 Wisconsin, No. 13 Washington and No. 24 Tulane men, plus No. 12 Northwestern, No. 20 Virginia and No. 24 Minnesota women.",
-   tags:["Women 6K 9:00 CT","Men 8K 9:40 CT","Ranked showdown"], results:"https://results.lakeshoreathleticservices.com/meets/76406", watch:null, watchNote:"Not streamed"},
+   tags:["Women 6K 9:00 CT","Men 8K 9:40 CT","Ranked showdown"], results:"https://results.lakeshoreathleticservices.com/meets/76406", watch:null, watchNote:"Not streamed",
+   recap:"No. 20 Virginia (71) beat No. 24 Minnesota (112) for the women's team title, with Santa Clara's Milaina Almonte winning by 14 seconds in 20:14.82. Arizona topped Michigan for the men's title as Tulane's Bernard Cheruiyot won the individual race in his season debut (22:37.20); No. 13 Washington raced with several debut runners, not its usual lineup, and placed 11th."},
   {d:"26",m:"Sep",div:"d1",name:"Cowboy Jamboree",where:"Stillwater, OK · host Oklahoma State",
    why:"#1 Oklahoma State, #2 New Mexico, #5 Oregon and #21 Tulsa men; #2 New Mexico, #3 BYU and #15 Oklahoma State women. D-II #1 Adams State women and #3 men also race.",
    tags:["Men 8K","Women 6K","Ranked showdown"], xo:"D-II #1 Adams State women, #3 men",
    results:"https://live.reddirtrunning.com/meets/78098", watch:null, watchNote:"No confirmed stream"},
   {d:"25",m:"Sep",div:"d1",name:"Gans Creek Classic",where:"Columbia, MO · host Missouri",
    why:"#16 Arkansas, #28 Missouri and #30 Kansas men and #22 Arkansas and #26 Missouri women, plus D-II #2 Colorado School of Mines in the men's Gold race.",
-   tags:["SEC host"], xo:"D-II #2 Colorado School of Mines", results:"https://www.pttiming.com/event/6e8a4829-944b-4519-b188-c38fbd1e5ecd", watch:BC, watchNote:"SEC Network+"},
+   tags:["SEC host"], xo:"D-II #2 Colorado School of Mines", results:"https://www.pttiming.com/event/6e8a4829-944b-4519-b188-c38fbd1e5ecd", watch:BC, watchNote:"SEC Network+",
+   recap:"No. 16 Arkansas won the men's team title (69) over Tennessee (75), with Ernest Cheruiyot (22:32.8) and teammate Nick Busienei (22:34.0) going 1-2 individually; D-II No. 2 Colorado School of Mines placed 4th (175), ahead of Ole Miss, Missouri, Florida State, Colorado State and Illinois. Host No. 26 Missouri women won by the meet's largest margin in its eight-year history, 56 to Kentucky's 136, though Arkansas's Isca Chelangat (18:58.4) took the individual women's title."},
   {d:"26",m:"Sep",div:"d1",name:"Princeton Meadows Challenge",where:"Princeton, NJ · host Princeton",
    why:"The deepest field of the weekend: #4 Alabama, #9 Syracuse and #25 Princeton men; #10 Alabama, #19 North Carolina and #29 Villanova women, with Penn State (#13 W) also expected.",
    tags:["Men 8K 9:30 ET","Women 6K 10:15 ET","Ranked showdown"], results:"https://results.leonetiming.com/xc.html?mid=9151", watch:null, watchNote:"No confirmed stream"},
@@ -274,7 +276,8 @@ const MEETS = [
    tags:["Conference preview"], results:"https://www.athletic.net/CrossCountry/meet/276340", watch:null},
   {d:"25",m:"Sep",div:"d2",name:"Augustana Invitational",where:"Sioux Falls, SD · host Augustana",
    why:"The biggest D-II field of the weekend: #14 Augustana and #19 Washburn men, #18 Rogers State and #23 Nebraska-Kearney women.",
-   tags:["Men 8K 10:15 CT","Women 6K 11:00 CT"], results:"https://dakotatiming.anet.live/meets/75998", watch:null},
+   tags:["Men 8K 10:15 CT","Women 6K 11:00 CT"], results:"https://dakotatiming.anet.live/meets/75998", watch:null,
+   recap:"Washburn (54) edged Nebraska-Kearney (62) for the men's team title, with host No. 14 Augustana third (67); Mary's Gideon Hammah won individually in 24:09.8, with Augustana's Bryant Keller third (24:18.5). Rogers State (81) topped Black Hills State (86) for the women's title, with Augustana fifth (115) and Newman's Katie Hughes winning in 20:16.9."},
   {d:"26",m:"Sep",div:"d2",name:"ChicknLegs XC Throwdown",where:"Salisbury, NC · host Catawba",
    why:"The #24 D-II Catawba women race at home.",
    tags:["Southeast"], results:"https://live.rrtiming.com/meets/77870", watch:null},
@@ -352,10 +355,11 @@ function meetCard(m){
       <h3>${m.name}</h3>
       <div class="meta">${m.where}</div>
       <div class="why">${m.why}</div>
+      ${m.recap?`<div class="why"><b>Final:</b> ${m.recap}</div>`:""}
       <div class="tags"><span class="tag ${m.div==="hs"?"lvl-hs":"lvl-col"}">${SHORT[listDiv(m)]}</span>${listDiv(m)!==m.div?`<span class="tag">${SHORT[m.div]} host</span>`:""}${m.tags.map(t=>`<span class="tag">${t}</span>`).join("")}${m.xo?`<span class="tag xo">Crossover: ${m.xo}</span>`:""}</div>
     </div>
     <div class="actions">
-      <a class="res" href="${m.results}" target="_blank" rel="noopener"><span class="dot"></span>Live results</a>
+      <a class="res" href="${m.results}" target="_blank" rel="noopener"><span class="dot"></span>${m.recap?"Final results":"Live results"}</a>
       ${m.watch?`<a href="${m.watch}" target="_blank" rel="noopener">Watch</a>`:`<span class="na">No stream listed</span>`}
       ${m.watchNote?`<span class="na">${m.watchNote}</span>`:""}
     </div>
