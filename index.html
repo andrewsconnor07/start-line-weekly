@@ -145,7 +145,7 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
     <div>
       <div class="eyebrow">Matchup of the week · Sat Sept 26 · Stillwater, OK</div>
       <h3 id="ft">Cowboy Jamboree: #1 vs #2 vs #5, plus #2 vs #3 women</h3>
-      <p>Top-ranked Oklahoma State hosts No. 2 New Mexico and No. 5 Oregon on the men's side. In the women's race, No. 2 New Mexico faces No. 3 BYU, which also gets an early look at the course where the Big 12 Championships will be held on Oct. 31.</p>
+      <p><b>Final:</b> No. 2 New Mexico beat No. 1 Oklahoma State 28-44 for its first Jamboree men's title behind freshman Pasanjo Kitonga (23:24.4), and No. 3 BYU won the women's race with 32 points to No. 15 Oklahoma State's 64 and No. 2 New Mexico's 70.</p>
     </div>
     <div class="startline" aria-label="Ranked men's teams entered">
       <div class="lane"><span class="rk">1</span><span class="tm">Oklahoma State<small>Men · Big 12 · host</small></span></div>
@@ -155,7 +155,7 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
       <div class="lane"><span class="rk">3</span><span class="tm">BYU<small>Women · Big 12</small></span></div>
     </div>
     <div class="actions" style="flex-direction:row;flex-wrap:wrap">
-      <a class="res" href="https://live.reddirtrunning.com/meets/78098" target="_blank" rel="noopener"><span class="dot"></span>Live results</a>
+      <a class="res" href="https://live.reddirtrunning.com/meets/78098" target="_blank" rel="noopener"><span class="dot"></span>Final results</a>
       <a href="https://web4.ustfccca.org/meets-results/broadcast-schedule" target="_blank" rel="noopener">Broadcast schedule</a>
     </div>
   </section>
@@ -173,7 +173,7 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
       <div class="lane"><span class="rk">30</span><span class="tm">Kansas<small>D-I men · Big 12</small></span></div>
     </div>
     <div class="actions" style="flex-direction:row;flex-wrap:wrap">
-      <a class="res" href="https://www.pttiming.com/event/6e8a4829-944b-4519-b188-c38fbd1e5ecd" target="_blank" rel="noopener"><span class="dot"></span>Live results</a>
+      <a class="res" href="https://www.pttiming.com/event/6e8a4829-944b-4519-b188-c38fbd1e5ecd" target="_blank" rel="noopener"><span class="dot"></span>Final results</a>
     </div>
   </section>
 
@@ -181,7 +181,7 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
     <div>
       <div class="eyebrow">D-III matchup of the week · Sat Sept 26 · Greenwich, NY</div>
       <h3 id="ft-d3">Fairgrounds Showdown: Undefeated #8 RPI hosts #4 Geneseo</h3>
-      <p>Undefeated No. 8 RPI (2-0, wins at the Fred Pavlich and George Suitor Invitationals) hosts No. 4 SUNY Geneseo and No. 17 WPI, which jumped 11 spots in this week's poll, at the Washington County Fairgrounds.</p>
+      <p><b>Final:</b> No. 4 SUNY Geneseo beat No. 8 RPI 24-41 to end RPI's unbeaten start, and No. 17 WPI placed third, though WPI's Everett Mosher won the race in 23:56.5.</p>
     </div>
     <div class="startline" aria-label="Ranked men's teams entered">
       <div class="lane"><span class="rk">8</span><span class="tm">RPI<small>D-III men · Liberty League · host</small></span></div>
@@ -189,7 +189,7 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
       <div class="lane"><span class="rk">17</span><span class="tm">WPI<small>D-III men · NEWMAC</small></span></div>
     </div>
     <div class="actions" style="flex-direction:row;flex-wrap:wrap">
-      <a class="res" href="https://results.leonetiming.com/xc.html?mid=9150" target="_blank" rel="noopener"><span class="dot"></span>Live results</a>
+      <a class="res" href="https://results.leonetiming.com/xc.html?mid=9150" target="_blank" rel="noopener"><span class="dot"></span>Final results</a>
     </div>
   </section>
 
@@ -252,22 +252,25 @@ const MEETS = [
   {d:"25",m:"Sep",div:"d1",name:"Sean Earl Loyola Lakefront Invitational",where:"Chicago, IL · host Loyola Chicago",
    why:"No. 11 Wisconsin, No. 13 Washington and No. 24 Tulane men, plus No. 12 Northwestern, No. 20 Virginia and No. 24 Minnesota women.",
    tags:["Women 6K 9:00 CT","Men 8K 9:40 CT","Ranked showdown"], results:"https://results.lakeshoreathleticservices.com/meets/76406", watch:null, watchNote:"Not streamed",
-   recap:"No. 20 Virginia (71) beat No. 24 Minnesota (112) for the women's team title, with Santa Clara's Milaina Almonte winning by 14 seconds in 20:14.82. Arizona topped Michigan for the men's title as Tulane's Bernard Cheruiyot won the individual race in his season debut (22:37.20); No. 13 Washington raced with several debut runners, not its usual lineup, and placed 11th."},
+   recap:"Arizona won the men's 8K ahead of Michigan, and Tulane's Bernard Cheruiyot took the individual title in 22:37.20 in his season debut; No. 13 Washington, with five men making their cross country debuts, placed 11th (257). No. 20 Virginia won the women's 6K with 71 points to No. 24 Minnesota's 112, with No. 12 Northwestern third (123), and Arizona freshman Mercy Chepkemoi won in 19:02.52."},
   {d:"26",m:"Sep",div:"d1",name:"Cowboy Jamboree",where:"Stillwater, OK · host Oklahoma State",
    why:"#1 Oklahoma State, #2 New Mexico, #5 Oregon and #21 Tulsa men; #2 New Mexico, #3 BYU and #15 Oklahoma State women. D-II #1 Adams State women and #3 men also race.",
    tags:["Men 8K","Women 6K","Ranked showdown"], xo:"D-II #1 Adams State women, #3 men",
-   results:"https://live.reddirtrunning.com/meets/78098", watch:null, watchNote:"No confirmed stream"},
+   results:"https://live.reddirtrunning.com/meets/78098", watch:null, watchNote:"No confirmed stream",
+   recap:"No. 2 New Mexico beat No. 1 Oklahoma State 28-44 for its first Cowboy Jamboree men's title, putting four runners in the top six; freshman Pasanjo Kitonga won in 23:24.4, a second ahead of Oklahoma State's Denis Kipngetich. No. 3 BYU won the women's race with 32 points, ahead of No. 15 Oklahoma State (64) and No. 2 New Mexico (70), while Oklahoma State's Billah Jepkirui won in a meet- and course-record 19:24.4."},
   {d:"25",m:"Sep",div:"d1",name:"Gans Creek Classic",where:"Columbia, MO · host Missouri",
    why:"#16 Arkansas, #28 Missouri and #30 Kansas men and #22 Arkansas and #26 Missouri women, plus D-II #2 Colorado School of Mines in the men's Gold race.",
    tags:["SEC host"], xo:"D-II #2 Colorado School of Mines", results:"https://www.pttiming.com/event/6e8a4829-944b-4519-b188-c38fbd1e5ecd", watch:BC, watchNote:"SEC Network+",
-   recap:"No. 16 Arkansas won the men's team title (69) over Tennessee (75), with Ernest Cheruiyot (22:32.8) and teammate Nick Busienei (22:34.0) going 1-2 individually; D-II No. 2 Colorado School of Mines placed 4th (175), ahead of Ole Miss, Missouri, Florida State, Colorado State and Illinois. Host No. 26 Missouri women won by the meet's largest margin in its eight-year history, 56 to Kentucky's 136, though Arkansas's Isca Chelangat (18:58.4) took the individual women's title."},
+   recap:"No. 16 Arkansas won the men's Gold race with 69 points to Tennessee's 75, with Ernest Cheruiyot (22:32.8) and Nick Busienei (22:34.0) going 1-2; D-II No. 2 Colorado School of Mines placed fourth (175), ahead of Ole Miss, No. 28 Missouri, Florida State, Colorado State and Illinois. The No. 26 Missouri women won with 56 points to Kentucky's 136, the largest margin in course history, while Arkansas's Isca Chelangat won the individual title in 18:58.4."},
   {d:"26",m:"Sep",div:"d1",name:"Princeton Meadows Challenge",where:"Princeton, NJ · host Princeton",
    why:"The deepest field of the weekend: #4 Alabama, #9 Syracuse and #25 Princeton men; #10 Alabama, #19 North Carolina and #29 Villanova women, with Penn State (#13 W) also expected.",
-   tags:["Men 8K 9:30 ET","Women 6K 10:15 ET","Ranked showdown"], results:"https://results.leonetiming.com/xc.html?mid=9151", watch:null, watchNote:"No confirmed stream"},
+   tags:["Men 8K 9:30 ET","Women 6K 10:15 ET","Ranked showdown"], results:"https://results.leonetiming.com/xc.html?mid=9151", watch:null, watchNote:"No confirmed stream",
+   recap:"No. 4 Alabama won the rain-soaked men's 8K with 42 points to No. 9 Syracuse's 68, as Rodgers Minatum (22:59.4) led an Alabama 1-2. The No. 10 Alabama women completed the sweep with 57 points, 18 ahead of No. 19 North Carolina, behind individual winner Caren Kiplagat (19:21.4)."},
   // D-II
   {d:"26",m:"Sep",div:"d2",d1Ranked:true,name:"Mike Johnson Classic",where:"Monmouth, OR · host Western Oregon",
    why:"The #5 Oregon women open their season, and host Western Oregon's men are ranked #24 in D-II.",
-   tags:["Season debut"], xo:"#5 Oregon women", results:"https://www.athletic.net/CrossCountry/meet/273598", watch:null},
+   tags:["Season debut"], xo:"#5 Oregon women", results:"https://live.athletictiming.net/meets/78125", watch:null,
+   recap:"The No. 5 Oregon women opened their season with the team title, scoring 18 points and sweeping the top four places; Juliet Cherubet won in 18:36.7."},
   {d:"26",m:"Sep",div:"d2",name:"WWU Bill Roe Classic",where:"Ferndale, WA · host Western Washington",
    why:"The No. 9 D-II Western Washington men race at home.",
    tags:["GNAC"], results:"https://pntfo.trackscoreboard.com/meets/9262026/events", watch:null},
@@ -277,17 +280,20 @@ const MEETS = [
   {d:"25",m:"Sep",div:"d2",name:"Augustana Invitational",where:"Sioux Falls, SD · host Augustana",
    why:"The biggest D-II field of the weekend: #14 Augustana and #19 Washburn men, #18 Rogers State and #23 Nebraska-Kearney women.",
    tags:["Men 8K 10:15 CT","Women 6K 11:00 CT"], results:"https://dakotatiming.anet.live/meets/75998", watch:null,
-   recap:"Washburn (54) edged Nebraska-Kearney (62) for the men's team title, with host No. 14 Augustana third (67); Mary's Gideon Hammah won individually in 24:09.8, with Augustana's Bryant Keller third (24:18.5). Rogers State (81) topped Black Hills State (86) for the women's title, with Augustana fifth (115) and Newman's Katie Hughes winning in 20:16.9."},
+   recap:"No. 19 Washburn (54) edged Nebraska-Kearney (62) for the men's title, with host No. 14 Augustana third (67), and Mary's Gideon Hammah won in 24:09.8. No. 18 Rogers State (81) held off Black Hills State (86) for the women's title, Augustana was fifth (115), and Newman's Katie Hughes won in 20:16.9."},
   {d:"26",m:"Sep",div:"d2",name:"ChicknLegs XC Throwdown",where:"Salisbury, NC · host Catawba",
    why:"The #24 D-II Catawba women race at home.",
-   tags:["Southeast"], results:"https://live.rrtiming.com/meets/77870", watch:null},
+   tags:["Southeast"], results:"https://live.rrtiming.com/meets/77870", watch:null,
+   recap:"The No. 24 Catawba women took the top six places for a perfect 15, led by winner Mandi Pollard in 18:18.83, with Emory & Henry second. Catawba also won the men's race, where Seth Caudill won in 25:47.4 and Emory & Henry was again second."},
   // D-III
   {d:"26",m:"Sep",div:"d3",name:"RPI Fairgrounds Showdown",where:"Greenwich, NY · host RPI",
    why:"Undefeated #8 RPI hosts #4 SUNY Geneseo and #17 WPI men, with #13 Vassar and #18 Geneseo in the women's race.",
-   tags:["Liberty League"], results:"https://results.leonetiming.com/xc.html?mid=9150", watch:null},
+   tags:["Liberty League"], results:"https://results.leonetiming.com/xc.html?mid=9150", watch:null,
+   recap:"No. 4 SUNY Geneseo won the men's 8K with 24 points to No. 8 RPI's 41, ending RPI's unbeaten start, and No. 17 WPI was third; WPI's Everett Mosher won in 23:56.5, 1.5 seconds ahead of Geneseo's Collin Brown. No. 18 Geneseo also won the women's 6K with 24 points, ahead of No. 13 Vassar (66) and RPI (84), and Vassar's Haley Schoenegge won in 20:49.2."},
   {d:"26",m:"Sep",div:"d3",name:"Adrian Invitational",where:"Adrian, MI · host Adrian",
    why:"#16 Hope men and #15 Hope and #22 Calvin women lead a Michigan D-III field.",
-   tags:["MIAA"], results:"https://live.a2racemanagement.com/meets/76270", watch:null},
+   tags:["MIAA"], results:"https://live.a2racemanagement.com/meets/76270", watch:null,
+   recap:"Southwestern Michigan College won the men's 8K with 56 points, ahead of Calvin (66) and No. 16 Hope (98). No. 15 Hope won the women's 6K with 38 points, 24 ahead of Saint Mary's (62)."},
   // High school
   {d:"25",m:"Sep",div:"hs",name:"Desert Twilight XC Festival",where:"Mesa, AZ · Toka Sticks Golf Course",
    why:"Oliver Horton vs. Yohanes van Meerten, a rematch of last year's boys sweepstakes race, which Horton won 14:23.9 to 14:25.7.",
@@ -298,7 +304,8 @@ const MEETS = [
   {d:"26",m:"Sep",div:"hs",name:"Bob Firman Invitational",where:"Spokane Valley, WA · The Course",
    why:"The Northwest's best field: DyeStat #4 Summit (OR) and #9 Coeur d'Alene boys, #8 Sehome, #24 Rocky Mountain and #35 Jesuit (OR) girls.",
    tags:["Northwest","Elite races Saturday"], results:"https://live.athletictiming.net/meets/77993",
-   watch:"https://www.runnerspace.com/eprofile.php?event_id=358&do=news&news_id=675366", watchNote:"RunnerSpace+"},
+   watch:"https://www.runnerspace.com/eprofile.php?event_id=358&do=news&news_id=675366", watchNote:"RunnerSpace+",
+   recap:"DyeStat No. 4 Summit (OR) won the boys elite race with 64 points, ahead of No. 9 Coeur d'Alene, and South Eugene's Yosuke Shibata won in a school-record 14:28.0, just ahead of Gonzaga Prep sophomore Miro Parr-Coffin (14:28.4). No. 8 Sehome won the girls race with 125 points to No. 24 Rocky Mountain's 176, with No. 35 Jesuit (OR) third (183), and Polson (MT) senior Morgan Delaney won in 17:11.2."},
   {d:"26",m:"Sep",div:"hs",name:"Nike Portland XC",where:"Fairview, OR · Blue Lake Regional Park",
    why:"DyeStat #5 St. Francis (CA) and #19 ThunderRidge (CO) girls and #37 Grant (OR) boys.",
    tags:["Northwest"], results:"https://live.athletictiming.net/meets/76302",
