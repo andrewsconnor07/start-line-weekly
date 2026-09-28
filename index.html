@@ -156,6 +156,7 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
     </div>
     <div class="actions" style="flex-direction:row;flex-wrap:wrap">
       <a class="res" href="https://live.reddirtrunning.com/meets/78098" target="_blank" rel="noopener"><span class="dot"></span>Final results</a>
+      <a href="https://www.youtube.com/watch?v=ZvuEM9_QJWc" target="_blank" rel="noopener">Race replay</a>
       <a href="https://web4.ustfccca.org/meets-results/broadcast-schedule" target="_blank" rel="noopener">Broadcast schedule</a>
     </div>
   </section>
@@ -174,6 +175,7 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
     </div>
     <div class="actions" style="flex-direction:row;flex-wrap:wrap">
       <a class="res" href="https://www.pttiming.com/event/6e8a4829-944b-4519-b188-c38fbd1e5ecd" target="_blank" rel="noopener"><span class="dot"></span>Final results</a>
+      <a href="https://www.youtube.com/live/UTs3I2cr9MM" target="_blank" rel="noopener">Race replay</a>
     </div>
   </section>
 
@@ -205,7 +207,8 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
     </div>
     <div class="actions" style="flex-direction:row;flex-wrap:wrap">
       <a class="res" href="https://results.wingfootfinish.com/meets/77664" target="_blank" rel="noopener"><span class="dot"></span>Live results (Wingfoot)</a>
-      <a href="https://desert-twilight-xc-festival.runnerspace.com/eprofile.php?event_id=4930&amp;do=videos&amp;video_id=465721" target="_blank" rel="noopener">Watch (RunnerSpace+)</a>
+      <a href="https://www.youtube.com/watch?v=NCQlOElWqFE" target="_blank" rel="noopener">Boys race replay</a>
+      <a href="https://www.youtube.com/watch?v=Xu8hgF5isnU" target="_blank" rel="noopener">Girls race replay</a>
     </div>
   </section>
 
@@ -256,11 +259,11 @@ const MEETS = [
   {d:"26",m:"Sep",div:"d1",name:"Cowboy Jamboree",where:"Stillwater, OK · host Oklahoma State",
    why:"#1 Oklahoma State, #2 New Mexico, #5 Oregon and #21 Tulsa men; #2 New Mexico, #3 BYU and #15 Oklahoma State women. D-II #1 Adams State women and #3 men also race.",
    tags:["Men 8K","Women 6K","Ranked showdown"], xo:"D-II #1 Adams State women, #3 men",
-   results:"https://live.reddirtrunning.com/meets/78098", watch:null, watchNote:"No confirmed stream",
+   results:"https://live.reddirtrunning.com/meets/78098", watch:"https://www.youtube.com/watch?v=ZvuEM9_QJWc", watchNote:"Race replay",
    recap:"No. 2 New Mexico beat No. 1 Oklahoma State 28-44 for its first Cowboy Jamboree men's title, putting four runners in the top six; freshman Pasanjo Kitonga won in 23:24.4, a second ahead of Oklahoma State's Denis Kipngetich. No. 3 BYU won the women's race with 32 points, ahead of No. 15 Oklahoma State (64) and No. 2 New Mexico (70), while Oklahoma State's Billah Jepkirui won in a meet- and course-record 19:24.4."},
   {d:"25",m:"Sep",div:"d1",name:"Gans Creek Classic",where:"Columbia, MO · host Missouri",
    why:"#16 Arkansas, #28 Missouri and #30 Kansas men and #22 Arkansas and #26 Missouri women, plus D-II #2 Colorado School of Mines in the men's Gold race.",
-   tags:["SEC host"], xo:"D-II #2 Colorado School of Mines", results:"https://www.pttiming.com/event/6e8a4829-944b-4519-b188-c38fbd1e5ecd", watch:BC, watchNote:"SEC Network+",
+   tags:["SEC host"], xo:"D-II #2 Colorado School of Mines", results:"https://www.pttiming.com/event/6e8a4829-944b-4519-b188-c38fbd1e5ecd", watch:"https://www.youtube.com/live/UTs3I2cr9MM", watchNote:"Race replay",
    recap:"No. 16 Arkansas won the men's Gold race with 69 points to Tennessee's 75, with Ernest Cheruiyot (22:32.8) and Nick Busienei (22:34.0) going 1-2; D-II No. 2 Colorado School of Mines placed fourth (175), ahead of Ole Miss, No. 28 Missouri, Florida State, Colorado State and Illinois. The No. 26 Missouri women won with 56 points to Kentucky's 136, the largest margin in course history, while Arkansas's Isca Chelangat won the individual title in 18:58.4."},
   {d:"26",m:"Sep",div:"d1",name:"Princeton Meadows Challenge",where:"Princeton, NJ · host Princeton",
    why:"The deepest field of the weekend: #4 Alabama, #9 Syracuse and #25 Princeton men; #10 Alabama, #19 North Carolina and #29 Villanova women, with Penn State (#13 W) also expected.",
@@ -297,19 +300,19 @@ const MEETS = [
   // High school
   {d:"25",m:"Sep",div:"hs",name:"Desert Twilight XC Festival",where:"Mesa, AZ · Toka Sticks Golf Course",
    why:"Oliver Horton vs. Yohanes van Meerten, a rematch of last year's boys sweepstakes race, which Horton won 14:23.9 to 14:25.7.",
-   tags:["Twilight","NXR Southwest preview"], results:"https://results.wingfootfinish.com/meets/77664", watch:"https://desert-twilight-xc-festival.runnerspace.com/eprofile.php?event_id=4930&do=videos&video_id=465721", watchNote:"RunnerSpace+"},
+   tags:["Twilight","NXR Southwest preview"], results:"https://results.wingfootfinish.com/meets/77664", watch:"https://www.youtube.com/watch?v=NCQlOElWqFE", watchNote:"Boys race replay", watch2:"https://www.youtube.com/watch?v=Xu8hgF5isnU", watch2Note:"Girls race replay"},
   {d:"26",m:"Sep",div:"hs",name:"Oatlands Invitational",where:"Leesburg, VA",
    why:"Nationally ranked #15 James Robinson and #21 Blacksburg (DyeStat) headline the girls race.",
    tags:["Mid-Atlantic"], results:"https://www.milesplit.com/meets/719471-oatlands-invitational-2026", watch:null},
   {d:"26",m:"Sep",div:"hs",name:"Bob Firman Invitational",where:"Spokane Valley, WA · The Course",
    why:"The Northwest's best field: DyeStat #4 Summit (OR) and #9 Coeur d'Alene boys, #8 Sehome, #24 Rocky Mountain and #35 Jesuit (OR) girls.",
    tags:["Northwest","Elite races Saturday"], results:"https://live.athletictiming.net/meets/77993",
-   watch:"https://www.runnerspace.com/eprofile.php?event_id=358&do=news&news_id=675366", watchNote:"RunnerSpace+",
-   recap:"DyeStat No. 4 Summit (OR) won the boys elite race with 64 points, ahead of No. 9 Coeur d'Alene, and South Eugene's Yosuke Shibata won in a school-record 14:28.0, just ahead of Gonzaga Prep sophomore Miro Parr-Coffin (14:28.4). No. 8 Sehome won the girls race with 125 points to No. 24 Rocky Mountain's 176, with No. 35 Jesuit (OR) third (183), and Polson (MT) senior Morgan Delaney won in 17:11.2."},
+   watch:"https://www.youtube.com/watch?v=QqnxR31PMNU", watchNote:"Boys race replay",
+   recap:"DyeStat No. 4 Summit (OR) won the boys elite race with 64 points, ahead of No. 9 Coeur d'Alene, and South Eugene's Yosuke Shibata won in a school-record 14:28.0, just ahead of Gonzaga Prep sophomore Miro Parr-Coffin (14:28.4). No. 8 Sehome won the girls race with 125 points to No. 24 Rocky Mountain's 176, with No. 35 Jesuit (OR) third (183), and Polson (MT) senior Morgan Delaney won in 17:11.2.", watch2:"https://www.youtube.com/watch?v=aHiGUnRTmQU", watch2Note:"Girls race replay"},
   {d:"26",m:"Sep",div:"hs",name:"Nike Portland XC",where:"Fairview, OR · Blue Lake Regional Park",
    why:"DyeStat #5 St. Francis (CA) and #19 ThunderRidge (CO) girls and #37 Grant (OR) boys.",
    tags:["Northwest"], results:"https://live.athletictiming.net/meets/76302",
-   watch:"https://www.runnerspace.com/eprofile.php?event_id=383&do=news&news_id=675367", watchNote:"RunnerSpace+"},
+   watch:"https://www.youtube.com/watch?v=DgHZYufvHIA", watchNote:"Boys race replay", watch2:"https://www.youtube.com/watch?v=0uZLIrfH9nA", watch2Note:"Girls race replay"},
 ];
 
 const U="https://www.ustfccca.org/2026/09/featured/";
@@ -368,6 +371,8 @@ function meetCard(m){
       <a class="res" href="${m.results}" target="_blank" rel="noopener"><span class="dot"></span>${m.recap?"Final results":"Live results"}</a>
       ${m.watch?`<a href="${m.watch}" target="_blank" rel="noopener">Watch</a>`:`<span class="na">No stream listed</span>`}
       ${m.watchNote?`<span class="na">${m.watchNote}</span>`:""}
+      ${m.watch2?`<a href="${m.watch2}" target="_blank" rel="noopener">Watch</a>`:""}
+      ${m.watch2Note?`<span class="na">${m.watch2Note}</span>`:""}
     </div>
   </article>`;
 }
