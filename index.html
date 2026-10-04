@@ -145,7 +145,7 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
     <div>
       <div class="eyebrow">Matchup of the week · Fri Oct 2 · Notre Dame, IN</div>
       <h3 id="ft">Joe Piane Invitational: #1 NC State visits #7 Notre Dame</h3>
-      <p>Defending national champion NC State, winner of four of the last five NCAA titles, takes on the host Irish women, who took the top eight places at the National Catholic Invitational. D-II No. 4 Grand Valley State's men are also in the field.</p>
+      <p>Defending national champion NC State, winner of four of the last five NCAA titles, takes on the host Irish women, who took the top eight places at the National Catholic Invitational. D-II No. 4 Grand Valley State's men are also in the field. <b>Final:</b> NC State won the women's race 39-84 over Notre Dame, with Hannah Gapes winning in 15:22.59.</p>
     </div>
     <div class="startline" aria-label="Ranked teams entered">
       <div class="lane"><span class="rk">1</span><span class="tm">NC State<small>Women · ACC</small></span></div>
@@ -154,7 +154,7 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
       <div class="lane"><span class="rk">4</span><span class="tm">Grand Valley State<small>D-II men · GLIAC</small></span></div>
     </div>
     <div class="actions" style="flex-direction:row;flex-wrap:wrap">
-      <a class="res" href="https://live.pttiming.com/xc-ptt.html?mid=9174" target="_blank" rel="noopener"><span class="dot"></span>Live results</a>
+      <a class="res" href="https://live.pttiming.com/xc-ptt.html?mid=9174" target="_blank" rel="noopener"><span class="dot"></span>Final results</a>
     </div>
   </section>
 
@@ -254,10 +254,12 @@ const MEETS = [
   {d:"2",m:"Oct",div:"d1",name:"Joe Piane Notre Dame Invitational",where:"Notre Dame, IN · host Notre Dame",
    why:"No. 1 NC State visits No. 7 Notre Dame in the women's race, and the No. 15 Notre Dame men race at home.",
    tags:["Women 5K","Men 8K","Ranked showdown"], xo:"D-II #4 Grand Valley State men",
+   recap:"No. 1 NC State won the women\'s team title with 39 points, ahead of No. 7 Notre Dame (84) and South Carolina (102); Hannah Gapes of NC State won the individual title in 15:22.59. Notre Dame\'s men won the Blue Division team title for the fifth straight year with 22 points to Bradley\'s 87, led by Daelen Ackley (22:54.7) and Cameron Todd (22:58.6). In the men\'s Gold 8K, Goshen freshman Jesse Songo won in 23:45.5 and Tiffin took the team title.",
    results:"https://live.pttiming.com/xc-ptt.html?mid=9174", watch:null},
   {d:"2",m:"Oct",div:"d1",name:"Paul Short Run",where:"Bethlehem, PA · host Lehigh",
    why:"No. 15 Virginia and No. 28 Penn State women lead the D-I side. D-II No. 1 Wingate men, D-III No. 1 NYU women and D-III No. 4 NYU men also race.",
    tags:["Crossover"], xo:"D-II #1 Wingate men · D-III #1 NYU women · D-III #4 NYU men",
+   recap:"D-II No. 1 Wingate won the men\'s College Gold 8K team title with 58 points to Penn State\'s 129, and Penn State\'s Nick Sloff won the race in 23:59.8. Liberty took the women\'s College Gold team title with 115 points to Penn\'s 144. NYU won the women\'s College White 6K team race with 55 points.",
    results:"https://results.leonetiming.com/xc.html?mid=9170", watch:null},
   {d:"2",m:"Oct",div:"d1",name:"Georgia Tech XC Invitational",where:"Douglasville, GA · host Georgia Tech",
    why:"Georgia Tech hosts an early-morning open meet at Fox Hall Sporting Club.",
@@ -267,6 +269,7 @@ const MEETS = [
   {d:"3",m:"Oct",div:"d1",name:"Chile Pepper Cross Country Festival",where:"Fayetteville, AR · host Arkansas",
    why:"Host No. 16 Arkansas men and No. 25 Arkansas women race on their home course.",
    tags:["SEC host","Men 8K 10:25 CT","Women 5K 11:00 CT"],
+   recap:"Arkansas won the women\'s team title with 69 points to Mississippi State\'s 83 and Tulsa\'s 89, and freshman Braelyn Combe won the 5K in 15:59.0, a tenth of a second ahead of UT Arlington\'s Dorcas Jepkosgei. Texas won the men\'s 8K team title with 64 points.",
    results:"https://flashresults.com/2027_Meets/xc/ChilePepper/index.htm", watch:"https://chilepepperfestival.runnerspace.com/", watchNote:"RunnerSpace+"},
   {d:"3",m:"Oct",div:"d1",name:"Swags Louisville Cross Country Classic",where:"Louisville, KY · E.P. \"Tom\" Sawyer State Park",
    why:"The 25th annual Louisville Classic brings one of the biggest college fields of the fall, with Gold, Blue and Silver races.",
@@ -275,7 +278,8 @@ const MEETS = [
   // D-III
   {d:"3",m:"Oct",div:"d3",name:"Running of the Cows (NCAA DIII Pre-Nationals)",where:"Northfield, MN · host Carleton",
    why:"Seven of the top 10 D-III men's teams and 17 top-30 women's teams race on the NCAA championship course. Men: No. 1 UW-La Crosse, No. 3 Johns Hopkins, No. 5 Wartburg, No. 6 Pomona-Pitzer, No. 8 RPI, No. 9 UW-Stevens Point, No. 10 Tufts and No. 23 St. Olaf. Women: No. 2 Williams, No. 3 Johns Hopkins, No. 4 Claremont-Mudd-Scripps, No. 6 Tufts, No. 7 UW-La Crosse, No. 9 Pomona-Pitzer and No. 10 Washington (Mo.).",
-   tags:["Pre-Nationals","Women 11:00 CT","Men 12:00 CT"], results:"https://results.wayzatatiming.com/meets/78254", watch:null},
+   tags:["Pre-Nationals","Women 11:00 CT","Men 12:00 CT"],
+   recap:"Women: No. 2 Williams won the Navy Division with 79 points, ahead of No. 7 UW-La Crosse (141), No. 3 Johns Hopkins (176), No. 6 Tufts (197) and No. 10 Washington (Mo.) (203). Men: No. 5 Wartburg won with 110 points, ahead of No. 3 Johns Hopkins (123), No. 1 UW-La Crosse (144), No. 9 UW-Stevens Point (182) and No. 8 RPI (189).", results:"https://results.wayzatatiming.com/meets/78254", watch:null},
   // High school
   {d:"3",m:"Oct",div:"hs",name:"Great American XC Festival",where:"Cary, NC · WakeMed Soccer Park",
    why:"Team battle: DyeStat No. 1 Christ School (NC), last year's boys champion, vs. No. 6 Belen Jesuit (FL), the 2024 champion, with No. 15 Broughton (NC) also in the boys field. No. 4 J Serra Catholic (CA) travels east for the girls race. Mantecon goes for a third straight title; No. 3 Averi Lowen defends her girls title against No. 8 Elin Latta and No. 10 Madison Lange.",
