@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bash tools/setup-browser.sh)",
+      "Bash(node tools/fetch.js:*)"
+    ]
+  }
+}
