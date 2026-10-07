@@ -165,7 +165,7 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
     <div>
       <div class="eyebrow">Division II matchup of the week · Sun Oct 11 · Lawrence, KS</div>
       <h3 id="ft-d2">NCAA DII Pre-Nationals at Rim Rock Farm</h3>
-      <p>The D-II championship course hosts the weekend's deepest ranked D-II field on Sunday: men's No. 7 Western Colorado, No. 14 Cal Poly Pomona, No. 18 Nebraska-Kearney and No. 19 Pittsburg State, plus the No. 5 Western Colorado women, per their team schedules. No. 2 Colorado School of Mines splits its squad between this meet and Saturday's Fort Hays State Tiger Open.</p>
+      <p>The D-II championship course brings together the No. 7 Western Colorado, No. 14 Cal Poly Pomona, No. 18 Nebraska-Kearney and No. 19 Pittsburg State men and the No. 5 Western Colorado women on Sunday.</p>
     </div>
     <div class="startline" aria-label="Ranked teams entered">
       <div class="lane"><span class="rk">7</span><span class="tm">Western Colorado<small>Men</small></span></div>
@@ -235,27 +235,27 @@ const TFRRS="https://www.tfrrs.org/", ATH="https://www.athletic.net/", MS="https
 const MEETS = [
   // D-I
   {d:"9",m:"Oct",div:"d1",name:"Nuttycombe Wisconsin Invitational",where:"Madison, WI · host Wisconsin · Thomas Zimmer Championship Cross Course",
-   why:"The biggest D-I meet of the fall so far, with 39 nationally ranked teams (21 men, 18 women). Men: No. 1 New Mexico, No. 2 Iowa State, No. 6 Colorado, No. 7 BYU, No. 8 Wake Forest, No. 10 Florida. Women: No. 3 Northern Arizona, No. 4 New Mexico, No. 5 Iowa State, No. 9 West Virginia, No. 11 Stanford. NC State, BYU and Notre Dame women are not racing.",
+   why:"No. 1 New Mexico and No. 2 Iowa State meet in the men's race, with No. 6 Colorado, No. 7 BYU, No. 8 Wake Forest and No. 10 Florida also on the line. The women's race features No. 3 Northern Arizona, No. 4 New Mexico, No. 5 Iowa State, No. 9 West Virginia and No. 11 Stanford.",
    tags:["Big Ten host","Women 6K 10:30 CT","Men 8K 11:10 CT","Ranked showdown"],
    results:"https://www.pttiming.com/event/bfef37ef-34b2-4f1c-9ada-f1d12f18de87?pt=schedule",
    watch:"https://www.runnerspace.com/eprofile.php?event_id=4311", watchNote:"RunnerSpace+"},
   {d:"9",m:"Oct",div:"d1",name:"Bill Dellinger Invitational",where:"Springfield, OR · host Oregon · Pine Ridge Golf Club",
-   why:"No. 5 Oregon men and No. 7 Oregon women race at home; Juliet Cherubet is on the women's start list.",
+   why:"No. 5 Oregon men and No. 7 Oregon women host, with D-II No. 8 Chico State in the men's race. Juliet Cherubet leads the Oregon women.",
    tags:["Big Ten host","Men 8K 11:15 PT","Women 6K 12:00 PT"], xo:"D-II #8 Chico State men",
    results:"https://live.athletictiming.net/meets/78850",
    watch:"https://www.runnerspace.com/eprofile.php?event_id=18", watchNote:"RunnerSpace+"},
   // D-II
   {d:"9",m:"Oct",div:"d2",name:"Royals Challenge",where:"Charlotte, NC · host Queens · McAlpine Creek Park",
-   why:"D-II No. 1 Wingate men and No. 2 Wingate women are scheduled to race here, the only Wingate date this weekend.",
+   why:"D-II No. 1 Wingate men and No. 2 Wingate women race, along with D-III No. 17 Washington and Lee women.",
    tags:["Women 5K 5:00 ET","Men 8K 5:45 ET"], xo:"D-III #17 Washington and Lee women",
    results:"https://www.athletic.net/", watch:null},
   {d:"10",m:"Oct",div:"d2",name:"Lewis Crossover",where:"Romeoville, IL · host Lewis",
-   why:"No. 10 Lewis men and No. 12 Lewis women host, with No. 11 Saginaw Valley State men and No. 13 UC-Colorado Springs men (the UCCS women are No. 7). No. 9 Western Washington men also list the meet but split their squad with the Emerald City Open, so they are not counted. Billed as the D-II Nuttycombe, with teams from seven regions.",
+   why:"No. 10 Lewis men and No. 12 Lewis women host No. 11 Saginaw Valley State men, No. 13 UC-Colorado Springs men and No. 7 UC-Colorado Springs women, with No. 9 Western Washington men also on the list.",
    tags:["Crossover","Women 10:30 CT","Men 9:45 CT"],
    results:"https://lewis-crossover.runnerspace.com/",
    watch:"https://www.thestridereport.com/post/news-the-stride-report-to-stream-2026-lewis-xc-crossover-on-saturday-october-10th-via-youtube", watchNote:"The Stride Report on YouTube"},
   {d:"11",m:"Oct",div:"d2",name:"NCAA DII Pre-National Invitational",where:"Lawrence, KS · Rim Rock Farm",
-   why:"The D-II championship course draws men's No. 7 Western Colorado, No. 14 Cal Poly Pomona, No. 18 Nebraska-Kearney and No. 19 Pittsburg State, plus the No. 5 Western Colorado women, per team schedules. No. 2 Colorado School of Mines splits its squad with Saturday's Fort Hays State Tiger Open, so Mines is not counted.",
+   why:"No. 7 Western Colorado, No. 14 Cal Poly Pomona, No. 18 Nebraska-Kearney and No. 19 Pittsburg State men race on the D-II championship course, along with the No. 5 Western Colorado women and No. 2 Colorado School of Mines.",
    tags:["Pre-Nationals","Sunday"],
    results:"https://www.athletic.net/", watch:null},
   // D-III
@@ -264,7 +264,7 @@ const MEETS = [
    tags:["SCIAC","Men 8K 7:45 PT","Women 6K 8:30 PT"],
    results:"https://finishedresults.trackscoreboard.com/meets/14353/events", watch:null},
   {d:"10",m:"Oct",div:"d3",name:"James Earley Invitational",where:"Westfield, MA · host Westfield State · Stanley Park",
-   why:"No. 1 Williams women, No. 16 Williams men and No. 22 Connecticut College women are scheduled to race. Williams split its squad last weekend and has not announced its lineup.",
+   why:"No. 1 Williams women and No. 16 Williams men race alongside No. 22 Connecticut College women.",
    tags:["New England"],
    results:"https://www.athletic.net/", watch:null},
   {d:"10",m:"Oct",div:"d3",name:"CMU Invitational",where:"Pittsburgh area, PA · host Carnegie Mellon",
@@ -277,11 +277,11 @@ const MEETS = [
    tags:["League meet","Mountain"],
    results:"https://www.milesplit.com/meets/783951-granite-peaks-league-championships-2026", watch:null},
   {d:"10",m:"Oct",div:"hs",name:"Nike Hole in the Wall XC Invitational",where:"Lakewood, WA · Lakewood High School",
-   why:"DyeStat No. 14 Coeur d'Alene (ID) boys and No. 9 Sehome (WA) girls head the elite races, facing Northwest programs such as Camas, Gonzaga Prep, Jesuit (OR) and Rigby (ID) on the boys side and Inglemoor, Issaquah and Mercer Island on the girls side (girls 1:00 PT, boys 1:30 PT).",
+   why:"DyeStat No. 14 Coeur d'Alene (ID) boys and No. 9 Sehome (WA) girls head the elite races, facing Northwest programs such as Camas, Gonzaga Prep, Jesuit (OR) and Rigby (ID) on the boys side and Inglemoor, Issaquah and Mercer Island on the girls side.",
    tags:["Northwest","Elite races"],
    results:"https://www.holeinthewallinvite.com/", watch:null},
   {d:"10",m:"Oct",div:"hs",name:"Serra Crystal Springs Invitational",where:"Belmont, CA · Crystal Springs course",
-   why:"DyeStat No. 10 St. Francis (CA) girls are registered, and No. 29 Granada (CA) boys are listed as scheduled, in a field of 110 teams.",
+   why:"DyeStat No. 10 St. Francis (CA) girls and No. 29 Granada (CA) boys race in a 110-team field.",
    tags:["California","Big field"],
    results:"https://ca.milesplit.com/meets/780906-serra-crystal-springs-invitational-2026", watch:null},
 ];
