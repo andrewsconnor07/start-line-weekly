@@ -179,27 +179,11 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
     </div>
   </section>
 
-  <section class="feature" data-lvl="d3" aria-labelledby="ft-d3">
-    <div>
-      <div class="eyebrow">Division III matchup of the week · Sat Oct 10 · Claremont, CA</div>
-      <h3 id="ft-d3">Pomona-Pitzer Invitational: SCIAC showdown</h3>
-      <p>Most of the top D-III teams are off until Oct. 16–17, so the best available ranked meet is the SCIAC race in Claremont, where No. 14 Pomona-Pitzer men, No. 13 Pomona-Pitzer women and No. 23 Claremont-Mudd-Scripps men are entered. No meet this weekend has two top-10 D-III teams in the same race.</p>
-    </div>
-    <div class="startline" aria-label="Ranked teams entered">
-      <div class="lane"><span class="rk">13</span><span class="tm">Pomona-Pitzer<small>Women</small></span></div>
-      <div class="lane"><span class="rk">14</span><span class="tm">Pomona-Pitzer<small>Men</small></span></div>
-      <div class="lane"><span class="rk">23</span><span class="tm">Claremont-Mudd-Scripps<small>Men</small></span></div>
-    </div>
-    <div class="actions" style="flex-direction:row;flex-wrap:wrap">
-      <a class="res" href="https://finishedresults.trackscoreboard.com/meets/14353/events" target="_blank" rel="noopener"><span class="dot"></span>Live results</a>
-    </div>
-  </section>
-
   <section class="feature" data-lvl="hs" aria-labelledby="ft-hs">
     <div>
       <div class="eyebrow">High school matchup of the week · Sat Oct 10 · Lakewood, WA</div>
       <h3 id="ft-hs">Hole in the Wall: the weekend's top ranked field</h3>
-      <p>A thin weekend for the national top 30: no meet has three DyeStat-ranked teams. The elite races at the Nike Hole in the Wall Invitational include No. 14 Coeur d'Alene (ID) boys and No. 9 Sehome (WA) girls, the best-ranked teams confirmed on a posted entry list. Most of the top 10 teams had no confirmed race this weekend.</p>
+      <p>The elite races at the Nike Hole in the Wall Invitational put DyeStat No. 14 Coeur d'Alene (ID) boys and No. 9 Sehome (WA) girls against the Northwest's top programs, including Camas, Gonzaga Prep, Jesuit (OR), Eagle (ID) and Rigby (ID) on the boys side and Inglemoor, Issaquah and Mercer Island on the girls side. Girls race at 1:00 PT, boys at 1:30 PT.</p>
     </div>
     <div class="startline" aria-label="Ranked teams entered">
       <div class="lane"><span class="rk">14</span><span class="tm">Coeur d'Alene (ID)<small>Boys elite race</small></span></div>
@@ -276,7 +260,7 @@ const MEETS = [
    results:"https://www.athletic.net/", watch:null},
   // D-III
   {d:"10",m:"Oct",div:"d3",name:"Pomona-Pitzer Invitational",where:"Claremont, CA · host Pomona-Pitzer",
-   why:"SCIAC rivals No. 14 Pomona-Pitzer men, No. 13 Pomona-Pitzer women and No. 23 Claremont-Mudd-Scripps men are entered. A thin D-III weekend: most ranked teams are off until Oct. 16–17.",
+   why:"SCIAC rivals meet in Claremont: No. 14 Pomona-Pitzer men and No. 13 Pomona-Pitzer women host, with No. 23 Claremont-Mudd-Scripps men in the men's 8K.",
    tags:["SCIAC","Men 8K 7:45 PT","Women 6K 8:30 PT"],
    results:"https://finishedresults.trackscoreboard.com/meets/14353/events", watch:null},
   {d:"10",m:"Oct",div:"d3",name:"James Earley Invitational",where:"Westfield, MA · host Westfield State · Stanley Park",
@@ -284,16 +268,16 @@ const MEETS = [
    tags:["New England"],
    results:"https://www.athletic.net/", watch:null},
   {d:"10",m:"Oct",div:"d3",name:"CMU Invitational",where:"Pittsburgh area, PA · host Carnegie Mellon",
-   why:"No. 13 Carnegie Mellon men and No. 14 Carnegie Mellon women race at home. A thin D-III weekend with only two ranked teams entered.",
+   why:"No. 13 Carnegie Mellon men and No. 14 Carnegie Mellon women race at home, with D-II No. 17 Walsh in the men's field.",
    tags:["Men 10:00 ET","Women 10:45 ET"], xo:"D-II #17 Walsh men",
    results:"https://www.athletic.net/", watch:null},
   // High school
   {d:"9",m:"Oct",div:"hs",name:"Granite Peaks League Championships",where:"Thornton, CO · Margaret Carpenter Rec Center",
-   why:"DyeStat No. 4 Niwot boys and No. 5 Niwot girls race their league championship, a league meet rather than a national showcase.",
+   why:"DyeStat No. 4 Niwot boys and No. 5 Niwot girls take on Centaurus, Frederick, Holy Family, Longmont, Mead, Monarch and Silver Creek for the league title.",
    tags:["League meet","Mountain"],
    results:"https://www.milesplit.com/meets/783951-granite-peaks-league-championships-2026", watch:null},
   {d:"10",m:"Oct",div:"hs",name:"Nike Hole in the Wall XC Invitational",where:"Lakewood, WA · Lakewood High School",
-   why:"A thin weekend for the national top 30, with no meet holding three ranked teams. DyeStat No. 14 Coeur d'Alene (ID) boys and No. 9 Sehome (WA) girls are in the elite races (girls 1:00 PT, boys 1:30 PT).",
+   why:"DyeStat No. 14 Coeur d'Alene (ID) boys and No. 9 Sehome (WA) girls head the elite races, facing Northwest programs such as Camas, Gonzaga Prep, Jesuit (OR) and Rigby (ID) on the boys side and Inglemoor, Issaquah and Mercer Island on the girls side (girls 1:00 PT, boys 1:30 PT).",
    tags:["Northwest","Elite races"],
    results:"https://www.holeinthewallinvite.com/", watch:null},
   {d:"10",m:"Oct",div:"hs",name:"Serra Crystal Springs Invitational",where:"Belmont, CA · Crystal Springs course",
