@@ -11,6 +11,12 @@
 - USTFCCCA poll articles (ustfccca.org/<year>/<month>/featured/...-national-coaches-poll-week-N) load this way; find the article URL with a web search. The week-by-week poll page and web4.ustfccca.org (meet list, broadcast schedule) stay blocked, so find meets through school athletics schedules and previews, TFRRS, MileSplit and Athletic.net instead.
 - If fetch.js still ends on the check page, treat that source as blocked and move on.
 
+## Marquee meets
+- Every week, check this list for meets in the coming race week and include each one that is happening, even if no preview has been posted yet. The Wednesday build finds them; the Thursday run checks again for any that were missed. A marquee meet with ranked teams is a strong candidate for that division's Matchup of the week.
+- High school: Woodbridge Classic (CA), Nike Portland XC (OR), Bob Firman Invitational, Desert Twilight (AZ), Great American XC Festival (NC), Nike XC Town Twilight (IN), Chile Pepper Festival (AR), Clovis Invitational (CA, Woodward Park, early-mid October), Nike Hole in the Wall (WA), Manhattan Invitational (NY), Mt. SAC Invitational (CA), Roy Griak (MN), Brown Thrush/Rim Rock (KS).
+- College: Cowboy Jamboree, Joe Piane (Notre Dame), Paul Short Run, Nuttycombe Invitational, Bill Dellinger Invitational, Pre-Nationals (D-I, D-II and D-III), Roy Griak Invitational, Louisville Classic, Chile Pepper Festival.
+- If a meet on this list is skipped, say why in the run summary (not held this week, cancelled, no ranked teams).
+
 ## Content rules
 - Never use Watch Athletics (watchathletics.com) as a live stream or Watch link. If no other stream is found, set `watch:null` and leave the Watch button out.
 - When a meet has a `section.feature` "Matchup of the week" card, its Results/Watch links must match that meet's entry in MEETS exactly. If you update one, update the other.
