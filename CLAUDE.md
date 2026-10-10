@@ -13,8 +13,34 @@
 
 ## Marquee meets
 - Every week, check this list for meets in the coming race week and include each one that is happening, even if no preview has been posted yet. The Wednesday build finds them; the Thursday run checks again for any that were missed. A marquee meet with ranked teams is a strong candidate for that division's Matchup of the week.
-- High school: Woodbridge Classic (CA), Nike Portland XC (OR), Bob Firman Invitational, Desert Twilight (AZ), Great American XC Festival (NC), Nike XC Town Twilight (IN), Chile Pepper Festival (AR), Clovis Invitational (CA, Woodward Park, early-mid October), Nike Hole in the Wall (WA), Manhattan Invitational (NY), Mt. SAC Invitational (CA), Roy Griak (MN), Brown Thrush/Rim Rock (KS).
-- College: Cowboy Jamboree, Joe Piane (Notre Dame), Paul Short Run, Nuttycombe Invitational, Bill Dellinger Invitational, Pre-Nationals (D-I, D-II and D-III), Roy Griak Invitational, Louisville Classic, Chile Pepper Festival.
+- Dates are the 2026 dates (verified). Most meets keep the same weekend each year; confirm the date on the meet's site before relying on it in a new season.
+- High school:
+  - Roy Griak (MN): Sat Sept 19 (3rd weekend of Sept)
+  - Woodbridge Classic (CA): Sat Sept 19 (3rd Saturday of Sept)
+  - Desert Twilight (AZ): Fri Sept 25 (last Friday of Sept)
+  - Nike Portland XC (OR): Sat Sept 26 (last Saturday of Sept)
+  - Bob Firman Invitational (WA, Spokane): Sat Sept 26 (last Saturday of Sept)
+  - Rim Rock Classic (KS): Sat Sept 26
+  - Great American XC Festival (NC): Sat Oct 3 (1st Saturday of Oct)
+  - Nike XC Town Twilight (IN): Fri-Sat Oct 2-3 (1st weekend of Oct)
+  - Chile Pepper Festival (AR): Sat Oct 3 (1st Saturday of Oct)
+  - Brown Thrush Invitational (KS): Sat Oct 3
+  - Clovis Invitational (CA, Woodward Park): Fri-Sat Oct 9-10 (2nd weekend of Oct)
+  - Nike Hole in the Wall (WA): Sat Oct 10 (2nd Saturday of Oct)
+  - Manhattan Invitational (NY, Van Cortlandt Park): Sat Oct 10 (2nd Saturday of Oct)
+  - Mt. SAC Invitational (CA): Fri-Sat Oct 23-24, D1-D2 on Saturday (4th weekend of Oct)
+- College:
+  - Roy Griak Invitational: Fri Sept 18
+  - Cowboy Jamboree: Sat Sept 26
+  - Paul Short Run: Thu-Fri Oct 1-2
+  - Joe Piane (Notre Dame): Fri Oct 2
+  - Chile Pepper Festival: Sat Oct 3
+  - Louisville Classic: Sat Oct 3
+  - NCAA D-III Pre-Nationals: Sat Oct 3
+  - Nuttycombe Invitational: Fri Oct 9 (one week earlier than its usual mid-October date)
+  - Bill Dellinger Invitational: Fri Oct 9
+  - NCAA D-II Pre-Nationals: Sun Oct 11
+  - NCAA D-I Pre-Nationals: Fri Oct 16
 - If a meet on this list is skipped, say why in the run summary (not held this week, cancelled, no ranked teams).
 
 ## Content rules
