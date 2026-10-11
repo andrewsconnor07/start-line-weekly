@@ -182,20 +182,20 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
 
   <section class="feature" data-lvl="hs" aria-labelledby="ft-hs">
     <div>
-      <div class="eyebrow">High school matchup of the week · Sat Oct 10 · Fresno, CA</div>
-      <h3 id="ft-hs">Clovis: Crater leads a loaded Woodward Park field</h3>
-      <p>DyeStat No. 2 Crater (OR) girls, fresh off their Woodbridge win, headline the Saturday championship race against No. 10 St. Francis (Sacramento) and No. 12 Buchanan. On the boys side, No. 10 Crater takes on No. 16 Mountain View (CA). In the girls race, No. 22 Brynn Davenport of Crater and No. 23 Addyson Johns of Santiago (Corona), second and third at Woodbridge, meet again.</p>
+      <div class="eyebrow">High school final · Sat Oct 10 · Fresno, CA</div>
+      <h3 id="ft-hs">Clovis: Crater girls win, Mountain View tops the boys</h3>
+      <p>No. 2 Crater (OR) won the girls championship with 55 points to No. 12 Buchanan's 65, with No. 10 St. Francis third at 126; Santiago (Corona)'s Addyson Johns won in 16:50.8, ahead of Ontario's Isabella Ruiz (16:55.9) and Crater's Adley Damon (17:00.1), with Crater's Brynn Davenport fifth. In the boys championship No. 16 Mountain View scored 107 to Woodbridge's 140 and Granada's 145, while No. 10 Crater was sixth at 204. Rio Mesa's Derek Luna won the race in 14:30.0.</p>
     </div>
-    <div class="startline" aria-label="Ranked teams entered">
-      <div class="lane"><span class="rk">2</span><span class="tm">Crater (OR)<small>Girls</small></span></div>
-      <div class="lane"><span class="rk">10</span><span class="tm">St. Francis (Sacramento)<small>Girls</small></span></div>
-      <div class="lane"><span class="rk">12</span><span class="tm">Buchanan (CA)<small>Girls</small></span></div>
-      <div class="lane"><span class="rk">10</span><span class="tm">Crater (OR)<small>Boys</small></span></div>
-      <div class="lane"><span class="rk">16</span><span class="tm">Mountain View (CA)<small>Boys</small></span></div>
-      <div class="lane"><span class="rk">22</span><span class="tm">Brynn Davenport<small>Crater · girls</small></span></div>
+    <div class="startline" aria-label="Final results">
+      <div class="lane"><span class="rk">1</span><span class="tm">Crater (OR)<small>Girls · 55</small></span></div>
+      <div class="lane"><span class="rk">2</span><span class="tm">Buchanan (CA)<small>Girls · 65</small></span></div>
+      <div class="lane"><span class="rk">1</span><span class="tm">Addyson Johns<small>Santiago (Corona) · 16:50.8</small></span></div>
+      <div class="lane"><span class="rk">1</span><span class="tm">Mountain View (CA)<small>Boys · 107</small></span></div>
+      <div class="lane"><span class="rk">2</span><span class="tm">Woodbridge<small>Boys · 140</small></span></div>
+      <div class="lane"><span class="rk">1</span><span class="tm">Derek Luna<small>Rio Mesa · 14:30.0</small></span></div>
     </div>
     <div class="actions" style="flex-direction:row;flex-wrap:wrap">
-      <a class="res" href="https://finishedresults.trackscoreboard.com/meets/14352/events" target="_blank" rel="noopener"><span class="dot"></span>Live results</a>
+      <a class="res" href="https://finishedresults.trackscoreboard.com/meets/14352/events" target="_blank" rel="noopener"><span class="dot"></span>Final results</a>
     </div>
   </section>
 
@@ -259,7 +259,8 @@ const MEETS = [
   {d:"10",m:"Oct",div:"d2",name:"Lewis Crossover",where:"Romeoville, IL · host Lewis",
    why:"No. 10 Lewis men and No. 12 Lewis women host No. 11 Saginaw Valley State men, No. 13 UC-Colorado Springs men and No. 7 UC-Colorado Springs women, with No. 9 Western Washington men also on the list.",
    tags:["Crossover","Women 10:30 CT","Men 9:45 CT"],
-   results:"https://live.athletic.net/meets/78806",
+   recap:"Colorado Christian won the women's race with 74 points, ahead of No. 23 Biola (119) and No. 18 Winona State (126), while Winona State's Stella Rusch won individually in 21:13.4 and No. 12 Lewis finished fourth at 135. In the men's race No. 9 Western Washington scored 114 to edge Findlay (120) and No. 13 UC-Colorado Springs (130), with No. 10 Lewis tenth at 296. No. 11 Saginaw Valley State's Jacob Walker won in 24:11.4, but the Cardinals placed ninth as a team at 260.",
+   results:"https://iptt.anet.live/meets/78806",
    watch:"https://www.thestridereport.com/post/news-the-stride-report-to-stream-2026-lewis-xc-crossover-on-saturday-october-10th-via-youtube", watchNote:"The Stride Report on YouTube"},
   {d:"11",m:"Oct",div:"d2",name:"NCAA DII Pre-National Invitational",where:"Lawrence, KS · Rim Rock Farm",
    why:"No. 7 Western Colorado, No. 14 Cal Poly Pomona, No. 18 Nebraska-Kearney and No. 19 Pittsburg State men race on the D-II championship course, along with the No. 5 Western Colorado women and No. 2 Colorado School of Mines.",
@@ -269,27 +270,33 @@ const MEETS = [
   {d:"10",m:"Oct",div:"d3",name:"Pomona-Pitzer Invitational",where:"Claremont, CA · host Pomona-Pitzer",
    why:"SCIAC rivals meet in Claremont: No. 14 Pomona-Pitzer men and No. 13 Pomona-Pitzer women host, with No. 23 Claremont-Mudd-Scripps men in the men's 8K.",
    tags:["SCIAC","Men 8K 7:45 PT","Women 6K 8:30 PT"],
+   recap:"Pomona-Pitzer swept both team titles. The No. 14 men scored 15 points to No. 23 Claremont-Mudd-Scripps's 71 and Caltech's 87, with Owen Irving the first Sagehen in 25:17.4 behind unattached runner James Settles, who won in 25:00.8. The No. 13 women scored 29 to Vanguard's 45, with Claremont-Mudd-Scripps third at 93, and Vanguard's Ella Murray won in 21:49.6.",
    results:"https://finishedresults.trackscoreboard.com/meets/14353/events", watch:null},
   {d:"10",m:"Oct",div:"d3",name:"James Earley Invitational",where:"Westfield, MA · host Westfield State · Stanley Park",
    why:"No. 1 Williams women and No. 16 Williams men race alongside No. 22 Connecticut College women.",
    tags:["New England"],
-   results:"https://live.athletic.net/meets/79018", watch:null},
+   recap:"No. 1 Williams won the women's title with 24 points to No. 22 Connecticut College's 76, with Westfield State third at 99, and Westfield State's Reese Stevens won in 17:56.7 ahead of Williams' Lily Yampolsky (18:03.1). The No. 16 Williams men scored 19 to Roger Williams' 78, with Westfield State third at 133, and Williams' Emil Nelson won in 25:06.2, just ahead of Fitchburg State's Paulino Guevara Mateo (25:08.0).",
+   results:"https://live.ic4atrack.com/meets/79018", watch:null},
   {d:"10",m:"Oct",div:"d3",name:"CMU Invitational",where:"Pittsburgh area, PA · host Carnegie Mellon",
    why:"No. 13 Carnegie Mellon men and No. 14 Carnegie Mellon women race at home, with D-II No. 17 Walsh in the men's field.",
    tags:["Men 10:00 ET","Women 10:45 ET"], xo:"D-II #17 Walsh men",
+   recap:"Ashland won the men's team title with 71 points to No. 13 Carnegie Mellon's 76, with Northwood third (94) and D-II No. 17 Walsh fourth on a tiebreak. CMU alumnus Ryan Podnar won in 24:28.9, with Ashland's Braeden Geist the top collegiate finisher in second at 24:32.8. In the women's race No. 9 West Virginia scored 45 points to No. 14 Carnegie Mellon's 69, with Ashland third at 107, and Ashland freshman Reese Landis won in 17:22.3.",
    results:"https://live.gingerbreadtiming.com/meets/78910", watch:null},
   // High school
   {d:"9",m:"Oct",div:"hs",name:"Granite Peaks League Championships",where:"Thornton, CO · Margaret Carpenter Rec Center",
    why:"DyeStat No. 4 Niwot boys and No. 5 Niwot girls take on Centaurus, Frederick, Holy Family, Longmont, Mead, Monarch and Silver Creek for the league title.",
    tags:["League meet","Mountain"],
-   results:"https://www.milesplit.com/meets/783951-granite-peaks-league-championships-2026", watch:null},
+   recap:"Niwot swept the league titles. The No. 4 boys scored 20 points to Monarch's 87 and Longmont's 95, with Niwot's Quinn Sullivan winning in 15:27.97, 0.05 ahead of teammate Jude Ritzenhein. The No. 5 girls scored 19 to Monarch's 71 and Centaurus's 78, and Niwot's Scarlett Parks won in 18:13.91.",
+   results:"https://co.milesplit.com/meets/783951-granite-peaks-league-championships-2026/results", watch:null},
   {d:"10",m:"Oct",div:"hs",name:"ASICS Clovis Invitational",where:"Fresno, CA · host Clovis High School · Woodward Park",
    why:"DyeStat No. 2 Crater (OR) girls and No. 10 Crater boys headline Saturday's championship races, with No. 10 St. Francis (Sacramento) and No. 12 Buchanan girls and No. 16 Mountain View (CA) boys also in the field. In the girls race, No. 22 Brynn Davenport of Crater and No. 23 Addyson Johns of Santiago (Corona), second and third at Woodbridge, meet again.",
    tags:["California","Two-day meet"],
+   recap:"No. 2 Crater (OR) won the girls championship with 55 points to No. 12 Buchanan's 65, with No. 10 St. Francis third at 126; Santiago (Corona)'s Addyson Johns won in 16:50.8, ahead of Ontario's Isabella Ruiz (16:55.9) and Crater's Adley Damon (17:00.1), with Crater's Brynn Davenport fifth. In the boys championship No. 16 Mountain View scored 107 to Woodbridge's 140 and Granada's 145, while No. 10 Crater was sixth at 204. Rio Mesa's Derek Luna won the race in 14:30.0.",
    results:"https://finishedresults.trackscoreboard.com/meets/14352/events", watch:null},
   {d:"10",m:"Oct",div:"hs",name:"Manhattan Invitational",where:"Bronx, NY · host Manhattan University · Van Cortlandt Park",
    why:"The 54th Manhattan Invitational at Van Cortlandt Park, the Northeast's biggest meet, is headlined by the boys and girls Eastern States Championship races over 2.5 miles at 12:31 and 12:43 p.m. ET.",
    tags:["Northeast","Eastern States"],
+   recap:"In the boys Eastern States Championship, Broughton (NC) won with 64 points to Bishop Hendricken's 115 and Christian Brothers Academy's 123, and Horace Greeley's Ryan Sykes won the 2.5-mile race in 12:04.3, with Brunswick School's Teddy Hojlo second (12:13.6). Bethlehem Central won the girls championship with 96 points to Mountain Brook (AL) at 111 and La Salle Academy at 134, and Scarsdale's Adriana Pettinelli won in 14:25.4, 1.9 seconds ahead of Tri-Valley's Anna Furman.",
    results:"https://results.leonetiming.com/xc.html?mid=9152",
    watch:"https://accounts.milesplit.com/live/247244-2026-manhattan-university-xc-invitational", watchNote:"MileSplit live"},
   {d:"10",m:"Oct",div:"hs",name:"Nike Hole in the Wall XC Invitational",where:"Lakewood, WA · Lakewood High School",
@@ -299,7 +306,8 @@ const MEETS = [
   {d:"10",m:"Oct",div:"hs",name:"Serra Crystal Springs Invitational",where:"Belmont, CA · Crystal Springs course",
    why:"DyeStat No. 10 St. Francis (CA) girls and No. 29 Granada (CA) boys race in a 110-team field.",
    tags:["California","Big field"],
-   results:"https://ca.milesplit.com/meets/780906-serra-crystal-springs-invitational-2026", watch:null},
+   recap:"Piedmont Hills won the championship boys race with 49 points to Sequoia's 98 and Mountainside (OR)'s 109, led by Gabriel Saludo's winning 15:14.4. Mountainside (OR) took the girls championship with 69 points to Piedmont Hills' 85 and Sacred Heart Cathedral's 86, and Scotts Valley's Hanna Shehorn won in 17:20.0.",
+   results:"https://ca.milesplit.com/meets/780906-serra-crystal-springs-invitational-2026/results", watch:null},
 ];
 
 const U="https://www.ustfccca.org/2026/10/featured/";
