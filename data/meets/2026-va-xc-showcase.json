@@ -1,0 +1,52 @@
+{
+ "slug": "2026-va-xc-showcase",
+ "lvl": "hs",
+ "iso": "2026-10-17",
+ "week": "Oct 12–18, 2026",
+ "status": "preview",
+ "name": "The VA XC Showcase",
+ "date": "Sat Oct 17",
+ "where": "Mechanicsville, VA · host Hanover · Pole Green Park",
+ "headline": "VA XC Showcase: No. 1 Christ School and No. 1 Union Catholic",
+ "summary": "DyeStat's No. 1 boys team, Christ School (NC), and No. 1 girls team, Union Catholic (NJ), race at Pole Green Park, along with No. 15 Broughton (NC) and No. 25 Calvert Hall (MD) on the boys side and No. 20 James Robinson, No. 22 Blacksburg and No. 23 Georgetown Visitation on the girls side.",
+ "lanes": [
+  [
+   "1",
+   "Christ School (NC)",
+   "Boys"
+  ],
+  [
+   "15",
+   "Broughton (NC)",
+   "Boys"
+  ],
+  [
+   "25",
+   "Calvert Hall (MD)",
+   "Boys"
+  ],
+  [
+   "1",
+   "Union Catholic (NJ)",
+   "Girls"
+  ],
+  [
+   "20",
+   "James Robinson (VA)",
+   "Girls"
+  ],
+  [
+   "22",
+   "Blacksburg (VA)",
+   "Girls"
+  ]
+ ],
+ "results": "https://live.tfresult.com/VAXC2026/",
+ "watch": [
+  [
+   "MileSplit LIVE",
+   "https://accounts.milesplit.com/live/282366?ref=live-735172-meetPage&site=48"
+  ]
+ ],
+ "insights": []
+}

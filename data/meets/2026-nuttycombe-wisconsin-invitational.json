@@ -1,0 +1,164 @@
+{
+ "slug": "2026-nuttycombe-wisconsin-invitational",
+ "lvl": "d1",
+ "iso": "2026-10-09",
+ "week": "Oct 5–11, 2026",
+ "status": "final",
+ "name": "Nuttycombe Wisconsin Invitational",
+ "date": "Fri Oct 9",
+ "where": "Madison, WI · host Wisconsin · Thomas Zimmer Championship Cross Country Course",
+ "headline": "Nuttycombe: New Mexico wins the men's title",
+ "summary": "New Mexico won the men's title with 59 points to Colorado's 93, with No. 7 BYU third at 146; Colorado freshman Meshack Kipruto won in a course-record 22:30.1, 0.7 seconds ahead of New Mexico's Pasanjo Kitonga. West Virginia took the women's race with 66 points to Florida's 111 and Northern Arizona's 130, and Florida's Judy Chepkoech won in 19:19.5.",
+ "lanes": [
+  [
+   "1",
+   "New Mexico",
+   "Men · 59"
+  ],
+  [
+   "2",
+   "Colorado",
+   "Men · 93"
+  ],
+  [
+   "3",
+   "BYU",
+   "Men · 146"
+  ],
+  [
+   "1",
+   "Meshack Kipruto",
+   "Colorado · 22:30.1"
+  ],
+  [
+   "1",
+   "West Virginia",
+   "Women · 66"
+  ],
+  [
+   "1",
+   "Judy Chepkoech",
+   "Florida · 19:19.5"
+  ]
+ ],
+ "results": "https://www.pttiming.com/event/bfef37ef-34b2-4f1c-9ada-f1d12f18de87?pt=schedule",
+ "watch": [
+  [
+   "Men's race replay",
+   "https://nuttycombe-invitational.runnerspace.com/eprofile.php?event_id=4311&do=videos&video_id=466240"
+  ],
+  [
+   "Women's race replay",
+   "https://nuttycombe-invitational.runnerspace.com/eprofile.php?event_id=4311&do=videos&video_id=466236"
+  ]
+ ],
+ "insights": [
+  {
+   "race": "Men's 8K",
+   "rankedN": 21,
+   "lede": "<b>No. 1 New Mexico</b> won by 34 points over No. 6 Colorado, 59–93, while <b>No. 2 Iowa State</b> finished 19th. Colorado freshman <b>Meshack Kipruto</b> won in a course-record 22:30.1, and the top four men all broke the old Zimmer record of 22:33.8.",
+   "upset": [
+    {
+     "rk": 1,
+     "tm": "New Mexico",
+     "pl": 1,
+     "exp": 1,
+     "fin": 1
+    },
+    {
+     "rk": 2,
+     "tm": "Iowa State",
+     "pl": 19,
+     "exp": 2,
+     "fin": 16
+    },
+    {
+     "rk": 6,
+     "tm": "Colorado",
+     "pl": 2,
+     "exp": 3,
+     "fin": 2
+    },
+    {
+     "rk": 7,
+     "tm": "BYU",
+     "pl": 3,
+     "exp": 4,
+     "fin": 3
+    },
+    {
+     "rk": 8,
+     "tm": "Wake Forest",
+     "pl": 6,
+     "exp": 5,
+     "fin": 6
+    },
+    {
+     "rk": 10,
+     "tm": "Florida",
+     "pl": 5,
+     "exp": 6,
+     "fin": 5
+    },
+    {
+     "rk": 12,
+     "tm": "Wisconsin",
+     "pl": 9,
+     "exp": 8,
+     "fin": 9
+    },
+    {
+     "rk": 15,
+     "tm": "Stanford",
+     "pl": 8,
+     "exp": 10,
+     "fin": 8
+    },
+    {
+     "rk": 16,
+     "tm": "Arkansas",
+     "pl": 4,
+     "exp": 11,
+     "fin": 4
+    },
+    {
+     "rk": 30,
+     "tm": "Georgetown",
+     "pl": 7,
+     "exp": 21,
+     "fin": 7
+    }
+   ],
+   "upsetNote": "Showing 10 of the 21 ranked teams",
+   "spread": [
+    [
+     "New Mexico",
+     37.2
+    ],
+    [
+     "Colorado",
+     45.8
+    ]
+   ],
+   "dual": "<b>New Mexico</b> went 34–0 in head-to-head scoring against the field. 38 head-to-heads go against the final team standings; the highest-placed is 5th-place Florida beating 4th-place Arkansas 28–28 on the sixth-runner tiebreak.",
+   "next": "Take out the seniors and <b>BYU</b> wins this race with 119 points. New Mexico loses one of its five scorers and would be second with 127.",
+   "notes": [
+    [
+     "Where it was won",
+     "New Mexico was 2nd at 2K, took the lead at 4K and never gave it back. Colorado led at 2K and finished 2nd."
+    ],
+    [
+     "Fastest finish",
+     "Kipruto ran the fastest 6K-to-finish split in the field, 5:35.0. Louisville's Elsingi Kipruto was next at 5:35.8 on his way to 3rd."
+    ]
+   ],
+   "src": "PrimeTime Timing results and splits; rankings are the USTFCCCA Week 3 poll",
+   "srcUrl": "https://www.pttiming.com/event/bfef37ef-34b2-4f1c-9ada-f1d12f18de87?pt=schedule"
+  },
+  {
+   "race": "Women's 6K",
+   "lede": "<b>West Virginia</b> won with 66 points to Florida's 111 and Northern Arizona's 130, a result that moved the Mountaineers from 9th to 3rd in the next poll. Florida's <b>Judy Chepkoech</b> won in 19:19.5.",
+   "src": "Final team and individual results"
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "slug": "2026-connecticut-college-invitational",
+ "lvl": "d3",
+ "iso": "2026-10-17",
+ "week": "Oct 12–18, 2026",
+ "status": "preview",
+ "name": "Connecticut College Invitational",
+ "date": "Sat Oct 17",
+ "where": "Waterford, CT · host Connecticut College · Harkness Memorial State Park",
+ "headline": "Connecticut College Invitational: a New England men's showdown",
+ "summary": "No. 10 MIT, No. 15 Tufts, No. 16 Williams, No. 18 Amherst and No. 19 WPI lead nine ranked men's teams at Harkness Memorial State Park. The women's fields include No. 16 Vassar and host No. 22 Connecticut College.",
+ "lanes": [
+  [
+   "10",
+   "MIT",
+   "Men"
+  ],
+  [
+   "15",
+   "Tufts",
+   "Men"
+  ],
+  [
+   "16",
+   "Williams",
+   "Men"
+  ],
+  [
+   "18",
+   "Amherst",
+   "Men"
+  ],
+  [
+   "19",
+   "WPI",
+   "Men"
+  ],
+  [
+   "16",
+   "Vassar",
+   "Women"
+  ]
+ ],
+ "results": "https://live.pctiming.com/meets/79101",
+ "watch": [],
+ "insights": []
+}

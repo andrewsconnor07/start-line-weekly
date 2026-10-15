@@ -49,3 +49,19 @@
 - Still state only facts you verified. Keep notes about sources, missing entries or unconfirmed teams in the commit message and run summary, not on the page.
 - Never use Watch Athletics (watchathletics.com) as a live stream or Watch link. If no other stream is found, set `watch:null` and leave the Watch button out.
 - When a meet has a `section.feature` "Matchup of the week" card, its Results/Watch links must match that meet's entry in MEETS exactly. If you update one, update the other.
+
+## Matchup pages and S/L Insights
+- Every matchup of the week (each `section.feature` card) has its own page at `/meets/<slug>/`, built from `data/meets/<slug>.json` by `node tools/build-meets.js` (run from the repo root). The script also writes `meets/pages.js` (homepage buttons) and `archive/index.html`. Never hand-edit the generated files; edit the JSON and rerun the script, then commit the JSON and everything it generated.
+- Slug: `<year>-<meet-name-in-kebab-case>`, e.g. `2026-ncaa-d1-pre-nationals`. The file name must equal the slug. Set `data-page="<slug>"` on that division's `section.feature` card.
+- JSON fields: `slug, lvl (d1|d2|d3|hs), iso (YYYY-MM-DD race date), week (the race-week label, e.g. "Oct 12–18, 2026"), status ("preview"|"final"), name, date, where, headline, summary, lanes [[rank-or-place, name, small text]], results (url), watch [[label, url]], insights []`. Mirror the card: same headline, summary, lanes and links as the homepage card. When a card's links change, update its JSON too and rebuild.
+- Wednesday build: for each new matchup card, create its JSON with `status:"preview"` and `insights:[]`. Do NOT delete old JSON files; past weeks stay in the archive.
+- Thursday/Friday/Saturday runs: if you change a matchup card's results or watch links, make the same change in its JSON and rebuild.
+- Sunday recap: for each matchup that has final results, set `status:"final"`, rewrite headline/summary/lanes to match the final card, switch watch links to replays when found, and fill `insights` (one object per race, men and women, as tabs). Skip any piece you can't compute from the official results; never estimate. If full team results can't be read, leave `insights:[]` and say so in the run summary.
+- Insight object for one race: `{race:"Men's 8K", lede, rankedN, upset:[{rk,tm,pl}], spread:[[team,seconds]], dual, next, notes:[[title,text]], src, srcUrl}`.
+  - `lede`: one or two sentences: winner and margin, top individual and time, any record. `<b>` allowed.
+  - `upset`: every team in the race that was nationally ranked in the poll published BEFORE the race (`rk`), with its overall team place (`pl`). The page computes expected order vs actual order among ranked teams. Set `rankedN` to the count. Use USTFCCCA for college, DyeStat for high school.
+  - `spread`: 1st-to-5th-runner finish-time gap in seconds for the top 3–6 teams.
+  - `dual`: score every pair of scoring teams as a dual meet (re-score only those two teams' runners, top 5 score, 6th runner breaks ties). Report the winner's record and the most notable head-to-head that goes against the final team standings.
+  - `next`: re-score the team race without seniors (needs class years in the results) and name the new winner and points.
+  - `notes`: optional extra cards. Only with split data: "Where it was won" (team place at each split) and "Fastest finish" (fastest final segment).
+  - `src`/`srcUrl`: the timer or results page the numbers came from.

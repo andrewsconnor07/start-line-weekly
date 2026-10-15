@@ -1,0 +1,52 @@
+{
+ "slug": "2026-ncaa-d1-pre-nationals",
+ "lvl": "d1",
+ "iso": "2026-10-16",
+ "week": "Oct 12–18, 2026",
+ "status": "preview",
+ "name": "Under Armour NCAA Pre-National Invitational",
+ "date": "Fri Oct 16",
+ "where": "Terre Haute, IN · host Indiana State · LaVern Gibson Championship Cross Country Course",
+ "headline": "Pre-Nationals: No. 1 NC State meets No. 2 BYU",
+ "summary": "The top two women's teams race each other for the first time this season on the LaVern Gibson course that hosts the NCAA Championships, with No. 7 Notre Dame also in the field. The men's race brings No. 8 Syracuse, No. 14 Villanova, No. 15 Notre Dame and No. 20 Iowa State. BYU's Jane Hedengren is reportedly dealing with illness and will not race.",
+ "lanes": [
+  [
+   "1",
+   "NC State",
+   "Women"
+  ],
+  [
+   "2",
+   "BYU",
+   "Women"
+  ],
+  [
+   "7",
+   "Notre Dame",
+   "Women"
+  ],
+  [
+   "8",
+   "Syracuse",
+   "Men"
+  ],
+  [
+   "14",
+   "Villanova",
+   "Men"
+  ],
+  [
+   "15",
+   "Notre Dame",
+   "Men"
+  ]
+ ],
+ "results": "https://live.pttiming.com/xc-ptt.html?mid=9216",
+ "watch": [
+  [
+   "RunnerSpace+ broadcast",
+   "https://prenationals-d1.runnerspace.com/eprofile.php?event_id=473&do=news&news_id=675278"
+  ]
+ ],
+ "insights": []
+}
