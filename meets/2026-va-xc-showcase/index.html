@@ -84,21 +84,21 @@ function upset(r){
   const col=d=>d>=2?"var(--up)":d<=-2?"var(--dn)":"var(--flat)";
   const svg=R.map(x=>`<line x1="44" y1="${x.yl}" x2="196" y2="${x.yr}" stroke="${col(x.d)}" stroke-width="${Math.abs(x.d)>=2?2.5:1.5}"/><circle cx="44" cy="${x.yl}" r="3.5" fill="${col(x.d)}"/><circle cx="196" cy="${x.yr}" r="3.5" fill="${col(x.d)}"/><text class="rk" x="34" y="${x.yl+4}" text-anchor="end">#${x.rk}</text><text x="206" y="${x.yr+4}">${x.tm}${Math.abs(x.d)>=2?` <tspan style="fill:${col(x.d)}">${x.d>0?"+":"−"}${Math.abs(x.d)}</tspan>`:""}</text>`).join("");
   const up=[...R].sort((a,b)=>b.d-a.d)[0], dn=[...R].sort((a,b)=>a.d-b.d)[0], top=R.find(x=>x.rk===byRk[0].rk);
-  let t=`Of the ${r.rankedN||R.length} ranked teams here, `;
-  t+=up.d>=2?`<b>${up.tm}</b> (No. ${up.rk}) placed ${ord(up.pl)}, ${up.d} spots better than its ranking: the biggest upset. `:`no team beat its ranking by more than a spot. `;
-  if(dn.d<=-2) t+=`<b>${dn.tm}</b> (No. ${dn.rk}) placed ${ord(dn.pl)}, ${-dn.d} spots below its ranking. `;
-  if(top!==up&&top!==dn) t+=`<b>${top.tm}</b> (No. ${top.rk}) placed ${ord(top.pl)}.`;
-  return `<div class="card wide"><h3>Upset meter</h3><p>${t}</p><svg viewBox="0 0 410 ${H}" role="img" aria-label="Ranked teams, national ranking versus finish">${svg}</svg>
-  <div class="key"><span><i style="background:var(--up)"></i>Beat its ranking</span><span><i style="background:var(--dn)"></i>Below its ranking</span><span><i style="background:var(--flat)"></i>Within one spot</span>${r.upsetNote?`<span>${r.upsetNote}</span>`:""}</div></div>`;
+  let t=`${r.rankedN||R.length} ranked teams toed the line. `;
+  t+=up.d>=2?`Biggest riser: <b>${up.tm}</b>, No. ${up.rk} in the poll, came home ${ord(up.pl)}, ${up.d} spots ahead of where its ranking had it. `:`Nobody outran its ranking by more than a spot. `;
+  if(dn.d<=-2) t+=`Biggest slide: <b>${dn.tm}</b>, No. ${dn.rk}, finished ${ord(dn.pl)}, ${-dn.d} spots back. `;
+  if(top!==up&&top!==dn) t+=`Top-ranked <b>${top.tm}</b> (No. ${top.rk}) ended up ${ord(top.pl)}.`;
+  return `<div class="card wide"><h3>Rank vs. Result</h3><p>${t}</p><svg viewBox="0 0 410 ${H}" role="img" aria-label="Ranked teams, national ranking versus finish">${svg}</svg>
+  <div class="key"><span><i style="background:var(--up)"></i>Ahead of its ranking</span><span><i style="background:var(--dn)"></i>Behind its ranking</span><span><i style="background:var(--flat)"></i>Held its spot (±1)</span>${r.upsetNote?`<span>${r.upsetNote}</span>`:""}</div></div>`;
 }
 function race(r){
   const c=[];
-  if(r.lede) c.push(`<div class="card wide"><h3>The race</h3><p>${r.lede}</p></div>`);
+  if(r.lede) c.push(`<div class="card wide"><h3>The Race</h3><p>${r.lede}</p></div>`);
   if(r.upset&&r.upset.length>1) c.push(upset(r));
   if(r.spread&&r.spread.length){const m=Math.max(...r.spread.map(s=>s[1]));
-    c.push(`<div class="card"><h3>Pack spread · 1–5 gap</h3><p>Seconds between each team's 1st and 5th runner. Tighter is better.</p>${r.spread.map(s=>`<div class="spr"><span>${s[0]}</span><div class="bar" style="width:${Math.max(6,s[1]/m*100)}%"></div><span class="v">${s[1].toFixed(1)}s</span></div>`).join("")}</div>`);}
-  if(r.dual) c.push(`<div class="card"><h3>Every team as a dual meet</h3><p>${r.dual}</p></div>`);
-  if(r.next) c.push(`<div class="card"><h3>Next year's race</h3><p>${r.next}</p></div>`);
+    c.push(`<div class="card"><h3>Pack Gap</h3><p>Time from each team's first finisher to its fifth. The smaller the gap, the tighter the pack.</p>${r.spread.map(s=>`<div class="spr"><span>${s[0]}</span><div class="bar" style="width:${Math.max(6,s[1]/m*100)}%"></div><span class="v">${s[1].toFixed(1)}s</span></div>`).join("")}</div>`);}
+  if(r.dual) c.push(`<div class="card"><h3>Head-to-Head Board</h3><p>${r.dual}</p></div>`);
+  if(r.next) c.push(`<div class="card"><h3>Next Fall</h3><p>${r.next}</p></div>`);
   (r.notes||[]).forEach(n=>c.push(`<div class="card"><h3>${n[0]}</h3><p>${n[1]}</p></div>`));
   return `<div class="grid">${c.join("")}</div>${r.src?`<div class="src">Data: ${r.srcUrl?`<a href="${r.srcUrl}" target="_blank" rel="noopener">${r.src}</a>`:r.src}</div>`:""}`;
 }
@@ -111,7 +111,7 @@ ${M.lanes&&M.lanes.length?`<div class="lanes" aria-label="${fin?"Results":"Ranke
 <div class="btns">${M.results?`<a class="res" href="${M.results}" target="_blank" rel="noopener"><span class="dot"></span>${fin?"Final results":"Live results"}</a>`:""}${(M.watch||[]).map(w=>`<a href="${w[1]}" target="_blank" rel="noopener">Watch · ${w[0]}</a>`).join("")}</div>
 <section><h2>S/L Insights <small>${fin?"post-race breakdown":"posted after the race"}</small></h2>
 ${ins.length?`${ins.length>1?`<div class="tabs">${ins.map((r,i)=>`<button type="button" data-i="${i}" aria-pressed="${i===0}">${r.race}</button>`).join("")}</div>`:`<div class="meta" style="margin:8px 0 12px">${ins[0].race}</div>`}<div id="ins">${race(ins[0])}</div>`
-:`<div class="empty">The upset meter, pack spreads and dual-meet breakdown go up here once the results are final.</div>`}</section>`;
+:`<div class="empty">Rank vs. Result, the Head-to-Head Board, Pack Gap and Next Fall go up here once the results are final.</div>`}</section>`;
 document.querySelectorAll(".tabs button").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".tabs button").forEach(x=>x.setAttribute("aria-pressed",x===b));document.getElementById("ins").innerHTML=race(ins[+b.dataset.i]);}));
 </script>
 </body></html>

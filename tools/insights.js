@@ -105,10 +105,10 @@ for (let i = 0; i < teams.length; i++) for (let j = i + 1; j < teams.length; j++
   if (w.team === B) flips.push({ w: B, l: A, ws: w.pts, ls: l.pts, tie: w.pts === l.pts, sum: place[A] + place[B] });
 }
 const rr = rec[t1.team];
-let dual = `<b>${t1.team}</b> went ${rr.w}–${rr.l} in head-to-head scoring against the field.`;
+let dual = rr.l === 0 ? `Score <b>${t1.team}</b> one-on-one against every other team and it wins ${rr.w === 2 ? "both" : rr.w === 1 ? "its only one" : "all " + rr.w}.` : `Score <b>${t1.team}</b> one-on-one against every other team and it goes ${rr.w}–${rr.l}.`;
 if (flips.length) { const f = flips.sort((a, b) => a.sum - b.sum)[0];
-  dual += ` ${flips.length} head-to-head${flips.length === 1 ? " goes" : "s go"} against the final team standings; the highest-placed is ${ord(place[f.w])}-place ${f.w} beating ${ord(place[f.l])}-place ${f.l} ${f.ws}–${f.ls}${f.tie ? " on the sixth-runner tiebreak" : ""}.`; }
-else dual += " Every head-to-head matches the final team standings.";
+  dual += ` In ${flips.length} pairing${flips.length === 1 ? "" : "s"} the lower-placed team wins the head-to-head. Best example: ${f.w} (${ord(place[f.w])}) tops ${f.l} (${ord(place[f.l])}), ${f.ws}–${f.ls}${f.tie ? ", settled on the sixth runner" : ""}.`; }
+else dual += " Every pairing goes the way the team standings say.";
 out.dual = dual;
 
 // next year's race (no seniors / grad students)
@@ -117,7 +117,9 @@ if (TEAMS_ONLY) {} else if (known >= 0.9) {
   const ny = score(runners.filter(r => !/^(SR|GR|5TH|RS-SR)/.test(r.cls)));
   if (ny.length >= 2) { const a = ny[0], b = ny[1];
     const lost = t => (top7[t] || []).slice(0, 5).filter(r => /^(SR|GR|5TH|RS-SR)/.test(r.cls)).length;
-    out.next = `Take out the seniors and <b>${a.team}</b> wins this race with ${a.pts} points` + (a.team === t1.team ? `, ahead of ${b.team} (${b.pts}).` : `. ${t1.team} loses ${lost(t1.team)} of its five scorers and would be ${ord(ny.findIndex(t => t.team === t1.team) + 1 || ny.length + 1)}${ny.some(t => t.team === t1.team) ? ` with ${ny.find(t => t.team === t1.team).pts}` : " (can't field five)"}.`); }
+    const n1 = ny.find(t => t.team === t1.team), p1 = ny.indexOf(n1) + 1, L = lost(t1.team);
+    out.next = `Remove every senior and re-score: ` + (a.team === t1.team ? `<b>${a.team}</b> still wins, with ${a.pts}. ${b.team} is next at ${b.pts}.`
+      : `<b>${a.team}</b> takes it with ${a.pts}. ${t1.team}, down ${L} scorer${L === 1 ? "" : "s"}, ` + (n1 ? `drops to ${ord(p1)} at ${n1.pts}.` : `can't field five.`)); }
 } else console.log("Class years missing for more than 10% of finishers; skipping next year's race.");
 
 // splits
@@ -129,13 +131,15 @@ if (splitCols.length && runners.every(r => r.splits.every(x => x != null))) {
   const path = tm => splitCols.map((c, k) => `${ordinal(posAt(k, tm))} at ${c}`);
   function ordinal(n) { return ord(n); }
   let w;
-  if (lead === 0) w = `${t1.team} led at ${splitCols[0]} and never gave it back.`;
-  else if (lead > 0) w = `${t1.team} was ${path(t1.team).slice(0, lead).join(", ")}, took the lead at ${splitCols[lead]} and never gave it back.`;
-  else w = `${t1.team} was ${path(t1.team).join(", ")} and moved into 1st only at the finish.`;
-  w += ` ${t2.team} was ${ord(posAt(0, t2.team))} at ${splitCols[0]} and finished 2nd.`;
-  notes.push(["Where it was won", w]);
+  const sat = k => splitCols.slice(0, k).map((c, i) => `${ord(posAt(i, t1.team))} at ${c}`).join(", ");
+  if (lead === 0) w = `<b>${t1.team}</b> was in front by ${splitCols[0]} and never trailed.`;
+  else if (lead > 0) w = `<b>${t1.team}</b> sat ${sat(lead)}, went to the front at ${splitCols[lead]} and stayed there.`;
+  else w = `<b>${t1.team}</b> sat ${sat(splitCols.length)} and only got to the front at the line.`;
+  const l0 = at[0][0].team;
+  w += l0 !== t1.team ? ` ${l0} was the early leader at ${splitCols[0]}` + (l0 === t2.team ? ` before settling for 2nd.` : ` and finished ${ord(place[l0])}.`) : ` ${t2.team} was ${ord(posAt(0, t2.team))} at ${splitCols[0]} and finished 2nd.`;
+  notes.push(["The Move", w]);
   const last = splitCols.length - 1, seg = runners.map(r => ({ r, s: r.t - r.splits[last] })).sort((a, b) => a.s - b.s);
-  notes.push(["Fastest finish", `${seg[0].r.name}${seg[0].r.team ? ` (${seg[0].r.team})` : ""} ran the fastest ${splitCols[last]}-to-finish split, ${fmt(seg[0].s)}, and finished ${ord(seg[0].r.place)}. ${seg[1].r.name} was next at ${fmt(seg[1].s)}.`]);
+  notes.push(["Closing Speed", `Quickest ${splitCols[last]}-to-finish: <b>${seg[0].r.name}</b>${seg[0].r.team ? ` (${seg[0].r.team})` : ""}, ${fmt(seg[0].s)}, on the way to ${ord(seg[0].r.place)}. Next best: ${seg[1].r.name}${seg[1].r.team ? ` (${seg[1].r.team})` : ""}, ${fmt(seg[1].s)}.`]);
 }
 if (notes.length) out.notes = notes;
 if (args.src) out.src = args.src; if (args.srcUrl) out.srcUrl = args.srcUrl;
@@ -144,7 +148,7 @@ console.log("\n" + JSON.stringify(out, null, 1));
 if (!args.dry) {
   const f = path.join(__dirname, "..", "data/meets", args.meet + ".json"); const m = JSON.parse(fs.readFileSync(f, "utf8"));
   m.insights = m.insights || []; const i = m.insights.findIndex(x => x.race === args.race);
-  // keep hand-added split cards when this run has no splits
+  // keep existing split cards (The Move, Closing Speed) when this run has no splits
   if (i >= 0 && !out.notes && m.insights[i].notes) out.notes = m.insights[i].notes;
   if (i >= 0) m.insights[i] = out; else m.insights.push(out);
   fs.writeFileSync(f, JSON.stringify(m, null, 1) + "\n"); console.log(`\nwrote ${args.race} insights to ${f}. Now run: node tools/build-meets.js`);
