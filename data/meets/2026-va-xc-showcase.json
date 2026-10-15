@@ -8,7 +8,7 @@
  "date": "Sat Oct 17",
  "where": "Mechanicsville, VA · host Hanover · Pole Green Park",
  "headline": "VA XC Showcase: No. 1 Christ School and No. 1 Union Catholic",
- "summary": "DyeStat's No. 1 boys team, Christ School (NC), and No. 1 girls team, Union Catholic (NJ), race at Pole Green Park, along with No. 15 Broughton (NC) and No. 25 Calvert Hall (MD) on the boys side and No. 20 James Robinson, No. 22 Blacksburg and No. 23 Georgetown Visitation on the girls side.",
+ "summary": "DyeStat's No. 1 boys team, Christ School (NC), and No. 1 girls team, Union Catholic (NJ), race at Pole Green Park, along with No. 10 Broughton (NC) and No. 26 Calvert Hall (MD) on the boys side and James Robinson (VA), Blacksburg (VA) and Georgetown Visitation (DC) on the girls side.",
  "lanes": [
   [
    "1",
@@ -16,28 +16,18 @@
    "Boys"
   ],
   [
-   "15",
+   "10",
    "Broughton (NC)",
    "Boys"
   ],
   [
-   "25",
+   "26",
    "Calvert Hall (MD)",
    "Boys"
   ],
   [
    "1",
    "Union Catholic (NJ)",
-   "Girls"
-  ],
-  [
-   "20",
-   "James Robinson (VA)",
-   "Girls"
-  ],
-  [
-   "22",
-   "Blacksburg (VA)",
    "Girls"
   ]
  ],
