@@ -50,7 +50,7 @@ h2 small{font:500 13px var(--mono);color:var(--muted);text-transform:none;letter
 .card.wide{grid-column:1/-1}
 .card h3{font:700 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--flag);margin:0 0 6px}
 .card p{margin:0}
-.card svg{width:100%;max-width:480px;height:auto;display:block;margin-top:12px}
+.card svg{width:100%;max-width:540px;height:auto;display:block;margin-top:12px}
 .card svg text{font:600 15px var(--body);fill:var(--ink)}
 .card svg .rk{font:700 13px var(--mono);fill:var(--muted)}
 .key{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-top:8px}
@@ -87,7 +87,7 @@ function upset(r){
   t+=up.d>=2?`<b>${up.tm}</b> (No. ${up.rk}) placed ${ord(up.pl)}, ${up.d} spots better than its ranking: the biggest upset. `:`no team beat its ranking by more than a spot. `;
   if(dn.d<=-2) t+=`<b>${dn.tm}</b> (No. ${dn.rk}) placed ${ord(dn.pl)}, ${-dn.d} spots below its ranking. `;
   if(top!==up&&top!==dn) t+=`<b>${top.tm}</b> (No. ${top.rk}) placed ${ord(top.pl)}.`;
-  return `<div class="card wide"><h3>Upset meter</h3><p>${t}</p><svg viewBox="0 0 360 ${H}" role="img" aria-label="Ranked teams, national ranking versus finish">${svg}</svg>
+  return `<div class="card wide"><h3>Upset meter</h3><p>${t}</p><svg viewBox="0 0 410 ${H}" role="img" aria-label="Ranked teams, national ranking versus finish">${svg}</svg>
   <div class="key"><span><i style="background:var(--up)"></i>Beat its ranking</span><span><i style="background:var(--dn)"></i>Below its ranking</span><span><i style="background:var(--flat)"></i>Within one spot</span>${r.upsetNote?`<span>${r.upsetNote}</span>`:""}</div></div>`;
 }
 function race(r){

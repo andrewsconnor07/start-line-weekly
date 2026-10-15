@@ -157,8 +157,98 @@
   },
   {
    "race": "Women's 6K",
-   "lede": "<b>West Virginia</b> won with 66 points to Florida's 111 and Northern Arizona's 130, a result that moved the Mountaineers from 9th to 3rd in the next poll. Florida's <b>Judy Chepkoech</b> won in 19:19.5.",
-   "src": "Final team and individual results"
+   "lede": "<b>No. 9 West Virginia</b> won with 66 points to No. 13 Florida's 111 and No. 3 Northern Arizona's 130, a result that moved the Mountaineers to No. 3 in the next poll. Florida's <b>Judy Chepkoech</b> won in 19:19.5.",
+   "rankedN": 17,
+   "upset": [
+    {
+     "rk": 3,
+     "tm": "Northern Arizona",
+     "pl": 3
+    },
+    {
+     "rk": 4,
+     "tm": "New Mexico",
+     "pl": 4
+    },
+    {
+     "rk": 5,
+     "tm": "Iowa State",
+     "pl": 10
+    },
+    {
+     "rk": 9,
+     "tm": "West Virginia",
+     "pl": 1
+    },
+    {
+     "rk": 11,
+     "tm": "Stanford",
+     "pl": 12
+    },
+    {
+     "rk": 13,
+     "tm": "Florida",
+     "pl": 2
+    },
+    {
+     "rk": 14,
+     "tm": "Utah",
+     "pl": 8
+    },
+    {
+     "rk": 16,
+     "tm": "Colorado",
+     "pl": 5
+    },
+    {
+     "rk": 17,
+     "tm": "Washington St.",
+     "pl": 7
+    },
+    {
+     "rk": 19,
+     "tm": "Missouri",
+     "pl": 9
+    },
+    {
+     "rk": 20,
+     "tm": "Toledo",
+     "pl": 6
+    },
+    {
+     "rk": 21,
+     "tm": "Minnesota",
+     "pl": 13
+    },
+    {
+     "rk": 22,
+     "tm": "Northwestern",
+     "pl": 11
+    },
+    {
+     "rk": 23,
+     "tm": "Washington",
+     "pl": 16
+    },
+    {
+     "rk": 24,
+     "tm": "Providence",
+     "pl": 17
+    },
+    {
+     "rk": 29,
+     "tm": "Penn State",
+     "pl": 14
+    },
+    {
+     "rk": 30,
+     "tm": "Boise State",
+     "pl": 25
+    }
+   ],
+   "dual": "<b>West Virginia</b> went 32–0 in head-to-head scoring against the field. 22 head-to-heads go against the final team standings; the highest-placed is 10th-place Iowa State beating 7th-place Washington St. 29–30.",
+   "src": "TFRRS official results; rankings are the USTFCCCA Week 3 poll",
+   "srcUrl": "https://www.tfrrs.org/results/xc/28897/Nuttycombe_Wisconsin_Invitational"
   }
  ]
 }
