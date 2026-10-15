@@ -27,6 +27,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--flag);outline-offse
 .brand span{color:var(--flag)}
 .nav{display:flex;gap:16px;font:600 14px var(--body)}
 .nav a{text-decoration:none;color:var(--muted)}.nav a:hover{color:var(--ink)}
+.nav a.arch{color:var(--flag);border:2px solid var(--flag);border-radius:4px;padding:4px 10px;font:700 12px var(--mono);letter-spacing:.08em;text-transform:uppercase}.nav a.arch:hover{background:var(--flag);color:#fff}
 .eyebrow{font:700 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--flag)}
 h1{font:700 clamp(34px,6vw,56px)/1 var(--display);text-transform:uppercase;margin:6px 0 10px;text-wrap:balance}
 .meta{color:var(--muted);font-size:15px}
@@ -66,7 +67,7 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
 </style></head><body>
 <div class="wrap">
   <header class="mast"><a class="brand" href="/">Start<span>/</span>Line Weekly</a>
-    <nav class="nav"><a href="/">This week</a><a href="/archive/">Archive</a></nav></header>
+    <nav class="nav"><a href="/">This week</a><a class="arch" href="/archive/">Meet archive</a></nav></header>
   <main id="app"></main>
   <footer>Start Line Weekly is built and edited by Connor Andrews. Results and streams link out to the meet's official timer or broadcaster. Insights are computed by Start Line Weekly from the official results and the USTFCCCA / DyeStat rankings the week of the race.</footer>
 </div>

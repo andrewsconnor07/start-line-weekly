@@ -47,6 +47,8 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--flag);outline-offse
 .brand span{color:var(--flag)}
 .week{font-family:var(--mono);font-size:13px;color:var(--muted);text-align:right}
 .week b{display:block;color:var(--ink);font-size:15px}
+.arch-btn{display:inline-block;margin-top:10px;font:700 13px var(--mono);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:var(--flag);border:2px solid var(--flag);border-radius:4px;padding:7px 12px}
+.arch-btn:hover{background:var(--flag);color:#fff}
 
 .filters{display:flex;gap:8px;flex-wrap:wrap}
 .filters button{font:600 14px var(--body);border:1.5px solid var(--line);background:var(--surface);color:var(--ink);padding:7px 14px;border-radius:999px;cursor:pointer}
@@ -129,7 +131,7 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
 <div class="wrap">
   <header class="mast">
     <h1 class="brand">Start<span>/</span>Line<br>Weekly</h1>
-    <div class="week"><b>Race Week · Oct 12–18, 2026</b>College + High School Cross Country<br>by Connor Andrews<br><a href="/archive/">Archive →</a></div>
+    <div class="week"><b>Race Week · Oct 12–18, 2026</b>College + High School Cross Country<br><a class="arch-btn" href="/archive/">Meet archive →</a></div>
   </header>
 
   <nav class="filters" aria-label="Filter by level">

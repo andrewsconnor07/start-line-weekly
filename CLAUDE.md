@@ -47,6 +47,7 @@
 - Write meet descriptions, matchup cards, recaps and athlete blurbs as plain statements of who is racing whom and what's at stake. Never tell readers where the information came from or what is missing: no "listed on their schedules", "on the meet's MileSplit attending list", "per Stanford's schedule", "DyeStat's preview says", "entries/lineups have not been posted", "not confirmed", "so they are not counted" or similar. If something isn't known yet, leave it out; a later run adds it once it is known.
 - If a ranked team lists two meets on the same day (often a split squad), list it at the bigger, more competitive meet and say nothing about the other one.
 - Still state only facts you verified. Keep notes about sources, missing entries or unconfirmed teams in the commit message and run summary, not on the page.
+- The masthead has no byline (Connor removed "by Connor Andrews" from it); the credit lives in the footer ("Start Line Weekly is built and edited by Connor Andrews."). Don't add the byline back to the masthead, and keep the "Meet archive →" button there.
 - Never use Watch Athletics (watchathletics.com) as a live stream or Watch link. If no other stream is found, set `watch:null` and leave the Watch button out.
 - When a meet has a `section.feature` "Matchup of the week" card, its Results/Watch links must match that meet's entry in MEETS exactly. If you update one, update the other.
 
