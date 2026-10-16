@@ -49,6 +49,7 @@
 - Still state only facts you verified. Keep notes about sources, missing entries or unconfirmed teams in the commit message and run summary, not on the page.
 - The masthead has no byline (Connor removed "by Connor Andrews" from it); the credit lives in the footer ("Start Line Weekly is built and edited by Connor Andrews."). Don't add the byline back to the masthead, and keep the "Meet archive →" button there.
 - Never use Watch Athletics (watchathletics.com) as a live stream or Watch link. If no other stream is found, set `watch:null` and leave the Watch button out.
+- A meet's results link must never be a site's home page (tfrrs.org, athletic.net, milesplit.com, a timer's home page), and every run must fix any it finds. Find the meet's own page: the host's schedule page ("Live Stats"/"Results" link for that meet), the host's meet-info page, team previews (visiting schools' previews often link "Live Results"), and the timer's meet list (e.g. results.wayzatatiming.com/meet-list, live.gingerbreadtiming.com/meet-list). If no live page is posted yet, use the meet's Athletic.net or MileSplit meet page. This overrides any routine step that says to leave a race-day link as it is.
 - When a meet has a `section.feature` "Matchup of the week" card, its Results/Watch links must match that meet's entry in MEETS exactly. If you update one, update the other.
 
 ## Matchup pages and S/L Insights
