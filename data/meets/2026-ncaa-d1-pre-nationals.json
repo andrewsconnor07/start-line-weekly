@@ -3,42 +3,42 @@
  "lvl": "d1",
  "iso": "2026-10-16",
  "week": "Oct 12–18, 2026",
- "status": "preview",
+ "status": "final",
  "name": "Under Armour NCAA Pre-National Invitational",
  "date": "Fri Oct 16",
  "where": "Terre Haute, IN · host Indiana State · LaVern Gibson Championship Cross Country Course",
- "headline": "Pre-Nationals: No. 1 NC State meets No. 2 BYU",
- "summary": "The top two women's teams race each other for the first time this season on the LaVern Gibson course that hosts the NCAA Championships, with No. 7 Notre Dame also in the field. The men's race brings No. 8 Syracuse, No. 14 Villanova, No. 15 Notre Dame and No. 20 Iowa State. BYU's Jane Hedengren is reportedly dealing with illness and will not race.",
+ "headline": "Pre-Nationals: BYU edges NC State 84-88",
+ "summary": "No. 2 BYU edged No. 1 NC State 84-88 on the LaVern Gibson course that hosts the NCAA Championships, with NC State's Hannah Gapes winning the women's race in 18:57.6; No. 7 Notre Dame was third (213). In the men's race, No. 8 Syracuse won with 115 ahead of No. 14 Villanova (127) and No. 15 Notre Dame (148), and Tulane's Silas Kiptanui won in 23:17.4.",
  "lanes": [
   [
    "1",
-   "NC State",
-   "Women"
+   "BYU",
+   "Women · 84"
   ],
   [
    "2",
-   "BYU",
-   "Women"
+   "NC State",
+   "Women · 88"
   ],
   [
-   "7",
+   "3",
    "Notre Dame",
-   "Women"
+   "Women · 213"
   ],
   [
-   "8",
+   "1",
    "Syracuse",
-   "Men"
+   "Men · 115"
   ],
   [
-   "14",
+   "2",
    "Villanova",
-   "Men"
+   "Men · 127"
   ],
   [
-   "15",
+   "3",
    "Notre Dame",
-   "Men"
+   "Men · 148"
   ]
  ],
  "results": "https://live.pttiming.com/xc-ptt.html?mid=9216",

@@ -3,27 +3,37 @@
  "lvl": "d2",
  "iso": "2026-10-16",
  "week": "Oct 12–18, 2026",
- "status": "preview",
+ "status": "final",
  "name": "Panorama Farms Invitational",
  "date": "Fri Oct 16",
  "where": "Charlottesville, VA · host Virginia",
- "headline": "Wingate heads to Panorama Farms",
- "summary": "D-II No. 1 Wingate men and No. 2 Wingate women take on a D-I field at Virginia's Panorama Farms Invitational, led by host No. 16 Virginia on the women's side.",
+ "headline": "Panorama Farms: Virginia Tech sweeps",
+ "summary": "Virginia Tech won both races, beating No. 16 Virginia 20-36 in the women's 6K and 31-51 in the men's 8K. D-II No. 1 Wingate's men were third (75) and its women fifth (151) against the D-I field.",
  "lanes": [
   [
    "1",
-   "Wingate",
-   "D-II Men"
+   "Virginia Tech",
+   "Women · 20"
   ],
   [
    "2",
-   "Wingate",
-   "D-II Women"
+   "Virginia",
+   "Women · 36"
   ],
   [
-   "16",
+   "1",
+   "Virginia Tech",
+   "Men · 31"
+  ],
+  [
+   "2",
    "Virginia",
-   "D-I Women · host"
+   "Men · 51"
+  ],
+  [
+   "3",
+   "Wingate",
+   "D-II Men · 75"
   ]
  ],
  "results": "https://www.flashresults.com/2027_Meets/xc/Panorama/index.htm",
