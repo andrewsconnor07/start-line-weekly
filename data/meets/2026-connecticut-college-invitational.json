@@ -1,47 +1,47 @@
 {
- "slug": "2026-connecticut-college-invitational",
- "lvl": "d3",
- "iso": "2026-10-17",
- "week": "Oct 12–18, 2026",
- "status": "preview",
- "name": "Connecticut College Invitational",
- "date": "Sat Oct 17",
- "where": "Waterford, CT · host Connecticut College · Harkness Memorial State Park",
- "headline": "Connecticut College Invitational: a New England men's showdown",
- "summary": "No. 10 MIT, No. 15 Tufts, No. 16 Williams, No. 18 Amherst and No. 19 WPI lead nine ranked men's teams at Harkness Memorial State Park. The women's fields include No. 16 Vassar and host No. 22 Connecticut College.",
- "lanes": [
-  [
-   "10",
-   "MIT",
-   "Men"
+  "slug": "2026-connecticut-college-invitational",
+  "lvl": "d3",
+  "iso": "2026-10-17",
+  "week": "Oct 12–18, 2026",
+  "status": "final",
+  "name": "Connecticut College Invitational",
+  "date": "Sat Oct 17",
+  "where": "Waterford, CT · host Connecticut College · Harkness Memorial State Park",
+  "headline": "Connecticut College: MIT wins the men's showdown",
+  "summary": "Men's Blue race: No. 10 MIT won with 57 points, ahead of No. 16 Williams (120), No. 21 Wesleyan (173), No. 15 Tufts (196) and No. 29 Bates (197), and Wesleyan's Dylan Cote won in 23:52.8. Women's Blue race: No. 8 Middlebury beat No. 1 Williams 63-65, with No. 6 Tufts third (131), and Middlebury's Audrey Maclean won in 20:36.6. MIT also won the men's White race (52) and Williams the women's White race (25).",
+  "lanes": [
+    [
+      "10",
+      "MIT",
+      "Men · 57"
+    ],
+    [
+      "16",
+      "Williams",
+      "Men · 120"
+    ],
+    [
+      "21",
+      "Wesleyan",
+      "Men · 173"
+    ],
+    [
+      "8",
+      "Middlebury",
+      "Women · 63"
+    ],
+    [
+      "1",
+      "Williams",
+      "Women · 65"
+    ],
+    [
+      "6",
+      "Tufts",
+      "Women · 131"
+    ]
   ],
-  [
-   "15",
-   "Tufts",
-   "Men"
-  ],
-  [
-   "16",
-   "Williams",
-   "Men"
-  ],
-  [
-   "18",
-   "Amherst",
-   "Men"
-  ],
-  [
-   "19",
-   "WPI",
-   "Men"
-  ],
-  [
-   "16",
-   "Vassar",
-   "Women"
-  ]
- ],
- "results": "https://live.pctiming.com/meets/79101",
- "watch": [],
- "insights": []
+  "results": "https://live.pctiming.com/meets/79101",
+  "watch": [],
+  "insights": []
 }
