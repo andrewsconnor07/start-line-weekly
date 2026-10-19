@@ -11,107 +11,62 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Libre+Franklin:wght@400;600;700;800&family=DM+Mono:wght@500&display=swap">
 <style>
-:root{--bg:#F4F6F1;--surface:#FFFFFF;--ink:#12201A;--muted:#55655C;--line:#D5DDD6;--flag:#E4570F;--up:#1D7A4E;--dn:#C81E3A;--flat:#B9C4BD;
---display:"Barlow Condensed","Arial Narrow",Impact,sans-serif;--body:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1813;--surface:#16241D;--ink:#E8EFEA;--muted:#98AAA0;--line:#2A3B32;--flag:#FF7A33;--up:#5FD39A;--dn:#FF7A85;--flat:#3E5247;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#0E1813;--surface:#16241D;--ink:#E8EFEA;--muted:#98AAA0;--line:#2A3B32;--flag:#FF7A33;--up:#5FD39A;--dn:#FF7A85;--flat:#3E5247;color-scheme:dark}
+:root{--bg:#F3F5F8;--surface:#FFFFFF;--ink:#0E2240;--muted:#56677F;--line:#D9DFE8;--navy:#0E2240;--red:#C8102E;--red-ink:#C8102E;--on-navy:#FFFFFF;--on-navy-muted:#AFC0DA;--rule:#0E2240;
+--display:"Oswald","Arial Narrow",Impact,sans-serif;--body:"Libre Franklin",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"DM Mono",ui-monospace,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0A1424;--surface:#111F35;--ink:#E7EDF6;--muted:#9AABC4;--line:#24364F;--navy:#071022;--red:#E0263F;--red-ink:#FF7A8A;--rule:#4A6A9C;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0A1424;--surface:#111F35;--ink:#E7EDF6;--muted:#9AABC4;--line:#24364F;--navy:#071022;--red:#E0263F;--red-ink:#FF7A8A;--rule:#4A6A9C;color-scheme:dark}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 var(--body);padding:0 16px}
-.wrap{max-width:1080px;margin:0 auto;padding-block:24px 56px;display:grid;gap:28px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 var(--body)}
 a{color:inherit}
-a:focus-visible,button:focus-visible{outline:3px solid var(--flag);outline-offset:2px}
-.mast{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;border-bottom:3px solid var(--ink);padding-bottom:12px}
-.brand{font:800 32px/.9 var(--display);text-transform:uppercase;text-decoration:none}
-.brand span{color:var(--flag)}
-.nav{display:flex;gap:16px;font:600 14px var(--body)}
-.nav a{text-decoration:none;color:var(--muted)}.nav a:hover{color:var(--ink)}
-.nav a.arch{color:var(--flag);border:2px solid var(--flag);border-radius:4px;padding:4px 10px;font:700 12px var(--mono);letter-spacing:.08em;text-transform:uppercase}.nav a.arch:hover{background:var(--flag);color:#fff}
-.eyebrow{font:700 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--flag)}
-h1{font:700 clamp(34px,6vw,56px)/1 var(--display);text-transform:uppercase;margin:6px 0 10px;text-wrap:balance}
+a:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.top{position:sticky;top:0;z-index:10;background:var(--navy);color:var(--on-navy);border-bottom:4px solid var(--red)}
+.top-in{max-width:1180px;margin:0 auto;padding:10px 16px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px}
+.brand{font:700 26px/1 var(--display);text-transform:uppercase;letter-spacing:.02em;text-decoration:none;color:var(--on-navy)}
+.brand span{color:#FF4A5F}
+.nav{display:flex;flex-wrap:wrap;gap:2px;margin-left:auto}
+.nav a{text-decoration:none;color:var(--on-navy);font:700 15px var(--body);padding:10px 12px}
+.nav a:hover{color:#FFD1D7}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 16px 56px;display:grid;gap:26px}
+.eyebrow{font:500 13px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--red-ink)}
+h1{font:700 clamp(34px,6vw,54px)/1.02 var(--display);text-transform:uppercase;margin:6px 0 10px;text-wrap:balance}
+h2{font:600 26px var(--display);text-transform:uppercase;letter-spacing:.02em;margin:0}
 .meta{color:var(--muted);font-size:15px}
 .sum{max-width:68ch;margin:10px 0 0}
-.status{display:inline-block;font:700 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;padding:3px 8px;border-radius:3px;background:var(--ink);color:var(--bg);margin-left:8px;vertical-align:middle}
-.lanes{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}
-.lane{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:10px 12px;display:flex;align-items:center;gap:10px}
-.lane .rk{font:700 22px var(--mono);color:var(--flag);min-width:2.2ch}
+.status{display:inline-block;font:500 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;padding:3px 8px;border-radius:3px;background:var(--red);color:#fff;margin-left:8px;vertical-align:middle}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--rule);padding:24px}
+.lanes{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));background:var(--surface);border:1px solid var(--line)}
+.lane{padding:12px 16px;display:flex;align-items:center;gap:12px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.lane .rk{font:700 24px var(--display);color:var(--red-ink);min-width:2ch}
 .lane b{display:block;line-height:1.2}.lane small{color:var(--muted);font-size:12px}
-.btns{display:flex;flex-wrap:wrap;gap:8px}
-.btns a{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font:700 14px var(--body);padding:9px 14px;border-radius:4px;border:1.5px solid var(--ink)}
-.btns a.res{background:var(--flag);border-color:var(--flag);color:#fff}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btns a{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font:700 14px var(--body);padding:12px 18px;border-radius:4px;border:2px solid var(--ink)}
+.btns a.res{background:var(--red);border-color:var(--red);color:#fff}
 .dot{width:8px;height:8px;border-radius:50%;background:currentColor;display:inline-block}
-h2{font:700 28px var(--display);text-transform:uppercase;letter-spacing:.03em;margin:0;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
-h2 small{font:500 13px var(--mono);color:var(--muted);text-transform:none;letter-spacing:0}
-.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
-.tabs button{font:600 14px var(--body);border:1.5px solid var(--line);background:var(--surface);color:var(--ink);padding:6px 14px;border-radius:999px;cursor:pointer}
-.tabs button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:16px;min-width:0}
-.card.wide{grid-column:1/-1}
-.card h3{font:700 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--flag);margin:0 0 6px}
+.card{background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--rule);padding:16px;min-width:0}
+.card h3{font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--red-ink);margin:0 0 6px}
 .card p{margin:0}
-.card svg{width:100%;max-width:540px;height:auto;display:block;margin-top:12px}
-.card svg text{font:600 15px var(--body);fill:var(--ink)}
-.card svg .rk{font:700 13px var(--mono);fill:var(--muted)}
-.key{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-top:8px}
-.key i{display:inline-block;width:14px;height:3px;border-radius:2px;vertical-align:middle;margin-right:5px}
-.spr{display:grid;grid-template-columns:minmax(0,11ch) 1fr auto;gap:10px;align-items:center;font-size:14px;margin-top:8px}
-.spr span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.spr .bar{height:8px;border-radius:4px;background:var(--flag)}
-.spr .v{font:700 13px var(--mono)}
-.src{font:500 12px var(--mono);color:var(--muted);margin-top:10px}
-.empty{background:var(--surface);border:1px dashed var(--line);border-radius:6px;padding:16px;color:var(--muted)}
-#app{display:grid;gap:22px}
 footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+footer a{font-weight:700;color:var(--red-ink)}
 </style></head><body>
+<header class="top"><div class="top-in"><a class="brand" href="/">Start<span>/</span>Line Weekly</a>
+  <nav class="nav" aria-label="Sections"><a href="/#this-week">This Week</a><a href="/#rankings">Rankings</a></nav></div></header>
 <div class="wrap">
-  <header class="mast"><a class="brand" href="/">Start<span>/</span>Line Weekly</a>
-    <nav class="nav"><a href="/">This week</a><a class="arch" href="/archive/">Meet archive</a></nav></header>
   <main id="app"></main>
-  <footer>Start Line Weekly is built and edited by Connor Andrews. Results and streams link out to the meet's official timer or broadcaster. Insights are computed by Start Line Weekly from the official results and the USTFCCCA / DyeStat rankings the week of the race.</footer>
+  <footer>Start Line Weekly is built and edited by Connor Andrews. Results and streams link out to the meet's official timer or broadcaster. <a href="/archive/">Past weeks →</a></footer>
 </div>
 <script id="meet" type="application/json">{"slug":"2026-connecticut-college-invitational","lvl":"d3","iso":"2026-10-17","week":"Oct 12–18, 2026","status":"final","name":"Connecticut College Invitational","date":"Sat Oct 17","where":"Waterford, CT · host Connecticut College · Harkness Memorial State Park","headline":"Connecticut College: MIT wins the men's showdown","summary":"Men's Blue race: No. 10 MIT won with 57 points, ahead of No. 16 Williams (120), No. 21 Wesleyan (173), No. 15 Tufts (196) and No. 29 Bates (197), and Wesleyan's Dylan Cote won in 23:52.8. Women's Blue race: No. 8 Middlebury beat No. 1 Williams 63-65, with No. 6 Tufts third (131), and Middlebury's Audrey Maclean won in 20:36.6. MIT also won the men's White race (52) and Williams the women's White race (25).","lanes":[["10","MIT","Men · 57"],["16","Williams","Men · 120"],["21","Wesleyan","Men · 173"],["8","Middlebury","Women · 63"],["1","Williams","Women · 65"],["6","Tufts","Women · 131"]],"results":"https://live.pctiming.com/meets/79101","watch":[],"insights":[]}</script>
 <script>
 const M=JSON.parse(document.getElementById("meet").textContent);
 const LV={d1:"Division I",d2:"Division II",d3:"Division III",hs:"High school"};
-const ord=n=>{const s=["th","st","nd","rd"],v=n%100;return n+(s[(v-20)%10]||s[v]||s[0]);};
-function upset(r){
-  const rows=r.upset, byRk=[...rows].sort((a,b)=>a.rk-b.rk), byPl=[...rows].sort((a,b)=>a.pl-b.pl);
-  const R=rows.map(x=>({...x,exp:x.exp??byRk.indexOf(x)+1,fin:x.fin??byPl.indexOf(x)+1})); R.forEach(x=>x.d=x.exp-x.fin);
-  const L=[...R].sort((a,b)=>a.exp-b.exp), F=[...R].sort((a,b)=>a.fin-b.fin), y=i=>18+i*26, H=y(R.length-1)+12;
-  R.forEach(x=>{x.yl=y(L.indexOf(x));x.yr=y(F.indexOf(x));});
-  const col=d=>d>=2?"var(--up)":d<=-2?"var(--dn)":"var(--flat)";
-  const svg=R.map(x=>`<line x1="44" y1="${x.yl}" x2="196" y2="${x.yr}" stroke="${col(x.d)}" stroke-width="${Math.abs(x.d)>=2?2.5:1.5}"/><circle cx="44" cy="${x.yl}" r="3.5" fill="${col(x.d)}"/><circle cx="196" cy="${x.yr}" r="3.5" fill="${col(x.d)}"/><text class="rk" x="34" y="${x.yl+4}" text-anchor="end">#${x.rk}</text><text x="206" y="${x.yr+4}">${x.tm}${Math.abs(x.d)>=2?` <tspan style="fill:${col(x.d)}">${x.d>0?"+":"−"}${Math.abs(x.d)}</tspan>`:""}</text>`).join("");
-  const up=[...R].sort((a,b)=>b.d-a.d)[0], dn=[...R].sort((a,b)=>a.d-b.d)[0], top=R.find(x=>x.rk===byRk[0].rk);
-  let t=`${r.rankedN||R.length} ranked teams toed the line. `;
-  t+=up.d>=2?`Biggest riser: <b>${up.tm}</b>, No. ${up.rk} in the poll, came home ${ord(up.pl)}, ${up.d} spots ahead of where its ranking had it. `:`Nobody outran its ranking by more than a spot. `;
-  if(dn.d<=-2) t+=`Biggest slide: <b>${dn.tm}</b>, No. ${dn.rk}, finished ${ord(dn.pl)}, ${-dn.d} spots back. `;
-  if(top!==up&&top!==dn) t+=`Top-ranked <b>${top.tm}</b> (No. ${top.rk}) ended up ${ord(top.pl)}.`;
-  return `<div class="card wide"><h3>Rank vs. Result</h3><p>${t}</p><svg viewBox="0 0 410 ${H}" role="img" aria-label="Ranked teams, national ranking versus finish">${svg}</svg>
-  <div class="key"><span><i style="background:var(--up)"></i>Ahead of its ranking</span><span><i style="background:var(--dn)"></i>Behind its ranking</span><span><i style="background:var(--flat)"></i>Held its spot (±1)</span>${r.upsetNote?`<span>${r.upsetNote}</span>`:""}</div></div>`;
-}
-function race(r){
-  const c=[];
-  if(r.lede) c.push(`<div class="card wide"><h3>The Race</h3><p>${r.lede}</p></div>`);
-  if(r.upset&&r.upset.length>1) c.push(upset(r));
-  if(r.spread&&r.spread.length){const m=Math.max(...r.spread.map(s=>s[1]));
-    c.push(`<div class="card"><h3>Pack Gap</h3><p>Time from each team's first finisher to its fifth. The smaller the gap, the tighter the pack.</p>${r.spread.map(s=>`<div class="spr"><span>${s[0]}</span><div class="bar" style="width:${Math.max(6,s[1]/m*100)}%"></div><span class="v">${s[1].toFixed(1)}s</span></div>`).join("")}</div>`);}
-  if(r.dual) c.push(`<div class="card"><h3>Head-to-Head Board</h3><p>${r.dual}</p></div>`);
-  if(r.next) c.push(`<div class="card"><h3>Next Fall</h3><p>${r.next}</p></div>`);
-  (r.notes||[]).forEach(n=>c.push(`<div class="card"><h3>${n[0]}</h3><p>${n[1]}</p></div>`));
-  return `<div class="grid">${c.join("")}</div>${r.src?`<div class="src">Data: ${r.srcUrl?`<a href="${r.srcUrl}" target="_blank" rel="noopener">${r.src}</a>`:r.src}</div>`:""}`;
-}
-const fin=M.status==="final", ins=M.insights||[];
+const fin=M.status==="final";
 document.getElementById("app").innerHTML=`
-<section><div class="eyebrow">${LV[M.lvl]} matchup of the week · ${M.date}</div>
+<section class="hero"><div class="eyebrow">${LV[M.lvl]} matchup of the week · ${M.date}</div>
 <h1>${M.headline}${fin?'<span class="status">Final</span>':''}</h1>
 <div class="meta">${M.name} · ${M.where}</div><p class="sum">${M.summary}</p></section>
 ${M.lanes&&M.lanes.length?`<div class="lanes" aria-label="${fin?"Results":"Ranked teams entered"}">${M.lanes.map(l=>`<div class="lane"><span class="rk">${l[0]}</span><span><b>${l[1]}</b><small>${l[2]||""}</small></span></div>`).join("")}</div>`:""}
-<div class="btns">${M.results?`<a class="res" href="${M.results}" target="_blank" rel="noopener"><span class="dot"></span>${fin?"Final results":"Live results"}</a>`:""}${(M.watch||[]).map(w=>`<a href="${w[1]}" target="_blank" rel="noopener">Watch · ${w[0]}</a>`).join("")}</div>
-<section><h2>S/L Insights <small>${fin?"post-race breakdown":"posted after the race"}</small></h2>
-${ins.length?`${ins.length>1?`<div class="tabs">${ins.map((r,i)=>`<button type="button" data-i="${i}" aria-pressed="${i===0}">${r.race}</button>`).join("")}</div>`:`<div class="meta" style="margin:8px 0 12px">${ins[0].race}</div>`}<div id="ins">${race(ins[0])}</div>`
-:`<div class="empty">Rank vs. Result, the Head-to-Head Board, Pack Gap and Next Fall go up here once the results are final.</div>`}</section>`;
-document.querySelectorAll(".tabs button").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".tabs button").forEach(x=>x.setAttribute("aria-pressed",x===b));document.getElementById("ins").innerHTML=race(ins[+b.dataset.i]);}));
+<div class="btns">${M.results?`<a class="res" href="${M.results}" target="_blank" rel="noopener"><span class="dot"></span>${fin?"Final results":"Live results"}</a>`:""}${(M.watch||[]).map(w=>`<a href="${w[1]}" target="_blank" rel="noopener">Watch · ${w[0]}</a>`).join("")}</div>`;
 </script>
 </body></html>

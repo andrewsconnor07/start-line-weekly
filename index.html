@@ -13,126 +13,142 @@
 </head><body>
 <title>Start Line Weekly</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Libre+Franklin:wght@400;600;700;800&family=DM+Mono:wght@500&display=swap">
 <style>
 :root{
-  --bg:#F4F6F1; --surface:#FFFFFF; --ink:#12201A; --muted:#55655C; --line:#D5DDD6;
-  --pine:#1D5A3E; --pine-soft:#E3EEE7; --flag:#E4570F; --flag-soft:#FCE9DE;
-  --live:#C81E3A; --chip:#EEF2EE;
-  --display:"Barlow Condensed","Arial Narrow",Impact,sans-serif;
-  --body:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
-  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  --bg:#F3F5F8; --surface:#FFFFFF; --ink:#0E2240; --muted:#56677F; --line:#D9DFE8; --chip:#EDF1F6;
+  --navy:#0E2240; --red:#C8102E; --red-ink:#C8102E; --red-soft:#FBE8EB; --up:#1F6B3A; --dn:#A10E25;
+  --on-navy:#FFFFFF; --on-navy-muted:#AFC0DA; --rule:#0E2240;
+  --display:"Oswald","Arial Narrow",Impact,sans-serif;
+  --body:"Libre Franklin",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"DM Mono",ui-monospace,Menlo,Consolas,monospace;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --bg:#0E1813; --surface:#16241D; --ink:#E8EFEA; --muted:#98AAA0; --line:#2A3B32;
-    --pine:#6CC497; --pine-soft:#1C3328; --flag:#FF7A33; --flag-soft:#3A2418;
-    --live:#FF5C74; --chip:#1E2E26; color-scheme:dark;
+    --bg:#0A1424; --surface:#111F35; --ink:#E7EDF6; --muted:#9AABC4; --line:#24364F; --chip:#1A2B45;
+    --navy:#071022; --red:#E0263F; --red-ink:#FF7A8A; --red-soft:#3A1520; --up:#6FD39A; --dn:#FF7A8A; --rule:#4A6A9C; color-scheme:dark;
   }
 }
 :root[data-theme="dark"]{
-  --bg:#0E1813; --surface:#16241D; --ink:#E8EFEA; --muted:#98AAA0; --line:#2A3B32;
-  --pine:#6CC497; --pine-soft:#1C3328; --flag:#FF7A33; --flag-soft:#3A2418;
-  --live:#FF5C74; --chip:#1E2E26; color-scheme:dark;
+  --bg:#0A1424; --surface:#111F35; --ink:#E7EDF6; --muted:#9AABC4; --line:#24364F; --chip:#1A2B45;
+  --navy:#071022; --red:#E0263F; --red-ink:#FF7A8A; --red-soft:#3A1520; --up:#6FD39A; --dn:#FF7A8A; --rule:#4A6A9C; color-scheme:dark;
 }
 *{box-sizing:border-box}
-body{background:var(--bg);color:var(--ink);font:16px/1.5 var(--body);padding:0 16px}
-.wrap{max-width:1080px;margin:0 auto;padding-block:28px 56px;display:grid;gap:40px}
+html{scroll-padding-top:76px}
+body{background:var(--bg);color:var(--ink);font:16px/1.5 var(--body);padding:0}
 a{color:inherit}
-a:focus-visible,button:focus-visible{outline:3px solid var(--flag);outline-offset:2px}
+a:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid var(--red);outline-offset:2px}
 
-/* masthead */
-.mast{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px;border-bottom:3px solid var(--ink);padding-bottom:14px}
-.brand{font-family:var(--display);font-weight:800;font-size:clamp(40px,7vw,64px);line-height:.9;letter-spacing:.01em;text-transform:uppercase;margin:0}
-.brand span{color:var(--flag)}
-.week{font-family:var(--mono);font-size:13px;color:var(--muted);text-align:right}
-.week b{display:block;color:var(--ink);font-size:15px}
-.arch-btn{display:inline-block;margin-top:10px;font:700 13px var(--mono);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:var(--flag);border:2px solid var(--flag);border-radius:4px;padding:7px 12px}
-.arch-btn:hover{background:var(--flag);color:#fff}
+/* top bar (sticky) */
+.top{position:sticky;top:0;z-index:10;background:var(--navy);color:var(--on-navy);border-bottom:4px solid var(--red)}
+.top-in{max-width:1180px;margin:0 auto;padding:10px 16px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px}
+.brand{font:700 28px/1 var(--display);letter-spacing:.02em;text-transform:uppercase;margin:0;text-decoration:none;color:var(--on-navy)}
+.brand span{color:#FF4A5F}
+.nav{display:flex;flex-wrap:wrap;gap:2px;margin-left:auto}
+.nav a{text-decoration:none;color:var(--on-navy);font:700 15px var(--body);padding:10px 12px;border-bottom:3px solid transparent}
+.nav a:hover{border-bottom-color:#FF4A5F}
+
+.wrap{max-width:1180px;margin:0 auto;padding:24px 16px 56px}
+.layout{display:flex;flex-wrap:wrap;gap:32px;align-items:flex-start}
+.main{flex:999 1 600px;min-width:0;display:grid;gap:36px}
+.rail{flex:1 1 300px;min-width:0;position:sticky;top:84px;background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--red);padding:16px 18px}
+@media (max-width:960px){.rail{position:static}}
+
+.mast{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px;border-bottom:2px solid var(--rule);padding-bottom:12px}
+.week{font:500 13px var(--mono);color:var(--muted)}
+.week b{display:block;color:var(--ink);font:600 22px var(--display);text-transform:uppercase;letter-spacing:.02em}
 
 .filters{display:flex;gap:8px;flex-wrap:wrap}
-.filters button{font:600 14px var(--body);border:1.5px solid var(--line);background:var(--surface);color:var(--ink);padding:7px 14px;border-radius:999px;cursor:pointer}
-.filters button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.filters button{font:700 14px var(--body);border:1.5px solid #C5CEDB;background:var(--surface);color:var(--ink);padding:10px 16px;border-radius:4px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--rule);color:#fff;border-color:var(--rule)}
 
-h2{font-family:var(--display);font-weight:700;font-size:28px;text-transform:uppercase;letter-spacing:.03em;margin:0 0 14px;display:flex;align-items:baseline;gap:10px;text-wrap:balance}
-h2 small{font:500 13px var(--mono);color:var(--muted);text-transform:none;letter-spacing:0}
+h2{font:600 26px var(--display);text-transform:uppercase;letter-spacing:.02em;margin:0 0 12px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;text-wrap:balance}
+h2 small{font:500 12px var(--mono);color:var(--muted);text-transform:none;letter-spacing:0}
 
-/* featured matchup */
-.feature{background:var(--ink);color:var(--bg);border-radius:6px;padding:24px;display:grid;gap:18px}
-.feature .eyebrow{font:700 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--flag)}
-.feature h3{font-family:var(--display);font-size:clamp(30px,5vw,44px);line-height:1;margin:4px 0 6px;text-transform:uppercase}
-.feature p{margin:0;max-width:62ch;opacity:.85}
-.startline{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
-.lane{border:1.5px solid color-mix(in srgb,var(--bg) 30%,transparent);border-radius:4px;padding:10px 12px;display:flex;align-items:center;gap:10px}
-.lane .rk{font:700 22px var(--mono);color:var(--flag);min-width:2.2ch}
+/* matchup of the week */
+.feature{background:var(--surface);color:var(--ink);border:1px solid var(--line);border-top:6px solid var(--rule);padding:22px 24px;display:grid;gap:16px}
+.feature .eyebrow{font:500 13px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--red-ink)}
+.feature h3{font:700 clamp(30px,4.6vw,44px)/1.02 var(--display);margin:6px 0 8px;text-transform:uppercase;text-wrap:balance}
+.feature p{margin:0;max-width:68ch;color:var(--ink);opacity:.9}
+.startline{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));border:1px solid var(--line)}
+.lane{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:10px 14px;display:flex;align-items:center;gap:10px}
+.lane .rk{font:700 24px var(--display);color:var(--red-ink);min-width:2ch}
 .lane .tm{font-weight:700;line-height:1.2}
-.lane .tm small{display:block;font-weight:400;opacity:.7;font-size:12px}
-.feature .actions a{border-color:var(--bg);color:var(--bg)}
+.lane .tm small{display:block;font-weight:400;color:var(--muted);font-size:12px}
+.feature .actions a{border-color:var(--ink);color:var(--ink)}
+.feature .actions a.res{color:#fff}
 
 /* meets */
-.meets{display:grid;gap:12px}
-.meet{background:var(--surface);border:1px solid var(--line);border-radius:6px;display:grid;grid-template-columns:78px 1fr auto;gap:16px;padding:16px;align-items:center}
-.groups{display:grid;gap:28px}
-.group h3.gh{font:700 13px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 10px;display:flex;align-items:center;gap:10px}
-.group h3.gh::after{content:"";flex:1;height:1px;background:var(--line)}
-.group h3.gh b{color:var(--ink);font-family:var(--display);font-size:20px;letter-spacing:.04em}
-.tag.xo{background:transparent;border:1px dashed var(--muted);color:var(--muted)}
-.date{text-align:center;border-right:1px dashed var(--line);padding-right:12px}
-.date .d{font:800 34px/1 var(--display)}
-.date .m{font:600 12px var(--mono);color:var(--muted);text-transform:uppercase}
-.meet h3{margin:0;font-size:19px;line-height:1.25}
+.meets{display:grid;gap:0;background:var(--surface);border:1px solid var(--line)}
+.meet{display:grid;grid-template-columns:64px 1fr auto;gap:16px;padding:16px 18px;align-items:center;border-bottom:1px solid var(--line)}
+.meet:last-child{border-bottom:0}
+.groups{display:grid;gap:26px}
+.group h3.gh{font:500 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 8px;display:flex;align-items:center;gap:10px}
+.group h3.gh::after{content:"";flex:1;height:2px;background:var(--rule)}
+.group h3.gh b{color:var(--ink);font:600 20px var(--display);letter-spacing:.03em}
+.date{text-align:center;border-right:1px solid var(--line);padding-right:12px}
+.date .d{font:700 30px/1 var(--display)}
+.date .m{font:500 12px var(--mono);color:var(--muted);text-transform:uppercase}
+.meet h3{margin:0;font-size:18px;line-height:1.25;font-weight:800}
 .meta{font-size:14px;color:var(--muted);margin-top:2px}
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
 .tag{font:600 12px var(--body);padding:2px 8px;border-radius:3px;background:var(--chip);color:var(--ink)}
-.tag.lvl-col{background:var(--pine-soft);color:var(--pine)}
-.tag.lvl-hs{background:var(--flag-soft);color:var(--flag)}
-.why{font-size:14px;margin-top:6px}
+.tag.lvl-col{background:var(--rule);color:#fff}
+.tag.lvl-hs{background:var(--red-soft);color:var(--red-ink)}
+.tag.xo{background:transparent;border:1px dashed var(--muted);color:var(--muted)}
+.why{font-size:15px;margin-top:6px}
 .actions{display:flex;flex-direction:column;gap:6px;min-width:140px}
-.actions a{display:flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;font:700 13px var(--body);padding:8px 12px;border-radius:4px;border:1.5px solid var(--ink);white-space:nowrap}
-.actions a.res{background:var(--flag);border-color:var(--flag);color:#fff}
+.actions a{display:flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;font:700 14px var(--body);padding:11px 14px;border-radius:4px;border:2px solid var(--ink);white-space:nowrap}
+.actions a.res{background:var(--red);border-color:var(--red);color:#fff}
 .dot{width:8px;height:8px;border-radius:50%;background:currentColor;display:inline-block}
 .actions .na{font-size:12px;color:var(--muted);text-align:center}
 
-/* rankings */
-.rgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
-.poll{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:16px}
-.poll h3{margin:0 0 2px;font:700 16px var(--body)}
-.poll .src{font:500 12px var(--mono);color:var(--muted);margin-bottom:10px}
+/* rankings rail */
+.rail h2{margin:0 0 10px}
+.psel{display:flex;flex-direction:column;gap:6px;font:700 13px var(--body);color:var(--muted);margin-bottom:8px}
+.psel select{font:700 15px var(--body);color:var(--ink);background:var(--surface);padding:10px 12px;border:1.5px solid #C5CEDB;border-radius:4px}
+.rgrid{display:block}
+.poll{padding:0}
+.poll h3{margin:0 0 2px;font:600 18px var(--display);text-transform:uppercase;letter-spacing:.02em}
+.poll .src{font:500 12px var(--mono);color:var(--muted);margin-bottom:6px}
 .poll ol{list-style:none;margin:0;padding:0}
-.poll li{display:grid;grid-template-columns:2.4ch 1fr auto;gap:10px;padding:6px 0;border-top:1px solid var(--line);font-variant-numeric:tabular-nums}
-.poll li .n{font:700 14px var(--mono);color:var(--pine)}
+.poll li{display:grid;grid-template-columns:2.4ch 1fr auto;gap:10px;padding:8px 0;border-top:1px solid var(--line);font-weight:700;font-variant-numeric:tabular-nums}
+.poll li .n{font:500 14px var(--mono);color:var(--red-ink)}
 .poll li .chg{font:500 12px var(--mono);color:var(--muted)}
-.poll li .chg.up{color:var(--pine)}
-.poll li .chg.dn{color:var(--live)}
-.poll .more{display:inline-block;margin-top:10px;font-size:14px;font-weight:600;color:var(--pine)}
+.poll li .chg.up{color:var(--up)}
+.poll li .chg.dn{color:var(--dn)}
+.poll .more{display:inline-block;margin-top:10px;font-size:14px;font-weight:800;color:var(--red-ink)}
 
 /* athletes */
 .agrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
-.ath{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:14px 16px;display:grid;gap:4px}
-.ath .bib{font:700 12px var(--mono);color:var(--flag);letter-spacing:.06em;text-transform:uppercase}
-.ath .nm{font:700 18px var(--body)}
+.ath{background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--rule);padding:14px 16px;display:grid;gap:4px}
+.ath .bib{font:500 12px var(--mono);color:var(--red-ink);letter-spacing:.06em;text-transform:uppercase}
+.ath .nm{font:600 20px var(--display);text-transform:uppercase;letter-spacing:.02em}
 .ath .tm2{font-size:14px;color:var(--muted)}
-.ath .mark{font:700 15px var(--mono)}
+.ath .mark{font:500 15px var(--mono)}
 .ath p{margin:4px 0 0;font-size:14px}
 
 .hubs{display:flex;flex-wrap:wrap;gap:8px}
-.hubs a{font-weight:600;font-size:14px;padding:8px 12px;background:var(--surface);border:1px solid var(--line);border-radius:4px;text-decoration:none}
-.hubs a:hover{border-color:var(--pine)}
-footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+.hubs a{font-weight:700;font-size:14px;padding:10px 12px;background:var(--surface);border:1px solid var(--line);border-radius:4px;text-decoration:none}
+.hubs a:hover{border-color:var(--red)}
+footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+footer .past{display:inline-block;margin-top:8px;font:700 14px var(--body);color:var(--red-ink)}
 
 @media (max-width:640px){
-  .meet{grid-template-columns:56px 1fr}
+  .meet{grid-template-columns:52px 1fr}
   .actions{grid-column:1/-1;flex-direction:row;flex-wrap:wrap}
   .actions a{flex:1}
-  .date .d{font-size:28px}
+  .date .d{font-size:26px}
+  .brand{font-size:24px}
 }
 </style>
 
+<header class="top"><div class="top-in"><a class="brand" href="/">Start<span>/</span>Line Weekly</a><nav class="nav" aria-label="Sections"><a href="#this-week">This Week</a><a href="#rankings">Rankings</a></nav></div></header>
 <div class="wrap">
-  <header class="mast">
-    <h1 class="brand">Start<span>/</span>Line<br>Weekly</h1>
-    <div class="week"><b>Race Week · Oct 12–18, 2026</b>College + High School Cross Country<br><a class="arch-btn" href="/archive/">Meet archive →</a></div>
-  </header>
+<div class="layout">
+<div class="main" id="this-week">
+  <h1 class="sr-only" style="position:absolute;left:-9999px">Start Line Weekly</h1>
+  <div class="mast"><div class="week"><b>Race Week · Oct 12–18, 2026</b>College + High School Cross Country</div></div>
 
   <nav class="filters" aria-label="Filter by level">
     <button type="button" id="f-all" data-f="all" aria-pressed="true">All</button>
@@ -223,12 +239,6 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
     <div class="groups" id="meets"></div>
   </section>
 
-  <section aria-labelledby="rh">
-    <h2 id="rh">Top teams &amp; runners <small>USTFCCCA coaches' polls + DyeStat HS · top 10</small></h2>
-    <div class="rgrid" id="polls">
-    </div>
-  </section>
-
   <section aria-labelledby="ah">
     <h2 id="ah">Individuals to watch</h2>
     <div class="agrid" id="aths"></div>
@@ -246,7 +256,14 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
     </div>
   </section>
 
-  <footer>Start Line Weekly is built and edited by Connor Andrews. Rankings from USTFCCCA (D-I Oct 13; D-II Oct 14; D-III Oct 14, 2026) and DyeStat (Oct 8 and Oct 15, 2026). Results and streams link out to the meet's official timer or broadcaster. College meets are listed under the host school&rsquo;s division, except that any meet with a nationally ranked D-I team moves to D-I. Updated weekly.</footer>
+</div>
+<aside class="rail" id="rankings" aria-labelledby="rh">
+  <h2 id="rh">Rankings</h2>
+  <label class="psel">Poll <select id="pollsel"></select></label>
+  <div class="rgrid" id="polls"></div>
+</aside>
+</div>
+  <footer>Start Line Weekly is built and edited by Connor Andrews. Rankings from USTFCCCA (D-I Oct 13; D-II Oct 14; D-III Oct 14, 2026) and DyeStat (Oct 8 and Oct 15, 2026). Results and streams link out to the meet's official timer or broadcaster. College meets are listed under the host school&rsquo;s division, except that any meet with a nationally ranked D-I team moves to D-I. Updated weekly.<br><a class="past" href="/archive/">Past weeks →</a></footer>
 </div>
 
 <script src="/meets/pages.js"></script>
@@ -402,7 +419,7 @@ function render(f){
     const g = list.filter(m=>listDiv(m)===dv); if(!g.length) return "";
     return `<div class="group"><h3 class="gh"><b>${LABEL[dv]}</b>${g.length}</h3><div class="meets">${g.map(meetCard).join("")}</div></div>`;
   }).join("");
-  document.querySelectorAll("#polls .poll").forEach(p=>p.hidden = !match(p.dataset.lvl,f));
+  pollsFor(f);
   $("#aths").innerHTML = ATHS.filter(a=>match(a.div,f)).map(a=>`
     <div class="ath"><span class="bib">${a.bib} · ${SHORT[a.div]}</span><span class="nm">${a.nm}</span><span class="tm2">${a.tm}</span><span class="mark">${a.mark}</span><p>${a.p}</p></div>`).join("");
   document.querySelectorAll(".feature").forEach(el=>el.hidden = !match(el.dataset.lvl,f));
@@ -417,6 +434,18 @@ POLLS.forEach(p=>{
     <a class="more" href="${p.url}" target="_blank" rel="noopener">Full poll →</a>`;
   $("#polls").append(el);
 });
+
+// rankings rail: show one poll at a time; the picker lists the polls for the current filter
+const sel = document.getElementById("pollsel");
+function pollsFor(f){
+  const ps=[...document.querySelectorAll("#polls .poll")], keep=sel.value;
+  const vis=ps.filter(p=>match(p.dataset.lvl,f));
+  sel.innerHTML=vis.map(p=>`<option value="${ps.indexOf(p)}">${p.querySelector("h3").textContent}</option>`).join("");
+  if(vis.some(p=>String(ps.indexOf(p))===keep)) sel.value=keep;
+  showPoll();
+}
+function showPoll(){ document.querySelectorAll("#polls .poll").forEach((p,i)=>p.hidden = String(i)!==sel.value); }
+sel.addEventListener("change",showPoll);
 
 let cur="all";
 try{ const s = localStorage.getItem("slw-filter"); if(s && document.querySelector(`.filters [data-f="${s}"]`)) cur=s; }catch(e){}
@@ -433,7 +462,7 @@ document.querySelectorAll(".filters button").forEach(b=>{
 if(window.SLW_PAGES) document.querySelectorAll(".feature[data-page]").forEach(sec=>{
   const p=SLW_PAGES.find(x=>x.slug===sec.dataset.page); if(!p) return;
   const a=document.createElement("a"); a.href=`/meets/${p.slug}/`;
-  a.textContent = p.status==="final"&&p.ins ? "S/L Insights →" : "Matchup page →";
+  a.textContent = "Matchup page →";
   (sec.querySelector(".actions")||sec).append(a);
 });
 render(cur);
