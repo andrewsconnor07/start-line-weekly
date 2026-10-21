@@ -3,10 +3,12 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VM39PTKQW9"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-VM39PTKQW9');</script>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Pre-Nationals: BYU edges NC State 84-88 · Start Line Weekly</title>
-<meta name="description" content="No. 2 BYU edged No. 1 NC State 84-88 on the LaVern Gibson course that hosts the NCAA Championships, with NC State's Hannah Gapes winning the women's race in 18:57.6; No. 7 Notre Dame was third (213). ">
+<title>Under Armour NCAA Pre-National Invitational 2026 Results | Start Line Weekly</title>
+<link rel="canonical" href="https://startlineweekly.com/meets/2026-ncaa-d1-pre-nationals/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsEvent","name":"2026 Under Armour NCAA Pre-National Invitational","sport":"Cross country running","startDate":"2026-10-16","eventStatus":"https://schema.org/EventScheduled","url":"https://startlineweekly.com/meets/2026-ncaa-d1-pre-nationals/","location":{"@type":"Place","name":"LaVern Gibson Championship Cross Country Course","address":"Terre Haute, IN"}}</script>
+<meta name="description" content="No. 2 BYU edged No. 1 NC State 84-88 on the LaVern Gibson course that hosts the NCAA Championships, with NC State's Hannah Gapes winning the women's race in 18:57.6; No. 7 Notre Dame was third (213). In the men's race, No. 8 Syracuse won with 115 ahead of No. 14 Villanova (127) and No. 15 Notre Dame">
 <meta property="og:title" content="Pre-Nationals: BYU edges NC State 84-88">
-<meta property="og:description" content="No. 2 BYU edged No. 1 NC State 84-88 on the LaVern Gibson course that hosts the NCAA Championships, with NC State's Hannah Gapes winning the women's race in 18:57.6; No. 7 Notre Dame was third (213). ">
+<meta property="og:description" content="No. 2 BYU edged No. 1 NC State 84-88 on the LaVern Gibson course that hosts the NCAA Championships, with NC State's Hannah Gapes winning the women's race in 18:57.6; No. 7 Notre Dame was third (213). In the men's race, No. 8 Syracuse won with 115 ahead of No. 14 Villanova (127) and No. 15 Notre Dame">
 <meta property="og:image" content="https://startlineweekly.com/og-image.png">
 <meta property="og:url" content="https://startlineweekly.com/meets/2026-ncaa-d1-pre-nationals/">
 <meta property="og:type" content="article">
@@ -66,7 +68,7 @@ const M=JSON.parse(document.getElementById("meet").textContent);
 const LV={d1:"Division I",d2:"Division II",d3:"Division III",hs:"High school"};
 const fin=M.status==="final";
 document.getElementById("app").innerHTML=`
-<section class="hero"><div class="eyebrow">${LV[M.lvl]} matchup of the week · ${M.date}</div>
+<section class="hero"><div class="eyebrow">${M.kind==="meet"?LV[M.lvl]:LV[M.lvl]+" matchup of the week"} · ${M.date}</div>
 <h1>${M.headline}${fin?'<span class="status">Final</span>':''}</h1>
 <div class="meta">${M.name} · ${M.where}</div><p class="sum">${M.summary}</p></section>
 ${M.lanes&&M.lanes.length?`<div class="lanes" aria-label="${fin?"Results":"Ranked teams entered"}">${M.lanes.map(l=>`<div class="lane"><span class="rk">${l[0]}</span><span><b>${l[1]}</b><small>${l[2]||""}</small></span></div>`).join("")}</div>`:""}

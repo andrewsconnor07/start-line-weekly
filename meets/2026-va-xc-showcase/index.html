@@ -3,10 +3,12 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VM39PTKQW9"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-VM39PTKQW9');</script>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>VA XC Showcase: Christ School and Union Catholic win · Start Line Weekly</title>
-<meta name="description" content="Boys Showcase: No. 1 Christ School won with 26 points, ahead of No. 26 Calvert Hall (MD) (66) and Cardinal Gibbons and Cuthbertson (154 each), and South Eugene's Yosuke Shibata won in 14:53.7. Girls S">
+<title>The VA XC Showcase 2026 Results | Start Line Weekly</title>
+<link rel="canonical" href="https://startlineweekly.com/meets/2026-va-xc-showcase/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsEvent","name":"2026 VA XC Showcase","sport":"Cross country running","startDate":"2026-10-17","eventStatus":"https://schema.org/EventScheduled","url":"https://startlineweekly.com/meets/2026-va-xc-showcase/","location":{"@type":"Place","name":"Pole Green Park","address":"Mechanicsville, VA"}}</script>
+<meta name="description" content="Boys Showcase: No. 1 Christ School won with 26 points, ahead of No. 26 Calvert Hall (MD) (66) and Cardinal Gibbons and Cuthbertson (154 each), and South Eugene's Yosuke Shibata won in 14:53.7. Girls Showcase: No. 1 Union Catholic (NJ) scored 65 to beat Penn Charter (132), Blacksburg (154) and Marvin">
 <meta property="og:title" content="VA XC Showcase: Christ School and Union Catholic win">
-<meta property="og:description" content="Boys Showcase: No. 1 Christ School won with 26 points, ahead of No. 26 Calvert Hall (MD) (66) and Cardinal Gibbons and Cuthbertson (154 each), and South Eugene's Yosuke Shibata won in 14:53.7. Girls S">
+<meta property="og:description" content="Boys Showcase: No. 1 Christ School won with 26 points, ahead of No. 26 Calvert Hall (MD) (66) and Cardinal Gibbons and Cuthbertson (154 each), and South Eugene's Yosuke Shibata won in 14:53.7. Girls Showcase: No. 1 Union Catholic (NJ) scored 65 to beat Penn Charter (132), Blacksburg (154) and Marvin">
 <meta property="og:image" content="https://startlineweekly.com/og-image.png">
 <meta property="og:url" content="https://startlineweekly.com/meets/2026-va-xc-showcase/">
 <meta property="og:type" content="article">
@@ -66,7 +68,7 @@ const M=JSON.parse(document.getElementById("meet").textContent);
 const LV={d1:"Division I",d2:"Division II",d3:"Division III",hs:"High school"};
 const fin=M.status==="final";
 document.getElementById("app").innerHTML=`
-<section class="hero"><div class="eyebrow">${LV[M.lvl]} matchup of the week · ${M.date}</div>
+<section class="hero"><div class="eyebrow">${M.kind==="meet"?LV[M.lvl]:LV[M.lvl]+" matchup of the week"} · ${M.date}</div>
 <h1>${M.headline}${fin?'<span class="status">Final</span>':''}</h1>
 <div class="meta">${M.name} · ${M.where}</div><p class="sum">${M.summary}</p></section>
 ${M.lanes&&M.lanes.length?`<div class="lanes" aria-label="${fin?"Results":"Ranked teams entered"}">${M.lanes.map(l=>`<div class="lane"><span class="rk">${l[0]}</span><span><b>${l[1]}</b><small>${l[2]||""}</small></span></div>`).join("")}</div>`:""}

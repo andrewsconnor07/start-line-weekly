@@ -53,11 +53,13 @@
 - Every page has the Google Analytics tag (G-VM39PTKQW9) right after the opening `<head>`. Never remove it, and keep it in tools/meet-template.html.
 - When a meet has a `section.feature` "Matchup of the week" card, its Results/Watch links must match that meet's entry in MEETS exactly. If you update one, update the other.
 
-## Matchup pages
+## Matchup and meet pages
 - Every matchup of the week (each `section.feature` card) has its own page at `/meets/<slug>/`, built from `data/meets/<slug>.json` by `node tools/build-meets.js` (run from the repo root). The script also writes `meets/pages.js` (homepage buttons) and `archive/index.html`. Never hand-edit the generated files; edit the JSON and rerun the script, then commit the JSON and everything it generated.
 - Slug: `<year>-<meet-name-in-kebab-case>`, e.g. `2026-ncaa-d1-pre-nationals`. The file name must equal the slug. Set `data-page="<slug>"` on that division's `section.feature` card.
 - JSON fields: `slug, lvl (d1|d2|d3|hs), iso (YYYY-MM-DD race date), week (the race-week label, e.g. "Oct 12–18, 2026"), status ("preview"|"final"), name, date, where, headline, summary, lanes [[rank-or-place, name, small text]], results (url), watch [[label, url]], insights []`. Mirror the card: same headline, summary, lanes and links as the homepage card. When a card's links change, update its JSON too and rebuild.
 - Wednesday build: for each new matchup card, create its JSON with `status:"preview"` and `insights:[]`. Do NOT delete old JSON files; past weeks stay in the archive.
 - Thursday/Friday/Saturday runs: if you change a matchup card's results or watch links, make the same change in its JSON and rebuild.
 - Sunday recap: for each matchup that has final results, set `status:"final"`, rewrite headline/summary/lanes to match the final card, switch watch links to replays when found, then rebuild.
+- Every meet in the homepage MEETS list also gets its own page at /meets/<meet-name-slug>/, built by `node tools/build-meets.js` from MEETS (saved in data/meet-pages/). Run `node tools/build-meets.js` at the end of EVERY run that changes index.html or data/meets, and commit data/meet-pages/, meets/, archive/, sitemap.xml and robots.txt with it. Never hand-edit those files, and never delete data/meet-pages/ files (they keep past weeks' pages and Google search traffic alive).
+- Keep the homepage <title> ("Start Line Weekly | Cross Country Live Results, Streams & Rankings"), the canonical link and the meta description inside <head>.
 - S/L Insights is paused. Don't run tools/insights.js or fill `insights`; the meet pages don't show them.

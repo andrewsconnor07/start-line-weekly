@@ -6,15 +6,16 @@
 <meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/icon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<meta name="description" content="Weekly college and high school cross country hub: top meets, rankings, matchups, and live results links.">
+<meta name="description" content="Live results and stream links for this week's top college and high school cross country meets, plus matchups of the week and national rankings for D-I, D-II, D-III and high school.">
 <meta property="og:title" content="Start Line Weekly">
 <meta property="og:description" content="Top meets, rankings, matchups and live results for college and high school cross country.">
 <meta property="og:image" content="https://startlineweekly.com/og-image.png">
 <meta property="og:url" content="https://startlineweekly.com/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+<title>Start Line Weekly | Cross Country Live Results, Streams &amp; Rankings</title>
+<link rel="canonical" href="https://startlineweekly.com/">
 </head><body>
-<title>Start Line Weekly</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Libre+Franklin:wght@400;600;700;800&family=DM+Mono:wght@500&display=swap">
 <style>
@@ -144,6 +145,7 @@ footer .past{display:inline-block;margin-top:8px;font:700 14px var(--body);color
   .date .d{font-size:26px}
   .brand{font-size:24px}
 }
+.meet h3 a.mlink{text-decoration:none}.meet h3 a.mlink:hover{text-decoration:underline;text-decoration-color:var(--red)}
 </style>
 
 <header class="top"><div class="top-in"><a class="brand" href="/">Start<span>/</span>Line Weekly</a><nav class="nav" aria-label="Sections"><a href="#this-week">This Week</a><a href="#rankings">Rankings</a></nav></div></header>
@@ -396,11 +398,12 @@ const $ = s => document.querySelector(s);
 const listDiv = m => (m.d1Ranked && m.div!=="hs") ? "d1" : m.div;
 const match = (div,f) => f==="all" || f===div || (f==="col" && div!=="hs");
 
+const slugify = n => n.replace(/<[^>]+>/g,"").replace(/&amp;/g,"&").replace(/&rsquo;/g,"’").replace(/&ndash;/g,"–").toLowerCase().replace(/&/g,"and").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
 function meetCard(m){
   return `<article class="meet">
     <div class="date"><div class="d">${m.d}</div><div class="m">${m.m}</div></div>
     <div>
-      <h3>${m.name}</h3>
+      <h3><a class="mlink" href="/meets/${slugify(m.name)}/">${m.name}</a></h3>
       <div class="meta">${m.where}</div>
       ${m.recap?`<div class="why"><b>Final:</b> ${m.recap}</div>`:`<div class="why">${m.why}</div>`}
       <div class="tags"><span class="tag ${m.div==="hs"?"lvl-hs":"lvl-col"}">${SHORT[listDiv(m)]}</span>${listDiv(m)!==m.div?`<span class="tag">${SHORT[m.div]} host</span>`:""}${m.tags.map(t=>`<span class="tag">${t}</span>`).join("")}${m.xo?`<span class="tag xo">Crossover: ${m.xo}</span>`:""}</div>

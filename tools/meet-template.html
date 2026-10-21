@@ -3,12 +3,14 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VM39PTKQW9"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-VM39PTKQW9');</script>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{{TITLE}} · Start Line Weekly</title>
+<title>{{TITLE}}</title>
+<link rel="canonical" href="{{CANON}}">
+{{LD}}
 <meta name="description" content="{{DESC}}">
-<meta property="og:title" content="{{TITLE}}">
+<meta property="og:title" content="{{OGTITLE}}">
 <meta property="og:description" content="{{DESC}}">
 <meta property="og:image" content="https://startlineweekly.com/og-image.png">
-<meta property="og:url" content="https://startlineweekly.com/meets/{{SLUG}}/">
+<meta property="og:url" content="{{CANON}}">
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
@@ -66,7 +68,7 @@ const M=JSON.parse(document.getElementById("meet").textContent);
 const LV={d1:"Division I",d2:"Division II",d3:"Division III",hs:"High school"};
 const fin=M.status==="final";
 document.getElementById("app").innerHTML=`
-<section class="hero"><div class="eyebrow">${LV[M.lvl]} matchup of the week · ${M.date}</div>
+<section class="hero"><div class="eyebrow">${M.kind==="meet"?LV[M.lvl]:LV[M.lvl]+" matchup of the week"} · ${M.date}</div>
 <h1>${M.headline}${fin?'<span class="status">Final</span>':''}</h1>
 <div class="meta">${M.name} · ${M.where}</div><p class="sum">${M.summary}</p></section>
 ${M.lanes&&M.lanes.length?`<div class="lanes" aria-label="${fin?"Results":"Ranked teams entered"}">${M.lanes.map(l=>`<div class="lane"><span class="rk">${l[0]}</span><span><b>${l[1]}</b><small>${l[2]||""}</small></span></div>`).join("")}</div>`:""}
