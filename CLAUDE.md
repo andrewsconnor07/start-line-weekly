@@ -29,6 +29,12 @@
   - Nike Hole in the Wall (WA): Sat Oct 10 (2nd Saturday of Oct)
   - Manhattan Invitational (NY, Van Cortlandt Park): Sat Oct 10 (2nd Saturday of Oct)
   - Mt. SAC Invitational (CA): Fri-Sat Oct 23-24, D1-D2 on Saturday (4th weekend of Oct)
+  - Wyoming state championships (Cheyenne): Sat Oct 24
+  - South Dakota state championships (Rapid City): Sat Oct 24
+  - IHSAA regionals (Indiana, 5 sites): Sat Oct 24
+  - Colorado state championships (CHSAA, Norris Penrose Event Center, Colorado Springs): Sat Oct 31
+  - IHSAA state finals (Indiana, LaVern Gibson course, Terre Haute): Sat Oct 31
+  - Utah state championships (UHSAA, held at Sugar House Park in late Oct in 2025): confirm the 2026 date on the UHSAA site before using it
 - College:
   - Roy Griak Invitational: Fri Sept 18
   - Cowboy Jamboree: Sat Sept 26
@@ -42,6 +48,15 @@
   - NCAA D-II Pre-Nationals: Sun Oct 11
   - NCAA D-I Pre-Nationals: Fri Oct 16
 - If a meet on this list is skipped, say why in the run summary (not held this week, cancelled, no ranked teams).
+- Each Wednesday in October and November, check the state associations' sites for that week's state championship meets and add any that aren't on this list.
+
+## Choosing meets
+- Decide which meets to include, and which gets Matchup of the Week, on three things, never just whether a top-10 team is racing:
+  1. Ranked teams: any team in the current national top 25 (USTFCCCA top 30 for college, DyeStat top 25 for high school).
+  2. Ranked individuals: any runner in the DyeStat individual top 25, or a college runner who's a top contender (a recent national-level finish, a meet or course record, or Athlete of the Week).
+  3. Meet importance: state championships, conference championships, NCAA regionals and championships, high school national championship meets, and marquee invitationals are worth including even with few ranked teams, because people search for their results.
+- Every high school state championship meet goes in the meet list for its week, with direct live-results and stream links. A state final with ranked teams or individuals is a strong Matchup of the Week candidate.
+- Pick the Matchup of the Week for the biggest head-to-head between ranked teams or individuals, or the most important meet when there's no head-to-head.
 
 ## Content rules
 - Write meet descriptions, matchup cards, recaps and athlete blurbs as plain statements of who is racing whom and what's at stake. Never tell readers where the information came from or what is missing: no "listed on their schedules", "on the meet's MileSplit attending list", "per Stanford's schedule", "DyeStat's preview says", "entries/lineups have not been posted", "not confirmed", "so they are not counted" or similar. If something isn't known yet, leave it out; a later run adds it once it is known.
