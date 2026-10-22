@@ -79,5 +79,5 @@
 - Keep the homepage <title> ("Start Line Weekly | Cross Country Live Results, Streams & Rankings"), the canonical link and the meta description inside <head>.
 - S/L Insights is paused. Don't run tools/insights.js or fill `insights`; the meet pages don't show them.
 
-## One-time: restore matchup order (Wednesday Oct 28 build, then delete this section)
-- For the Oct 19–25 week only, Connor moved the high school Matchup of the week card (`section.feature[data-lvl="hs"]`) to the top, above D-I. In the Oct 28 Wednesday build, put the cards back in the usual order (d1, d2, d3, hs), then delete this section.
+## One-time: restore matchup cards (Wednesday Oct 28 build, then delete this section)
+- For the Oct 19–25 week only, Connor replaced the three college Matchup of the week cards with high school ones, so all four cards are `data-lvl="hs"` (Mt. SAC on top, then Indiana regionals, South Dakota state, Wyoming state). In the Oct 28 Wednesday build, go back to the usual four cards in the usual order (d1, d2, d3, hs, each with its own `data-lvl`), then delete this section.
