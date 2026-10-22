@@ -63,3 +63,6 @@
 - Every meet in the homepage MEETS list also gets its own page at /meets/<meet-name-slug>/, built by `node tools/build-meets.js` from MEETS (saved in data/meet-pages/). Run `node tools/build-meets.js` at the end of EVERY run that changes index.html or data/meets, and commit data/meet-pages/, meets/, archive/, sitemap.xml and robots.txt with it. Never hand-edit those files, and never delete data/meet-pages/ files (they keep past weeks' pages and Google search traffic alive).
 - Keep the homepage <title> ("Start Line Weekly | Cross Country Live Results, Streams & Rankings"), the canonical link and the meta description inside <head>.
 - S/L Insights is paused. Don't run tools/insights.js or fill `insights`; the meet pages don't show them.
+
+## One-time: restore matchup order (Wednesday Oct 28 build, then delete this section)
+- For the Oct 19–25 week only, Connor moved the high school Matchup of the week card (`section.feature[data-lvl="hs"]`) to the top, above D-I. In the Oct 28 Wednesday build, put the cards back in the usual order (d1, d2, d3, hs), then delete this section.
