@@ -3,42 +3,37 @@
  "lvl": "hs",
  "iso": "2026-10-24",
  "week": "Oct 19–25, 2026",
- "status": "preview",
+ "status": "final",
  "name": "IHSAA Cross Country Regionals",
  "date": "Sat Oct 24",
  "where": "Indiana · New Prairie, Manchester, Brownsburg, Columbus (CERAland Sports Park) and Crawford County",
- "headline": "Indiana regionals: Seitz and Zieren meet at Crawford County",
- "summary": "Springs Valley's Calvin Seitz, last year's Indiana state champion and No. 10 in DyeStat's national rankings, races Evansville Reitz's Carter Zieren (No. 16) at the Crawford County regional, a week before the state finals at the LaVern Gibson course. At Nike XC Town Twilight, Seitz ran an Indiana-record 14:42.1 for third with Zieren fourth in 14:42.4. No. 21 Fort Wayne Carroll boys and No. 14 Homestead girls race at Manchester, No. 22 Carmel girls at Brownsburg, and Hamilton Southeastern's Anya Zoeller (No. 25) at CERAland. The Crawford County boys race starts at 11:15 a.m. ET.",
+ "headline": "Indiana regionals: Seitz wins Crawford County by 44 seconds",
+ "summary": "Springs Valley's Calvin Seitz won the Crawford County regional in 14:30.7, 44.6 seconds ahead of Evansville Reitz's Carter Zieren (15:15.3). At Manchester, No. 21 Fort Wayne Carroll won the boys team title with 29 points and No. 14 Homestead won the girls with 65, and Hamilton Southeastern's Anya Zoeller won the girls race at CERAland in 17:23.4. The top five teams at each site, plus the top 15 individuals not on those teams, move on to the state finals Oct. 31 in Terre Haute.",
  "lanes": [
   [
-   "10",
+   "1",
    "Calvin Seitz",
-   "Springs Valley · Boys"
+   "Springs Valley · 14:30.7"
   ],
   [
-   "16",
+   "2",
    "Carter Zieren",
-   "Evansville Reitz · Boys"
+   "Evansville Reitz · 15:15.3"
   ],
   [
-   "21",
+   "1",
    "Fort Wayne Carroll",
-   "Boys · Manchester"
+   "Boys · Manchester · 29"
   ],
   [
-   "14",
+   "1",
    "Homestead",
-   "Girls · Manchester"
+   "Girls · Manchester · 65"
   ],
   [
-   "22",
-   "Carmel",
-   "Girls · Brownsburg"
-  ],
-  [
-   "25",
+   "1",
    "Anya Zoeller",
-   "Hamilton Southeastern · Girls"
+   "Hamilton Southeastern · 17:23.4"
   ]
  ],
  "results": "https://www.ihsaa.org/sports/boys/cross-country/2026-27-tournament?round=regionals",

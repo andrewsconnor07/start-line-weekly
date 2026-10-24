@@ -3,37 +3,42 @@
  "lvl": "hs",
  "iso": "2026-10-24",
  "week": "Oct 19–25, 2026",
- "status": "preview",
+ "status": "final",
  "name": "Mt. SAC Invitational",
  "date": "Fri-Sat Oct 23-24",
  "where": "Walnut, CA · host Mt. San Antonio College · Hilmer Lodge Stadium",
- "headline": "Mt. SAC: Van Meerten returns to chase his own course record",
- "summary": "Flagstaff (AZ) senior Yohanes Van Meerten, who set the Mt. SAC course record of 14:10.1 last year, runs the Division 1-2 boys team sweepstakes against California's best, including Mt. Carmel's Jaxon Northcutt (13:42.4 three-mile best) and Redondo Union, ranked fifth in California. In the girls race, Mira Costa, ranked fifth in California and last year's team champion, and Westlake's Sabina Cruz are among the favorites. Boys team sweepstakes at 9:43 a.m. PT, girls at 10:08 a.m.",
+ "headline": "Mt. SAC: Crescenta Valley and Northgate win the sweepstakes",
+ "summary": "Crescenta Valley won the Division 1-2 boys team sweepstakes with 149 points to Beckman's 158, and Redondo Union's Mario Montoya won the race in 13:43.5 ahead of Mt. Carmel's Jaxon Northcutt (13:53.4). Northgate won the girls team sweepstakes with 107 to Mira Costa's 137, and Westlake sophomore Sabina Cruz won in 16:35.1. Ontario's Isabella Ruiz, No. 27 in DyeStat's individual rankings, ran the fastest girls time of the day, 16:22.6, to win the individual sweepstakes.",
  "lanes": [
   [
-   "–",
-   "Yohanes Van Meerten",
-   "Flagstaff (AZ) · Boys"
+   "1",
+   "Crescenta Valley",
+   "Boys · 149"
   ],
   [
-   "–",
-   "Jaxon Northcutt",
-   "Mt. Carmel (CA) · Boys"
+   "2",
+   "Beckman",
+   "Boys · 158"
   ],
   [
-   "–",
-   "Redondo Union",
-   "No. 5 in CA · Boys"
+   "1",
+   "Northgate",
+   "Girls · 107"
   ],
   [
-   "–",
+   "2",
    "Mira Costa",
-   "No. 5 in CA · Girls"
+   "Girls · 137"
   ],
   [
-   "–",
+   "1",
+   "Mario Montoya",
+   "Redondo Union · 13:43.5"
+  ],
+  [
+   "1",
    "Sabina Cruz",
-   "Westlake (CA) · Girls"
+   "Westlake · 16:35.1"
   ]
  ],
  "results": "https://finishedresults.trackscoreboard.com/meets/14364",
