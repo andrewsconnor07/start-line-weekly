@@ -9,10 +9,15 @@
  "where": "Tallahassee, FL · Apalachee Regional Park",
  "headline": "SWAC Cross Country Championships",
  "status": "preview",
- "summary": "The SWAC opens championship week three days before everyone else.",
- "results": null,
+ "summary": "The SWAC opens championship week three days before everyone else. · Men 8:00 a.m. CT · Women 9:00 a.m. CT",
+ "results": "https://live.pttiming.com/xc-ptt.html?mid=9266",
  "info": null,
- "watch": [],
+ "watch": [
+  [
+   "SWAC TV",
+   "https://tv.swac.org/"
+  ]
+ ],
  "lanes": [],
  "hub": "/championships/"
 }
