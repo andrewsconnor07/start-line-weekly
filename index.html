@@ -145,15 +145,19 @@ footer .past{display:inline-block;margin-top:8px;font:700 14px var(--body);color
   .date .d{font-size:26px}
   .brand{font-size:24px}
 }
+.champ{display:grid;gap:4px;text-decoration:none;background:var(--navy);color:#fff;border-left:8px solid var(--red);padding:16px 18px;margin:0 0 18px}
+.champ .eyebrow{font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#FF8A99}.champ b{font:700 clamp(22px,3.4vw,30px)/1.05 var(--display);text-transform:uppercase}
+.champ .go{font:700 14px var(--body);color:#FFD1D7}.champ:hover .go{text-decoration:underline}
 .meet h3 a.mlink{text-decoration:none}.meet h3 a.mlink:hover{text-decoration:underline;text-decoration-color:var(--red)}
 </style>
 
-<header class="top"><div class="top-in"><a class="brand" href="/">Start<span>/</span>Line Weekly</a><nav class="nav" aria-label="Sections"><a href="#this-week">This Week</a><a href="#rankings">Rankings</a></nav></div></header>
+<header class="top"><div class="top-in"><a class="brand" href="/">Start<span>/</span>Line Weekly</a><nav class="nav" aria-label="Sections"><a href="#this-week">This Week</a><a href="/championships/">Championships</a><a href="#rankings">Rankings</a></nav></div></header>
 <div class="wrap">
 <div class="layout">
 <div class="main" id="this-week">
   <h1 class="sr-only" style="position:absolute;left:-9999px">Start Line Weekly</h1>
   <div class="mast"><div class="week"><b>Race Week · Oct 19–25, 2026</b>College + High School Cross Country</div></div>
+  <a class="champ" href="/championships/"><span class="eyebrow">Oct 26–Nov 1 · Championship Week</span><b>Every conference championship and state final, live</b><span class="go">Open the hub →</span></a>
 
   <nav class="filters" aria-label="Filter by level">
     <button type="button" id="f-all" data-f="all" aria-pressed="true">All</button>
