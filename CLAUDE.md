@@ -79,6 +79,7 @@
 - Every meet in the homepage MEETS list also gets its own page at /meets/<meet-name-slug>/, built by `node tools/build-meets.js` from MEETS (saved in data/meet-pages/). Run `node tools/build-meets.js` at the end of EVERY run that changes index.html or data/meets, and commit data/meet-pages/, meets/, archive/, sitemap.xml and robots.txt with it. Never hand-edit those files, and never delete data/meet-pages/ files (they keep past weeks' pages and Google search traffic alive).
 - Keep the homepage <title> ("Start Line Weekly | Cross Country Live Results, Streams & Rankings"), the canonical link and the meta description inside <head>.
 - S/L Insights is paused. Don't run tools/insights.js or fill `insights`; the meet pages don't show them.
+- Meet and matchup pages are plain HTML written by `tools/build-meets.js` (the page text, buttons and a "More meets" section are in the HTML itself, with no JavaScript rendering), so Google reads them right away. Every page links to the other meets that week (championship pages: the other championships that same day, plus the hub). Keep it that way: never add client-side rendering to tools/meet-template.html.
 
 ## Championship Week (Oct 26–Nov 1, 2026) and the postseason hub
 - `data/championships.json` drives the hub at /championships/ and a meet page for every entry (/meets/<name-slug>/, saved to data/meet-pages/ like MEETS). Edit only the JSON, then run `node tools/build-meets.js`. Never hand-edit championships/index.html.

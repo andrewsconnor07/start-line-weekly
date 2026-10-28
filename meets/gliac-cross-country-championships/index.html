@@ -59,19 +59,11 @@ footer a{font-weight:700;color:var(--red-ink)}
 <header class="top"><div class="top-in"><a class="brand" href="/">Start<span>/</span>Line Weekly</a>
   <nav class="nav" aria-label="Sections"><a href="/#this-week">This Week</a><a href="/championships/">Championships</a><a href="/#rankings">Rankings</a></nav></div></header>
 <div class="wrap">
-  <main id="app"></main>
+  <main id="app" style="display:grid;gap:18px"><section class="hero"><div class="eyebrow">Division II · Nov. 7, 2026</div>
+<h1>GLIAC Cross Country Championships</h1>
+<div class="meta">GLIAC Cross Country Championships · Hammond, IN · PNW Cross Country Course</div><p class="sum">No. 5 Grand Valley State men and No. 6 Grand Valley State women. · 11:00 a.m.</p><p style="margin:14px 0 0"><a href="/championships/" style="font-weight:700;color:var(--red-ink)">← All Championship Week meets</a></p></section>
+
+<section aria-labelledby="more" style="margin-top:10px"><h2 id="more">More Saturday, Nov. 7 championships</h2><div class="grid" style="margin-top:12px"><a class="card" style="text-decoration:none" href="/meets/ccaa-cross-country-championships/"><h3>Division II · Nov. 7, 2026</h3><p><b>CCAA Cross Country Championships</b></p><p class="meta">San Bernardino, CA</p></a><a class="card" style="text-decoration:none" href="/meets/glvc-cross-country-championships/"><h3>Division II · Nov. 7, 2026</h3><p><b>GLVC Cross Country Championships</b></p><p class="meta">Springfield, MO</p></a><a class="card" style="text-decoration:none" href="/meets/nsic-cross-country-championships/"><h3>Division II · Nov. 7, 2026</h3><p><b>NSIC Cross Country Championships</b></p><p class="meta">Sioux Falls, SD</p></a><a class="card" style="text-decoration:none" href="/meets/psac-cross-country-championships/"><h3>Division II · Nov. 7, 2026</h3><p><b>PSAC Cross Country Championships</b></p><p class="meta">Bloomsburg, PA</p></a><a class="card" style="text-decoration:none" href="/meets/rmac-cross-country-championships/"><h3>Division II · Nov. 7, 2026</h3><p><b>RMAC Cross Country Championships</b></p><p class="meta">Rapid City, SD</p></a></div><p style="margin:14px 0 0"><a href="/championships/" style="font-weight:700;color:var(--red-ink)">See every Championship Week meet →</a></p></section></main>
   <footer>Start Line Weekly is built and edited by Connor Andrews. Results and streams link out to the meet's official timer or broadcaster. <a href="/archive/">Past weeks →</a></footer>
 </div>
-<script id="meet" type="application/json">{"slug":"gliac-cross-country-championships","kind":"meet","lvl":"d2","iso":"2026-11-07","week":"Oct 26–Nov 1, 2026","name":"GLIAC Cross Country Championships","date":"Nov. 7, 2026","where":"Hammond, IN · PNW Cross Country Course","headline":"GLIAC Cross Country Championships","status":"preview","summary":"No. 5 Grand Valley State men and No. 6 Grand Valley State women. · 11:00 a.m.","results":null,"info":null,"watch":[],"lanes":[],"hub":"/championships/"}</script>
-<script>
-const M=JSON.parse(document.getElementById("meet").textContent);
-const LV={d1:"Division I",d2:"Division II",d3:"Division III",hs:"High school"};
-const fin=M.status==="final";
-document.getElementById("app").innerHTML=`
-<section class="hero"><div class="eyebrow">${M.kind==="meet"?LV[M.lvl]:LV[M.lvl]+" matchup of the week"} · ${M.date}</div>
-<h1>${M.headline}${fin?'<span class="status">Final</span>':''}</h1>
-<div class="meta">${M.name} · ${M.where}</div><p class="sum">${M.summary}</p>${M.hub?`<p style="margin:14px 0 0"><a href="${M.hub}" style="font-weight:700;color:var(--red-ink)">← All Championship Week meets</a></p>`:""}</section>
-${M.lanes&&M.lanes.length?`<div class="lanes" aria-label="${fin?"Results":"Ranked teams entered"}">${M.lanes.map(l=>`<div class="lane"><span class="rk">${l[0]}</span><span><b>${l[1]}</b><small>${l[2]||""}</small></span></div>`).join("")}</div>`:""}
-<div class="btns">${M.results?`<a class="res" href="${M.results}" target="_blank" rel="noopener"><span class="dot"></span>${fin?"Final results":"Live results"}</a>`:""}${(M.watch||[]).map(w=>`<a href="${w[1]}" target="_blank" rel="noopener">Watch · ${w[0]}</a>`).join("")}${M.info?`<a href="${M.info}" target="_blank" rel="noopener">Meet info</a>`:""}</div>`;
-</script>
 </body></html>

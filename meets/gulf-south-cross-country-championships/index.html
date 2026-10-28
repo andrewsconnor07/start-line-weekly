@@ -59,19 +59,11 @@ footer a{font-weight:700;color:var(--red-ink)}
 <header class="top"><div class="top-in"><a class="brand" href="/">Start<span>/</span>Line Weekly</a>
   <nav class="nav" aria-label="Sections"><a href="/#this-week">This Week</a><a href="/championships/">Championships</a><a href="/#rankings">Rankings</a></nav></div></header>
 <div class="wrap">
-  <main id="app"></main>
+  <main id="app" style="display:grid;gap:18px"><section class="hero"><div class="eyebrow">Division II · Nov. 6, 2026</div>
+<h1>Gulf South Cross Country Championships</h1>
+<div class="meta">Gulf South Cross Country Championships · Nashville, TN</div><p class="sum">No. 6 Lee men and No. 10 Lee women. · Men 9:00 a.m. ET · Women 9:45 a.m. ET</p><p style="margin:14px 0 0"><a href="/championships/" style="font-weight:700;color:var(--red-ink)">← All Championship Week meets</a></p></section>
+
+<section aria-labelledby="more" style="margin-top:10px"><h2 id="more">More Friday, Nov. 6 championships</h2><p style="margin:14px 0 0"><a href="/championships/" style="font-weight:700;color:var(--red-ink)">See every Championship Week meet →</a></p></section></main>
   <footer>Start Line Weekly is built and edited by Connor Andrews. Results and streams link out to the meet's official timer or broadcaster. <a href="/archive/">Past weeks →</a></footer>
 </div>
-<script id="meet" type="application/json">{"slug":"gulf-south-cross-country-championships","kind":"meet","lvl":"d2","iso":"2026-11-06","week":"Oct 26–Nov 1, 2026","name":"Gulf South Cross Country Championships","date":"Nov. 6, 2026","where":"Nashville, TN","headline":"Gulf South Cross Country Championships","status":"preview","summary":"No. 6 Lee men and No. 10 Lee women. · Men 9:00 a.m. ET · Women 9:45 a.m. ET","results":null,"info":null,"watch":[],"lanes":[],"hub":"/championships/"}</script>
-<script>
-const M=JSON.parse(document.getElementById("meet").textContent);
-const LV={d1:"Division I",d2:"Division II",d3:"Division III",hs:"High school"};
-const fin=M.status==="final";
-document.getElementById("app").innerHTML=`
-<section class="hero"><div class="eyebrow">${M.kind==="meet"?LV[M.lvl]:LV[M.lvl]+" matchup of the week"} · ${M.date}</div>
-<h1>${M.headline}${fin?'<span class="status">Final</span>':''}</h1>
-<div class="meta">${M.name} · ${M.where}</div><p class="sum">${M.summary}</p>${M.hub?`<p style="margin:14px 0 0"><a href="${M.hub}" style="font-weight:700;color:var(--red-ink)">← All Championship Week meets</a></p>`:""}</section>
-${M.lanes&&M.lanes.length?`<div class="lanes" aria-label="${fin?"Results":"Ranked teams entered"}">${M.lanes.map(l=>`<div class="lane"><span class="rk">${l[0]}</span><span><b>${l[1]}</b><small>${l[2]||""}</small></span></div>`).join("")}</div>`:""}
-<div class="btns">${M.results?`<a class="res" href="${M.results}" target="_blank" rel="noopener"><span class="dot"></span>${fin?"Final results":"Live results"}</a>`:""}${(M.watch||[]).map(w=>`<a href="${w[1]}" target="_blank" rel="noopener">Watch · ${w[0]}</a>`).join("")}${M.info?`<a href="${M.info}" target="_blank" rel="noopener">Meet info</a>`:""}</div>`;
-</script>
 </body></html>

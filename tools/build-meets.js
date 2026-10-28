@@ -61,6 +61,42 @@ const meets = fs.readdirSync(dir).filter(f => f.endsWith(".json")).map(f => {
 }).sort((a, b) => b.iso.localeCompare(a.iso) || a.lvl.localeCompare(b.lvl));
 const pages = fs.readdirSync(pdir).filter(f => f.endsWith(".json")).map(f => JSON.parse(fs.readFileSync(path.join(pdir, f), "utf8")));
 
+// Page body is written into the HTML at build time (no client-side rendering), so search engines see it right away.
+const LVN = { d1: "Division I", d2: "Division II", d3: "Division III", hs: "High school" };
+const DAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const dayName = iso => { const d = new Date(iso + "T12:00:00Z"); return `${DAYS[d.getUTCDay()]}, ${FULLMON[d.getUTCMonth() + 1]} ${d.getUTCDate()}`; };
+const city = w => strip(w).split("·")[0].trim();
+let ALL = [];
+function related(m) {
+  const key = x => strip(x.name).toLowerCase();
+  const seen = new Set([key(m)]), others = [];
+  // one card per meet: a meet page wins over a matchup page with the same meet name
+  for (const x of ALL.filter(x => x.slug !== m.slug && x.week === m.week).sort((a, b) => (a.kind === "meet" ? 0 : 1) - (b.kind === "meet" ? 0 : 1)))
+    if (!seen.has(key(x))) { seen.add(key(x)); others.push(x); }
+  let list, head;
+  if (m.hub) { list = others.filter(x => x.hub && x.iso === m.iso); head = `More ${dayName(m.iso)} championships`; }
+  else { list = others; head = "More meets this week"; }
+  list = list.sort((a, b) => (a.lvl === m.lvl ? 0 : 1) - (b.lvl === m.lvl ? 0 : 1) || a.iso.localeCompare(b.iso) || a.name.localeCompare(b.name)).slice(0, 12);
+  if (!list.length && !m.hub) return "";
+  return `<section aria-labelledby="more" style="margin-top:10px"><h2 id="more">${esc(head)}</h2>`
+    + (list.length ? `<div class="grid" style="margin-top:12px">${list.map(x => `<a class="card" style="text-decoration:none" href="/meets/${x.slug}/"><h3>${LVN[x.lvl] || ""} · ${esc(x.date)}${x.status === "final" ? " · Final" : ""}</h3><p><b>${esc(strip(x.name))}</b></p><p class="meta">${esc(city(x.where))}</p></a>`).join("")}</div>` : "")
+    + (m.hub ? `<p style="margin:14px 0 0"><a href="${m.hub}" style="font-weight:700;color:var(--red-ink)">See every Championship Week meet →</a></p>` : "")
+    + `</section>`;
+}
+function body(m) {
+  const fin = m.status === "final";
+  const eyebrow = m.kind === "meet" ? LVN[m.lvl] : LVN[m.lvl] + " matchup of the week";
+  const lanes = m.lanes && m.lanes.length ? `<div class="lanes" aria-label="${fin ? "Results" : "Ranked teams entered"}">${m.lanes.map(l => `<div class="lane"><span class="rk">${l[0]}</span><span><b>${l[1]}</b><small>${l[2] || ""}</small></span></div>`).join("")}</div>` : "";
+  const btns = (m.results ? `<a class="res" href="${esc(m.results)}" target="_blank" rel="noopener"><span class="dot"></span>${fin ? "Final results" : "Live results"}</a>` : "")
+    + (m.watch || []).map(w => `<a href="${esc(w[1])}" target="_blank" rel="noopener">Watch · ${w[0]}</a>`).join("")
+    + (m.info ? `<a href="${esc(m.info)}" target="_blank" rel="noopener">Meet info</a>` : "");
+  return `<section class="hero"><div class="eyebrow">${eyebrow} · ${m.date}</div>
+<h1>${m.headline}${fin ? '<span class="status">Final</span>' : ""}</h1>
+<div class="meta">${m.name} · ${m.where}</div><p class="sum">${m.summary}</p>${m.hub ? `<p style="margin:14px 0 0"><a href="${m.hub}" style="font-weight:700;color:var(--red-ink)">← All Championship Week meets</a></p>` : ""}</section>
+${lanes}${btns ? `<div class="btns">${btns}</div>` : ""}
+${related(m)}`;
+}
+
 function render(m, matchup) {
   const y = m.iso.slice(0, 4), fin = m.status === "final", name = strip(m.name);
   const title = fin ? `${name} ${y} Results | Start Line Weekly`
@@ -73,10 +109,11 @@ function render(m, matchup) {
   return tpl.replaceAll("{{TITLE}}", esc(title)).replaceAll("{{OGTITLE}}", esc(matchup ? strip(m.headline) : `${name} ${y}`))
     .replaceAll("{{DESC}}", esc(desc.slice(0, 300))).replaceAll("{{CANON}}", canon).replaceAll("{{SLUG}}", m.slug)
     .replace("{{LD}}", `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, "\\u003c")}</script>`)
-    .replace("{{DATA}}", JSON.stringify(m).replace(/</g, "\\u003c"));
+    .replace("{{BODY}}", () => body(m));
 }
 const write = (slug, html) => { const out = path.join(root, "meets", slug); fs.mkdirSync(out, { recursive: true }); fs.writeFileSync(path.join(out, "index.html"), html); };
 const taken = new Set(meets.map(m => m.slug));
+ALL = meets.concat(pages.filter(m => !taken.has(m.slug)));
 for (const m of meets) write(m.slug, render(m, true));
 for (const m of pages) if (!taken.has(m.slug)) write(m.slug, render(m, false));
 
