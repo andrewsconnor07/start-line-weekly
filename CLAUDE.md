@@ -90,6 +90,3 @@
 - Every run also checks entries that already raced this week: set results to the final results page and add a short recap right away instead of waiting for Sunday.
 - Sunday Nov 1 recap: give every entry with final results a `recap` (team champions and individual winners, men and women, with points and times), switch `results` to the final results page and `watch` to replays, then rebuild. Change the banner text to "Championship Week results".
 - Wednesday Nov 4 build: turn the hub into the next postseason week. Set `week` and `title` (e.g. "D-II Conference Week & NCAA Regionals Preview"), move that week's entries out of `next`, delete last week's entries from the JSON (their meet pages stay, because data/meet-pages/ keeps them), and add new ones. Keep the NCAA Championships entries under `next` until their week.
-
-## One-time: restore matchup cards (Wednesday Oct 28 build, then delete this section)
-- For the Oct 19–25 week only, Connor replaced the three college Matchup of the week cards with high school ones, so all four cards are `data-lvl="hs"` (Mt. SAC on top, then Indiana regionals, South Dakota state, Wyoming state). In the Oct 28 Wednesday build, go back to the usual four cards in the usual order (d1, d2, d3, hs, each with its own `data-lvl`), then delete this section.

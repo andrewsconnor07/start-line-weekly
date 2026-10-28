@@ -9,10 +9,15 @@
  "where": "Middlebury, VT · host Middlebury",
  "headline": "NESCAC Cross Country Championships",
  "status": "preview",
- "summary": "Three top-10 women's teams: No. 2 Middlebury at home, No. 4 Williams and No. 7 Tufts. Middlebury beat Williams 63-65 at Connecticut College two weeks ago.",
- "results": null,
+ "summary": "Three top-10 women's teams: No. 2 Middlebury at home, No. 4 Williams and No. 7 Tufts. Middlebury beat Williams 63-65 at Connecticut College two weeks ago. · Women 11:00 a.m. ET · Men noon ET",
+ "results": "https://live.802timing.com/meets/79991",
  "info": null,
- "watch": [],
+ "watch": [
+  [
+   "NSN live video",
+   "https://www.nsnsports.net/conferences/nescac/?bfplayvid=4711484"
+  ]
+ ],
  "lanes": [],
  "hub": "/championships/"
 }
