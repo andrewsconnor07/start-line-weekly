@@ -10,9 +10,14 @@
  "headline": "ACC Cross Country Championships",
  "status": "preview",
  "summary": "No. 2 NC State and No. 8 Notre Dame women; No. 8 Syracuse and No. 10 Wake Forest men. NC State's Hannah Gapes won Pre-Nationals in a course record two weeks ago.",
- "results": null,
+ "results": "https://www.flashresults.com/2027_Meets/xc/ACC/index.htm",
  "info": null,
- "watch": [],
+ "watch": [
+  [
+   "ACC Network",
+   "https://www.espn.com/watch/catalog/2fd594b9-ec76-49c8-b882-075b3388e29d/cross-country-running"
+  ]
+ ],
  "lanes": [],
  "hub": "/championships/"
 }
