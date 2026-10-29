@@ -10,9 +10,14 @@
  "headline": "Mountain West Cross Country Championships",
  "status": "preview",
  "summary": "No. 1 New Mexico men and No. 6 New Mexico women.",
- "results": null,
+ "results": "https://www.rtspt.com/events/mw/2026-XC/",
  "info": null,
- "watch": [],
+ "watch": [
+  [
+   "Mountain West Network",
+   "https://watch.themw.com/"
+  ]
+ ],
  "lanes": [],
  "hub": "/championships/"
 }
