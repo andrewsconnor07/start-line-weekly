@@ -12,7 +12,12 @@
  "summary": "No. 6 Oregon men lead the Big Ten field. · First race 10:35 a.m.",
  "results": "https://live.pttiming.com/xc-ptt.html?mid=9277",
  "info": null,
- "watch": [],
+ "watch": [
+  [
+   "Big Ten Network",
+   "https://www.foxsports.com/live/btn"
+  ]
+ ],
  "lanes": [],
  "hub": "/championships/"
 }
