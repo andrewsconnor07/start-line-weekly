@@ -10,9 +10,14 @@
  "headline": "Sun Belt Cross Country Championships",
  "status": "preview",
  "summary": "Sun Belt Cross Country Championships, Oct. 30, 2026, in Foley, AL.",
- "results": null,
+ "results": "https://live.xpresstiming.com/meets/79395",
  "info": null,
- "watch": [],
+ "watch": [
+  [
+   "ESPN+",
+   "https://www.espn.com/watch/player/_/id/8caed623-41e5-4910-a097-c25434a30d8c"
+  ]
+ ],
  "lanes": [],
  "hub": "/championships/"
 }

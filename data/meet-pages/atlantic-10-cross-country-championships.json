@@ -10,9 +10,14 @@
  "headline": "Atlantic 10 Cross Country Championships",
  "status": "preview",
  "summary": "Atlantic 10 Cross Country Championships, Oct. 31, 2026, in Mechanicsville, VA.",
- "results": null,
+ "results": "https://blueridgetiming.live/meets/78126",
  "info": null,
- "watch": [],
+ "watch": [
+  [
+   "ESPN+",
+   "https://www.espn.com/watch/player/_/id/80f12bff-3d45-46e9-bc20-15510f194d8a"
+  ]
+ ],
  "lanes": [],
  "hub": "/championships/"
 }

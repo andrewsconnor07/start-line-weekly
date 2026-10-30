@@ -10,9 +10,18 @@
  "headline": "ASUN Cross Country Championships",
  "status": "preview",
  "summary": "ASUN Cross Country Championships, Oct. 30, 2026, in Richmond, KY.",
- "results": null,
+ "results": "https://live.prtime.tf/meets/79798",
  "info": null,
- "watch": [],
+ "watch": [
+  [
+   "ESPN+ · Women",
+   "https://www.espn.com/watch/player/_/id/4e9a3aeb-511a-4571-9c16-312e0c271839"
+  ],
+  [
+   "ESPN+ · Men",
+   "https://www.espn.com/watch/player/_/id/8215092d-9dd6-43f6-ba07-169b33b7ff53"
+  ]
+ ],
  "lanes": [],
  "hub": "/championships/"
 }

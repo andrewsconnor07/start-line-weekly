@@ -10,9 +10,14 @@
  "headline": "American Cross Country Championships",
  "status": "preview",
  "summary": "Tulane's Silas Kiptanui, the Pre-National men's champion, races at home.",
- "results": null,
+ "results": "https://live.pttiming.com/xc-ptt.html?mid=9278",
  "info": null,
- "watch": [],
+ "watch": [
+  [
+   "ESPN+",
+   "https://www.espn.com/watch/player/_/id/df5cb365-2f10-4d9a-a01e-9d14318ec2b5"
+  ]
+ ],
  "lanes": [],
  "hub": "/championships/"
 }

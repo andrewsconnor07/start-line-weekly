@@ -10,9 +10,14 @@
  "headline": "Big East Cross Country Championships",
  "status": "preview",
  "summary": "Big East Cross Country Championships, Oct. 30, 2026, in Mechanicsville, VA.",
- "results": null,
+ "results": "https://blueridgetiming.live/meets/77746",
  "info": null,
- "watch": [],
+ "watch": [
+  [
+   "ESPN+",
+   "https://www.espn.com/watch/player/_/id/b465839e-4502-42f1-9d2e-d6aac16f066b"
+  ]
+ ],
  "lanes": [],
  "hub": "/championships/"
 }

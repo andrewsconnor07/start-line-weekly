@@ -10,9 +10,14 @@
  "headline": "Pac-12 Cross Country Championships",
  "status": "preview",
  "summary": "Seven men's teams and nine women's teams.",
- "results": null,
+ "results": "https://swtiming.anet.live/meets/79660",
  "info": null,
- "watch": [],
+ "watch": [
+  [
+   "Pac-12 on YouTube",
+   "https://www.youtube.com/pac12/streams"
+  ]
+ ],
  "lanes": [],
  "hub": "/championships/"
 }

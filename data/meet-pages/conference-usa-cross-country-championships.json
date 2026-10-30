@@ -10,9 +10,14 @@
  "headline": "Conference USA Cross Country Championships",
  "status": "preview",
  "summary": "Conference USA Cross Country Championships, Oct. 31, 2026, in Huntsville, AL.",
- "results": null,
+ "results": "https://live.xpresstiming.com/meets/79397",
  "info": null,
- "watch": [],
+ "watch": [
+  [
+   "ESPN+",
+   "https://www.espn.com/watch/player/_/id/8a44cc62-9e40-4392-9122-eb6c36349443"
+  ]
+ ],
  "lanes": [],
  "hub": "/championships/"
 }

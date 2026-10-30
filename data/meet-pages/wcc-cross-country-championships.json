@@ -10,9 +10,14 @@
  "headline": "WCC Cross Country Championships",
  "status": "preview",
  "summary": "WCC Cross Country Championships, Oct. 30, 2026, in San Diego, CA.",
- "results": null,
+ "results": "https://rt.trackscoreboard.com/meets/10302026/events",
  "info": null,
- "watch": [],
+ "watch": [
+  [
+   "ESPN+",
+   "https://www.espn.com/watch/player/_/id/e16b76b8-49ee-4e70-b22f-9979c75aea4c"
+  ]
+ ],
  "lanes": [],
  "hub": "/championships/"
 }

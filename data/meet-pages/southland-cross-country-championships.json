@@ -10,9 +10,14 @@
  "headline": "Southland Cross Country Championships",
  "status": "preview",
  "summary": "Southland Cross Country Championships, Oct. 30, 2026, in Lake Charles, LA.",
- "results": null,
+ "results": "https://milesplit.live/meets/788061/schedule",
  "info": null,
- "watch": [],
+ "watch": [
+  [
+   "ESPN+",
+   "https://www.espn.com/watch/player/_/id/3b4f7044-ac52-4662-a336-bb687724806a"
+  ]
+ ],
  "lanes": [],
  "hub": "/championships/"
 }

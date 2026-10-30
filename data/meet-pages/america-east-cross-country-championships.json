@@ -12,7 +12,12 @@
  "summary": "America East Cross Country Championships, Oct. 30, 2026, in Albany, NY.",
  "results": null,
  "info": null,
- "watch": [],
+ "watch": [
+  [
+   "ESPN+",
+   "https://www.espn.com/watch/player/_/id/220ec538-5af5-4088-8278-af5d4c1e66af"
+  ]
+ ],
  "lanes": [],
  "hub": "/championships/"
 }
