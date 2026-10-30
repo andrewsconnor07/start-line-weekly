@@ -10,9 +10,14 @@
  "headline": "Liberty League Cross Country Championships",
  "status": "preview",
  "summary": "No. 8 RPI men.",
- "results": null,
+ "results": "https://results.leonetiming.com/xc.html?mid=9274",
  "info": null,
- "watch": [],
+ "watch": [
+  [
+   "Team1Sports",
+   "https://www.team1sports.com/college/ag/?B=4251096"
+  ]
+ ],
  "lanes": [],
  "hub": "/championships/"
 }
