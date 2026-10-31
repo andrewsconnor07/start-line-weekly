@@ -10,9 +10,14 @@
  "headline": "NEWMAC Cross Country Championships",
  "status": "preview",
  "summary": "No. 10 MIT men take on No. 25 WPI, with Babson also in the men’s field. MIT’s women are tied for No. 9.",
- "results": "https://www.milesplit.com/meets/779665-newmac-cross-country-championships-2026/results",
+ "results": "https://results.millenniumrunning.com/meets/77369",
  "info": null,
- "watch": [],
+ "watch": [
+  [
+   "NSN Sports",
+   "https://www.nsnsports.net/conferences/newmac/"
+  ]
+ ],
  "lanes": [],
  "hub": "/championships/"
 }
