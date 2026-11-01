@@ -1,47 +1,52 @@
 {
- "slug": "2026-sec-cross-country-championships",
- "lvl": "d1",
- "iso": "2026-10-30",
- "week": "Oct 26–Nov 1, 2026",
- "status": "preview",
- "name": "SEC Cross Country Championships",
- "date": "Fri Oct 30",
- "where": "Columbia, MO · host Missouri · Gans Creek Cross Country Course",
- "headline": "SEC: Alabama, Arkansas and Florida put three top-10 men’s teams in one race",
- "summary": "No. 4 Alabama, No. 7 Arkansas and No. 9 Florida race for the men’s title at Gans Creek, and Alabama’s men and women were picked to win the league in the preseason coaches’ poll. No. 4 Florida women, last year’s champions, meet No. 9 Alabama.",
- "lanes": [
-  [
-   "4",
-   "Alabama",
-   "Men"
+  "slug": "2026-sec-cross-country-championships",
+  "lvl": "d1",
+  "iso": "2026-10-30",
+  "week": "Oct 26–Nov 1, 2026",
+  "status": "final",
+  "name": "SEC Cross Country Championships",
+  "date": "Fri Oct 30",
+  "where": "Columbia, MO · host Missouri · Gans Creek Cross Country Course",
+  "headline": "SEC: Alabama sweeps the men’s and women’s titles",
+  "summary": "Alabama won both SEC titles. The No. 4 Crimson Tide men scored 37 points to beat No. 7 Arkansas (76) and No. 9 Florida (82), with Florida's Kelvin Cheruiyot winning the 8K in 22:03.1. The women's team also won, scoring 48 to Florida's 80 with South Carolina third at 110, as Alabama's Caren Kiplagat took the 6K in 18:46.5, 1.4 seconds ahead of Arkansas' Isca Chelangat.",
+  "lanes": [
+    [
+      "1",
+      "Alabama",
+      "Men · 37 pts"
+    ],
+    [
+      "2",
+      "Arkansas",
+      "Men · 76 pts"
+    ],
+    [
+      "3",
+      "Florida",
+      "Men · 82 pts"
+    ],
+    [
+      "1",
+      "Alabama",
+      "Women · 48 pts"
+    ],
+    [
+      "2",
+      "Florida",
+      "Women · 80 pts"
+    ],
+    [
+      "3",
+      "South Carolina",
+      "Women · 110 pts"
+    ]
   ],
-  [
-   "7",
-   "Arkansas",
-   "Men"
+  "results": "https://www.pttiming.com/event/fc8cf1f1-99df-4249-9f6c-153bf0f9da8e?pt=schedule",
+  "watch": [
+    [
+      "ESPN",
+      "https://www.espn.com/watch/player/_/id/3b727f0f-e758-4586-a73a-8e565266f0cc"
+    ]
   ],
-  [
-   "9",
-   "Florida",
-   "Men"
-  ],
-  [
-   "4",
-   "Florida",
-   "Women"
-  ],
-  [
-   "9",
-   "Alabama",
-   "Women"
-  ]
- ],
- "results": "https://www.pttiming.com/event/fc8cf1f1-99df-4249-9f6c-153bf0f9da8e?pt=schedule",
- "watch": [
-  [
-   "ESPN",
-   "https://www.espn.com/watch/player/_/id/3b727f0f-e758-4586-a73a-8e565266f0cc"
-  ]
- ],
- "insights": []
+  "insights": []
 }

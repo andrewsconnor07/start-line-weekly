@@ -1,64 +1,886 @@
 {
- "week": "Oct 26–Nov 1, 2026",
- "title": "Championship Week",
- "meets": [
- {"name":"SWAC Cross Country Championships","lvl":"d1","conf":"SWAC","day":"2026-10-27","where":"Tallahassee, FL · Apalachee Regional Park","time":"Men 8:00 a.m. CT · Women 9:00 a.m. CT","why":"The SWAC opens championship week three days before everyone else.","results":"https://live.pttiming.com/xc-ptt.html?mid=9266","info":null,"watch":[["SWAC TV","https://tv.swac.org/"]],"recap":"Jackson State won the men's 8K with 41 points to Texas Southern's 51, led by freshman Ryan Achau, who won in 25:09.5 ahead of Bethune-Cookman's Jayden Santos-Gonzales (25:12.2). Alabama A&M won the women's 5K with 37 points to Florida A&M's 41, and Alabama A&M senior Laura Avila won in 18:16.4."},
- {"name":"UHSAA State Cross Country Championships","lvl":"hs","conf":"Utah","day":"2026-10-27","days":"Tue–Wed Oct 27–28","where":"Salt Lake City, UT · Sugar House Park","time":"6A 11:00 a.m. MT Tue · 2A 11:00 a.m. Wed","why":"Utah's six classes over two days: 6A, 3A and 5A on Tuesday, 2A, 1A and 4A on Wednesday. No. 6 American Fork and No. 7 Riverton boys and No. 5 Lone Peak girls are in DyeStat's national top 10. Tuesday's 6A races: Lehi boys won their first title since 1995 with 61 points to No. 6 American Fork's 66 and No. 7 Riverton's 82, and No. 5 Lone Peak girls won a fifth straight title with 30 points to American Fork's 86.","results":"https://sporttrax.com/meets/1419","info":"https://www.uhsaa.org/xc/2026/XCStateInfo.pdf","watch":[],"recap":"Lehi won the 6A boys title with 61 points to No. 6 American Fork's 66 and No. 7 Riverton's 82, and Herriman's Trevin Lounsbury won the race in 15:08.08; No. 5 Lone Peak won the 6A girls with 30 points to American Fork's 86, and Farmington's Ellie Dorius won in 17:54.41. The other boys team champions were Maple Mountain (5A), Mountain View (4A), Ogden (3A), Grand County (2A) and Bryce Valley (1A), and the other girls champions were Viewmont (5A), Orem (4A), Canyon View (3A), North Summit (2A) and Panguitch (1A). Ogden's Avery Barton ran the fastest girls time of the meet, 17:49.88, to win 3A, and Northridge's Jeff Hazard won 5A boys in 15:06.53."},
- {"name":"MHSAA State Cross Country Championships","lvl":"hs","conf":"Mississippi","day":"2026-10-29","days":"Thu Oct 29 & Sat Oct 31","where":"Clinton, MS · Choctaw Trails, Mississippi College","time":"3A girls 10:00 a.m. Thu","why":"Mississippi's 1A, 2A and 3A titles are Thursday; 4A through 7A race Saturday.","results":"https://milesplit.live/meets/772502","info":"https://www.misshsaa.com/2026/08/03/2026-cross-country-championships/","watch":[],"recap":"Thursday, 1A–3A: St. Andrew’s Episcopal swept 3A, the boys with 22 points behind champion Jackson Jumper (16:43.87) and the girls with 31 behind champion Evelyn Spellings (19:39.08). 2A: Myrtle won the boys title (60) and Enterprise-Clarke the girls (44); Wesson’s Dalton Jackson (17:34.90) and Myrtle’s Ally Murphy (19:43.71) won the individual titles. 1A: French Camp won the boys (36) behind champion Matthew Simmons (16:34.77), and Tupelo Christian won the girls (30) with a 1-2-3 led by Alexia Fleming (20:48.78). 4A–7A race Saturday."},
- {"name":"ACC Cross Country Championships","lvl":"d1","conf":"ACC","day":"2026-10-30","where":"Blacksburg, VA · host Virginia Tech · Buford Meredith XC Course","time":"","why":"No. 2 NC State and No. 8 Notre Dame women; No. 8 Syracuse and No. 10 Wake Forest men. NC State's Hannah Gapes won Pre-Nationals in a course record two weeks ago.","results":"https://www.flashresults.com/2027_Meets/xc/ACC/index.htm","info":null,"watch":[["ACC Network","https://www.espn.com/watch/catalog/2fd594b9-ec76-49c8-b882-075b3388e29d/cross-country-running"]]},
- {"name":"SEC Cross Country Championships","lvl":"d1","conf":"SEC","day":"2026-10-30","where":"Columbia, MO · host Missouri","time":"","why":"Three top-10 men's teams in one race: No. 4 Alabama, No. 7 Arkansas and No. 9 Florida. On the women's side, No. 4 Florida meets No. 9 Alabama.","results":"https://www.pttiming.com/event/fc8cf1f1-99df-4249-9f6c-153bf0f9da8e?pt=schedule","info":null,"watch":[["ESPN","https://www.espn.com/watch/player/_/id/3b727f0f-e758-4586-a73a-8e565266f0cc"]],"top":true},
- {"name":"Big Ten Cross Country Championships","lvl":"d1","conf":"Big Ten","day":"2026-10-30","where":"Verona, WI · host Wisconsin · Zimmer XC Course","time":"First race 10:35 a.m.","why":"No. 6 Oregon men lead the Big Ten field.","results":"https://live.pttiming.com/xc-ptt.html?mid=9277","info":null,"watch":[["Big Ten Network","https://www.foxsports.com/live/btn"]]},
- {"name":"Mountain West Cross Country Championships","lvl":"d1","conf":"Mountain West","day":"2026-10-30","where":"Reno, NV · host Nevada","time":"","why":"No. 1 New Mexico men and No. 6 New Mexico women.","results":"https://www.rtspt.com/events/mw/2026-XC/","info":null,"watch":[["Mountain West Network","https://watch.themw.com/"]]},
- {"name":"Big Sky Cross Country Championships","lvl":"d1","conf":"Big Sky","day":"2026-10-30","where":"Flagstaff, AZ · Buffalo Park","time":"Men 10:00 a.m. MST · Women 11:00 a.m. MST","why":"No. 5 Northern Arizona women race at altitude on their home course.","results":"https://results.wingfootfinish.com/meets/78121","info":"https://bigskyconf.com/news/2026/10/27/northern-arizona-hosts-2026-big-sky-conference-cross-country-championships.aspx","watch":[]},
- {"name":"Big East Cross Country Championships","lvl":"d1","conf":"Big East","day":"2026-10-30","where":"Mechanicsville, VA","time":"","why":"","results":"https://blueridgetiming.live/meets/77746","info":null,"watch":[["ESPN+","https://www.espn.com/watch/player/_/id/b465839e-4502-42f1-9d2e-d6aac16f066b"]]},
- {"name":"Pac-12 Cross Country Championships","lvl":"d1","conf":"Pac-12","day":"2026-10-30","where":"Boise, ID · host Boise State · Warm Springs Golf Course","time":"","why":"Seven men's teams and nine women's teams.","results":"https://swtiming.anet.live/meets/79660","info":null,"watch":[["Pac-12 on YouTube","https://www.youtube.com/pac12/streams"]]},
- {"name":"WCC Cross Country Championships","lvl":"d1","conf":"WCC","day":"2026-10-30","where":"San Diego, CA · Tecolote Shores","time":"","why":"","results":"https://rt.trackscoreboard.com/meets/10302026/events","info":null,"watch":[["ESPN+","https://www.espn.com/watch/player/_/id/e16b76b8-49ee-4e70-b22f-9979c75aea4c"]]},
- {"name":"Sun Belt Cross Country Championships","lvl":"d1","conf":"Sun Belt","day":"2026-10-30","where":"Foley, AL","time":"","why":"","results":"https://live.xpresstiming.com/meets/79395","info":null,"watch":[["ESPN+","https://www.espn.com/watch/player/_/id/8caed623-41e5-4910-a097-c25434a30d8c"]]},
- {"name":"MAC Cross Country Championships","lvl":"d1","conf":"MAC","day":"2026-10-30","where":"Kalamazoo, MI","time":"","why":"","results":"https://live.michianatiming.com/meets/79978","info":null,"watch":[]},
- {"name":"ASUN Cross Country Championships","lvl":"d1","conf":"ASUN","day":"2026-10-30","where":"Richmond, KY · host Eastern Kentucky · University Club at Arlington","time":"","why":"","results":"https://live.prtime.tf/meets/79798","info":null,"watch":[["ESPN+ · Women","https://www.espn.com/watch/player/_/id/4e9a3aeb-511a-4571-9c16-312e0c271839"],["ESPN+ · Men","https://www.espn.com/watch/player/_/id/8215092d-9dd6-43f6-ba07-169b33b7ff53"]]},
- {"name":"UAC Cross Country Championships","lvl":"d1","conf":"UAC","day":"2026-10-30","where":"Richmond, KY","time":"","why":"","results":"https://live.prtime.tf/meets/79798","info":null,"watch":[]},
- {"name":"CAA Cross Country Championships","lvl":"d1","conf":"CAA","day":"2026-10-30","where":"Long Island, NY · host Hofstra","time":"","why":"","results":"https://elitefeats.com/xc-Results/?ID=26247","info":null,"watch":[]},
- {"name":"Missouri Valley Cross Country Championships","lvl":"d1","conf":"MVC","day":"2026-10-30","where":"Des Moines, IA · host Drake · A.H. Blank Golf Course","time":"","why":"","results":"https://results.wayzatatiming.com/meets/79753","info":null,"watch":[]},
- {"name":"America East Cross Country Championships","lvl":"d1","conf":"America East","day":"2026-10-30","where":"Albany, NY · host UAlbany","time":"","why":"","results":"https://lancer.trackscoreboard.com/meets/527/events","info":null,"watch":[["ESPN+","https://www.espn.com/watch/player/_/id/220ec538-5af5-4088-8278-af5d4c1e66af"]]},
- {"name":"Big South Cross Country Championships","lvl":"d1","conf":"Big South","day":"2026-10-30","where":"Spartanburg, SC · host USC Upstate · Milliken Research Park","time":"","why":"","results":"https://live.timinginc.com/meets/79955","info":null,"watch":[]},
- {"name":"OVC Cross Country Championships","lvl":"d1","conf":"OVC","day":"2026-10-30","where":"Cape Girardeau, MO · host Southeast Missouri","time":"10:00 a.m.","why":"","results":"https://milesplit.live/meets/783544/schedule","info":null,"watch":[]},
- {"name":"Southland Cross Country Championships","lvl":"d1","conf":"Southland","day":"2026-10-30","where":"Lake Charles, LA","time":"","why":"","results":"https://milesplit.live/meets/788061/schedule","info":null,"watch":[["ESPN+","https://www.espn.com/watch/player/_/id/3b4f7044-ac52-4662-a336-bb687724806a"]]},
- {"name":"Iowa State Cross Country Championships","lvl":"hs","conf":"Iowa","day":"2026-10-30","days":"Fri–Sat Oct 30–31","where":"Fort Dodge, IA · Kennedy Park","time":"","why":"Classes 1A and 2A race Friday; 3A and 4A race Saturday.","results":"https://results.wayzatatiming.com/meets/79752","info":null,"watch":[]},
- {"name":"Big 12 Cross Country Championships","lvl":"d1","conf":"Big 12","day":"2026-10-31","where":"Stillwater, OK · host Oklahoma State · Greiner Family OSU XC Course","time":"Women 10:00 a.m. CT · Men 11:00 a.m. CT","why":"The deepest conference meet in the country. Men: No. 2 Oklahoma State, No. 3 Colorado and No. 5 BYU. Women: No. 1 BYU, No. 3 West Virginia, No. 7 Oklahoma State and No. 10 Colorado. On ESPN.","results":"https://www.pttiming.com/event/fda0d982-abfd-43af-ae80-684ab8d21f62?pt=schedule","info":"https://static.okstate.com/custompages/b12xc-26/","watch":[["ESPN+","https://www.espn.com/watch/catalog/2fd594b9-ec76-49c8-b882-075b3388e29d/cross-country-running"]],"top":true},
- {"name":"Ivy League Heptagonal Cross Country Championships","lvl":"d1","conf":"Ivy","day":"2026-10-31","where":"Attleboro, MA · host Harvard","time":"","why":"","results":"https://results.leonetiming.com/xc.html?mid=9264","info":null,"watch":[]},
- {"name":"American Cross Country Championships","lvl":"d1","conf":"American","day":"2026-10-31","where":"New Orleans, LA · host Tulane · Lake Oaks Park","time":"","why":"Tulane's Silas Kiptanui, the Pre-National men's champion, races at home.","results":"https://live.pttiming.com/xc-ptt.html?mid=9278","info":null,"watch":[["ESPN+","https://www.espn.com/watch/player/_/id/df5cb365-2f10-4d9a-a01e-9d14318ec2b5"]]},
- {"name":"SoCon Cross Country Championships","lvl":"d1","conf":"SoCon","day":"2026-10-31","where":"Mill Spring, NC · Tryon International Equestrian Center","time":"","why":"","results":"https://snapresults.snaptiming.com/meets/80022","info":null,"watch":[]},
- {"name":"Patriot League Cross Country Championships","lvl":"d1","conf":"Patriot","day":"2026-10-31","where":"Lewisburg, PA · host Bucknell · Bucknell Golf Club","time":"","why":"Navy men and Army women are the favorites, with host Bucknell the main challenger.","results":"https://results.leonetiming.com/xc.html?mid=9265","info":null,"watch":[]},
- {"name":"Conference USA Cross Country Championships","lvl":"d1","conf":"C-USA","day":"2026-10-31","where":"Huntsville, AL · John Hunt Park","time":"","why":"","results":"https://live.xpresstiming.com/meets/79397","info":null,"watch":[["ESPN+","https://www.espn.com/watch/player/_/id/8a44cc62-9e40-4392-9122-eb6c36349443"]]},
- {"name":"Atlantic 10 Cross Country Championships","lvl":"d1","conf":"A-10","day":"2026-10-31","where":"Mechanicsville, VA · host Richmond · Pole Green Park","time":"","why":"","results":"https://blueridgetiming.live/meets/78126","info":null,"watch":[["ESPN+","https://www.espn.com/watch/player/_/id/80f12bff-3d45-46e9-bc20-15510f194d8a"]]},
- {"name":"Big West Cross Country Championships","lvl":"d1","conf":"Big West","day":"2026-10-31","where":"Riverside, CA · host UC Riverside · Ag/Ops course","time":"","why":"","results":"https://finishedresults.trackscoreboard.com/meets/14367","info":null,"watch":[]},
- {"name":"Summit League Cross Country Championships","lvl":"d1","conf":"Summit","day":"2026-10-31","where":"St. Paul, MN · host St. Thomas","time":"","why":"","results":"https://results.wayzatatiming.com/meets/79755","info":null,"watch":[]},
- {"name":"Horizon League Cross Country Championships","lvl":"d1","conf":"Horizon","day":"2026-10-31","where":"Clinton, PA · host Robert Morris · Youthtowne XC Course","time":"Women 11:00 a.m. · Men 12:00 p.m.","why":"","results":"https://milesplit.live/meets/792810/schedule","info":null,"watch":[]},
- {"name":"NEC Cross Country Championships","lvl":"d1","conf":"NEC","day":"2026-10-31","where":"Brookville, NY · host LIU","time":"","why":"Central Connecticut women chase a third straight title.","results":"https://elitefeats.com/xc-Results/?ID=25612","info":null,"watch":[]},
- {"name":"MEAC Cross Country Championships","lvl":"d1","conf":"MEAC","day":"2026-10-30","where":"Cary, NC · WakeMed Soccer Park","time":"Women 11:00 a.m. · Men 12:00 p.m.","why":"","results":"https://blueridgetiming.live/meets/79005","info":null,"watch":[["MEAC Digital Network","https://watch.meacsports.com/program-group/de4296c31c951199cb4f9747ab78f3cb/program/fc6a3e9da6b9fc33810bbb00765965f9"]]},
- {"name":"NESCAC Cross Country Championships","lvl":"d3","conf":"NESCAC","day":"2026-10-31","where":"Middlebury, VT · host Middlebury","time":"Women 11:00 a.m. ET · Men noon ET","why":"Three top-10 women's teams: No. 2 Middlebury at home, No. 4 Williams and No. 7 Tufts. Middlebury beat Williams 63-65 at Connecticut College two weeks ago.","results":"https://live.802timing.com/meets/79991","info":null,"watch":[["NSN live video","https://www.nsnsports.net/conferences/nescac/?bfplayvid=4711484"]],"top":true},
- {"name":"UAA Cross Country Championships","lvl":"d3","conf":"UAA","day":"2026-10-31","where":"Warrenville, IL · host Chicago · St. James Farm","time":"","why":"No. 1 NYU, No. 6 Chicago and No. 8 Washington (Mo.) women; No. 7 Washington (Mo.) and No. 9 NYU men.","results":"https://live.timingmd.net/meets/80153","info":null,"watch":[]},
- {"name":"WIAC Cross Country Championships","lvl":"d3","conf":"WIAC","day":"2026-10-31","where":"Whitewater, WI · host UW-Whitewater","time":"","why":"No. 5 UW-La Crosse and No. 6 UW-Stevens Point men; No. 3 UW-La Crosse women.","results":"https://live.athletic.net/meets/78578","info":null,"watch":[]},
- {"name":"CCIW Cross Country Championships","lvl":"d3","conf":"CCIW","day":"2026-10-31","where":"Warrenville, IL · host Carroll · St. James Farm","time":"","why":"No. 4 North Central men, up seven spots in this week's poll.","results":"https://live.timingmd.net/meets/80153","info":null,"watch":[]},
- {"name":"Empire 8 Cross Country Championships","lvl":"d3","conf":"Empire 8","day":"2026-10-31","where":"Utica, NY · host SUNY Poly","time":"Women 11:00 a.m.","why":"No. 3 SUNY Geneseo men; Geneseo's women go for a third straight title.","results":"https://results.leonetiming.com/xc.html?mid=9272","info":null,"watch":[]},
- {"name":"Liberty League Cross Country Championships","lvl":"d3","conf":"Liberty League","day":"2026-10-31","where":"Annandale-on-Hudson, NY · host Bard","time":"","why":"No. 8 RPI men.","results":"https://results.leonetiming.com/xc.html?mid=9274","info":null,"watch":[["Team1Sports","https://www.team1sports.com/college/ag/?B=4251096"]]},
- {"name":"NEWMAC Cross Country Championships","lvl":"d3","conf":"NEWMAC","day":"2026-10-31","where":"Northampton, MA · host Smith","time":"","why":"No. 10 MIT men take on No. 25 WPI, with Babson also in the men’s field. MIT’s women are tied for No. 9.","results":"https://results.millenniumrunning.com/meets/77369","info":null,"watch":[["NSN Sports","https://www.nsnsports.net/conferences/newmac/"]]},
- {"name":"MIAC Cross Country Championships","lvl":"d3","conf":"MIAC","day":"2026-10-31","where":"Northfield, MN · host St. Olaf","time":"Women 11:00 a.m. CT · Men 12:00 p.m. CT","why":"Northfield hosts the NCAA D-III Championships three weeks later, at Carleton.","results":"https://live.herostiming.com/meets/78988","info":null,"watch":[]},
- {"name":"CHSAA State Cross Country Championships","lvl":"hs","conf":"Colorado","day":"2026-10-31","where":"Colorado Springs, CO · Norris Penrose Event Center","time":"Nine races, first at 9:00 a.m. MT; 5A girls 1:00 p.m., 5A boys 2:20 p.m.","why":"The deepest state final of the week. Niwot (No. 4 boys, No. 7 girls), No. 9 Boulder, No. 13 Fairview, No. 14 Heritage, No. 16 ThunderRidge and No. 20 Arapahoe girls, plus Northfield's Abdi Hassan (No. 2 nationally), Coronado's Oliver Horton (No. 10) and Eaton's Delaney Reuter (No. 9 girls). No. 29 Mountain Vista looks to pull an upset in the boys race with its star-studded duo of Benjamin Adams and Riley Kiziah.","results":"https://chsaanow.com/results/cross-country/2026","info":null,"watch":[["NFHS Network","https://www.nfhsnetwork.com/events/chsaa/gamfe42379abf"]],"top":true},
- {"name":"IHSAA State Cross Country Finals","lvl":"hs","conf":"Indiana","day":"2026-10-31","where":"Terre Haute, IN · LaVern Gibson Championship Course","time":"Boys 1:00 p.m. ET","why":"Indiana's one-class final on the NCAA Championships course. Springs Valley's Calvin Seitz, Fort Wayne Carroll's boys and Homestead's girls all won regional titles last weekend.","results":"https://milesplit.live/meets/772823/schedule","info":null,"watch":[]},
- {"name":"KSHSAA State Cross Country Championships","lvl":"hs","conf":"Kansas","day":"2026-10-31","where":"Lawrence, KS · Rim Rock Farm (3A, 5A, 6A) · Wamego Country Club (1A, 2A, 4A)","time":"","why":"Kapaun Mount Carmel's Ava Claasen is No. 10 in DyeStat's girls individual rankings.","results":"https://ks.milesplit.com/meets/787763-kshsaa-state-championship-3a-5a-6a-2026/results","info":null,"watch":[]},
- {"name":"KHSAA State Cross Country Championships","lvl":"hs","conf":"Kentucky","day":"2026-10-31","where":"Lexington, KY · Kentucky Horse Park","time":"","why":"","results":"https://ky.milesplit.com/meets/774035-2026-khsaa-state-cross-country-championships-2026","info":"https://khsaa.org/2026-2027-state-cross-country-meet-schedule/","watch":[]},
- {"name":"WIAA State Cross Country Championships","lvl":"hs","conf":"Wisconsin","day":"2026-10-31","where":"Wisconsin Rapids, WI · The Ridges Golf Course","time":"","why":"","results":"https://live.pttiming.com/xc-ptt.html?mid=9282","info":null,"watch":[]},
- {"name":"WVSSAC State Cross Country Championships","lvl":"hs","conf":"West Virginia","day":"2026-10-31","where":"Ona, WV · host Cabell Midland · Cabell Midland XC Course","time":"","why":"","results":"https://wv.milesplit.com/meets/783632-2026-wvssac-state-cross-country-championships-2026","info":null,"watch":[]},
- {"name":"Gulf South Cross Country Championships","lvl":"d2","conf":"Gulf South","day":"2026-11-06","where":"Nashville, TN","time":"Men 9:00 a.m. ET · Women 9:45 a.m. ET","why":"No. 6 Lee men and No. 10 Lee women.","results":null,"info":null,"watch":[],"next":true},
- {"name":"RMAC Cross Country Championships","lvl":"d2","conf":"RMAC","day":"2026-11-07","where":"Rapid City, SD","time":"","why":"Men: No. 2 Colorado School of Mines, No. 3 Adams State and No. 9 Western Colorado. Women: No. 1 Adams State, No. 3 Mines, No. 5 Western Colorado and No. 7 UC-Colorado Springs.","results":null,"info":null,"watch":[],"next":true},
- {"name":"GLIAC Cross Country Championships","lvl":"d2","conf":"GLIAC","day":"2026-11-07","where":"Hammond, IN · PNW Cross Country Course","time":"11:00 a.m.","why":"No. 5 Grand Valley State men and No. 6 Grand Valley State women.","results":null,"info":null,"watch":[],"next":true},
- {"name":"CCAA Cross Country Championships","lvl":"d2","conf":"CCAA","day":"2026-11-07","where":"San Bernardino, CA · host Cal State San Bernardino · CSUSB XC Course","time":"","why":"No. 8 Chico State men and No. 4 Chico State women.","results":null,"info":null,"watch":[],"next":true},
- {"name":"PSAC Cross Country Championships","lvl":"d2","conf":"PSAC","day":"2026-11-07","where":"Bloomsburg, PA · host Bloomsburg","time":"","why":"","results":null,"info":null,"watch":[],"next":true},
- {"name":"GLVC Cross Country Championships","lvl":"d2","conf":"GLVC","day":"2026-11-07","where":"Springfield, MO","time":"","why":"","results":null,"info":null,"watch":[],"next":true},
- {"name":"NSIC Cross Country Championships","lvl":"d2","conf":"NSIC","day":"2026-11-07","where":"Sioux Falls, SD · Yankton Trail Park","time":"11:15 a.m.","why":"","results":null,"info":null,"watch":[],"next":true},
- {"name":"NCAA Division I Cross Country Championships","lvl":"d1","conf":"NCAA","day":"2026-11-21","where":"Terre Haute, IN · LaVern Gibson Championship Course","time":"","why":"The national championship. Regionals are Nov. 13.","results":null,"info":null,"watch":[],"next":true},
- {"name":"NCAA Division III Cross Country Championships","lvl":"d3","conf":"NCAA","day":"2026-11-21","where":"Northfield, MN · host Carleton","time":"","why":"The D-III national championship.","results":null,"info":null,"watch":[],"next":true},
- {"name":"NCAA Division II Cross Country Championships","lvl":"d2","conf":"NCAA","day":"2026-12-04","where":"Lawrence, KS · Rim Rock Farm","time":"","why":"The D-II national championship.","results":null,"info":null,"watch":[],"next":true}
- ]
+  "week": "Oct 26–Nov 1, 2026",
+  "title": "Championship Week",
+  "meets": [
+    {
+      "name": "SWAC Cross Country Championships",
+      "lvl": "d1",
+      "conf": "SWAC",
+      "day": "2026-10-27",
+      "where": "Tallahassee, FL · Apalachee Regional Park",
+      "time": "Men 8:00 a.m. CT · Women 9:00 a.m. CT",
+      "why": "The SWAC opens championship week three days before everyone else.",
+      "results": "https://live.pttiming.com/xc-ptt.html?mid=9266",
+      "info": null,
+      "watch": [
+        [
+          "SWAC TV",
+          "https://tv.swac.org/"
+        ]
+      ],
+      "recap": "Jackson State won the men's 8K with 41 points to Texas Southern's 51, led by freshman Ryan Achau, who won in 25:09.5 ahead of Bethune-Cookman's Jayden Santos-Gonzales (25:12.2). Alabama A&M won the women's 5K with 37 points to Florida A&M's 41, and Alabama A&M senior Laura Avila won in 18:16.4."
+    },
+    {
+      "name": "UHSAA State Cross Country Championships",
+      "lvl": "hs",
+      "conf": "Utah",
+      "day": "2026-10-27",
+      "days": "Tue–Wed Oct 27–28",
+      "where": "Salt Lake City, UT · Sugar House Park",
+      "time": "6A 11:00 a.m. MT Tue · 2A 11:00 a.m. Wed",
+      "why": "Utah's six classes over two days: 6A, 3A and 5A on Tuesday, 2A, 1A and 4A on Wednesday. No. 6 American Fork and No. 7 Riverton boys and No. 5 Lone Peak girls are in DyeStat's national top 10. Tuesday's 6A races: Lehi boys won their first title since 1995 with 61 points to No. 6 American Fork's 66 and No. 7 Riverton's 82, and No. 5 Lone Peak girls won a fifth straight title with 30 points to American Fork's 86.",
+      "results": "https://sporttrax.com/meets/1419",
+      "info": "https://www.uhsaa.org/xc/2026/XCStateInfo.pdf",
+      "watch": [],
+      "recap": "Lehi won the 6A boys title with 61 points to No. 6 American Fork's 66 and No. 7 Riverton's 82, and Herriman's Trevin Lounsbury won the race in 15:08.08; No. 5 Lone Peak won the 6A girls with 30 points to American Fork's 86, and Farmington's Ellie Dorius won in 17:54.41. The other boys team champions were Maple Mountain (5A), Mountain View (4A), Ogden (3A), Grand County (2A) and Bryce Valley (1A), and the other girls champions were Viewmont (5A), Orem (4A), Canyon View (3A), North Summit (2A) and Panguitch (1A). Ogden's Avery Barton ran the fastest girls time of the meet, 17:49.88, to win 3A, and Northridge's Jeff Hazard won 5A boys in 15:06.53."
+    },
+    {
+      "name": "MHSAA State Cross Country Championships",
+      "lvl": "hs",
+      "conf": "Mississippi",
+      "day": "2026-10-29",
+      "days": "Thu Oct 29 & Sat Oct 31",
+      "where": "Clinton, MS · Choctaw Trails, Mississippi College",
+      "time": "3A girls 10:00 a.m. Thu",
+      "why": "Mississippi's 1A, 2A and 3A titles are Thursday; 4A through 7A race Saturday.",
+      "results": "https://milesplit.live/meets/772502",
+      "info": "https://www.misshsaa.com/2026/08/03/2026-cross-country-championships/",
+      "watch": [],
+      "recap": "Thursday, 1A–3A: St. Andrew’s Episcopal swept 3A, the boys with 22 points behind champion Jackson Jumper (16:43.87) and the girls with 31 behind champion Evelyn Spellings (19:39.08). 2A: Myrtle won the boys title (60) and Enterprise-Clarke the girls (44); Wesson’s Dalton Jackson (17:34.90) and Myrtle’s Ally Murphy (19:43.71) won the individual titles. 1A: French Camp won the boys (36) behind champion Matthew Simmons (16:34.77), and Tupelo Christian won the girls (30) with a 1-2-3 led by Alexia Fleming (20:48.78). 4A–7A race Saturday."
+    },
+    {
+      "name": "ACC Cross Country Championships",
+      "lvl": "d1",
+      "conf": "ACC",
+      "day": "2026-10-30",
+      "where": "Blacksburg, VA · host Virginia Tech · Buford Meredith XC Course",
+      "time": "",
+      "why": "No. 2 NC State and No. 8 Notre Dame women; No. 8 Syracuse and No. 10 Wake Forest men. NC State's Hannah Gapes won Pre-Nationals in a course record two weeks ago.",
+      "results": "https://www.flashresults.com/2027_Meets/xc/ACC/index.htm",
+      "info": null,
+      "watch": [
+        [
+          "ACC Network",
+          "https://www.espn.com/watch/catalog/2fd594b9-ec76-49c8-b882-075b3388e29d/cross-country-running"
+        ]
+      ],
+      "recap": "No. 2 NC State won the women's title with 65 points, ahead of Clemson (113), as Hannah Gapes took the individual title in 18:23.8. On the men's side, No. 10 Wake Forest won with 48 points, with Virginia Tech and Syracuse tied at 94 and Notre Dame fourth at 95; Louisville's Elsingi Kiruto won the 8K in 22:03.5, with Wake Forest's Rocky Hansen second in 22:10.0."
+    },
+    {
+      "name": "SEC Cross Country Championships",
+      "lvl": "d1",
+      "conf": "SEC",
+      "day": "2026-10-30",
+      "where": "Columbia, MO · host Missouri",
+      "time": "",
+      "why": "Three top-10 men's teams in one race: No. 4 Alabama, No. 7 Arkansas and No. 9 Florida. On the women's side, No. 4 Florida meets No. 9 Alabama.",
+      "results": "https://www.pttiming.com/event/fc8cf1f1-99df-4249-9f6c-153bf0f9da8e?pt=schedule",
+      "info": null,
+      "watch": [
+        [
+          "ESPN",
+          "https://www.espn.com/watch/player/_/id/3b727f0f-e758-4586-a73a-8e565266f0cc"
+        ]
+      ],
+      "top": true,
+      "recap": "Alabama won both SEC titles. The No. 4 Crimson Tide men scored 37 points to beat No. 7 Arkansas (76) and No. 9 Florida (82), with Florida's Kelvin Cheruiyot winning the 8K in 22:03.1. The women's team also won, scoring 48 to Florida's 80 with South Carolina third at 110, as Alabama's Caren Kiplagat took the 6K in 18:46.5, 1.4 seconds ahead of Arkansas' Isca Chelangat."
+    },
+    {
+      "name": "Big Ten Cross Country Championships",
+      "lvl": "d1",
+      "conf": "Big Ten",
+      "day": "2026-10-30",
+      "where": "Verona, WI · host Wisconsin · Zimmer XC Course",
+      "time": "First race 10:35 a.m.",
+      "why": "No. 6 Oregon men lead the Big Ten field.",
+      "results": "https://live.pttiming.com/xc-ptt.html?mid=9277",
+      "info": null,
+      "watch": [
+        [
+          "Big Ten Network",
+          "https://www.foxsports.com/live/btn"
+        ]
+      ],
+      "recap": "Oregon swept the team titles. The No. 6 Ducks men scored 23 points to beat No. 14 Wisconsin (62) and Michigan State (90), with Oregon's Simeon Birnbaum winning the 8K in 23:04.2. In the women's race Oregon scored 35 to Northwestern's 90 and Penn State's 92, and Diana Cherotich won in 18:56.1."
+    },
+    {
+      "name": "Mountain West Cross Country Championships",
+      "lvl": "d1",
+      "conf": "Mountain West",
+      "day": "2026-10-30",
+      "where": "Reno, NV · host Nevada",
+      "time": "",
+      "why": "No. 1 New Mexico men and No. 6 New Mexico women.",
+      "results": "https://www.rtspt.com/events/mw/2026-XC/",
+      "info": null,
+      "watch": [
+        [
+          "Mountain West Network",
+          "https://watch.themw.com/"
+        ]
+      ],
+      "recap": "New Mexico swept both titles. The No. 1 Lobo men scored 15 points, with Air Force second (54) and Wyoming third (84), and New Mexico's Evans Kiplagat won the 8K in 22:54.3. The No. 6 New Mexico women scored 19 to Wyoming's 55 and Air Force's 58, and Pamela Kosgei won the 6K in 18:49.4."
+    },
+    {
+      "name": "Big Sky Cross Country Championships",
+      "lvl": "d1",
+      "conf": "Big Sky",
+      "day": "2026-10-30",
+      "where": "Flagstaff, AZ · Buffalo Park",
+      "time": "Men 10:00 a.m. MST · Women 11:00 a.m. MST",
+      "why": "No. 5 Northern Arizona women race at altitude on their home course.",
+      "results": "https://results.wingfootfinish.com/meets/78121",
+      "info": "https://bigskyconf.com/news/2026/10/27/northern-arizona-hosts-2026-big-sky-conference-cross-country-championships.aspx",
+      "watch": [],
+      "recap": "Northern Arizona won both Big Sky titles at Buffalo Park. The No. 5 Lumberjack women scored 16 points to Montana State's 77, with Ava Mitchell winning the 5K in 15:35.1. The NAU men scored 20 to Montana State's 71 and Weber State's 79, led by Erik Le Roux in 23:50.9."
+    },
+    {
+      "name": "Big East Cross Country Championships",
+      "lvl": "d1",
+      "conf": "Big East",
+      "day": "2026-10-30",
+      "where": "Mechanicsville, VA",
+      "time": "",
+      "why": "",
+      "results": "https://blueridgetiming.live/meets/77746",
+      "info": null,
+      "watch": [
+        [
+          "ESPN+",
+          "https://www.espn.com/watch/player/_/id/b465839e-4502-42f1-9d2e-d6aac16f066b"
+        ]
+      ],
+      "recap": "Providence won the women's title with 36 points, ahead of Villanova (44) and Connecticut (59), as Georgetown's Barrett Justema won the 6K in 19:31.5. Georgetown took the men's title with 33 points to Villanova's 40, with Villanova's Bailey Habler winning the 8K in 22:58.3."
+    },
+    {
+      "name": "Pac-12 Cross Country Championships",
+      "lvl": "d1",
+      "conf": "Pac-12",
+      "day": "2026-10-30",
+      "where": "Boise, ID · host Boise State · Warm Springs Golf Course",
+      "time": "",
+      "why": "Seven men's teams and nine women's teams.",
+      "results": "https://swtiming.anet.live/meets/79660",
+      "info": null,
+      "watch": [
+        [
+          "Pac-12 on YouTube",
+          "https://www.youtube.com/pac12/streams"
+        ]
+      ],
+      "recap": "Washington State's Solomon Kipchoge won the men's 8K in 22:46.8 and Nelly Jemeli took the women's 6K in 19:57.0, but the team titles went separate ways. Gonzaga won the men's team race with 39 points ahead of Utah State (56) and Washington State (59), while Washington State won the women's title with 50 points to Boise State's 62."
+    },
+    {
+      "name": "WCC Cross Country Championships",
+      "lvl": "d1",
+      "conf": "WCC",
+      "day": "2026-10-30",
+      "where": "San Diego, CA · Tecolote Shores",
+      "time": "",
+      "why": "",
+      "results": "https://rt.trackscoreboard.com/meets/10302026/events",
+      "info": null,
+      "watch": [
+        [
+          "ESPN+",
+          "https://www.espn.com/watch/player/_/id/e16b76b8-49ee-4e70-b22f-9979c75aea4c"
+        ]
+      ],
+      "recap": "San Francisco won the women's title with 28 points, ahead of Portland (57) and Santa Clara (84), while Portland's Latham West took the individual win in 20:31.2. Portland won the men's title with 32 points to San Francisco's 65, and Portland's Nolan Turgeon won the 8K in 24:25.8."
+    },
+    {
+      "name": "Sun Belt Cross Country Championships",
+      "lvl": "d1",
+      "conf": "Sun Belt",
+      "day": "2026-10-30",
+      "where": "Foley, AL",
+      "time": "",
+      "why": "",
+      "results": "https://live.xpresstiming.com/meets/79395",
+      "info": null,
+      "watch": [
+        [
+          "ESPN+",
+          "https://www.espn.com/watch/player/_/id/8caed623-41e5-4910-a097-c25434a30d8c"
+        ]
+      ],
+      "recap": "App State won the men's title with 21 points, well ahead of Arkansas State (77) and Marshall (91); App State's Thomas Wlazlowski took the individual title in 23:33.3. Louisiana won the women's team race with 46 points over Southern Miss (81) and James Madison (86), while Marshall's Rachael Withrow won the 5K in 16:15.7."
+    },
+    {
+      "name": "MAC Cross Country Championships",
+      "lvl": "d1",
+      "conf": "MAC",
+      "day": "2026-10-30",
+      "where": "Kalamazoo, MI",
+      "time": "",
+      "why": "",
+      "results": "https://live.michianatiming.com/meets/79978",
+      "info": null,
+      "watch": [],
+      "recap": "Toledo swept the team titles. The men scored 21 points to beat Miami (Ohio) (66) and UMass Amherst (98), with Toledo's Patrick Kiprop winning the 8K in 23:20.9. The Rocket women scored 25 to UMass Amherst's 97 and Bowling Green's 101, and Akron's Mercy Jebitok won the 6K in 19:19.9."
+    },
+    {
+      "name": "ASUN Cross Country Championships",
+      "lvl": "d1",
+      "conf": "ASUN",
+      "day": "2026-10-30",
+      "where": "Richmond, KY · host Eastern Kentucky · University Club at Arlington",
+      "time": "",
+      "why": "",
+      "results": "https://live.prtime.tf/meets/79798",
+      "info": null,
+      "watch": [
+        [
+          "ESPN+ · Women",
+          "https://www.espn.com/watch/player/_/id/4e9a3aeb-511a-4571-9c16-312e0c271839"
+        ],
+        [
+          "ESPN+ · Men",
+          "https://www.espn.com/watch/player/_/id/8215092d-9dd6-43f6-ba07-169b33b7ff53"
+        ]
+      ],
+      "recap": "Lipscomb won both ASUN team titles: the men scored 16 points to North Florida's 66 and Bellarmine's 94, and the women scored 15 to North Florida's 65 and Florida Gulf Coast's 92. Camden Khon won the men's 8K in 24:17.2 and Harley Kletz the women's 5K in 17:12.0, both for Lipscomb."
+    },
+    {
+      "name": "UAC Cross Country Championships",
+      "lvl": "d1",
+      "conf": "UAC",
+      "day": "2026-10-30",
+      "where": "Richmond, KY",
+      "time": "",
+      "why": "",
+      "results": "https://live.prtime.tf/meets/79798",
+      "info": null,
+      "watch": [],
+      "recap": "Eastern Kentucky swept the UAC titles. The men scored 15 points to UT Arlington's 85 and Central Arkansas' 91, with Abel Kirui winning the 8K in 23:52.6. The women scored 20 to UT Arlington's 53 and Central Arkansas' 87, with Brighter Jepchumba winning the 5K in 16:24.4."
+    },
+    {
+      "name": "CAA Cross Country Championships",
+      "lvl": "d1",
+      "conf": "CAA",
+      "day": "2026-10-30",
+      "where": "Long Island, NY · host Hofstra",
+      "time": "",
+      "why": "",
+      "results": "https://elitefeats.com/xc-Results/?ID=26247",
+      "info": null,
+      "watch": [],
+      "recap": "William & Mary won the men's title with 34 points, edging Stony Brook (39), with Hofstra third (69); Hofstra's Fredrick Kipkosgei won the 8K in 23:11.7. Elon took the women's crown with 33 points ahead of Monmouth (78) and William & Mary (82), as Elon's Hannah Weber won the 6K in 20:36.6."
+    },
+    {
+      "name": "Missouri Valley Cross Country Championships",
+      "lvl": "d1",
+      "conf": "MVC",
+      "day": "2026-10-30",
+      "where": "Des Moines, IA · host Drake · A.H. Blank Golf Course",
+      "time": "",
+      "why": "",
+      "results": "https://results.wayzatatiming.com/meets/79753",
+      "info": null,
+      "watch": [],
+      "recap": "Bradley swept both team titles. The men scored 23 points to Illinois State's 60 and Drake's 96, with Bradley's Jayde Rosslee winning the 8K in 23:00.3. The Braves women scored 19 to Illinois State's 67 and Indiana State's 83, with Noelle Steines winning the 6K in 19:55.2."
+    },
+    {
+      "name": "America East Cross Country Championships",
+      "lvl": "d1",
+      "conf": "America East",
+      "day": "2026-10-30",
+      "where": "Albany, NY · host UAlbany",
+      "time": "",
+      "why": "",
+      "results": "https://lancer.trackscoreboard.com/meets/527/events",
+      "info": null,
+      "watch": [
+        [
+          "ESPN+",
+          "https://www.espn.com/watch/player/_/id/220ec538-5af5-4088-8278-af5d4c1e66af"
+        ]
+      ],
+      "recap": "UMass Lowell won the men's title with 49 points, ahead of Vermont (61), UMBC (69) and Binghamton (72); Binghamton's Robert Mayclim won the 8K in 23:59.7. Vermont took the women's title with 61 points over Maine (69) and UMass Lowell (101), while UMass Lowell's Mary-Kate Finn won the 5K in 17:05.7."
+    },
+    {
+      "name": "Big South Cross Country Championships",
+      "lvl": "d1",
+      "conf": "Big South",
+      "day": "2026-10-30",
+      "where": "Spartanburg, SC · host USC Upstate · Milliken Research Park",
+      "time": "",
+      "why": "",
+      "results": "https://live.timinginc.com/meets/79955",
+      "info": null,
+      "watch": [],
+      "recap": "Charleston Southern edged High Point 25-30 in the men's race, with Charleston Southern's Martin Iriondo winning the 8K in 23:45.2. High Point won the women's title with 38 points over UNC Asheville (67) and Charleston Southern (71), and High Point's Brianna Malone won the 5K in 16:42.6."
+    },
+    {
+      "name": "OVC Cross Country Championships",
+      "lvl": "d1",
+      "conf": "OVC",
+      "day": "2026-10-30",
+      "where": "Cape Girardeau, MO · host Southeast Missouri",
+      "time": "10:00 a.m.",
+      "why": "",
+      "results": "https://milesplit.live/meets/783544/schedule",
+      "info": null,
+      "watch": [],
+      "recap": "Southern Indiana swept the team titles at the OVC Championships in Cape Girardeau. The Screaming Eagles men scored 21 points to beat UT Martin (80), with Alex Nolan winning in 24:05.40 and teammate Jackson Nolan second in 24:10.70. The Southern Indiana women scored 34 to SE Missouri's 63, while Morehead State's Shelby Lamb won the individual title in 20:36.80."
+    },
+    {
+      "name": "Southland Cross Country Championships",
+      "lvl": "d1",
+      "conf": "Southland",
+      "day": "2026-10-30",
+      "where": "Lake Charles, LA",
+      "time": "",
+      "why": "",
+      "results": "https://milesplit.live/meets/788061/schedule",
+      "info": null,
+      "watch": [
+        [
+          "ESPN+",
+          "https://www.espn.com/watch/player/_/id/3b4f7044-ac52-4662-a336-bb687724806a"
+        ]
+      ],
+      "recap": "Stephen F. Austin won both Southland titles in Lake Charles. The SFA men scored 16 points to Texas A&M-Corpus Christi's 53, led by Eliud Kipkosgei's winning 23:31.36 with Paul Kiprotich second in 23:34.10. The SFA women scored 32 to Texas A&M-CC's 81, though Texas A&M-CC's Elizabeth Khatevi won the race in 18:53.56."
+    },
+    {
+      "name": "Iowa State Cross Country Championships",
+      "lvl": "hs",
+      "conf": "Iowa",
+      "day": "2026-10-30",
+      "days": "Fri–Sat Oct 30–31",
+      "where": "Fort Dodge, IA · Kennedy Park",
+      "time": "",
+      "why": "Classes 1A and 2A race Friday; 3A and 4A race Saturday.",
+      "results": "https://results.wayzatatiming.com/meets/79752",
+      "info": null,
+      "watch": [],
+      "recap": "Pella won the Class 3A girls with 34 points (Des Moines Christian 127), while Mount Vernon-Lisbon's Evelyn Moeller won the individual title in 17:07.5; Gilbert took the 3A boys at 98 points over Sioux Center (114) behind Logan Bleich's 15:12.2. In 4A, Dowling Catholic won the boys title with 70 points over Cedar Falls (93) and Marshalltown's Preston Johnson won in 14:40.2, and Cedar Falls edged Ankeny Centennial 96-101 for the girls title with Cedar Falls' Charlee Gall winning in 17:13.0. In the small classes, Pella Christian won 2A boys (62) with Chariton's Lucas Anderson first in 15:57.3, Mid-Prairie Wellman won 2A girls (85) with Monticello's Mary Grace Lyons first in 18:06.6, Riverside Oakland won 1A boys on a tiebreaker over Earlham after both scored 127 (Tri-Center Neola's Haven Weers won in 15:57.4), and Maquoketa Valley Delhi won 1A girls with 54 points (Madrid's Madelyn Grothus won in 18:17.6)."
+    },
+    {
+      "name": "Big 12 Cross Country Championships",
+      "lvl": "d1",
+      "conf": "Big 12",
+      "day": "2026-10-31",
+      "where": "Stillwater, OK · host Oklahoma State · Greiner Family OSU XC Course",
+      "time": "Women 10:00 a.m. CT · Men 11:00 a.m. CT",
+      "why": "The deepest conference meet in the country. Men: No. 2 Oklahoma State, No. 3 Colorado and No. 5 BYU. Women: No. 1 BYU, No. 3 West Virginia, No. 7 Oklahoma State and No. 10 Colorado. On ESPN.",
+      "results": "https://www.pttiming.com/event/fda0d982-abfd-43af-ae80-684ab8d21f62?pt=schedule",
+      "info": "https://static.okstate.com/custompages/b12xc-26/",
+      "watch": [
+        [
+          "ESPN+",
+          "https://www.espn.com/watch/catalog/2fd594b9-ec76-49c8-b882-075b3388e29d/cross-country-running"
+        ]
+      ],
+      "top": true,
+      "recap": "Colorado edged No. 2 Oklahoma State 36-38 for the men's title in Stillwater, with No. 5 BYU third at 91. Oklahoma State's Denis Kipngetich won the 8K in 23:05.7, with Colorado's Dominic Serem second in 23:06.9. In the women's race, No. 1 BYU won with 56 points to No. 3 West Virginia's 63, with No. 7 Oklahoma State third (116) and No. 10 Colorado fourth (117); BYU's Jane Hedengren won the 6K in 19:28.0."
+    },
+    {
+      "name": "Ivy League Heptagonal Cross Country Championships",
+      "lvl": "d1",
+      "conf": "Ivy",
+      "day": "2026-10-31",
+      "where": "Attleboro, MA · host Harvard",
+      "time": "",
+      "why": "",
+      "results": "https://results.leonetiming.com/xc.html?mid=9264",
+      "info": null,
+      "watch": [],
+      "recap": "Harvard won the men's Heps title with 23 points to Cornell's 53, and Harvard's Tam Gavenas won the 8K in 22:56.8. Princeton won the women's title with 33 points to Penn's 72, while Penn's Allison Lee won the 6K in 20:14.0."
+    },
+    {
+      "name": "American Cross Country Championships",
+      "lvl": "d1",
+      "conf": "American",
+      "day": "2026-10-31",
+      "where": "New Orleans, LA · host Tulane · Lake Oaks Park",
+      "time": "",
+      "why": "Tulane's Silas Kiptanui, the Pre-National men's champion, races at home.",
+      "results": "https://live.pttiming.com/xc-ptt.html?mid=9278",
+      "info": null,
+      "watch": [
+        [
+          "ESPN+",
+          "https://www.espn.com/watch/player/_/id/df5cb365-2f10-4d9a-a01e-9d14318ec2b5"
+        ]
+      ],
+      "recap": "Tulane swept the team titles at home in New Orleans. The Green Wave men scored 31 points to Tulsa's 56, with Silas Kiptanui winning the 8K in 23:28.7. The Tulane women scored 32 to Tulsa's 56, and Blezzin Kimutai won the 6K in 19:49.8."
+    },
+    {
+      "name": "SoCon Cross Country Championships",
+      "lvl": "d1",
+      "conf": "SoCon",
+      "day": "2026-10-31",
+      "where": "Mill Spring, NC · Tryon International Equestrian Center",
+      "time": "",
+      "why": "",
+      "results": "https://snapresults.snaptiming.com/meets/80022",
+      "info": null,
+      "watch": [],
+      "recap": "Furman swept the SoCon titles. The Paladins men scored 15 points to UNCG's 92, going 1-2-3-4-5 with Christopher Knight winning the 8K in 23:57.0. The Furman women scored 19 to Mercer's 79, led by Tessa Walter's 16:24.8 win in the 5K."
+    },
+    {
+      "name": "Patriot League Cross Country Championships",
+      "lvl": "d1",
+      "conf": "Patriot",
+      "day": "2026-10-31",
+      "where": "Lewisburg, PA · host Bucknell · Bucknell Golf Club",
+      "time": "",
+      "why": "Navy men and Army women are the favorites, with host Bucknell the main challenger.",
+      "results": "https://results.leonetiming.com/xc.html?mid=9265",
+      "info": null,
+      "watch": [],
+      "recap": "Navy won the men's title with 43 points to Boston University's 65, and Navy's Dane Eike won the 8K in 23:48.3. Army took the women's title 50-55 over Boston University, whose Adrienne Buettner-Cable won the 6K in 19:41.6."
+    },
+    {
+      "name": "Conference USA Cross Country Championships",
+      "lvl": "d1",
+      "conf": "C-USA",
+      "day": "2026-10-31",
+      "where": "Huntsville, AL · John Hunt Park",
+      "time": "",
+      "why": "",
+      "results": "https://live.xpresstiming.com/meets/79397",
+      "info": null,
+      "watch": [
+        [
+          "ESPN+",
+          "https://www.espn.com/watch/player/_/id/8a44cc62-9e40-4392-9122-eb6c36349443"
+        ]
+      ],
+      "recap": "Middle Tennessee swept the team titles in Huntsville. The women won with 25 points to Liberty's 65 and Kennesaw State's 105, with MTSU's Evalyne Wambui taking the individual title in 19:25.2. The men's race went to Jacksonville State's Shadrack Kipkurgat in 23:21.6, and MTSU won the team title with 31 points to Jacksonville State's 56 and Liberty's 70."
+    },
+    {
+      "name": "Atlantic 10 Cross Country Championships",
+      "lvl": "d1",
+      "conf": "A-10",
+      "day": "2026-10-31",
+      "where": "Mechanicsville, VA · host Richmond · Pole Green Park",
+      "time": "",
+      "why": "",
+      "results": "https://blueridgetiming.live/meets/78126",
+      "info": null,
+      "watch": [
+        [
+          "ESPN+",
+          "https://www.espn.com/watch/player/_/id/80f12bff-3d45-46e9-bc20-15510f194d8a"
+        ]
+      ],
+      "recap": "Loyola Chicago won both team titles at Pole Green Park. The women scored 69 points to beat Saint Louis (88) and George Washington (91), with Saint Louis' Oliwia Wawrzyniak winning the individual race in 19:37.6. The Loyola men scored 38 to Saint Joseph's 66 and Rhode Island's 86, and Rhode Island's Nick Martin won in 23:30.4 with Loyola's Jake Phillips second in 23:32.4."
+    },
+    {
+      "name": "Big West Cross Country Championships",
+      "lvl": "d1",
+      "conf": "Big West",
+      "day": "2026-10-31",
+      "where": "Riverside, CA · host UC Riverside · Ag/Ops course",
+      "time": "",
+      "why": "",
+      "results": "https://finishedresults.trackscoreboard.com/meets/14367",
+      "info": null,
+      "watch": [],
+      "recap": "Cal Baptist won the men's title with 28 points to Utah Valley's 33 and Cal Poly's 91, led by individual champion Pedro Marin in 23:07.8. Utah Valley took the women's title with 44 points to Cal Baptist's 63 and Cal Poly's 77, while Cal Poly's Tatiana Cornejo won the individual race in 18:55.4, ahead of Utah Valley's Caren Kipsirat (18:58.3)."
+    },
+    {
+      "name": "Summit League Cross Country Championships",
+      "lvl": "d1",
+      "conf": "Summit",
+      "day": "2026-10-31",
+      "where": "St. Paul, MN · host St. Thomas",
+      "time": "",
+      "why": "",
+      "results": "https://results.wayzatatiming.com/meets/79755",
+      "info": null,
+      "watch": [],
+      "recap": "North Dakota won the women's title with 22 points to South Dakota's 60 and North Dakota State's 67, with Shewaye Johnson taking the individual win in 20:30.0. South Dakota State won the men's title with 34 points to North Dakota's 45 and South Dakota's 83, while Oral Roberts' Abraham Chelangam won the race in 23:43.6."
+    },
+    {
+      "name": "Horizon League Cross Country Championships",
+      "lvl": "d1",
+      "conf": "Horizon",
+      "day": "2026-10-31",
+      "where": "Clinton, PA · host Robert Morris · Youthtowne XC Course",
+      "time": "Women 11:00 a.m. · Men 12:00 p.m.",
+      "why": "",
+      "results": "https://pa.milesplit.com/meets/792810-horizon-league-cross-country-championships-2026/results",
+      "info": null,
+      "watch": [],
+      "recap": "Robert Morris won the women's title on its home course, edging Youngstown State, and Robert Morris senior Julia Dill won the individual race in 20:19.98 ahead of YSU's McKinley Fielding (20:28.65). Youngstown State won the men's title ahead of IU Indianapolis, and IU Indy's Izaiah Steury won the race in 23:44.70."
+    },
+    {
+      "name": "NEC Cross Country Championships",
+      "lvl": "d1",
+      "conf": "NEC",
+      "day": "2026-10-31",
+      "where": "Brookville, NY · host LIU",
+      "time": "",
+      "why": "Central Connecticut women chase a third straight title.",
+      "results": "https://elitefeats.com/xc-Results/?ID=25612",
+      "info": null,
+      "watch": [],
+      "recap": "Stonehill swept the team titles, ending Central Connecticut's run of women's titles. The Stonehill women scored 39 points to Central Connecticut's 48 and Le Moyne's 113, with CCSU's Mya Morabito winning the race in 21:17.8 over Stonehill's Jordan Malloy (21:24.3). The Stonehill men scored 33 to Central Connecticut's 77 and Le Moyne's 114 (FDU 115), and CCSU's Aidan Budge won the individual title in 23:47.5."
+    },
+    {
+      "name": "MEAC Cross Country Championships",
+      "lvl": "d1",
+      "conf": "MEAC",
+      "day": "2026-10-30",
+      "where": "Cary, NC · WakeMed Soccer Park",
+      "time": "Women 11:00 a.m. · Men 12:00 p.m.",
+      "why": "",
+      "results": "https://blueridgetiming.live/meets/79005",
+      "info": null,
+      "watch": [
+        [
+          "MEAC Digital Network",
+          "https://watch.meacsports.com/program-group/de4296c31c951199cb4f9747ab78f3cb/program/fc6a3e9da6b9fc33810bbb00765965f9"
+        ]
+      ],
+      "recap": "Norfolk State won the men's title with 35 points to Delaware State's 62 and Maryland-Eastern Shore's 87, while N.C. Central freshman Aaron Alukunyang won the individual race in 23:44.8 ahead of Norfolk State's Clinton Kipruto (23:57.3). Howard won the women's title with 23 points to Norfolk State's 65 and Delaware State's 76, and Norfolk State freshman Veronica Jesang won the race in 18:21.8."
+    },
+    {
+      "name": "NESCAC Cross Country Championships",
+      "lvl": "d3",
+      "conf": "NESCAC",
+      "day": "2026-10-31",
+      "where": "Middlebury, VT · host Middlebury",
+      "time": "Women 11:00 a.m. ET · Men noon ET",
+      "why": "Three top-10 women's teams: No. 2 Middlebury at home, No. 4 Williams and No. 7 Tufts. Middlebury beat Williams 63-65 at Connecticut College two weeks ago.",
+      "results": "https://live.802timing.com/meets/79991",
+      "info": null,
+      "watch": [
+        [
+          "NSN live video",
+          "https://www.nsnsports.net/conferences/nescac/?bfplayvid=4711484"
+        ]
+      ],
+      "top": true
+    },
+    {
+      "name": "UAA Cross Country Championships",
+      "lvl": "d3",
+      "conf": "UAA",
+      "day": "2026-10-31",
+      "where": "Warrenville, IL · host Chicago · St. James Farm",
+      "time": "",
+      "why": "No. 1 NYU, No. 6 Chicago and No. 8 Washington (Mo.) women; No. 7 Washington (Mo.) and No. 9 NYU men.",
+      "results": "https://live.timingmd.net/meets/80153",
+      "info": null,
+      "watch": []
+    },
+    {
+      "name": "WIAC Cross Country Championships",
+      "lvl": "d3",
+      "conf": "WIAC",
+      "day": "2026-10-31",
+      "where": "Whitewater, WI · host UW-Whitewater",
+      "time": "",
+      "why": "No. 5 UW-La Crosse and No. 6 UW-Stevens Point men; No. 3 UW-La Crosse women.",
+      "results": "https://live.athletic.net/meets/78578",
+      "info": null,
+      "watch": []
+    },
+    {
+      "name": "CCIW Cross Country Championships",
+      "lvl": "d3",
+      "conf": "CCIW",
+      "day": "2026-10-31",
+      "where": "Warrenville, IL · host Carroll · St. James Farm",
+      "time": "",
+      "why": "No. 4 North Central men, up seven spots in this week's poll.",
+      "results": "https://live.timingmd.net/meets/80153",
+      "info": null,
+      "watch": []
+    },
+    {
+      "name": "Empire 8 Cross Country Championships",
+      "lvl": "d3",
+      "conf": "Empire 8",
+      "day": "2026-10-31",
+      "where": "Utica, NY · host SUNY Poly",
+      "time": "Women 11:00 a.m.",
+      "why": "No. 3 SUNY Geneseo men; Geneseo's women go for a third straight title.",
+      "results": "https://results.leonetiming.com/xc.html?mid=9272",
+      "info": null,
+      "watch": []
+    },
+    {
+      "name": "Liberty League Cross Country Championships",
+      "lvl": "d3",
+      "conf": "Liberty League",
+      "day": "2026-10-31",
+      "where": "Annandale-on-Hudson, NY · host Bard",
+      "time": "",
+      "why": "No. 8 RPI men.",
+      "results": "https://results.leonetiming.com/xc.html?mid=9274",
+      "info": null,
+      "watch": [
+        [
+          "Team1Sports",
+          "https://www.team1sports.com/college/ag/?B=4251096"
+        ]
+      ]
+    },
+    {
+      "name": "NEWMAC Cross Country Championships",
+      "lvl": "d3",
+      "conf": "NEWMAC",
+      "day": "2026-10-31",
+      "where": "Northampton, MA · host Smith",
+      "time": "",
+      "why": "No. 10 MIT men take on No. 25 WPI, with Babson also in the men’s field. MIT’s women are tied for No. 9.",
+      "results": "https://results.millenniumrunning.com/meets/77369",
+      "info": null,
+      "watch": [
+        [
+          "NSN Sports",
+          "https://www.nsnsports.net/conferences/newmac/"
+        ]
+      ]
+    },
+    {
+      "name": "MIAC Cross Country Championships",
+      "lvl": "d3",
+      "conf": "MIAC",
+      "day": "2026-10-31",
+      "where": "Northfield, MN · host St. Olaf",
+      "time": "Women 11:00 a.m. CT · Men 12:00 p.m. CT",
+      "why": "Northfield hosts the NCAA D-III Championships three weeks later, at Carleton.",
+      "results": "https://live.herostiming.com/meets/78988",
+      "info": null,
+      "watch": [],
+      "recap": "Carleton won the women's title with 25 points, 38 ahead of St. Olaf (63) and Macalester (74), while Macalester senior Ingrid Norquist won the individual race in 21:48.6 over 6K. St. Olaf took the men's title with 36 points for its fifth straight MIAC crown and 16th overall, 52 points clear of Carleton (88), which edged Saint John's (92) for second. Saint John's Cole Stencel won the men's race in 24:56.1, 13 seconds ahead of St. Olaf's Garrett Seppanen (25:09.9)."
+    },
+    {
+      "name": "CHSAA State Cross Country Championships",
+      "lvl": "hs",
+      "conf": "Colorado",
+      "day": "2026-10-31",
+      "where": "Colorado Springs, CO · Norris Penrose Event Center",
+      "time": "Nine races, first at 9:00 a.m. MT; 5A girls 1:00 p.m., 5A boys 2:20 p.m.",
+      "why": "The deepest state final of the week. Niwot (No. 4 boys, No. 7 girls), No. 9 Boulder, No. 13 Fairview, No. 14 Heritage, No. 16 ThunderRidge and No. 20 Arapahoe girls, plus Northfield's Abdi Hassan (No. 2 nationally), Coronado's Oliver Horton (No. 10) and Eaton's Delaney Reuter (No. 9 girls). No. 29 Mountain Vista looks to pull an upset in the boys race with its star-studded duo of Benjamin Adams and Riley Kiziah.",
+      "results": "https://chsaanow.com/results/cross-country/2026",
+      "info": null,
+      "watch": [
+        [
+          "NFHS Network",
+          "https://www.nfhsnetwork.com/events/chsaa/gamfe42379abf"
+        ]
+      ],
+      "top": true,
+      "recap": "Niwot swept the 5A titles. The No. 4 boys won their fourth straight with 60 points, well clear of Arapahoe (143), while Northfield's Abdinasir Hassan won the individual race in 14:56.41 and set the 5A course record. The No. 7 girls won with 47 points over No. 9 Boulder (100) and Fairview (116), and Cherokee Trail's Madison Lange won the individual title in 17:27.99. Coronado's Oliver Horton won the 4A boys race in 14:40.52 as Summit took the team title (75), and Eaton's Delaney Reuter won her third straight 3A girls title in 17:22.02 as Berthoud won the team title (62)."
+    },
+    {
+      "name": "IHSAA State Cross Country Finals",
+      "lvl": "hs",
+      "conf": "Indiana",
+      "day": "2026-10-31",
+      "where": "Terre Haute, IN · LaVern Gibson Championship Course",
+      "time": "Boys 1:00 p.m. ET",
+      "why": "Indiana's one-class final on the NCAA Championships course. Springs Valley's Calvin Seitz, Fort Wayne Carroll's boys and Homestead's girls all won regional titles last weekend.",
+      "results": "https://milesplit.live/meets/772823/schedule",
+      "info": null,
+      "watch": []
+    },
+    {
+      "name": "KSHSAA State Cross Country Championships",
+      "lvl": "hs",
+      "conf": "Kansas",
+      "day": "2026-10-31",
+      "where": "Lawrence, KS · Rim Rock Farm (3A, 5A, 6A) · Wamego Country Club (1A, 2A, 4A)",
+      "time": "",
+      "why": "Kapaun Mount Carmel's Ava Claasen is No. 10 in DyeStat's girls individual rankings.",
+      "results": "https://ks.milesplit.com/meets/787763-kshsaa-state-championship-3a-5a-6a-2026/results",
+      "info": null,
+      "watch": [],
+      "recap": "Kapaun Mount Carmel's Ava Claasen won the 5A girls race in 16:59.16 as St. Thomas Aquinas took the team title (69). In 6A, Blue Valley Northwest's D'Souza won the boys race in 15:27.56 and Olathe West won the team title (83), while Manhattan won the girls team title (66) and Shawnee Mission East's Hardy won the race in 17:55.36. Blue Valley Southwest won the 5A boys title (53) behind winner Claar (15:45.01), and Wichita Trinity Academy won the 3A boys title (41)."
+    },
+    {
+      "name": "KHSAA State Cross Country Championships",
+      "lvl": "hs",
+      "conf": "Kentucky",
+      "day": "2026-10-31",
+      "where": "Lexington, KY · Kentucky Horse Park",
+      "time": "",
+      "why": "",
+      "results": "https://ky.milesplit.com/meets/774035-2026-khsaa-state-cross-country-championships-2026",
+      "info": "https://khsaa.org/2026-2027-state-cross-country-meet-schedule/",
+      "watch": [
+        [
+          "MileSplit replay",
+          "https://ky.milesplit.com/videos/823919/replay-khsaa-ky-xc-championships-oct-31-11-am"
+        ]
+      ],
+      "recap": "Trinity (Louisville) won the Class 3A boys team title and Lafayette's Van Weimer won the individual race, while Sacred Heart won the 3A girls title behind individual champion Lucy Gaunt. Lexington Catholic won both 2A team titles, with Union County's Thomas Davis and Thomas Nelson's Baili Hoten taking the individual crowns. In 1A, Bishop Brossart won the boys title (Dawson Springs' Easton Bourland individual champion) and Owensboro Catholic won the girls title (Fort Campbell's Linden Pickler individual champion)."
+    },
+    {
+      "name": "WIAA State Cross Country Championships",
+      "lvl": "hs",
+      "conf": "Wisconsin",
+      "day": "2026-10-31",
+      "where": "Wisconsin Rapids, WI · The Ridges Golf Course",
+      "time": "",
+      "why": "",
+      "results": "https://live.pttiming.com/xc-ptt.html?mid=9282",
+      "info": null,
+      "watch": [],
+      "recap": "Stevens Point won its fifth straight Division 1 boys title with 90 points, ahead of Menomonee Falls, and Milwaukee King's Logan Zeise won the race in 15:02. Neenah took its third straight Division 1 girls title, edging Mount Horeb by 2 points, and Bloomer's Aliyah Hartman set a state-meet record with a 17:01 win. Campbellsport (102) and New Berlin Eisenhower (87) won the Division 2 team titles, and Marathon (102) and Southwestern (112) won in Division 3, where Three Lakes/Phelps' Nolan Waltz (15:58) and Southwestern's Mackenzie Knuckey (18:49) won the individual races."
+    },
+    {
+      "name": "WVSSAC State Cross Country Championships",
+      "lvl": "hs",
+      "conf": "West Virginia",
+      "day": "2026-10-31",
+      "where": "Ona, WV · host Cabell Midland · Cabell Midland XC Course",
+      "time": "",
+      "why": "",
+      "results": "https://wv.milesplit.com/meets/783632-2026-wvssac-state-cross-country-championships-2026",
+      "info": null,
+      "watch": [
+        [
+          "MileSplit replay (8 AM)",
+          "https://wv.milesplit.com/videos/823906/replay-wvssac-xc-championships-oct-31-8-am"
+        ],
+        [
+          "MileSplit replay (2 PM)",
+          "https://wv.milesplit.com/videos/823935/replay-wvssac-xc-championships-oct-31-2-pm"
+        ],
+        [
+          "MileSplit replay (5 PM)",
+          "https://wv.milesplit.com/videos/823974/replay-wvssac-xc-championships-oct-31-5-pm"
+        ]
+      ],
+      "recap": "Morgantown swept the Class AAAA titles, the boys scoring 46 points and the girls 47 (Cabell Midland second with 80), as University's Micah Gainer repeated as boys champion in 15:39.7 and Musselman's Sadie Yates won the girls race in 17:54. Elkins swept Class AAA (boys 63, girls 51), with Keyser's Luca Altobello (15:45.2) and Bridgeport's Aria Selario (18:51) winning the individual races. St. Marys won the Class A boys title (43) and Ritchie County the girls (44), and Frankfort (47) and Lincoln (44) won the Class AA titles."
+    },
+    {
+      "name": "Gulf South Cross Country Championships",
+      "lvl": "d2",
+      "conf": "Gulf South",
+      "day": "2026-11-06",
+      "where": "Nashville, TN",
+      "time": "Men 9:00 a.m. ET · Women 9:45 a.m. ET",
+      "why": "No. 6 Lee men and No. 10 Lee women.",
+      "results": null,
+      "info": null,
+      "watch": [],
+      "next": true
+    },
+    {
+      "name": "RMAC Cross Country Championships",
+      "lvl": "d2",
+      "conf": "RMAC",
+      "day": "2026-11-07",
+      "where": "Rapid City, SD",
+      "time": "",
+      "why": "Men: No. 2 Colorado School of Mines, No. 3 Adams State and No. 9 Western Colorado. Women: No. 1 Adams State, No. 3 Mines, No. 5 Western Colorado and No. 7 UC-Colorado Springs.",
+      "results": null,
+      "info": null,
+      "watch": [],
+      "next": true
+    },
+    {
+      "name": "GLIAC Cross Country Championships",
+      "lvl": "d2",
+      "conf": "GLIAC",
+      "day": "2026-11-07",
+      "where": "Hammond, IN · PNW Cross Country Course",
+      "time": "11:00 a.m.",
+      "why": "No. 5 Grand Valley State men and No. 6 Grand Valley State women.",
+      "results": null,
+      "info": null,
+      "watch": [],
+      "next": true
+    },
+    {
+      "name": "CCAA Cross Country Championships",
+      "lvl": "d2",
+      "conf": "CCAA",
+      "day": "2026-11-07",
+      "where": "San Bernardino, CA · host Cal State San Bernardino · CSUSB XC Course",
+      "time": "",
+      "why": "No. 8 Chico State men and No. 4 Chico State women.",
+      "results": null,
+      "info": null,
+      "watch": [],
+      "next": true
+    },
+    {
+      "name": "PSAC Cross Country Championships",
+      "lvl": "d2",
+      "conf": "PSAC",
+      "day": "2026-11-07",
+      "where": "Bloomsburg, PA · host Bloomsburg",
+      "time": "",
+      "why": "",
+      "results": null,
+      "info": null,
+      "watch": [],
+      "next": true
+    },
+    {
+      "name": "GLVC Cross Country Championships",
+      "lvl": "d2",
+      "conf": "GLVC",
+      "day": "2026-11-07",
+      "where": "Springfield, MO",
+      "time": "",
+      "why": "",
+      "results": null,
+      "info": null,
+      "watch": [],
+      "next": true
+    },
+    {
+      "name": "NSIC Cross Country Championships",
+      "lvl": "d2",
+      "conf": "NSIC",
+      "day": "2026-11-07",
+      "where": "Sioux Falls, SD · Yankton Trail Park",
+      "time": "11:15 a.m.",
+      "why": "",
+      "results": null,
+      "info": null,
+      "watch": [],
+      "next": true
+    },
+    {
+      "name": "NCAA Division I Cross Country Championships",
+      "lvl": "d1",
+      "conf": "NCAA",
+      "day": "2026-11-21",
+      "where": "Terre Haute, IN · LaVern Gibson Championship Course",
+      "time": "",
+      "why": "The national championship. Regionals are Nov. 13.",
+      "results": null,
+      "info": null,
+      "watch": [],
+      "next": true
+    },
+    {
+      "name": "NCAA Division III Cross Country Championships",
+      "lvl": "d3",
+      "conf": "NCAA",
+      "day": "2026-11-21",
+      "where": "Northfield, MN · host Carleton",
+      "time": "",
+      "why": "The D-III national championship.",
+      "results": null,
+      "info": null,
+      "watch": [],
+      "next": true
+    },
+    {
+      "name": "NCAA Division II Cross Country Championships",
+      "lvl": "d2",
+      "conf": "NCAA",
+      "day": "2026-12-04",
+      "where": "Lawrence, KS · Rim Rock Farm",
+      "time": "",
+      "why": "The D-II national championship.",
+      "results": null,
+      "info": null,
+      "watch": [],
+      "next": true
+    }
+  ]
 }

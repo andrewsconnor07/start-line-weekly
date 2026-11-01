@@ -8,11 +8,24 @@
  "date": "Oct. 31, 2026",
  "where": "Ona, WV · host Cabell Midland · Cabell Midland XC Course",
  "headline": "WVSSAC State Cross Country Championships",
- "status": "preview",
- "summary": "WVSSAC State Cross Country Championships, Oct. 31, 2026, in Ona, WV.",
+ "status": "final",
+ "summary": "Final: Morgantown swept the Class AAAA titles, the boys scoring 46 points and the girls 47 (Cabell Midland second with 80), as University's Micah Gainer repeated as boys champion in 15:39.7 and Musselman's Sadie Yates won the girls race in 17:54. Elkins swept Class AAA (boys 63, girls 51), with Keyser's Luca Altobello (15:45.2) and Bridgeport's Aria Selario (18:51) winning the individual races. St. Marys won the Class A boys title (43) and Ritchie County the girls (44), and Frankfort (47) and Lincoln (44) won the Class AA titles.",
  "results": "https://wv.milesplit.com/meets/783632-2026-wvssac-state-cross-country-championships-2026",
  "info": null,
- "watch": [],
+ "watch": [
+  [
+   "MileSplit replay (8 AM)",
+   "https://wv.milesplit.com/videos/823906/replay-wvssac-xc-championships-oct-31-8-am"
+  ],
+  [
+   "MileSplit replay (2 PM)",
+   "https://wv.milesplit.com/videos/823935/replay-wvssac-xc-championships-oct-31-2-pm"
+  ],
+  [
+   "MileSplit replay (5 PM)",
+   "https://wv.milesplit.com/videos/823974/replay-wvssac-xc-championships-oct-31-5-pm"
+  ]
+ ],
  "lanes": [],
  "hub": "/championships/"
 }

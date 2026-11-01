@@ -8,11 +8,16 @@
  "date": "Oct. 31, 2026",
  "where": "Lexington, KY · Kentucky Horse Park",
  "headline": "KHSAA State Cross Country Championships",
- "status": "preview",
- "summary": "KHSAA State Cross Country Championships, Oct. 31, 2026, in Lexington, KY.",
+ "status": "final",
+ "summary": "Final: Trinity (Louisville) won the Class 3A boys team title and Lafayette's Van Weimer won the individual race, while Sacred Heart won the 3A girls title behind individual champion Lucy Gaunt. Lexington Catholic won both 2A team titles, with Union County's Thomas Davis and Thomas Nelson's Baili Hoten taking the individual crowns. In 1A, Bishop Brossart won the boys title (Dawson Springs' Easton Bourland individual champion) and Owensboro Catholic won the girls title (Fort Campbell's Linden Pickler individual champion).",
  "results": "https://ky.milesplit.com/meets/774035-2026-khsaa-state-cross-country-championships-2026",
  "info": "https://khsaa.org/2026-2027-state-cross-country-meet-schedule/",
- "watch": [],
+ "watch": [
+  [
+   "MileSplit replay",
+   "https://ky.milesplit.com/videos/823919/replay-khsaa-ky-xc-championships-oct-31-11-am"
+  ]
+ ],
  "lanes": [],
  "hub": "/championships/"
 }

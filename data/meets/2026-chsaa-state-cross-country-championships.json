@@ -1,62 +1,52 @@
 {
- "slug": "2026-chsaa-state-cross-country-championships",
- "lvl": "hs",
- "iso": "2026-10-31",
- "week": "Oct 26–Nov 1, 2026",
- "status": "preview",
- "name": "CHSAA State Cross Country Championships",
- "date": "Sat Oct 31",
- "where": "Colorado Springs, CO · Norris Penrose Event Center",
- "headline": "Colorado state: Niwot and Boulder meet a national-level field",
- "summary": "Defending 5A champion Niwot brings DyeStat’s No. 4 boys team and No. 7 girls team to Colorado Springs, with No. 9 Boulder, No. 13 Fairview, No. 14 Heritage, No. 16 ThunderRidge and No. 20 Arapahoe in the girls race. Northfield’s Abdi Hassan, No. 2 in DyeStat’s individual rankings, Coronado’s Oliver Horton (No. 10) and Eaton’s Delaney Reuter (No. 9 girls) are all entered. No. 29 Mountain Vista looks to pull an upset in the boys race with its star-studded duo of Benjamin Adams and Riley Kiziah. The 5A girls race starts at 1:00 p.m. MT and the 5A boys at 2:20 p.m.",
- "lanes": [
-  [
-   "4",
-   "Niwot",
-   "Boys · DyeStat team"
+  "slug": "2026-chsaa-state-cross-country-championships",
+  "lvl": "hs",
+  "iso": "2026-10-31",
+  "week": "Oct 26–Nov 1, 2026",
+  "status": "final",
+  "name": "CHSAA State Cross Country Championships",
+  "date": "Sat Oct 31",
+  "where": "Colorado Springs, CO · Norris Penrose Event Center",
+  "headline": "Colorado state: Niwot sweeps the 5A titles",
+  "summary": "Niwot swept the 5A titles. The No. 4 boys won their fourth straight with 60 points, well clear of Arapahoe (143), while Northfield's Abdinasir Hassan won the individual race in 14:56.41 and set the 5A course record. The No. 7 girls won with 47 points over No. 9 Boulder (100) and Fairview (116), and Cherokee Trail's Madison Lange won the individual title in 17:27.99. Coronado's Oliver Horton won the 4A boys race in 14:40.52 as Summit took the team title (75), and Eaton's Delaney Reuter won her third straight 3A girls title in 17:22.02 as Berthoud won the team title (62).",
+  "lanes": [
+    [
+      "1",
+      "Niwot",
+      "5A boys · 60 pts"
+    ],
+    [
+      "2",
+      "Arapahoe",
+      "5A boys · 143 pts"
+    ],
+    [
+      "1",
+      "Niwot",
+      "5A girls · 47 pts"
+    ],
+    [
+      "2",
+      "Boulder",
+      "5A girls · 100 pts"
+    ],
+    [
+      "1",
+      "Abdinasir Hassan",
+      "Northfield · 14:56.41, course record"
+    ],
+    [
+      "1",
+      "Oliver Horton",
+      "Coronado · 4A boys, 14:40.52"
+    ]
   ],
-  [
-   "7",
-   "Niwot",
-   "Girls · DyeStat team"
+  "results": "https://chsaanow.com/results/cross-country/2026",
+  "watch": [
+    [
+      "NFHS Network",
+      "https://www.nfhsnetwork.com/events/chsaa/gamfe42379abf"
+    ]
   ],
-  [
-   "9",
-   "Boulder",
-   "Girls · DyeStat team"
-  ],
-  [
-   "13",
-   "Fairview",
-   "Girls · DyeStat team"
-  ],
-  [
-   "14",
-   "Heritage",
-   "Girls · DyeStat team"
-  ],
-  [
-   "16",
-   "ThunderRidge",
-   "Girls · DyeStat team"
-  ],
-  [
-   "2",
-   "Abdi Hassan",
-   "Northfield · DyeStat boys"
-  ],
-  [
-   "10",
-   "Oliver Horton",
-   "Coronado · DyeStat boys"
-  ]
- ],
- "results": "https://chsaanow.com/results/cross-country/2026",
- "watch": [
-  [
-   "NFHS Network",
-   "https://www.nfhsnetwork.com/events/chsaa/gamfe42379abf"
-  ]
- ],
- "insights": []
+  "insights": []
 }
