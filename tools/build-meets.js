@@ -42,13 +42,20 @@ for (const m of MEETS) {
 // ---- championship week (data/championships.json) ----
 // One entry per conference / state championship. Each gets a meet page (saved to data/meet-pages/ like MEETS, so it
 // stays live after the week ends) and the whole list becomes the /championships/ hub.
-const chFile = path.join(root, "data/championships.json");
+// Past weeks live in data/championships-archive/<slug>.json (same format plus a "slug") and get their own hub at
+// /championships/<slug>/, so last week's hub keeps its Google traffic after /championships/ moves on.
+const chFile = path.join(root, "data/championships.json"), chArchDir = path.join(root, "data/championships-archive");
 const CH = fs.existsSync(chFile) ? JSON.parse(fs.readFileSync(chFile, "utf8")) : null;
-if (CH) for (const m of CH.meets) {
-  const rec = { slug: slugify(m.name), kind: "meet", lvl: m.lvl, iso: m.day, week: CH.week, name: strip(m.name), date: longDate(m.day),
+const CHA = fs.existsSync(chArchDir) ? fs.readdirSync(chArchDir).filter(f => f.endsWith(".json")).map(f => {
+  const a = JSON.parse(fs.readFileSync(path.join(chArchDir, f), "utf8")); a.slug = a.slug || f.replace(/\.json$/, ""); return a; }).sort((a, b) => a.slug.localeCompare(b.slug)) : [];
+if (CH) CH.hub = "/championships/";
+for (const a of CHA) a.hub = `/championships/${a.slug}/`;
+for (const W of CHA.concat(CH ? [CH] : [])) for (const m of W.meets) {
+  if (W !== CH && m.next) continue;   // an archived week's "coming next" entries belong to later weeks
+  const rec = { slug: slugify(m.name), kind: "meet", lvl: m.lvl, iso: m.day, week: W.week, name: strip(m.name), date: longDate(m.day),
     where: m.where, headline: strip(m.name), status: m.recap ? "final" : "preview",
     summary: m.recap ? "Final: " + m.recap : ([m.why, m.days, m.time].filter(Boolean).join(" · ") || `${strip(m.name)}, ${longDate(m.day)}, in ${m.where.split(" · ")[0]}.`),
-    results: m.results || null, info: m.info || null, watch: m.watch || [], lanes: m.lanes || [], hub: "/championships/" };
+    results: m.results || null, info: m.info || null, watch: m.watch || [], lanes: m.lanes || [], hub: W.hub, hubTitle: W.title };
   fs.writeFileSync(path.join(pdir, rec.slug + ".json"), JSON.stringify(rec, null, 1) + "\n");
 }
 
@@ -65,6 +72,7 @@ const pages = fs.readdirSync(pdir).filter(f => f.endsWith(".json")).map(f => JSO
 const LVN = { d1: "Division I", d2: "Division II", d3: "Division III", hs: "High school" };
 const DAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const dayName = iso => { const d = new Date(iso + "T12:00:00Z"); return `${DAYS[d.getUTCDay()]}, ${FULLMON[d.getUTCMonth() + 1]} ${d.getUTCDate()}`; };
+const hubName = m => esc(m.hubTitle || "Championship Week");
 const city = w => strip(w).split("·")[0].trim();
 let ALL = [];
 function related(m) {
@@ -80,7 +88,7 @@ function related(m) {
   if (!list.length && !m.hub) return "";
   return `<section aria-labelledby="more" style="margin-top:10px"><h2 id="more">${esc(head)}</h2>`
     + (list.length ? `<div class="grid" style="margin-top:12px">${list.map(x => `<a class="card" style="text-decoration:none" href="/meets/${x.slug}/"><h3>${LVN[x.lvl] || ""} · ${esc(x.date)}${x.status === "final" ? " · Final" : ""}</h3><p><b>${esc(strip(x.name))}</b></p><p class="meta">${esc(city(x.where))}</p></a>`).join("")}</div>` : "")
-    + (m.hub ? `<p style="margin:14px 0 0"><a href="${m.hub}" style="font-weight:700;color:var(--red-ink)">See every Championship Week meet →</a></p>` : "")
+    + (m.hub ? `<p style="margin:14px 0 0"><a href="${m.hub}" style="font-weight:700;color:var(--red-ink)">See every ${hubName(m)} meet →</a></p>` : "")
     + `</section>`;
 }
 function body(m) {
@@ -92,7 +100,7 @@ function body(m) {
     + (m.info ? `<a href="${esc(m.info)}" target="_blank" rel="noopener">Meet info</a>` : "");
   return `<section class="hero"><div class="eyebrow">${eyebrow} · ${m.date}</div>
 <h1>${m.headline}${fin ? '<span class="status">Final</span>' : ""}</h1>
-<div class="meta">${m.name} · ${m.where}</div><p class="sum">${m.summary}</p>${m.hub ? `<p style="margin:14px 0 0"><a href="${m.hub}" style="font-weight:700;color:var(--red-ink)">← All Championship Week meets</a></p>` : ""}</section>
+<div class="meta">${m.name} · ${m.where}</div><p class="sum">${m.summary}</p>${m.hub ? `<p style="margin:14px 0 0"><a href="${m.hub}" style="font-weight:700;color:var(--red-ink)">← All ${hubName(m)} meets</a></p>` : ""}</section>
 ${lanes}${btns ? `<div class="btns">${btns}</div>` : ""}
 ${related(m)}`;
 }
@@ -129,8 +137,8 @@ const arch = head + `<main><h1>Archive</h1><p class="meta">Every matchup of the 
   + `</main><footer>Start Line Weekly is built and edited by Connor Andrews.</footer></div></body></html>\n`;
 fs.mkdirSync(path.join(root, "archive"), { recursive: true }); fs.writeFileSync(path.join(root, "archive/index.html"), arch);
 
-// ---- championship hub ----
-if (CH) {
+// ---- championship hubs ----
+function renderHub(CH, outRel, canon, earlier, earlierLabel) {
   const DAYN = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   const dayLabel = iso => { const d = new Date(iso + "T12:00:00Z"); return `${DAYN[d.getUTCDay()]}, ${FULLMON[d.getUTCMonth() + 1]} ${d.getUTCDate()}`; };
   const shortDay = iso => { const d = new Date(iso + "T12:00:00Z"); return `${DAYN[d.getUTCDay()].slice(0, 3)} ${FULLMON[d.getUTCMonth() + 1].replace(".", "")} ${d.getUTCDate()}`; };
@@ -150,7 +158,7 @@ ${m.recap ? `<p class="why"><b>Final:</b> ${esc(m.recap)}</p>` : m.why ? `<p cla
   const now = CH.meets.filter(m => !m.next), next = CH.meets.filter(m => m.next);
   const days = [...new Set(now.map(m => m.day))].sort();
   const cnt = l => now.filter(m => m.lvl === l).length;
-  const stats = [["d1", "D-I conference meets"], ["d3", "D-III conference meets"], ["hs", "high school state finals"]].filter(([l]) => cnt(l)).map(([l, t]) => `<span><b>${cnt(l)}</b> ${t}</span>`).join("");
+  const stats = (CH.stats || [["d1", "D-I meets"], ["d2", "D-II meets"], ["d3", "D-III meets"], ["hs", "high school state finals"]]).filter(([l]) => cnt(l)).map(([l, t]) => `<span><b>${cnt(l)}</b> ${t}</span>`).join("");
   const tops = now.filter(m => m.top);
   const lvls = ["d1", "d2", "d3", "hs"];
   const group = (list) => lvls.map(l => { const g = list.filter(m => m.lvl === l); return g.length ? `<div class="lg" data-lvl="${l}"><h3 class="gh"><b>${SH[l]}</b>${g.length}</h3>${g.map(row).join("")}</div>` : ""; }).join("");
@@ -180,19 +188,20 @@ ${m.recap ? `<p class="why"><b>Final:</b> ${esc(m.recap)}</p>` : m.why ? `<p cla
 .ca a.res{background:var(--red);border-color:var(--red);color:#fff}
 @media (max-width:700px){.cm{grid-template-columns:1fr}.ca{flex-direction:row;flex-wrap:wrap;min-width:0}.ca a{flex:1}.chero{padding:22px 16px}}
 </style>`;
-  const ttl = `${CH.title} ${CH.week.slice(-4)}: Conference & State Cross Country Live Results | Start Line Weekly`;
-  const dsc = `Live results and streams for every ${CH.week} cross country championship: ${now.filter(m => m.lvl === "d1").map(m => m.conf).slice(0, 6).join(", ")} and every D-I conference, the top D-III conferences and high school state finals.`;
+  const ttl = `${CH.title} ${CH.week.slice(-4)}: ${CH.seo || "Conference & State Cross Country Live Results"} | Start Line Weekly`;
+  const dsc = CH.desc || `Live results and streams for every ${CH.week} cross country championship: ${now.map(m => m.conf).slice(0, 8).join(", ")} and more.`;
   const hhead = tpl.split("<main")[0].replaceAll("{{TITLE}}", esc(ttl)).replaceAll("{{OGTITLE}}", esc(`${CH.title} · Start Line Weekly`))
-    .replaceAll("{{DESC}}", esc(dsc.slice(0, 300))).replaceAll("{{CANON}}", `${SITE}/championships/`).replace("{{LD}}", "");
+    .replaceAll("{{DESC}}", esc(dsc.slice(0, 300))).replaceAll("{{CANON}}", canon).replace("{{LD}}", "");
   const html = hhead + `<main style="display:grid;gap:24px">${css}
 <section class="chero"><div class="eyebrow">${esc(CH.week)}</div><h1>${esc(CH.title)}</h1>
-<p>Every D-I conference championship, the biggest D-III conference meets and this week's high school state finals, with live results and streams in one place.</p>
+<p>${esc(CH.blurb || "This week's championships, with live results and streams in one place.")}</p>
 <div class="stats">${stats}</div></section>
 ${tops.length ? `<section aria-labelledby="dm"><h2 id="dm" style="margin-bottom:12px">Don't miss</h2><div class="tops">${tops.map(m => `<div class="top4" data-lvl="${m.lvl}"><div class="eyebrow">${shortDay(m.day)} · ${SH[m.lvl]}</div><h3><a href="/meets/${slugify(m.name)}/">${esc(strip(m.name))}</a></h3><div class="meta">${esc(m.where.split(" · ")[0])}${m.time ? " · " + esc(m.time) : ""}</div><p>${esc(m.recap ? "Final: " + m.recap : m.why)}</p><div class="btns">${btns(m)}</div></div>`).join("")}</div></section>` : ""}
 <nav class="jump" aria-label="Jump to day">${days.map(d => `<a href="#d-${d}">${shortDay(d)}</a>`).join("")}${next.length ? `<a href="#next">Coming next</a>` : ""}</nav>
-<nav class="cfil" aria-label="Filter by level"><button type="button" data-f="all" aria-pressed="true">All</button>${["d1", "d3", "hs"].filter(cnt).map(l => `<button type="button" data-f="${l}" aria-pressed="false">${SH[l]}</button>`).join("")}</nav>
+<nav class="cfil" aria-label="Filter by level"><button type="button" data-f="all" aria-pressed="true">All</button>${lvls.filter(cnt).map(l => `<button type="button" data-f="${l}" aria-pressed="false">${SH[l]}</button>`).join("")}</nav>
 ${days.map(d => `<section class="day" id="d-${d}"><h2>${dayLabel(d)}</h2>${group(now.filter(m => m.day === d))}</section>`).join("")}
 ${next.length ? `<section class="day" id="next"><h2>Coming next</h2>${[...new Set(next.map(m => m.day))].sort().map(d => `<h3 class="gh"><b>${dayLabel(d)}</b></h3>` + next.filter(m => m.day === d).map(row).join("")).join("")}</section>` : ""}
+${earlier.length ? `<section aria-labelledby="earlier"><h2 id="earlier" style="margin-bottom:12px">${earlierLabel}</h2><div class="jump">${earlier.map(a => `<a href="${a.hub}">${esc(a.title)} · ${esc(a.week)}</a>`).join("")}</div></section>` : ""}
 </main><footer>Start Line Weekly is built and edited by Connor Andrews. Results and streams link out to the meet's official timer or broadcaster. <a href="/archive/">Past weeks →</a></footer></div>
 <script>
 document.querySelectorAll(".cfil button").forEach(b=>b.addEventListener("click",()=>{const f=b.dataset.f;
@@ -201,16 +210,18 @@ document.querySelectorAll(".lg,.top4").forEach(el=>el.hidden=!(f==="all"||el.dat
 document.querySelectorAll(".day:not(#next)").forEach(s=>s.hidden=![...s.querySelectorAll(".lg")].some(g=>!g.hidden));}));
 </script></body></html>
 `;
-  fs.mkdirSync(path.join(root, "championships"), { recursive: true }); fs.writeFileSync(path.join(root, "championships/index.html"), html);
+  fs.mkdirSync(path.join(root, outRel), { recursive: true }); fs.writeFileSync(path.join(root, outRel, "index.html"), html);
 }
+if (CH) renderHub(CH, "championships", `${SITE}/championships/`, CHA.slice().reverse(), "Earlier this postseason");
+for (const a of CHA) renderHub(Object.assign({}, a, { meets: a.meets.filter(m => !m.next) }), `championships/${a.slug}`, `${SITE}${a.hub}`, CH ? [CH] : [], "This week");
 
 // ---- sitemap + robots ----
 const today = new Date().toISOString().slice(0, 10);
-const urls = [[`${SITE}/`, today, "daily"], [`${SITE}/archive/`, today, "weekly"]].concat(CH ? [[`${SITE}/championships/`, today, "daily"]] : [])
+const urls = [[`${SITE}/`, today, "daily"], [`${SITE}/archive/`, today, "weekly"]].concat(CH ? [[`${SITE}/championships/`, today, "daily"]] : []).concat(CHA.map(a => [`${SITE}${a.hub}`, today, "monthly"]))
   .concat(fs.readdirSync(path.join(root, "meets"), { withFileTypes: true }).filter(d => d.isDirectory()).map(d => {
     const f = path.join(root, "meets", d.name, "index.html"); return [`${SITE}/meets/${d.name}/`, fs.statSync(f).mtime.toISOString().slice(0, 10), "weekly"];
   }));
 fs.writeFileSync(path.join(root, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`
   + urls.map(([u, d, c]) => `  <url><loc>${u}</loc><lastmod>${d}</lastmod><changefreq>${c}</changefreq></url>`).join("\n") + `\n</urlset>\n`);
 fs.writeFileSync(path.join(root, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: ${SITE}/sitemap.xml\n`);
-console.log(`built ${meets.length} matchup pages, ${pages.length} meet pages, ${CH ? "championship hub, " : ""}archive, sitemap (${urls.length} URLs)`);
+console.log(`built ${meets.length} matchup pages, ${pages.length} meet pages, ${CH ? `championship hub (+${CHA.length} past), ` : ""}archive, sitemap (${urls.length} URLs)`);

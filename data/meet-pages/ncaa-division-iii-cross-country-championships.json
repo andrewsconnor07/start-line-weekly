@@ -3,7 +3,7 @@
  "kind": "meet",
  "lvl": "d3",
  "iso": "2026-11-21",
- "week": "Oct 26–Nov 1, 2026",
+ "week": "Nov 2–8, 2026",
  "name": "NCAA Division III Cross Country Championships",
  "date": "Nov. 21, 2026",
  "where": "Northfield, MN · host Carleton",
@@ -14,5 +14,6 @@
  "info": null,
  "watch": [],
  "lanes": [],
- "hub": "/championships/"
+ "hub": "/championships/",
+ "hubTitle": "State Finals & D-II Championship Weekend"
 }
