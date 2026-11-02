@@ -3,30 +3,55 @@
  "lvl": "d3",
  "iso": "2026-10-31",
  "week": "Oct 26–Nov 1, 2026",
- "status": "preview",
+ "status": "final",
  "name": "NESCAC Cross Country Championships",
  "date": "Sat Oct 31",
  "where": "Middlebury, VT · host Middlebury · Middlebury Cross Country Course",
- "headline": "NESCAC: Middlebury, Williams and Tufts women race for the title",
- "summary": "No. 2 Middlebury hosts No. 4 Williams and No. 7 Tufts. Middlebury beat Williams 63-65 at the Connecticut College Invitational two weeks ago, and Williams won the 2025 NESCAC women’s title, its sixth straight. The women’s 6K starts at 11:00 a.m. ET and the men’s 8K at noon ET.",
+ "headline": "NESCAC: Williams holds off Middlebury, Amherst wins by one",
+ "summary": "Williams won the women’s title with 36 points, four ahead of host Middlebury (40), with Tufts third (94). Middlebury’s Audrey MacLean won the 6K in 20:54.4, ahead of teammate Annelise Jensen (21:14.1) and Williams’ Kate Tuttle (21:19.5). Amherst took the men’s title by one point, 66 to Williams’ 67, with Tufts third (70), Wesleyan fourth (83) and Middlebury fifth (116); Wesleyan’s Dylan Cote won the 8K in 24:31.1.",
  "lanes": [
+  [
+   "1",
+   "Williams",
+   "Women · 36 pts"
+  ],
   [
    "2",
    "Middlebury",
-   "Women"
+   "Women · 40 pts"
   ],
   [
-   "4",
-   "Williams",
-   "Women"
-  ],
-  [
-   "7",
+   "3",
    "Tufts",
-   "Women"
+   "Women · 94 pts"
+  ],
+  [
+   "1",
+   "Amherst",
+   "Men · 66 pts"
+  ],
+  [
+   "2",
+   "Williams",
+   "Men · 67 pts"
+  ],
+  [
+   "3",
+   "Tufts",
+   "Men · 70 pts"
+  ],
+  [
+   "1",
+   "Audrey MacLean",
+   "Middlebury · 20:54.4"
+  ],
+  [
+   "1",
+   "Dylan Cote",
+   "Wesleyan · 24:31.1"
   ]
  ],
- "results": "https://live.802timing.com/meets/79991",
+ "results": "https://www.tfrrs.org/results/xc/28639/NESCAC_Cross_Country_Championship",
  "watch": [
   [
    "NSN live video",
