@@ -46,6 +46,12 @@ h2{font:600 26px var(--display);text-transform:uppercase;letter-spacing:.02em;ma
 .lane .rk{font:700 24px var(--display);color:var(--red-ink);min-width:2ch}
 .lane b{display:block;line-height:1.2}.lane small{color:var(--muted);font-size:12px}
 .btns{display:flex;flex-wrap:wrap;gap:10px}
+.nl{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:18px 28px;align-items:center;background:var(--navy,#0E2240);color:#fff;border-left:8px solid var(--red,#C8102E);padding:22px 24px;margin:6px 0}
+.nl .eyebrow{font:500 12px var(--mono,monospace);letter-spacing:.1em;text-transform:uppercase;color:#FF8A99}
+.nl h2{margin:6px 0 6px;color:#fff;font:700 clamp(22px,3vw,28px)/1.05 var(--display,sans-serif);text-transform:uppercase;border:0;padding:0}
+.nl p{margin:0;color:#C9D4E5;font-size:15px;max-width:44ch}
+.nl-form{background:#fff;border-radius:4px;padding:6px;min-height:64px;min-width:0;overflow:hidden}
+@media (max-width:700px){.nl{grid-template-columns:1fr;padding:20px 16px}}
 .btns a{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font:700 14px var(--body);padding:12px 18px;border-radius:4px;border:2px solid var(--ink)}
 .btns a.res{background:var(--red);border-color:var(--red);color:#fff}
 .dot{width:8px;height:8px;border-radius:50%;background:currentColor;display:inline-block}
@@ -63,6 +69,7 @@ footer a{font-weight:700;color:var(--red-ink)}
 <h1>Nuttycombe: New Mexico wins the men's title<span class="status">Final</span></h1>
 <div class="meta">Nuttycombe Wisconsin Invitational · Madison, WI · host Wisconsin · Thomas Zimmer Championship Cross Country Course</div><p class="sum">New Mexico won the men's title with 59 points to Colorado's 93, with No. 7 BYU third at 146; Colorado freshman Meshack Kipruto won in a course-record 22:30.1, 0.7 seconds ahead of New Mexico's Pasanjo Kitonga. West Virginia took the women's race with 66 points to Florida's 111 and Northern Arizona's 130, and Florida's Judy Chepkoech won in 19:19.5.</p></section>
 <div class="lanes" aria-label="Results"><div class="lane"><span class="rk">1</span><span><b>New Mexico</b><small>Men · 59</small></span></div><div class="lane"><span class="rk">2</span><span><b>Colorado</b><small>Men · 93</small></span></div><div class="lane"><span class="rk">3</span><span><b>BYU</b><small>Men · 146</small></span></div><div class="lane"><span class="rk">1</span><span><b>Meshack Kipruto</b><small>Colorado · 22:30.1</small></span></div><div class="lane"><span class="rk">1</span><span><b>West Virginia</b><small>Women · 66</small></span></div><div class="lane"><span class="rk">1</span><span><b>Judy Chepkoech</b><small>Florida · 19:19.5</small></span></div></div><div class="btns"><a class="res" href="https://www.pttiming.com/event/bfef37ef-34b2-4f1c-9ada-f1d12f18de87?pt=schedule" target="_blank" rel="noopener"><span class="dot"></span>Final results</a><a href="https://nuttycombe-invitational.runnerspace.com/eprofile.php?event_id=4311&amp;do=videos&amp;video_id=466240" target="_blank" rel="noopener">Watch · Men's race replay</a><a href="https://nuttycombe-invitational.runnerspace.com/eprofile.php?event_id=4311&amp;do=videos&amp;video_id=466236" target="_blank" rel="noopener">Watch · Women's race replay</a></div>
+<section class="nl" aria-labelledby="nl-h"><div class="nl-copy"><div class="eyebrow">Free · Every Thursday</div><h2 id="nl-h">Get the weekend's races in your inbox</h2><p>The biggest meets, matchups, rankings and live links before every race weekend.</p></div><div class="nl-form"><script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="2f9af153-e145-4710-81b8-106fc34de986"></script></div></section>
 </main>
   <footer>Start Line Weekly is built and edited by Connor Andrews. Results and streams link out to the meet's official timer or broadcaster. <a href="/archive/">Past weeks →</a></footer>
 </div>

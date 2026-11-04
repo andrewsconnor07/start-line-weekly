@@ -46,6 +46,12 @@ h2{font:600 26px var(--display);text-transform:uppercase;letter-spacing:.02em;ma
 .lane .rk{font:700 24px var(--display);color:var(--red-ink);min-width:2ch}
 .lane b{display:block;line-height:1.2}.lane small{color:var(--muted);font-size:12px}
 .btns{display:flex;flex-wrap:wrap;gap:10px}
+.nl{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:18px 28px;align-items:center;background:var(--navy,#0E2240);color:#fff;border-left:8px solid var(--red,#C8102E);padding:22px 24px;margin:6px 0}
+.nl .eyebrow{font:500 12px var(--mono,monospace);letter-spacing:.1em;text-transform:uppercase;color:#FF8A99}
+.nl h2{margin:6px 0 6px;color:#fff;font:700 clamp(22px,3vw,28px)/1.05 var(--display,sans-serif);text-transform:uppercase;border:0;padding:0}
+.nl p{margin:0;color:#C9D4E5;font-size:15px;max-width:44ch}
+.nl-form{background:#fff;border-radius:4px;padding:6px;min-height:64px;min-width:0;overflow:hidden}
+@media (max-width:700px){.nl{grid-template-columns:1fr;padding:20px 16px}}
 .btns a{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font:700 14px var(--body);padding:12px 18px;border-radius:4px;border:2px solid var(--ink)}
 .btns a.res{background:var(--red);border-color:var(--red);color:#fff}
 .dot{width:8px;height:8px;border-radius:50%;background:currentColor;display:inline-block}
@@ -63,6 +69,7 @@ footer a{font-weight:700;color:var(--red-ink)}
 <h1>SWAC Cross Country Championships<span class="status">Final</span></h1>
 <div class="meta">SWAC Cross Country Championships · Tallahassee, FL · Apalachee Regional Park</div><p class="sum">Final: Jackson State won the men's 8K with 41 points to Texas Southern's 51, led by freshman Ryan Achau, who won in 25:09.5 ahead of Bethune-Cookman's Jayden Santos-Gonzales (25:12.2). Alabama A&M won the women's 5K with 37 points to Florida A&M's 41, and Alabama A&M senior Laura Avila won in 18:16.4.</p><p style="margin:14px 0 0"><a href="/championships/2026-conference-championship-week/" style="font-weight:700;color:var(--red-ink)">← All Championship Week meets</a></p></section>
 <div class="btns"><a class="res" href="https://live.pttiming.com/xc-ptt.html?mid=9266" target="_blank" rel="noopener"><span class="dot"></span>Final results</a><a href="https://tv.swac.org/" target="_blank" rel="noopener">Watch · SWAC TV</a></div>
+<section class="nl" aria-labelledby="nl-h"><div class="nl-copy"><div class="eyebrow">Free · Every Thursday</div><h2 id="nl-h">Get the weekend's races in your inbox</h2><p>The biggest meets, matchups, rankings and live links before every race weekend.</p></div><div class="nl-form"><script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="2f9af153-e145-4710-81b8-106fc34de986"></script></div></section>
 <section aria-labelledby="more" style="margin-top:10px"><h2 id="more">More Tuesday, Oct. 27 championships</h2><div class="grid" style="margin-top:12px"><a class="card" style="text-decoration:none" href="/meets/uhsaa-state-cross-country-championships/"><h3>High school · Oct. 27, 2026 · Final</h3><p><b>UHSAA State Cross Country Championships</b></p><p class="meta">Salt Lake City, UT</p></a></div><p style="margin:14px 0 0"><a href="/championships/2026-conference-championship-week/" style="font-weight:700;color:var(--red-ink)">See every Championship Week meet →</a></p></section></main>
   <footer>Start Line Weekly is built and edited by Connor Andrews. Results and streams link out to the meet's official timer or broadcaster. <a href="/archive/">Past weeks →</a></footer>
 </div>

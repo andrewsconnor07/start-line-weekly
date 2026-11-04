@@ -46,6 +46,12 @@ h2{font:600 26px var(--display);text-transform:uppercase;letter-spacing:.02em;ma
 .lane .rk{font:700 24px var(--display);color:var(--red-ink);min-width:2ch}
 .lane b{display:block;line-height:1.2}.lane small{color:var(--muted);font-size:12px}
 .btns{display:flex;flex-wrap:wrap;gap:10px}
+.nl{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:18px 28px;align-items:center;background:var(--navy,#0E2240);color:#fff;border-left:8px solid var(--red,#C8102E);padding:22px 24px;margin:6px 0}
+.nl .eyebrow{font:500 12px var(--mono,monospace);letter-spacing:.1em;text-transform:uppercase;color:#FF8A99}
+.nl h2{margin:6px 0 6px;color:#fff;font:700 clamp(22px,3vw,28px)/1.05 var(--display,sans-serif);text-transform:uppercase;border:0;padding:0}
+.nl p{margin:0;color:#C9D4E5;font-size:15px;max-width:44ch}
+.nl-form{background:#fff;border-radius:4px;padding:6px;min-height:64px;min-width:0;overflow:hidden}
+@media (max-width:700px){.nl{grid-template-columns:1fr;padding:20px 16px}}
 .btns a{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font:700 14px var(--body);padding:12px 18px;border-radius:4px;border:2px solid var(--ink)}
 .btns a.res{background:var(--red);border-color:var(--red);color:#fff}
 .dot{width:8px;height:8px;border-radius:50%;background:currentColor;display:inline-block}

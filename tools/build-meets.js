@@ -68,6 +68,9 @@ const meets = fs.readdirSync(dir).filter(f => f.endsWith(".json")).map(f => {
 }).sort((a, b) => b.iso.localeCompare(a.iso) || a.lvl.localeCompare(b.lvl));
 const pages = fs.readdirSync(pdir).filter(f => f.endsWith(".json")).map(f => JSON.parse(fs.readFileSync(path.join(pdir, f), "utf8")));
 
+// Newsletter signup (Beehiiv inline form; the loader inserts the form right after its script tag)
+const NL_BOX = `<section class="nl" aria-labelledby="nl-h"><div class="nl-copy"><div class="eyebrow">Free · Every Thursday</div><h2 id="nl-h">Get the weekend's races in your inbox</h2><p>The biggest meets, matchups, rankings and live links before every race weekend.</p></div><div class="nl-form"><script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="2f9af153-e145-4710-81b8-106fc34de986"></script></div></section>`;
+
 // Page body is written into the HTML at build time (no client-side rendering), so search engines see it right away.
 const LVN = { d1: "Division I", d2: "Division II", d3: "Division III", hs: "High school" };
 const DAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -102,6 +105,7 @@ function body(m) {
 <h1>${m.headline}${fin ? '<span class="status">Final</span>' : ""}</h1>
 <div class="meta">${m.name} · ${m.where}</div><p class="sum">${m.summary}</p>${m.hub ? `<p style="margin:14px 0 0"><a href="${m.hub}" style="font-weight:700;color:var(--red-ink)">← All ${hubName(m)} meets</a></p>` : ""}</section>
 ${lanes}${btns ? `<div class="btns">${btns}</div>` : ""}
+${NL_BOX}
 ${related(m)}`;
 }
 
@@ -186,6 +190,12 @@ ${m.recap ? `<p class="why"><b>Final:</b> ${esc(m.recap)}</p>` : m.why ? `<p cla
 .ca{display:flex;flex-direction:column;gap:6px;min-width:150px}
 .ca a{display:flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;font:700 13px var(--body);padding:9px 12px;border-radius:4px;border:2px solid var(--ink);white-space:nowrap}
 .ca a.res{background:var(--red);border-color:var(--red);color:#fff}
+.nl{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:18px 28px;align-items:center;background:var(--navy,#0E2240);color:#fff;border-left:8px solid var(--red,#C8102E);padding:22px 24px;margin:6px 0}
+.nl .eyebrow{font:500 12px var(--mono,monospace);letter-spacing:.1em;text-transform:uppercase;color:#FF8A99}
+.nl h2{margin:6px 0 6px;color:#fff;font:700 clamp(22px,3vw,28px)/1.05 var(--display,sans-serif);text-transform:uppercase;border:0;padding:0}
+.nl p{margin:0;color:#C9D4E5;font-size:15px;max-width:44ch}
+.nl-form{background:#fff;border-radius:4px;padding:6px;min-height:64px;min-width:0;overflow:hidden}
+@media (max-width:700px){.nl{grid-template-columns:1fr;padding:20px 16px}}
 @media (max-width:700px){.cm{grid-template-columns:1fr}.ca{flex-direction:row;flex-wrap:wrap;min-width:0}.ca a{flex:1}.chero{padding:22px 16px}}
 </style>`;
   const ttl = `${CH.title} ${CH.week.slice(-4)}: ${CH.seo || "Conference & State Cross Country Live Results"} | Start Line Weekly`;
@@ -197,6 +207,7 @@ ${m.recap ? `<p class="why"><b>Final:</b> ${esc(m.recap)}</p>` : m.why ? `<p cla
 <p>${esc(CH.blurb || "This week's championships, with live results and streams in one place.")}</p>
 <div class="stats">${stats}</div></section>
 ${tops.length ? `<section aria-labelledby="dm"><h2 id="dm" style="margin-bottom:12px">Don't miss</h2><div class="tops">${tops.map(m => `<div class="top4" data-lvl="${m.lvl}"><div class="eyebrow">${shortDay(m.day)} · ${SH[m.lvl]}</div><h3><a href="/meets/${slugify(m.name)}/">${esc(strip(m.name))}</a></h3><div class="meta">${esc(m.where.split(" · ")[0])}${m.time ? " · " + esc(m.time) : ""}</div><p>${esc(m.recap ? "Final: " + m.recap : m.why)}</p><div class="btns">${btns(m)}</div></div>`).join("")}</div></section>` : ""}
+${NL_BOX}
 <nav class="jump" aria-label="Jump to day">${days.map(d => `<a href="#d-${d}">${shortDay(d)}</a>`).join("")}${next.length ? `<a href="#next">Coming next</a>` : ""}</nav>
 <nav class="cfil" aria-label="Filter by level"><button type="button" data-f="all" aria-pressed="true">All</button>${lvls.filter(cnt).map(l => `<button type="button" data-f="${l}" aria-pressed="false">${SH[l]}</button>`).join("")}</nav>
 ${days.map(d => `<section class="day" id="d-${d}"><h2>${dayLabel(d)}</h2>${group(now.filter(m => m.day === d))}</section>`).join("")}
