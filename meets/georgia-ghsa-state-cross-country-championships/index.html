@@ -46,12 +46,13 @@ h2{font:600 26px var(--display);text-transform:uppercase;letter-spacing:.02em;ma
 .lane .rk{font:700 24px var(--display);color:var(--red-ink);min-width:2ch}
 .lane b{display:block;line-height:1.2}.lane small{color:var(--muted);font-size:12px}
 .btns{display:flex;flex-wrap:wrap;gap:10px}
-.nl{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:18px 28px;align-items:center;background:var(--navy,#0E2240);color:#fff;border-left:8px solid var(--red,#C8102E);padding:22px 24px;margin:6px 0}
-.nl .eyebrow{font:500 12px var(--mono,monospace);letter-spacing:.1em;text-transform:uppercase;color:#FF8A99}
-.nl h2{margin:6px 0 6px;color:#fff;font:700 clamp(22px,3vw,28px)/1.05 var(--display,sans-serif);text-transform:uppercase;border:0;padding:0}
-.nl p{margin:0;color:#C9D4E5;font-size:15px;max-width:44ch}
-.nl-form{background:#fff;border-radius:4px;padding:6px;min-height:64px;min-width:0;overflow:hidden}
-@media (max-width:700px){.nl{grid-template-columns:1fr;padding:20px 16px}}
+.nl{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;background:var(--navy,#0E2240);color:#fff;border-left:8px solid var(--red,#C8102E);padding:16px 20px;margin:0 0 18px}
+.nl .eyebrow{display:block;font:500 12px var(--mono,monospace);letter-spacing:.1em;text-transform:uppercase;color:#FF8A99}
+.nl b{display:block;margin-top:4px;color:#fff;font:700 clamp(20px,2.6vw,26px)/1.1 var(--display,sans-serif);text-transform:uppercase}
+.nl small{display:block;margin-top:4px;color:#C9D4E5;font:400 14px/1.4 var(--body,sans-serif)}
+.nl .nl-go{flex:0 0 auto;display:inline-flex;align-items:center;gap:8px;background:var(--red,#C8102E);color:#fff;text-decoration:none;font:700 15px var(--body,sans-serif);padding:12px 18px;border-radius:4px;white-space:nowrap}
+.nl .nl-go:hover{background:#A50D26}
+@media (max-width:600px){.nl{padding:16px}.nl .nl-go{width:100%;justify-content:center}}
 .btns a{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font:700 14px var(--body);padding:12px 18px;border-radius:4px;border:2px solid var(--ink)}
 .btns a.res{background:var(--red);border-color:var(--red);color:#fff}
 .dot{width:8px;height:8px;border-radius:50%;background:currentColor;display:inline-block}
@@ -69,7 +70,7 @@ footer a{font-weight:700;color:var(--red-ink)}
 <h1>Georgia GHSA State Cross Country Championships</h1>
 <div class="meta">Georgia GHSA State Cross Country Championships · Carrollton, GA · Carrollton High School</div><p class="sum">Bowdon's Averi Lowen is No. 3 in DyeStat's national girls rankings. · Fri–Sat Nov 6–7</p><p style="margin:14px 0 0"><a href="/championships/" style="font-weight:700;color:var(--red-ink)">← All State Finals &amp; D-II Championship Weekend meets</a></p></section>
 
-<section class="nl" aria-labelledby="nl-h"><div class="nl-copy"><div class="eyebrow">Free · Every Thursday</div><h2 id="nl-h">Get the weekend's races in your inbox</h2><p>The biggest meets, matchups, rankings and live links before every race weekend.</p></div><div class="nl-form"><script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="2f9af153-e145-4710-81b8-106fc34de986"></script></div></section>
+<section class="nl" aria-label="Newsletter"><div><span class="eyebrow">Free · Every Thursday</span><b>The weekend's races, in your inbox</b><small>The biggest meets, matchups, rankings and live links before every race weekend.</small></div><a class="nl-go" href="https://startlineweekly.beehiiv.com/subscribe?utm_source=startlineweekly&amp;utm_medium=site&amp;utm_campaign=meet-page" target="_blank" rel="noopener">Get the free email →</a></section>
 <section aria-labelledby="more" style="margin-top:10px"><h2 id="more">More Friday, Nov. 6 championships</h2><div class="grid" style="margin-top:12px"><a class="card" style="text-decoration:none" href="/meets/missouri-mshsaa-state-cross-country-championships/"><h3>High school · Nov. 6, 2026</h3><p><b>Missouri MSHSAA State Cross Country Championships</b></p><p class="meta">Columbia, MO</p></a><a class="card" style="text-decoration:none" href="/meets/north-carolina-nchsaa-state-cross-country-championships/"><h3>High school · Nov. 6, 2026</h3><p><b>North Carolina NCHSAA State Cross Country Championships</b></p><p class="meta">Kernersville, NC</p></a><a class="card" style="text-decoration:none" href="/meets/texas-uil-state-cross-country-championships/"><h3>High school · Nov. 6, 2026</h3><p><b>Texas UIL State Cross Country Championships</b></p><p class="meta">Round Rock, TX</p></a><a class="card" style="text-decoration:none" href="/meets/gulf-south-cross-country-championships/"><h3>Division II · Nov. 6, 2026</h3><p><b>Gulf South Cross Country Championships</b></p><p class="meta">Nashville, TN</p></a></div><p style="margin:14px 0 0"><a href="/championships/" style="font-weight:700;color:var(--red-ink)">See every State Finals &amp; D-II Championship Weekend meet →</a></p></section></main>
   <footer>Start Line Weekly is built and edited by Connor Andrews. Results and streams link out to the meet's official timer or broadcaster. <a href="/archive/">Past weeks →</a></footer>
 </div>
