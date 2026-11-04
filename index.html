@@ -275,7 +275,7 @@ footer .past{display:inline-block;margin-top:8px;font:700 14px var(--body);color
   <div class="rgrid" id="polls"></div>
 </aside>
 </div>
-  <footer>Start Line Weekly is built and edited by Connor Andrews. Rankings from USTFCCCA (D-I Oct 20; D-II Oct 28; D-III Oct 21, 2026) and DyeStat (Oct 22 and Oct 29, 2026). Results and streams link out to the meet's official timer or broadcaster. College meets are listed under the host school&rsquo;s division, except that any meet with a nationally ranked D-I team moves to D-I. Updated weekly.<br><a class="past" href="/archive/">Past weeks →</a></footer>
+  <footer>Start Line Weekly is built and edited by Connor Andrews. Rankings from USTFCCCA (D-I Nov 3; D-II Oct 28; D-III Nov 4, 2026) and DyeStat (Oct 22 and Oct 29, 2026). Results and streams link out to the meet's official timer or broadcaster. College meets are listed under the host school&rsquo;s division, except that any meet with a nationally ranked D-I team moves to D-I. Updated weekly.<br><a class="past" href="/archive/">Past weeks →</a></footer>
 </div>
 
 <script src="/meets/pages.js"></script>
@@ -300,6 +300,8 @@ const MEETS = [
   {d:"7", m:"Nov", div:"d2", name:"Lone Star Conference Cross Country Championships", where:"Lubbock, TX", why:"No. 4 West Texas A&M men and No. 8 West Texas A&M women.", tags:["Conference championship", "Saturday"], results:null, watch:null},
   {d:"7", m:"Nov", div:"d2", name:"MIAA Cross Country Championships", where:"St. Joseph, MO", why:"No. 7 Pittsburg State men; No. 9 Missouri Southern and No. 10 Pittsburg State women.", tags:["Conference championship", "Saturday"], results:null, watch:null},
   {d:"7", m:"Nov", div:"d2", name:"NSIC Cross Country Championships", where:"Sioux Falls, SD · Yankton Trail Park", why:"The NSIC championship.", tags:["Conference championship", "Saturday"], results:null, watch:null},
+  {d:"7", m:"Nov", div:"d2", name:"Peach Belt Conference Cross Country Championships", where:"Macon, GA · host Middle Georgia State · Georgia Premier Cross Country Course", why:"The Peach Belt championship, with Flagler the preseason favorite on both the men’s and women’s sides.", tags:["Conference championship", "Saturday"], results:null, watch:null},
+  {d:"7", m:"Nov", div:"d2", name:"Sunshine State Conference Cross Country Championships", where:"Lakeland, FL · Holloway Park", why:"The Sunshine State Conference championship.", tags:["Conference championship", "Saturday"], results:null, watch:null},
   {d:"7", m:"Nov", div:"d2", name:"PSAC Cross Country Championships", where:"Bloomsburg, PA · host Bloomsburg", why:"The PSAC championship.", tags:["Conference championship", "Saturday"], results:null, watch:null},
   {d:"7", m:"Nov", div:"d2", name:"RMAC Cross Country Championships", where:"Rapid City, SD", why:"The best conference meet in D-II. Men: No. 2 Colorado School of Mines, No. 3 Adams State and No. 9 Western Colorado. Women: No. 1 Adams State, No. 3 Mines, No. 5 Western Colorado and No. 7 UC-Colorado Springs.", tags:["Conference championship", "Saturday", "Ranked showdown"], results:null, watch:null},
   {d:"7", m:"Nov", div:"hs", name:"Alabama AHSAA State Cross Country Championships", where:"Moulton, AL · Oakville Indian Mounds Park", why:"Alabama’s state final.", tags:["State championship", "Alabama", "Saturday"], results:"https://al.milesplit.com/meets/766103-2026-ahsaa-xc-state-championship-2026", watch:null},
@@ -316,18 +318,18 @@ const MEETS = [
 
 const U="https://www.ustfccca.org/2026/10/featured/";
 const POLLS = [
-  {div:"d1",t:"D-I Men",src:"Week 5 · Oct 20",url:U+"2026-ncaa-di-mens-cross-country-national-coaches-poll-week-5",
-   rows:[["New Mexico",""],["Oklahoma State",""],["Colorado",""],["Alabama",""],["BYU",""],["Oregon",""],["Arkansas",""],["Syracuse",""],["Florida",""],["Wake Forest",""]]},
-  {div:"d1",t:"D-I Women",src:"Week 5 · Oct 20",url:U+"2026-ncaa-di-womens-cross-country-national-coaches-poll-week-5",
-   rows:[["BYU","+1"],["NC State","-1"],["West Virginia",""],["Florida",""],["Northern Arizona",""],["New Mexico",""],["Oklahoma State","+1"],["Notre Dame","-1"],["Alabama","+1"],["Colorado","-1"]]},
+  {div:"d1",t:"D-I Men",src:"Week 6 · Nov 3",url:"https://www.ustfccca.org/2026/11/featured/2026-ncaa-di-mens-cross-country-national-coaches-poll-week-6",
+   rows:[["New Mexico",""],["Colorado","+1"],["Oklahoma State","-1"],["Alabama",""],["Oregon","+1"],["BYU","-1"],["Arkansas",""],["Florida","+1"],["Wake Forest","+1"],["Iowa State","+10"]]},
+  {div:"d1",t:"D-I Women",src:"Week 6 · Nov 3",url:"https://www.ustfccca.org/2026/11/featured/2026-ncaa-di-womens-cross-country-national-coaches-poll-week-6",
+   rows:[["BYU",""],["NC State",""],["West Virginia",""],["Alabama","+5"],["Florida","-1"],["Northern Arizona","-1"],["New Mexico","-1"],["Oklahoma State","-1"],["South Carolina (T-9)","+2"],["Colorado (T-9)","+1"]]},
   {div:"d2",t:"D-II Men",src:"Week 6 · Oct 28",url:U+"2026-ncaa-dii-mens-cross-country-national-coaches-poll-week-6",
    rows:[["Wingate",""],["Colorado School of Mines",""],["Adams State",""],["West Texas A&M",""],["Lee (Tenn.)","+1"],["Grand Valley State","-1"],["Pittsburg State",""],["Chico State",""],["Western Colorado",""],["Western Washington",""]]},
   {div:"d2",t:"D-II Women",src:"Week 6 · Oct 28",url:U+"2026-ncaa-dii-womens-cross-country-national-coaches-poll-week-6",
    rows:[["Adams State",""],["Wingate",""],["Colorado School of Mines",""],["Chico State",""],["Western Colorado",""],["Grand Valley State",""],["UC-Colorado Springs",""],["West Texas A&M",""],["Missouri Southern",""],["Pittsburg State","+1"]]},
-  {div:"d3",t:"D-III Men",src:"Week 6 · Oct 21",url:U+"2026-ncaa-diii-mens-cross-country-national-coaches-poll-week-6",
-   rows:[["Wartburg",""],["Johns Hopkins","+1"],["SUNY Geneseo","-1"],["North Central (Ill.)","+7"],["UW-La Crosse","-1"],["UW-Stevens Point",""],["Washington (Mo.)","+2"],["RPI",""],["NYU","-4"],["MIT",""]]},
-  {div:"d3",t:"D-III Women",src:"Week 6 · Oct 21",url:U+"2026-ncaa-diii-womens-cross-country-national-coaches-poll-week-6",
-   rows:[["NYU","+1"],["Middlebury","+6"],["UW-La Crosse",""],["Williams","-3"],["Johns Hopkins","-1"],["Chicago","-1"],["Tufts","-1"],["Washington (Mo.)","-1"],["MIT (T-9)",""],["Claremont-Mudd-Scripps (T-9)","+1"]]},
+  {div:"d3",t:"D-III Men",src:"Week 7 · Nov 4",url:"https://www.ustfccca.org/2026/11/featured/2026-ncaa-diii-mens-cross-country-national-coaches-poll-week-7",
+   rows:[["Wartburg",""],["Johns Hopkins",""],["North Central (Ill.)","+1"],["SUNY Geneseo","-1"],["UW-La Crosse",""],["RPI","+2"],["UW-Stevens Point","-1"],["NYU","+1"],["MIT","+1"],["Carnegie Mellon","+2"]]},
+  {div:"d3",t:"D-III Women",src:"Week 7 · Nov 4",url:"https://www.ustfccca.org/2026/11/featured/2026-ncaa-diii-womens-cross-country-national-coaches-poll-week-7",
+   rows:[["NYU",""],["Williams","+2"],["Middlebury","-1"],["UW-La Crosse","-1"],["Johns Hopkins",""],["Chicago",""],["Tufts",""],["Washington (Mo.)",""],["MIT",""],["Carnegie Mellon","+1"]]},
   {div:"hs",t:"HS Boys",src:"DyeStat national team · Oct 29",url:"https://dyestatxcrankings.runnerspace.com/gprofile.php?mgroup_id=46052&do=news&news_id=675613",
    rows:[["Christ School (NC)",""],["Summit (OR)",""],["Southlake Carroll (TX)",""],["Niwot (CO)",""],["Belen Jesuit (FL)",""],["El Paso Eastwood (TX)","+2"],["Mountain View (CA)","+2"],["Lehi (UT)","NR"],["American Fork (UT)","-3"],["Broughton (NC)",""]]},
   {div:"hs",t:"HS Girls",src:"DyeStat national team · Oct 29",url:"https://dyestatxcrankings.runnerspace.com/gprofile.php?mgroup_id=46052&do=news&news_id=675614",
