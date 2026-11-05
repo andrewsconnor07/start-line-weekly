@@ -10,9 +10,14 @@
  "headline": "Ohio OHSAA State Cross Country Championships",
  "status": "preview",
  "summary": "Ohio OHSAA State Cross Country Championships, Nov. 7, 2026, in Obetz, OH.",
- "results": null,
+ "results": "https://oh.milesplit.com/meets/783630-ohsaa-cross-country-championship-2026",
  "info": null,
- "watch": [],
+ "watch": [
+  [
+   "NFHS Network",
+   "https://www.nfhsnetwork.com/events/ohsaa/gambdb9e1035c"
+  ]
+ ],
  "lanes": [],
  "hub": "/championships/",
  "hubTitle": "State Finals & D-II Championship Weekend"

@@ -6,13 +6,22 @@
  "week": "Nov 2–8, 2026",
  "name": "Virginia VHSL State Cross Country Championships",
  "date": "Nov. 7, 2026",
- "where": "Salem & Leesburg, VA",
+ "where": "Salem & Leesburg, VA · Green Hill Park and Oatlands",
  "headline": "Virginia VHSL State Cross Country Championships",
  "status": "preview",
- "summary": "Class 1 races at Green Hill Park in Salem and Class 6 at Oatlands in Leesburg.",
+ "summary": "Classes 1–3 race at Green Hill Park in Salem; Classes 4, 5 and 6 race at Oatlands in Leesburg.",
  "results": null,
- "info": null,
- "watch": [],
+ "info": "https://www.milesplit.com/meets/719474-vhsl-class-6-state-xc-meet-2026",
+ "watch": [
+  [
+   "NFHS Network · Class 1–3",
+   "https://www.nfhsnetwork.com/events/vhsl/gama6e078fb43"
+  ],
+  [
+   "NFHS Network · Class 4–6",
+   "https://www.nfhsnetwork.com/events/vhsl/gamddf56e79c9"
+  ]
+ ],
  "lanes": [],
  "hub": "/championships/",
  "hubTitle": "State Finals & D-II Championship Weekend"

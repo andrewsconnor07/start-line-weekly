@@ -12,7 +12,16 @@
  "summary": "All eight classes race at Ivey Redmon: 3A and 4A Friday morning and 1A and 2A Friday afternoon, then 7A and 8A Saturday morning and 5A and 6A Saturday afternoon. Broughton’s boys are No. 10 in DyeStat’s national team rankings. · Fri–Sat Nov 6–7 · 1A–4A Fri, 5A–8A Sat · first race 9:00 a.m. both days",
  "results": "https://milesplit.live/meets/780153",
  "info": "https://www.nchsaa.org/championships/cross-country/",
- "watch": [],
+ "watch": [
+  [
+   "NFHS Network · Fri",
+   "https://www.nfhsnetwork.com/events/nchsaa/gam5ffebc60e2"
+  ],
+  [
+   "NFHS Network · Sat",
+   "https://www.nfhsnetwork.com/events/nchsaa/gam9534725fcf"
+  ]
+ ],
  "lanes": [],
  "hub": "/championships/",
  "hubTitle": "State Finals & D-II Championship Weekend"
