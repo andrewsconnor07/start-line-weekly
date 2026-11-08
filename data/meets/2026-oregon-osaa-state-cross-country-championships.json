@@ -3,32 +3,37 @@
  "lvl": "hs",
  "iso": "2026-11-07",
  "week": "Nov 2–8, 2026",
- "status": "preview",
+ "status": "final",
  "name": "Oregon OSAA State Cross Country Championships",
  "date": "Sat Nov 7",
  "where": "Eugene, OR · Lane Community College",
- "headline": "Oregon: Summit boys and Crater girls, both No. 2 in the nation",
- "summary": "Two No. 2 teams in DyeStat’s national rankings race at Lane Community College: Summit’s boys and Crater’s girls. Lincoln’s Ellery Lincoln (No. 4 girls) and South Eugene’s Yosuke Shibata (No. 9 boys) are among the top individuals in the country.",
+ "headline": "Oregon: Summit boys and Crater girls win 5A titles",
+ "summary": "No. 2 Summit won the 5A boys title with 28 points to Crater’s 53, and No. 2 Crater won the 5A girls title with 27 points to Summit’s 99, trading the titles they won a year ago. Summit senior Bjorn Blankenship won the boys race in 14:19.6, the fastest high school 5K in the country this season on MileSplit, 2.7 seconds ahead of Crater’s Garrett Faught. Lincoln’s Ellery Lincoln repeated as 6A girls champion in 16:57.6, and South Eugene’s Yosuke Shibata won the 6A boys race in 14:53.3.",
  "lanes": [
   [
-   "2",
+   "1",
    "Summit",
-   "Boys"
+   "5A boys · 28 pts"
   ],
   [
-   "2",
+   "1",
    "Crater",
-   "Girls"
+   "5A girls · 27 pts"
   ],
   [
-   "4",
+   "1",
+   "Bjorn Blankenship",
+   "Summit · 14:19.6"
+  ],
+  [
+   "1",
    "Ellery Lincoln",
-   "Lincoln"
+   "Lincoln · 16:57.6"
   ],
   [
-   "9",
+   "1",
    "Yosuke Shibata",
-   "South Eugene"
+   "South Eugene · 14:53.3"
   ]
  ],
  "results": "https://www.milesplit.com/meets/788931-osaa-state-xc-championships-2026",

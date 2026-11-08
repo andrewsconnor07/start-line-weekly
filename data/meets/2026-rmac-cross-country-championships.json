@@ -3,50 +3,50 @@
  "lvl": "d2",
  "iso": "2026-11-07",
  "week": "Nov 2–8, 2026",
- "status": "preview",
+ "status": "final",
  "name": "RMAC Cross Country Championships",
  "date": "Sat Nov 7",
  "where": "Rapid City, SD",
- "headline": "RMAC: Mines, Adams State and Western Colorado in one race",
- "summary": "The best conference meet in D-II. The men’s race has No. 2 Colorado School of Mines, No. 3 Adams State and No. 9 Western Colorado. The women’s race has four top-10 teams: No. 1 Adams State, No. 3 Mines, No. 5 Western Colorado and No. 7 UC-Colorado Springs.",
+ "headline": "RMAC: Adams State men and Western Colorado women win titles",
+ "summary": "Adams State won the men’s title with 33 points to No. 2 Colorado School of Mines’ 48, with No. 9 Western Colorado third (79) and UC-Colorado Springs fourth (107). Mines’ Dawson Gunn won the men’s 8K in 23:17.3. In the women’s race, No. 5 Western Colorado won with 40 points over No. 1 Adams State (55), UC-Colorado Springs (64) and No. 3 Mines (69); Mines’ Emily LaMena took the individual title in 20:38.2.",
  "lanes": [
-  [
-   "2",
-   "Colorado School of Mines",
-   "Men"
-  ],
-  [
-   "3",
-   "Adams State",
-   "Men"
-  ],
-  [
-   "9",
-   "Western Colorado",
-   "Men"
-  ],
   [
    "1",
    "Adams State",
-   "Women"
+   "Men · 33 pts"
+  ],
+  [
+   "2",
+   "Colorado School of Mines",
+   "Men · 48 pts"
   ],
   [
    "3",
-   "Colorado School of Mines",
-   "Women"
-  ],
-  [
-   "5",
    "Western Colorado",
-   "Women"
+   "Men · 79 pts"
   ],
   [
-   "7",
+   "1",
+   "Western Colorado",
+   "Women · 40 pts"
+  ],
+  [
+   "2",
+   "Adams State",
+   "Women · 55 pts"
+  ],
+  [
+   "3",
    "UC-Colorado Springs",
-   "Women"
+   "Women · 64 pts"
+  ],
+  [
+   "4",
+   "Colorado School of Mines",
+   "Women · 69 pts"
   ]
  ],
- "results": "https://www.milesplit.com/meets/790528-rmac-championships-2026",
+ "results": "https://www.tfrrs.org/results/xc/28885/2026_RMAC_Cross_Country_Championships",
  "watch": [],
  "insights": []
 }
