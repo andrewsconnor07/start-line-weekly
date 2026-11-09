@@ -1,0 +1,418 @@
+{
+ "week": "Nov 2–8, 2026",
+ "title": "State Finals & D-II Championship Weekend",
+ "blurb": "This week's high school state finals and the D-II conference championships, with live results and streams in one place.",
+ "stats": [
+  [
+   "d2",
+   "D-II conference meets"
+  ],
+  [
+   "hs",
+   "high school state finals"
+  ]
+ ],
+ "seo": "Live Results & Streams",
+ "desc": "Live results and streams for the Nov. 5–8, 2026 high school state cross country finals (Texas, Michigan, Oregon, Illinois, Ohio, Pennsylvania, Georgia and more) and the D-II conference championships.",
+ "meets": [
+  {
+   "name": "Tennessee TSSAA State Cross Country Championships",
+   "lvl": "hs",
+   "conf": "Tennessee",
+   "day": "2026-11-05",
+   "where": "Memphis, TN · Shelby Farms Park",
+   "time": "",
+   "why": "",
+   "results": "https://tn.milesplit.com/meets/772359-tssaa-xc-state-championship-meet-2026",
+   "info": null,
+   "watch": [],
+   "days": "Thu–Fri Nov 5–6",
+   "recap": "Maryville swept the Division I AAA individual titles: Tommy Babbit won the boys race in 15:14.33 and Hadleih Mitchey the girls race in 17:58.52."
+  },
+  {
+   "name": "Texas UIL State Cross Country Championships",
+   "lvl": "hs",
+   "conf": "Texas",
+   "day": "2026-11-06",
+   "where": "Round Rock, TX · Old Settlers Park",
+   "time": "First race 8:15 a.m. CT both days",
+   "why": "Texas is home to No. 3 Southlake Carroll and No. 6 El Paso Eastwood in DyeStat's national boys team rankings, plus top-10 individuals Kai Gutierrez of Southlake Carroll and Noah Garcia of El Paso Eastwood. All six classes race over two days.",
+   "results": "https://tx.milesplit.com/meets/788273-uil-cross-country-state-championship-2026",
+   "info": "https://www.uiltexas.org/cross-country/state",
+   "watch": [
+    [
+     "NFHS Network · Fri",
+     "https://www.nfhsnetwork.com/events/uil/gam03797efa5a"
+    ],
+    [
+     "NFHS Network · Sat",
+     "https://www.nfhsnetwork.com/events/uil/gam13717338d7"
+    ]
+   ],
+   "days": "Fri–Sat Nov 6–7",
+   "top": true,
+   "recap": "No. 6 El Paso Eastwood (56) beats No. 3 Southlake Carroll (68) for the 6A boys title; Ruel Newberry (Denton Guyer) wins in 14:36.3; Flower Mound wins 6A girls (68)."
+  },
+  {
+   "name": "Georgia GHSA State Cross Country Championships",
+   "lvl": "hs",
+   "conf": "Georgia",
+   "day": "2026-11-06",
+   "where": "Carrollton, GA · Carrollton High School",
+   "time": "",
+   "why": "Bowdon's Averi Lowen is No. 3 in DyeStat's national girls rankings.",
+   "results": "https://ga.milesplit.com/meets/771888-ghsa-state-cross-country-championships-2026",
+   "info": null,
+   "watch": [],
+   "days": "Fri–Sat Nov 6–7",
+   "recap": "Carrollton won the 7A boys title with 62 points over Harrison (142), led by individual champion Drew Woznicki (15:54.47), and Marietta edged Harrison 48-53 for the 7A girls title as North Gwinnett’s Cadee Benz won in 18:34.44. Bowdon’s Averi Lowen won the 1A girls race in 17:49.83."
+  },
+  {
+   "name": "North Carolina NCHSAA State Cross Country Championships",
+   "lvl": "hs",
+   "conf": "N. Carolina",
+   "day": "2026-11-06",
+   "where": "Kernersville, NC · Ivey Redmon Sports Complex",
+   "time": "1A–4A Fri, 5A–8A Sat · first race 9:00 a.m. both days",
+   "why": "All eight classes race at Ivey Redmon: 3A and 4A Friday morning and 1A and 2A Friday afternoon, then 7A and 8A Saturday morning and 5A and 6A Saturday afternoon. Broughton’s boys are No. 10 in DyeStat’s national team rankings.",
+   "results": "https://milesplit.live/meets/780153",
+   "info": "https://www.nchsaa.org/championships/cross-country/",
+   "watch": [
+    [
+     "NFHS Network · Fri",
+     "https://www.nfhsnetwork.com/events/nchsaa/gam5ffebc60e2"
+    ],
+    [
+     "NFHS Network · Sat",
+     "https://www.nfhsnetwork.com/events/nchsaa/gam9534725fcf"
+    ]
+   ],
+   "days": "Fri–Sat Nov 6–7",
+   "recap": "No. 10 Broughton won the 8A boys title with 19 points, ahead of Apex Friendship (98), and Broughton’s Tyler Burke won the race in 15:21.01. Green Level won the 8A girls title with 67 points to Panther Creek’s 75, and Hoggard’s Amelia Medlin won in 17:28.40."
+  },
+  {
+   "name": "Missouri MSHSAA State Cross Country Championships",
+   "lvl": "hs",
+   "conf": "Missouri",
+   "day": "2026-11-06",
+   "where": "Columbia, MO · Gans Creek Cross Country Course",
+   "time": "",
+   "why": "Rockhurst's Jack McGovern is No. 3 in DyeStat's national boys rankings. Classes 2, 3 and 4 race Friday; Classes 1 and 5 race Saturday.",
+   "results": "https://www.milesplit.com/meets/789485-mshsaa-xc-state-championships-2026",
+   "info": "https://www.mshsaa.org/Content/CrossCountry/InformationCentral.aspx",
+   "watch": [],
+   "days": "Fri–Sat Nov 6–7"
+  },
+  {
+   "name": "Gulf South Cross Country Championships",
+   "lvl": "d2",
+   "conf": "Gulf South",
+   "day": "2026-11-06",
+   "where": "Nashville, TN",
+   "time": "Men 9:00 a.m. ET · Women 9:45 a.m. ET",
+   "why": "No. 5 Lee men lead the Gulf South field.",
+   "results": "https://www.tfrrs.org/results/xc/28933/Gulf_South_XC_Championships_2026",
+   "info": null,
+   "watch": [],
+   "recap": "Lee swept both titles: the men scored 16 points to Mississippi College’s 71 and the women 26 to Mississippi College’s 75. Lee’s Kylian Boulanger (23:30.2) and Ava Sparks (20:41.6) won the individual races."
+  },
+  {
+   "name": "Michigan MHSAA Lower Peninsula Cross Country Finals",
+   "lvl": "hs",
+   "conf": "Michigan",
+   "day": "2026-11-07",
+   "where": "Brooklyn, MI · Michigan International Speedway",
+   "time": "",
+   "why": "Ann Arbor Pioneer's girls are No. 4 in DyeStat's national team rankings and Pioneer's Natasza Dudek is the No. 1 girl in the country. Whitehall's Robert Jazwinski III is No. 6 among boys. All four divisions race at MIS.",
+   "results": "https://www.milesplit.com/meets/789016-mhsaa-lp-division-1-finals-2026",
+   "info": "https://www.mhsaa.com/sports/boys-cross-country",
+   "watch": [
+    [
+     "NFHS Network · D1-D2",
+     "https://www.nfhsnetwork.com/events/mhsaa-mi/gamc6e8ecabb2"
+    ],
+    [
+     "NFHS Network · D3-D4",
+     "https://www.nfhsnetwork.com/events/mhsaa-mi/gamc26c65f001"
+    ]
+   ],
+   "top": true,
+   "recap": "Natasza Dudek repeats in 16:26.6 and Ann Arbor Pioneer wins the Division 1 girls title (87); Pioneer’s Kamari Ronfeldt wins the boys race in 14:45.9."
+  },
+  {
+   "name": "Oregon OSAA State Cross Country Championships",
+   "lvl": "hs",
+   "conf": "Oregon",
+   "day": "2026-11-07",
+   "where": "Eugene, OR · Lane Community College",
+   "time": "",
+   "why": "Two No. 2 teams in DyeStat's national rankings: Summit's boys and Crater's girls. Lincoln's Ellery Lincoln (No. 4 girls) and South Eugene's Yosuke Shibata (No. 9 boys) are among the top individuals in the country.",
+   "results": "https://www.milesplit.com/meets/788931-osaa-state-xc-championships-2026",
+   "info": null,
+   "watch": [],
+   "top": true,
+   "recap": "Summit boys (28) and Crater girls (27) win 5A titles; Bjorn Blankenship runs 14:19.6; Ellery Lincoln (16:57.6) and Yosuke Shibata (14:53.3) win 6A."
+  },
+  {
+   "name": "Illinois IHSA State Cross Country Championships",
+   "lvl": "hs",
+   "conf": "Illinois",
+   "day": "2026-11-07",
+   "where": "Peoria, IL · Detweiller Park",
+   "time": "",
+   "why": "Effingham St. Anthony's Isabella Keller is No. 8 in DyeStat's national girls rankings.",
+   "results": "https://il.milesplit.com/meets/789238-ihsa-state-xc-championships-2026",
+   "info": null,
+   "watch": []
+  },
+  {
+   "name": "Ohio OHSAA State Cross Country Championships",
+   "lvl": "hs",
+   "conf": "Ohio",
+   "day": "2026-11-07",
+   "where": "Obetz, OH · Fortress Obetz & Memorial Park",
+   "time": "",
+   "why": "",
+   "results": "https://oh.milesplit.com/meets/783630-ohsaa-cross-country-championship-2026",
+   "info": null,
+   "watch": [
+    [
+     "NFHS Network",
+     "https://www.nfhsnetwork.com/events/ohsaa/gambdb9e1035c"
+    ]
+   ]
+  },
+  {
+   "name": "Pennsylvania PIAA State Cross Country Championships",
+   "lvl": "hs",
+   "conf": "Pennsylvania",
+   "day": "2026-11-07",
+   "where": "Newville, PA · Big Spring High School",
+   "time": "First race 9:30 a.m.",
+   "why": "The PIAA championships move to Big Spring for the first time.",
+   "results": "https://www.milesplit.com/meets/793010-piaa-state-championships-2026",
+   "info": null,
+   "watch": [
+    [
+     "NFHS Network",
+     "https://www.nfhsnetwork.com/events/piaa/gam7719b4e5c5"
+    ]
+   ]
+  },
+  {
+   "name": "Virginia VHSL State Cross Country Championships",
+   "lvl": "hs",
+   "conf": "Virginia",
+   "day": "2026-11-07",
+   "where": "Salem & Leesburg, VA · Green Hill Park and Oatlands",
+   "time": "",
+   "why": "Classes 1–3 race at Green Hill Park in Salem; Classes 4, 5 and 6 race at Oatlands in Leesburg.",
+   "results": null,
+   "info": "https://www.milesplit.com/meets/719474-vhsl-class-6-state-xc-meet-2026",
+   "watch": [
+    [
+     "NFHS Network · Class 1–3",
+     "https://www.nfhsnetwork.com/events/vhsl/gama6e078fb43"
+    ],
+    [
+     "NFHS Network · Class 4–6",
+     "https://www.nfhsnetwork.com/events/vhsl/gamddf56e79c9"
+    ]
+   ]
+  },
+  {
+   "name": "Washington WIAA State Cross Country Championships",
+   "lvl": "hs",
+   "conf": "Washington",
+   "day": "2026-11-07",
+   "where": "Pasco, WA · Sun Willows Golf Course",
+   "time": "",
+   "why": "",
+   "results": "https://www.milesplit.com/meets/788737-wiaa-state-xc-championships-2026",
+   "info": null,
+   "watch": []
+  },
+  {
+   "name": "Minnesota MSHSL State Cross Country Championships",
+   "lvl": "hs",
+   "conf": "Minnesota",
+   "day": "2026-11-07",
+   "where": "Ham Lake, MN · Majestic Oaks Golf Course",
+   "time": "",
+   "why": "The state meet moves to Majestic Oaks in Ham Lake.",
+   "results": "https://www.milesplit.com/meets/789325-mshsl-class-aaa-state-championships-2026",
+   "info": null,
+   "watch": []
+  },
+  {
+   "name": "Alabama AHSAA State Cross Country Championships",
+   "lvl": "hs",
+   "conf": "Alabama",
+   "day": "2026-11-07",
+   "where": "Moulton, AL · Oakville Indian Mounds Park",
+   "time": "First race 7:50 a.m. CT",
+   "why": "",
+   "results": "https://al.milesplit.com/meets/766103-2026-ahsaa-xc-state-championship-2026",
+   "info": null,
+   "watch": [],
+   "recap": "Hoover won the 6A boys title with 48 points over Huntsville (78) as Hazel Green’s Nehemiah Johnson won in 15:24.33, and Hewitt-Trussville edged Hoover 62-67 for the 6A girls title, with Hoover’s Reese Gonzalez winning in 17:56.08."
+  },
+  {
+   "name": "RMAC Cross Country Championships",
+   "lvl": "d2",
+   "conf": "RMAC",
+   "day": "2026-11-07",
+   "where": "Rapid City, SD",
+   "time": "",
+   "why": "The best conference meet in D-II. Men: No. 2 Colorado School of Mines, No. 3 Adams State and No. 9 Western Colorado. Women: No. 1 Adams State, No. 3 Mines, No. 5 Western Colorado and No. 7 UC-Colorado Springs.",
+   "results": "https://www.tfrrs.org/results/xc/28885/2026_RMAC_Cross_Country_Championships",
+   "info": null,
+   "watch": [],
+   "top": true,
+   "recap": "Adams State men (33) and Western Colorado women (40) win RMAC titles; Mines’ Dawson Gunn (23:17.3) and Emily LaMena (20:38.2) win the individual races."
+  },
+  {
+   "name": "GLIAC Cross Country Championships",
+   "lvl": "d2",
+   "conf": "GLIAC",
+   "day": "2026-11-06",
+   "where": "Hammond, IN · PNW Cross Country Course",
+   "time": "11:00 a.m.",
+   "why": "No. 6 Grand Valley State men and No. 6 Grand Valley State women.",
+   "results": "https://www.tfrrs.org/results/xc/28901/GLIAC_Cross_Country_Championships_2026",
+   "info": null,
+   "watch": [],
+   "recap": "Grand Valley State swept the titles with 19 points in both races: the men ahead of Saginaw Valley (77) and Michigan Tech (101), the women ahead of Michigan Tech (78) and Saginaw Valley (84). Grand Valley’s Flynn Pumpa (24:15.1) and Allie Arnsman (20:35.6) won the individual races."
+  },
+  {
+   "name": "Lone Star Conference Cross Country Championships",
+   "lvl": "d2",
+   "conf": "Lone Star",
+   "day": "2026-11-07",
+   "where": "Lubbock, TX",
+   "time": "",
+   "why": "No. 4 West Texas A&M men and No. 8 West Texas A&M women.",
+   "results": "https://www.tfrrs.org/results/xc/28982/2026_Lone_Star_Conference_Cross_Country_Championships",
+   "info": null,
+   "watch": [],
+   "recap": "West Texas A&M swept the titles, the men with 26 points over Texas A&M-International (70) and the women with 19 over Dallas Baptist (72). WT’s Meshack Keter won the men’s 8K in 23:51.9, and Lola Sarthou led a 1-2-3-4 WT finish in the women’s 6K in 21:16.6."
+  },
+  {
+   "name": "MIAA Cross Country Championships",
+   "lvl": "d2",
+   "conf": "MIAA",
+   "day": "2026-11-07",
+   "where": "St. Joseph, MO",
+   "time": "",
+   "why": "No. 7 Pittsburg State men; No. 9 Missouri Southern and No. 10 Pittsburg State women.",
+   "results": "https://www.tfrrs.org/results/xc/29009/MIAA_Championships",
+   "info": null,
+   "watch": [],
+   "recap": "Washburn won the men’s title with 48 points, three ahead of Pittsburg State (51), and Missouri Southern won the women’s with 60 over Rogers State (69) and Pittsburg State (72). Pittsburg State’s Dylan Sprecker (24:19.1) and Missouri Southern’s Ruth Chemutai (20:32.0) won the individual races."
+  },
+  {
+   "name": "CCAA Cross Country Championships",
+   "lvl": "d2",
+   "conf": "CCAA",
+   "day": "2026-11-07",
+   "where": "San Bernardino, CA · host Cal State San Bernardino · CSUSB XC Course",
+   "time": "",
+   "why": "No. 8 Chico State men and No. 4 Chico State women.",
+   "results": "https://www.tfrrs.org/results/xc/28294/2026_CCAA_Cross_Country_Championships_presented_by_Pollo_Campero",
+   "info": null,
+   "watch": [],
+   "recap": "Chico State swept the titles: the men scored 28 to Cal Poly Pomona’s 66 and the women 29 to Stanislaus State’s 50. Cal Poly Pomona’s Ricardo Vargas won the men’s race in 24:17.8 and Chico State’s Della Molina the women’s in 20:28.7."
+  },
+  {
+   "name": "GNAC Cross Country Championships",
+   "lvl": "d2",
+   "conf": "GNAC",
+   "day": "2026-11-07",
+   "where": "Monmouth, OR · Ash Creek Preserve",
+   "time": "",
+   "why": "No. 10 Western Washington men.",
+   "results": "https://www.milesplit.com/meets/792336-gnac-championships-2026",
+   "info": null,
+   "watch": []
+  },
+  {
+   "name": "PSAC Cross Country Championships",
+   "lvl": "d2",
+   "conf": "PSAC",
+   "day": "2026-11-07",
+   "where": "Bloomsburg, PA · host Bloomsburg",
+   "time": "",
+   "why": "",
+   "results": "https://www.tfrrs.org/results/xc/28381/PSAC_Cross_Country_Championships",
+   "info": null,
+   "watch": [],
+   "recap": "Shippensburg won the men’s title with 53 points over West Chester (67), and East Stroudsburg edged West Chester 65-70 for the women’s, with Edinboro third at 72. West Chester swept the individual titles through Matthew Remishofski (24:54.3) and Kristina Tapia (21:35.1)."
+  },
+  {
+   "name": "GLVC Cross Country Championships",
+   "lvl": "d2",
+   "conf": "GLVC",
+   "day": "2026-11-07",
+   "where": "Springfield, MO",
+   "time": "",
+   "why": "",
+   "results": "https://www.tfrrs.org/results/xc/28928/GLVC_XC_Championships",
+   "info": null,
+   "watch": [],
+   "recap": "Lewis swept the titles, the men with 30 points over Missouri S&T (48) and the women with 53 over Southwest Baptist (63). Lewis’ Evan Horgan won the men’s race in 23:07.4 and Rockhurst’s Carrington Hessen the women’s in 20:01.9."
+  },
+  {
+   "name": "NSIC Cross Country Championships",
+   "lvl": "d2",
+   "conf": "NSIC",
+   "day": "2026-11-07",
+   "where": "Sioux Falls, SD · Yankton Trail Park",
+   "time": "11:15 a.m.",
+   "why": "",
+   "results": "https://www.tfrrs.org/results/xc/29046/NSIC_Conference_XC_Championships",
+   "info": null,
+   "watch": [],
+   "recap": "Augustana won the men’s title with 25 points over Minnesota State (68), and Winona State won the women’s with 45 over Minnesota State (81). Minnesota State’s Luis Pfister (24:09.4) and Winona State’s Stella Rusch (19:51.6) won the individual races."
+  },
+  {
+   "name": "Peach Belt Conference Cross Country Championships",
+   "lvl": "d2",
+   "conf": "Peach Belt",
+   "day": "2026-11-07",
+   "where": "Macon, GA · host Middle Georgia State · Georgia Premier Cross Country Course",
+   "time": "",
+   "why": "The Peach Belt championship, with Flagler the preseason favorite on both the men's and women's sides.",
+   "results": "https://www.tfrrs.org/results/xc/28877/Peach_Belt_Championship",
+   "info": null,
+   "watch": [],
+   "recap": "Augusta swept the titles, edging Flagler 40-43 for the women’s crown and winning the men’s with 27 to Flagler’s 44. Augusta’s Gabby Jourdain won the women’s 5K in 17:59.6 and Flagler’s Axel Dabe the men’s 8K in 25:35.5."
+  },
+  {
+   "name": "Sunshine State Conference Cross Country Championships",
+   "lvl": "d2",
+   "conf": "Sunshine State",
+   "day": "2026-11-07",
+   "where": "Lakeland, FL · Holloway Park",
+   "time": "",
+   "why": "The Sunshine State Conference championship.",
+   "results": "https://www.tfrrs.org/results/xc/28911/2026_Sunshine_State_Conference_Mens_and_Womens_Cross_Country_Championships",
+   "info": null,
+   "watch": [],
+   "recap": "Tampa swept the titles, edging Embry-Riddle 41-42 for the men’s crown and winning the women’s with 33 to Embry-Riddle’s 52. Embry-Riddle swept the individual races through Taye Newman (24:05.3) and Emily Tubbs (21:30.5)."
+  },
+  {
+   "name": "Northeast-10 Cross Country Championships",
+   "lvl": "d2",
+   "conf": "NE-10",
+   "day": "2026-11-07",
+   "where": "Bethpage, NY · Bethpage Polo at the Park",
+   "time": "",
+   "why": "",
+   "results": "https://www.tfrrs.org/results/xc/28572/2026_NE10_Cross_Country_Championship",
+   "info": null,
+   "watch": [],
+   "recap": "Southern Connecticut State swept the titles, the men with 41 points over Bentley (60) and the women with 25 over Bentley (70). Southern Connecticut’s Colton Sallum won the men’s race in 25:00.3 and Bentley’s Lily Tedford the women’s in 21:38.2."
+  }
+ ],
+ "slug": "2026-state-finals-and-d-ii-championship-weekend"
+}
