@@ -17,7 +17,7 @@
   ]
  ],
  "seo": "NCAA Cross Country Regionals Live Results & Streams",
- "desc": "Live results and streams for every 2026 NCAA Division I cross country regional (Nov. 13) and Division III regional (Nov. 14), plus the New Jersey Meet of Champions, Maryland and Arizona state finals and the New England championships.",
+ "desc": "Live results and streams for every 2026 NCAA Division I cross country regional (Nov. 13) and Division III regional (Nov. 14), plus the New Jersey Meet of Champions, the New York state meet, Nike Cross Regionals Heartland and Midwest, and this week's other high school state finals.",
  "meets": [
   {
    "name": "NCAA D-I Mountain Regional Cross Country Championships",
@@ -257,8 +257,8 @@
    "day": "2026-11-14",
    "where": "Holmdel, NJ · Holmdel Park",
    "time": "",
-   "why": "New Jersey's fastest runners from every group race together. No. 1 Union Catholic girls lead DyeStat's national team rankings, and Ocean Township's Leah Starkey is the No. 2 girl in the country.",
-   "results": null,
+   "why": "New Jersey's fastest runners from every group race together at Holmdel. No. 1 Union Catholic's girls, who scored a perfect 15 at last week's Group meet, go for a fifth straight Meet of Champions title, with No. 19 Ridgewood also in the field. Ocean Township's Leah Starkey, the No. 2 girl in the country, ran 16:45 on this course last week. In the boys race, Union Catholic and No. 16 CBA meet again a week after Union Catholic beat CBA for the Non-Public A title, and CBA's Gavin Schmitt won that race in 15:27.",
+   "results": "https://nj.milesplit.com/meets/780716-njsiaa-xc-meet-of-champions-2026",
    "info": null,
    "watch": [],
    "top": true
@@ -270,8 +270,8 @@
    "day": "2026-11-14",
    "where": "Parkton, MD · Hereford High School",
    "time": "",
-   "why": "",
-   "results": null,
+   "why": "Maryland's state final at Hereford High School.",
+   "results": "https://md.milesplit.com/meets/789305-mpssaa-state-championships-2026",
    "info": null,
    "watch": []
   },
@@ -282,8 +282,8 @@
    "day": "2026-11-14",
    "where": "Phoenix, AZ · Cave Creek Golf Course",
    "time": "",
-   "why": "",
-   "results": null,
+   "why": "Arizona's state final at Cave Creek Golf Course.",
+   "results": "https://az.milesplit.com/meets/788771-aia-cross-country-state-championships-2026",
    "info": null,
    "watch": []
   },
@@ -295,9 +295,91 @@
    "where": "Belfast, ME · Troy Howard Middle School",
    "time": "",
    "why": "The top teams and runners from all six New England states, a week after their state meets.",
-   "results": null,
+   "results": "https://me.milesplit.com/meets/789042-91st-annual-new-england-interscholastic-cross-country-champions-2026",
    "info": null,
    "watch": []
+  },
+  {
+   "name": "New York NYSPHSAA State Cross Country Championships",
+   "lvl": "hs",
+   "conf": "New York",
+   "day": "2026-11-14",
+   "where": "Queensbury, NY · Queensbury High School",
+   "time": "First race 9:30 a.m. ET",
+   "why": "East Aurora's boys, No. 26 in DyeStat's national team rankings, go for a fourth straight Class C title. Shenendehowa's Riley Lynch (No. 15) and Ithaca's Tsadia Bercuvitz (No. 18) are among the top girls in the country.",
+   "results": "https://ny.milesplit.com/meets/769726-nysphsaa-new-york-state-championships-2026",
+   "info": null,
+   "watch": []
+  },
+  {
+   "name": "Delaware DIAA State Cross Country Championships",
+   "lvl": "hs",
+   "conf": "Delaware",
+   "day": "2026-11-14",
+   "where": "Felton, DE · Killens Pond State Park",
+   "time": "",
+   "why": "Delaware's state final at Killens Pond.",
+   "results": "https://de.milesplit.com/meets/793356-diaa-cross-country-state-championships-2026",
+   "info": null,
+   "watch": []
+  },
+  {
+   "name": "South Carolina SCHSL State Cross Country Championships",
+   "lvl": "hs",
+   "conf": "S. Carolina",
+   "day": "2026-11-14",
+   "where": "Aiken, SC · Aiken Steeplechase",
+   "time": "",
+   "why": "South Carolina's state finals at the Aiken Steeplechase, with Classes 5A and 3A in one meet and 4A, 2A and 1A in the other.",
+   "results": "https://sc.milesplit.com/meets/782178-schsl-class-5a3a-state-championships-2026",
+   "info": null,
+   "watch": []
+  },
+  {
+   "name": "Virginia VISAA State Cross Country Championships",
+   "lvl": "hs",
+   "conf": "Virginia",
+   "day": "2026-11-12",
+   "where": "Earlysville, VA · Panorama Farms",
+   "time": "",
+   "why": "The state championship for Virginia's independent schools, Thursday at Panorama Farms.",
+   "results": "https://va.milesplit.com/meets/790130-visaa-state-cross-country-championships-2026",
+   "info": null,
+   "watch": []
+  },
+  {
+   "name": "Nike Cross Regionals Heartland",
+   "lvl": "hs",
+   "conf": "NXR",
+   "day": "2026-11-15",
+   "where": "Sioux Falls, SD · Yankton Trail Park",
+   "time": "Girls 2:25 p.m. CT · Boys 2:55 p.m. CT",
+   "why": "A Nike Cross Nationals qualifier: the top two teams and top five individuals not on those teams advance. No. 6 Ava Claasen and No. 9 Ruby Ihmels lead the girls race with No. 11 Harrisburg (and No. 16 Brianna Reilly) and No. 17 Pella. No. 27 Sioux Falls Washington and No. 20 Preston Johnson lead the boys.",
+   "results": "https://results.wayzatatiming.com/meets/79759",
+   "info": null,
+   "watch": [
+    [
+     "RunnerSpace+",
+     "https://nxrhl.runnerspace.com/eprofile.php?event_id=300&do=videos&video_id=466278"
+    ]
+   ]
+  },
+  {
+   "name": "Nike Cross Regionals Midwest",
+   "lvl": "hs",
+   "conf": "NXR",
+   "day": "2026-11-15",
+   "where": "Terre Haute, IN · LaVern Gibson Championship Course",
+   "time": "Girls 12:30 p.m. ET · Boys 1:00 p.m. ET",
+   "why": "A Nike Cross Nationals qualifier on the NCAA championship course, with Indiana's Daphne Weller (No. 20 girls) in the field.",
+   "results": "https://in.milesplit.com/meets/789292-nxr-midwest-regional-championships-2026",
+   "info": null,
+   "watch": [
+    [
+     "RunnerSpace+",
+     "https://nxrmw.runnerspace.com/eprofile.php?event_id=298&do=videos&folder_id=5363"
+    ]
+   ]
   },
   {
    "name": "NCAA Division I Cross Country Championships",
