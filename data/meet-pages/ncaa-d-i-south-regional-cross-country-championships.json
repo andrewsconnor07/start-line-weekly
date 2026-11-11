@@ -9,10 +9,15 @@
  "where": "Tallahassee, FL · host Florida State · Apalachee Regional Park",
  "headline": "NCAA D-I South Regional Cross Country Championships",
  "status": "preview",
- "summary": "Men: No. 4 Alabama, No. 8 Florida and No. 24 Tennessee. Women: No. 4 Alabama and No. 5 Florida. The top two teams and the top four individuals not on those teams qualify automatically for the NCAA Championships on Nov. 21. · Women 6K · Men 10K",
- "results": "https://fl.milesplit.com/meets/789636-ncaa-division-i-south-region-cross-country-championships-2026",
+ "summary": "Men: No. 4 Alabama, No. 8 Florida and No. 24 Tennessee. Women: No. 4 Alabama and No. 5 Florida. The top two teams and the top four individuals not on those teams qualify automatically for the NCAA Championships on Nov. 21. · Women 6K 8:30 a.m. ET · Men 10K 9:30 a.m. ET",
+ "results": "https://live.pttiming.com/xc-ptt.html?mid=9294",
  "info": null,
- "watch": [],
+ "watch": [
+  [
+   "ESPN+",
+   "https://www.espn.com/watch/player/_/id/f03381ef-d0ef-4a55-b0c1-5b8b60da007a"
+  ]
+ ],
  "lanes": [],
  "hub": "/championships/",
  "hubTitle": "NCAA Regionals Weekend"

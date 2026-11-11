@@ -9,10 +9,15 @@
  "where": "Lock Haven, PA · host Lock Haven · West Branch XC Course",
  "headline": "NCAA D-III Mid-Atlantic Regional Cross Country Championships",
  "status": "preview",
- "summary": "Men: No. 2 Johns Hopkins and No. 10 Carnegie Mellon. Women: No. 5 Johns Hopkins and No. 10 Carnegie Mellon. Nationals bids are on the line for the NCAA D-III Championships on Nov. 21 in Northfield, Minn.",
- "results": null,
+ "summary": "Men: No. 2 Johns Hopkins and No. 10 Carnegie Mellon. Women: No. 5 Johns Hopkins and No. 10 Carnegie Mellon. Nationals bids are on the line for the NCAA D-III Championships on Nov. 21 in Northfield, Minn. · Women 6K 11:00 a.m. ET · Men 8K 12:00 p.m. ET",
+ "results": "https://lexicontiming.com/meets/76596",
  "info": null,
- "watch": [],
+ "watch": [
+  [
+   "PSAC Sports Digital Network",
+   "https://psacsportsdigitalnetwork.com/golhu/?B=4750967"
+  ]
+ ],
  "lanes": [],
  "hub": "/championships/",
  "hubTitle": "NCAA Regionals Weekend"
