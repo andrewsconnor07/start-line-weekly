@@ -3,37 +3,47 @@
  "lvl": "d1",
  "iso": "2026-11-13",
  "week": "Nov 9–15, 2026",
- "status": "preview",
+ "status": "final",
  "name": "NCAA D-I South Regional Cross Country Championships",
  "date": "Fri Nov 13",
  "where": "Tallahassee, FL · host Florida State · Apalachee Regional Park",
- "headline": "South Regional: Alabama and Florida, ranked in both races",
- "summary": "No. 4 Alabama and No. 8 Florida lead the men’s race with No. 24 Tennessee, and No. 4 Alabama and No. 5 Florida meet again in the women’s race at Apalachee Regional Park. The top two teams in each race earn automatic bids to the NCAA Championships. Women run 6K at 8:30 a.m. ET and men 10K at 9:30.",
+ "headline": "South Regional: Alabama sweeps both titles",
+ "summary": "No. 4 Alabama’s women won with 21 points behind a 1-2 from Caren Kiplagat (19:20.6) and Cynthia Jemutai, with No. 5 Florida second (74). Alabama’s men won too, 48 to 54 over No. 8 Florida, with No. 24 Tennessee third (120). Florida’s Kelvin Cheruiyot won the men’s race in 29:01.5, 0.7 seconds ahead of Alabama’s Dennis Kipruto.",
  "lanes": [
   [
-   "4",
+   "1",
    "Alabama",
-   "Men"
+   "Men · 48"
   ],
   [
-   "8",
+   "2",
    "Florida",
-   "Men"
+   "Men · 54"
   ],
   [
-   "24",
+   "3",
    "Tennessee",
-   "Men"
+   "Men · 120"
   ],
   [
-   "4",
+   "1",
    "Alabama",
-   "Women"
+   "Women · 21"
   ],
   [
-   "5",
+   "2",
    "Florida",
-   "Women"
+   "Women · 74"
+  ],
+  [
+   "1",
+   "Kelvin Cheruiyot",
+   "Florida · 29:01.5"
+  ],
+  [
+   "1",
+   "Caren Kiplagat",
+   "Alabama · 19:20.6"
   ]
  ],
  "results": "https://live.pttiming.com/xc-ptt.html?mid=9294",

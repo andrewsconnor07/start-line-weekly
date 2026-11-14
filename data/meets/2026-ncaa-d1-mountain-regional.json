@@ -3,52 +3,52 @@
  "lvl": "d1",
  "iso": "2026-11-13",
  "week": "Nov 9–15, 2026",
- "status": "preview",
+ "status": "final",
  "name": "NCAA D-I Mountain Regional Cross Country Championships",
  "date": "Fri Nov 13",
  "where": "Albuquerque, NM",
- "headline": "Mountain Regional: No. 1 New Mexico, No. 2 Colorado and No. 1 BYU",
- "summary": "The toughest region in the country, with only two automatic team bids. The men’s race has No. 1 New Mexico, No. 2 Colorado, No. 6 BYU and No. 20 Northern Arizona; the women’s race has No. 1 BYU, No. 6 Northern Arizona, No. 7 New Mexico, No. 9 Colorado and No. 16 Utah. Women run 6K at 11:00 a.m. MT and men 10K at noon.",
+ "headline": "Mountain Regional: New Mexico sweeps both titles",
+ "summary": "No. 7 New Mexico won the women’s race with 45 points as Pamela Kosgei (19:08.3), Mercy Kirarei and Marion Jepngetich went 1-2-3, with No. 6 Northern Arizona second (67) and No. 1 BYU third (81). No. 1 New Mexico also took the men’s title, 35 to 42 over No. 2 Colorado, with No. 6 BYU third (65). Texas Tech’s Titus Kimaru won the men’s race in 28:41.9.",
  "lanes": [
   [
    "1",
    "New Mexico",
-   "Men"
+   "Men · 35"
   ],
   [
    "2",
    "Colorado",
-   "Men"
+   "Men · 42"
   ],
   [
-   "6",
+   "3",
    "BYU",
-   "Men"
-  ],
-  [
-   "20",
-   "Northern Arizona",
-   "Men"
+   "Men · 65"
   ],
   [
    "1",
-   "BYU",
-   "Women"
-  ],
-  [
-   "6",
-   "Northern Arizona",
-   "Women"
-  ],
-  [
-   "7",
    "New Mexico",
-   "Women"
+   "Women · 45"
   ],
   [
-   "9",
-   "Colorado",
-   "Women"
+   "2",
+   "Northern Arizona",
+   "Women · 67"
+  ],
+  [
+   "3",
+   "BYU",
+   "Women · 81"
+  ],
+  [
+   "1",
+   "Titus Kimaru",
+   "Texas Tech · 28:41.9"
+  ],
+  [
+   "1",
+   "Pamela Kosgei",
+   "New Mexico · 19:08.3"
   ]
  ],
  "results": "https://www.rtspt.com/events/ncaa/d1mtnxc26/",
