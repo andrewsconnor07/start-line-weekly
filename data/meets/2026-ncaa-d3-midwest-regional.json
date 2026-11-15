@@ -3,42 +3,52 @@
  "lvl": "d3",
  "iso": "2026-11-14",
  "week": "Nov 9–15, 2026",
- "status": "preview",
+ "status": "final",
  "name": "NCAA D-III Midwest Regional Cross Country Championships",
  "date": "Sat Nov 14",
  "where": "Rock Island, IL · host Augustana · Saukie Golf Course",
- "headline": "Midwest Regional: No. 1 Wartburg vs. No. 3 North Central",
- "summary": "Five ranked men’s teams at Saukie Golf Course: No. 1 Wartburg, No. 3 North Central (Ill.), No. 12 Chicago, No. 13 Washington (Mo.) and No. 19 Central (Iowa). The women’s race has No. 6 Chicago, No. 8 Washington (Mo.) and No. 20 Wartburg. Women run 6K at noon CT and men 8K at 1:00 p.m.",
+ "headline": "Midwest Regional: North Central tops No. 1 Wartburg",
+ "summary": "No. 3 North Central (Ill.) won the men’s title with 59 points over No. 1 Wartburg (82), with No. 12 Chicago third (90) and No. 13 Washington (Mo.) fourth (99), though Wartburg’s Isaiah Hammerand won the race in 23:53.7, 12.6 seconds clear of North Central’s Daniel Kasperan. No. 6 Chicago won the women’s title with 33 points, putting five in the top 12, ahead of No. 8 Washington (Mo.) (62) and No. 20 Wartburg (88). Washington’s Lucinda Laughlin won the women’s race in 21:04.6.",
  "lanes": [
   [
    "1",
+   "North Central (Ill.)",
+   "Men · 59"
+  ],
+  [
+   "2",
    "Wartburg",
-   "Men"
+   "Men · 82"
   ],
   [
    "3",
-   "North Central (Ill.)",
-   "Men"
-  ],
-  [
-   "12",
    "Chicago",
-   "Men"
+   "Men · 90"
   ],
   [
-   "13",
-   "Washington (Mo.)",
-   "Men"
-  ],
-  [
-   "6",
+   "1",
    "Chicago",
-   "Women"
+   "Women · 33"
   ],
   [
-   "8",
+   "2",
    "Washington (Mo.)",
-   "Women"
+   "Women · 62"
+  ],
+  [
+   "3",
+   "Wartburg",
+   "Women · 88"
+  ],
+  [
+   "1",
+   "Isaiah Hammerand",
+   "Wartburg · 23:53.7"
+  ],
+  [
+   "1",
+   "Lucinda Laughlin",
+   "Washington (Mo.) · 21:04.6"
   ]
  ],
  "results": "https://results.wayzatatiming.com/meets/79757",

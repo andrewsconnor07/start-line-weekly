@@ -3,35 +3,54 @@
  "lvl": "hs",
  "iso": "2026-11-14",
  "week": "Nov 9–15, 2026",
- "status": "preview",
+ "status": "final",
  "name": "New Jersey NJSIAA Meet of Champions Cross Country",
  "date": "Sat Nov 14",
  "where": "Holmdel, NJ · Holmdel Park",
- "headline": "Meet of Champions: No. 1 Union Catholic and No. 2 Leah Starkey",
- "summary": "No. 1 Union Catholic’s girls, who scored a perfect 15 at last week’s Group meet, go for a fifth straight Meet of Champions title, with No. 19 Ridgewood also in the field. Ocean Township’s Leah Starkey, the No. 2 girl in the country, ran 16:45 at Holmdel last week. In the boys race, Union Catholic and No. 16 CBA meet again a week after Union Catholic beat CBA for the Non-Public A title.",
+ "headline": "Meet of Champions: Starkey runs 16:38, Union Catholic makes it five",
+ "summary": "Ocean Township’s Leah Starkey, the No. 2 girl in the country, won by more than a minute in 16:38.21, faster than her 16:45 on the same course a week earlier. No. 1 Union Catholic won a fifth straight Meet of Champions girls title, led by Cayleigh Kaiser (second, 17:42.46) and Paige Sheppard (third). In the boys race, CBA’s Gavin Schmitt won in 15:17.61, 17.5 seconds ahead of West Windsor-Plainsboro North’s Agrim Jha.",
  "lanes": [
   [
    "1",
-   "Union Catholic",
-   "Girls"
+   "Leah Starkey",
+   "Ocean Township · 16:38.21"
   ],
   [
-   "19",
-   "Ridgewood",
-   "Girls"
+   "1",
+   "Union Catholic",
+   "Girls · 5th straight title"
   ],
   [
    "2",
-   "Leah Starkey",
-   "Ocean Township"
+   "Cayleigh Kaiser",
+   "Union Catholic · 17:42.46"
   ],
   [
-   "16",
-   "CBA",
-   "Boys"
+   "3",
+   "Paige Sheppard",
+   "Union Catholic"
+  ],
+  [
+   "1",
+   "Gavin Schmitt",
+   "CBA · 15:17.61"
+  ],
+  [
+   "2",
+   "Agrim Jha",
+   "WW-P North · 15:35.14"
   ]
  ],
- "results": "https://nj.milesplit.com/meets/780716-njsiaa-xc-meet-of-champions-2026",
- "watch": [],
+ "results": "https://milesplit.live/meets/780716",
+ "watch": [
+  [
+   "Girls race replay",
+   "https://nj.milesplit.com/videos/824651"
+  ],
+  [
+   "Boys race replay",
+   "https://nj.milesplit.com/videos/824650"
+  ]
+ ],
  "insights": []
 }
