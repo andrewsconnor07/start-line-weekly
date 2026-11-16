@@ -1,456 +1,395 @@
 {
- "week": "Nov 9–15, 2026",
- "title": "NCAA Regionals Weekend",
- "blurb": "Every D-I and D-III regional, where the nationals fields are decided, plus this week's high school championships, with live results and streams in one place.",
+ "week": "Nov 16–22, 2026",
+ "title": "NCAA Nationals & NXR Weekend",
+ "blurb": "The D-I and D-III national championships on Saturday, plus five Nike Cross Regionals and the Massachusetts state meet, with live results and streams in one place.",
  "stats": [
   [
    "d1",
-   "D-I regionals"
+   "D-I national championship"
   ],
   [
    "d3",
-   "D-III regionals"
+   "D-III national championship"
   ],
   [
    "hs",
    "high school championships"
   ]
  ],
- "seo": "NCAA Cross Country Regionals Live Results & Streams",
- "desc": "Live results and streams for every 2026 NCAA Division I cross country regional (Nov. 13) and Division III regional (Nov. 14), plus the New Jersey Meet of Champions, the New York state meet, Nike Cross Regionals Heartland and Midwest, and this week's other high school state finals.",
+ "seo": "NCAA Cross Country Championships & NXR Live Results & Streams",
+ "desc": "Live results and streams for the 2026 NCAA Division I cross country championships in Terre Haute and Division III championships in Northfield (Nov. 21), with every qualified team, plus Nike Cross Regionals Northeast, Northwest, Southwest, South and Southeast.",
  "meets": [
-  {
-   "name": "NCAA D-I Mountain Regional Cross Country Championships",
-   "lvl": "d1",
-   "conf": "D-I Mountain",
-   "day": "2026-11-13",
-   "where": "Albuquerque, NM",
-   "time": "Women 6K 11:00 a.m. MT · Men 10K 12:00 p.m. MT",
-   "why": "The toughest region in the country. Men: No. 1 New Mexico, No. 2 Colorado, No. 6 BYU and No. 20 Northern Arizona. Women: No. 1 BYU, No. 6 Northern Arizona, No. 7 New Mexico, No. 9 Colorado and No. 16 Utah. The top two teams and the top four individuals not on those teams qualify automatically for the NCAA Championships on Nov. 21.",
-   "results": "https://www.rtspt.com/events/ncaa/d1mtnxc26/",
-   "info": null,
-   "watch": [],
-   "top": true,
-   "recap": "No. 7 New Mexico won the women’s race with 45 points as Pamela Kosgei (19:08.3), Mercy Kirarei and Marion Jepngetich went 1-2-3, with No. 6 Northern Arizona second (67) and No. 1 BYU third (81). No. 1 New Mexico also took the men’s title, 35 to 42 over No. 2 Colorado, with No. 6 BYU third (65). Texas Tech’s Titus Kimaru won the men’s race in 28:41.9."
-  },
-  {
-   "name": "NCAA D-I South Regional Cross Country Championships",
-   "lvl": "d1",
-   "conf": "D-I South",
-   "day": "2026-11-13",
-   "where": "Tallahassee, FL · host Florida State · Apalachee Regional Park",
-   "time": "Women 6K 8:30 a.m. ET · Men 10K 9:30 a.m. ET",
-   "why": "Men: No. 4 Alabama, No. 8 Florida and No. 24 Tennessee. Women: No. 4 Alabama and No. 5 Florida. The top two teams and the top four individuals not on those teams qualify automatically for the NCAA Championships on Nov. 21.",
-   "results": "https://live.pttiming.com/xc-ptt.html?mid=9294",
-   "info": null,
-   "watch": [
-    [
-     "ESPN+",
-     "https://www.espn.com/watch/player/_/id/f03381ef-d0ef-4a55-b0c1-5b8b60da007a"
-    ]
-   ],
-   "top": true,
-   "recap": "No. 4 Alabama’s women won with 21 points behind a 1-2 from Caren Kiplagat (19:20.6) and Cynthia Jemutai, with No. 5 Florida second (74). Alabama’s men won too, 48 to 54 over No. 8 Florida, with No. 24 Tennessee third (120). Florida’s Kelvin Cheruiyot won the men’s race in 29:01.5, 0.7 seconds ahead of Alabama’s Dennis Kipruto."
-  },
-  {
-   "name": "NCAA D-I Midwest Regional Cross Country Championships",
-   "lvl": "d1",
-   "conf": "D-I Midwest",
-   "day": "2026-11-13",
-   "where": "Ames, IA · host Iowa State · Iowa State Cross Country Course",
-   "time": "Women 6K 11:00 a.m. CT · Men 10K 12:00 p.m. CT",
-   "why": "Men: No. 3 Oklahoma State, No. 10 Iowa State, No. 22 Minnesota, No. 26 Missouri and No. 30 Tulsa. Women: No. 8 Oklahoma State, No. 20 Missouri, No. 25 Iowa State and No. 28 Minnesota. The top two teams and the top four individuals not on those teams qualify automatically for the NCAA Championships on Nov. 21.",
-   "results": "https://live.pttiming.com/xc-ptt.html?mid=9295",
-   "info": "https://cyclones.com/sports/2026/7/10/ncaa-midwest-regional",
-   "watch": [],
-   "recap": "No. 25 Iowa State won the women’s race with 72 points over No. 8 Oklahoma State (91), with Betty Kipkore and Rosemary Longisa second and third behind Oklahoma State’s Billah Jepkirui (19:18.9). No. 3 Oklahoma State won the men’s title 57 to 61 over No. 10 Iowa State behind a 1-2 from Brian Musau (28:47.1) and Denis Kipngetich (28:50.0)."
-  },
-  {
-   "name": "NCAA D-I Southeast Regional Cross Country Championships",
-   "lvl": "d1",
-   "conf": "D-I Southeast",
-   "day": "2026-11-13",
-   "where": "Spartanburg, SC",
-   "time": "Women 6K 10:00 a.m. ET · Men 10K 11:00 a.m. ET",
-   "why": "Seven ranked women's teams: No. 2 NC State, No. 9 South Carolina, No. 12 Clemson, No. 14 Virginia Tech, No. 18 North Carolina, No. 19 Duke and No. 22 Virginia. Men: No. 9 Wake Forest, No. 15 Virginia Tech, No. 18 Eastern Kentucky and No. 23 Furman. The top two teams and the top four individuals not on those teams qualify automatically for the NCAA Championships on Nov. 21.",
-   "results": "https://flashresults.com/2027_Meets/xc/NCAASE/index.htm",
-   "info": null,
-   "watch": [],
-   "recap": "No. 2 NC State won the women’s race with 71 points as Hannah Gapes won in 18:42.2, with No. 9 South Carolina second (100) and No. 12 Clemson third (105). No. 9 Wake Forest won the men’s race with 72, and No. 18 Eastern Kentucky edged No. 15 Virginia Tech 104 to 105 for second. Louisville’s Elsingi Kipruto won the men’s race by 16.5 seconds in 28:20.3."
-  },
-  {
-   "name": "NCAA D-I West Regional Cross Country Championships",
-   "lvl": "d1",
-   "conf": "D-I West",
-   "day": "2026-11-13",
-   "where": "Sacramento, CA · Arcade Creek Cross Country Course",
-   "time": "Women 6K 9:00 a.m. PT · Men 10K 10:00 a.m. PT",
-   "why": "Men: No. 5 Oregon, No. 19 Stanford and No. 27 Arizona. Women: No. 11 Oregon, No. 17 Washington State and No. 26 Washington. The top two teams and the top four individuals not on those teams qualify automatically for the NCAA Championships on Nov. 21.",
-   "results": "https://www.rtspt.com/events/ncaa/d1westxc26/",
-   "info": null,
-   "watch": [],
-   "recap": "No. 11 Oregon won the women’s race with 38 points over No. 17 Washington State (109), led by winner Diana Cherotich in 18:55.6. No. 5 Oregon’s men won with 51 points ahead of Washington (110) and No. 19 Stanford (115). Washington State’s Solomon Kipchoge won the men’s race in 28:37.6, 12 seconds ahead of teammate Evans Kurui."
-  },
-  {
-   "name": "NCAA D-I South Central Regional Cross Country Championships",
-   "lvl": "d1",
-   "conf": "D-I S. Central",
-   "day": "2026-11-13",
-   "where": "College Station, TX · host Texas A&M",
-   "time": "Women 6K 9:00 a.m. CT · Men 10K 10:00 a.m. CT",
-   "why": "Men: No. 7 Arkansas and No. 25 Tulane. Women: No. 23 Arkansas. The top two teams and the top four individuals not on those teams qualify automatically for the NCAA Championships on Nov. 21.",
-   "results": "https://flashresults.com/2027_Meets/xc/NCAASC/index.htm",
-   "info": null,
-   "watch": [],
-   "recap": "No. 23 Arkansas won the women’s race with 51 points ahead of SMU (109) and Stephen F. Austin (113), as Texas A&M-Corpus Christi’s Elizabeth Khatevi won in 18:58.2. No. 25 Tulane beat No. 7 Arkansas 44 to 48 for the men’s title, though Arkansas freshman Nick Busienei won the race in 28:57.1, leading a 1-2 with teammate Ernest Cheruiyot."
-  },
-  {
-   "name": "NCAA D-I Mid-Atlantic Regional Cross Country Championships",
-   "lvl": "d1",
-   "conf": "D-I Mid-Atl.",
-   "day": "2026-11-13",
-   "where": "Bethlehem, PA · host Lehigh",
-   "time": "Women 6K 11:00 a.m. ET · Men 10K 12:00 p.m. ET",
-   "why": "Men: No. 14 Georgetown and No. 17 Villanova. Women: No. 3 West Virginia, No. 24 Penn State and No. 29 Princeton. The top two teams and the top four individuals not on those teams qualify automatically for the NCAA Championships on Nov. 21.",
-   "results": "https://results.leonetiming.com/xc.html?mid=9289",
-   "info": null,
-   "watch": [],
-   "recap": "No. 3 West Virginia took the top four places and won the women’s race with 19 points, led by Joy Naukot (19:19.1), with No. 24 Penn State second (83) and No. 29 Princeton third (105). No. 17 Villanova beat No. 14 Georgetown 39 to 56 for the men’s title behind a 1-2 from Bailey Habler (29:47.7) and CJ Sullivan."
-  },
-  {
-   "name": "NCAA D-I Great Lakes Regional Cross Country Championships",
-   "lvl": "d1",
-   "conf": "D-I Gt. Lakes",
-   "day": "2026-11-13",
-   "where": "East Lansing, MI · host Michigan State · Forest Akers",
-   "time": "Women 6K 10:00 a.m. ET · Men 10K 11:00 a.m. ET",
-   "why": "Men: No. 12 Wisconsin, No. 16 Notre Dame, No. 21 Michigan State, No. 28 Michigan and No. 29 Butler. Women: No. 13 Notre Dame, No. 15 Toledo and No. 21 Northwestern. The top two teams and the top four individuals not on those teams qualify automatically for the NCAA Championships on Nov. 21.",
-   "results": "https://results.superiortiming.com/meets/80114",
-   "info": null,
-   "watch": [],
-   "recap": "No. 15 Toledo went 1-2-3 behind Karina James (19:55.2) and won the women’s race with 31 points over No. 13 Notre Dame (60). Toledo’s men also won, 59 to 66 over No. 16 Notre Dame, with Michigan State third (106) and No. 12 Wisconsin fourth (109). Butler’s William Zegarski won the men’s race in 29:55.0."
-  },
-  {
-   "name": "NCAA D-I Northeast Regional Cross Country Championships",
-   "lvl": "d1",
-   "conf": "D-I Northeast",
-   "day": "2026-11-13",
-   "where": "Farmingdale, NY · host Hofstra · Bethpage State Park",
-   "time": "Women 6K 11:00 a.m. · Men 10K 12:00 p.m.",
-   "why": "Men: No. 11 Harvard and No. 13 Syracuse. Women: No. 27 Providence and No. 30 Boston College. The top two teams and the top four individuals not on those teams qualify automatically for the NCAA Championships on Nov. 21.",
-   "results": "https://elitefeats.com/xc-Results/?ID=26248",
-   "info": null,
-   "watch": [],
-   "recap": "No. 13 Syracuse won the men’s title with 49 points over No. 11 Harvard (72), and host Hofstra’s Fredrick Kipkosgei won the race in 30:11.0. No. 30 Boston College edged No. 27 Providence 51 to 58 in the women’s race, with Syracuse third (77) and Syracuse’s Keira Rogan the winner in 19:46.9."
-  },
-  {
-   "name": "NCAA D-III Midwest Regional Cross Country Championships",
-   "lvl": "d3",
-   "conf": "D-III Midwest",
-   "day": "2026-11-14",
-   "where": "Rock Island, IL · host Augustana · Saukie Golf Course",
-   "time": "Women 6K 12:00 p.m. CT · Men 8K 1:00 p.m. CT",
-   "why": "The deepest D-III men's region. Men: No. 1 Wartburg, No. 3 North Central (Ill.), No. 12 Chicago, No. 13 Washington (Mo.) and No. 19 Central (Iowa). Women: No. 6 Chicago, No. 8 Washington (Mo.) and No. 20 Wartburg. Nationals bids are on the line for the NCAA D-III Championships on Nov. 21 in Northfield, Minn.",
-   "results": "https://results.wayzatatiming.com/meets/79757",
-   "info": null,
-   "watch": [],
-   "top": true,
-   "recap": "No. 3 North Central (Ill.) won the men’s title with 59 points over No. 1 Wartburg (82), with No. 12 Chicago third (90) and No. 13 Washington (Mo.) fourth (99), though Wartburg’s Isaiah Hammerand won the race in 23:53.7, 12.6 seconds clear of North Central’s Daniel Kasperan. No. 6 Chicago won the women’s title with 33 points, putting five in the top 12, ahead of No. 8 Washington (Mo.) (62) and No. 20 Wartburg (88). Washington’s Lucinda Laughlin won the women’s race in 21:04.6."
-  },
-  {
-   "name": "NCAA D-III North Regional Cross Country Championships",
-   "lvl": "d3",
-   "conf": "D-III North",
-   "day": "2026-11-14",
-   "where": "Northfield, MN · host St. Olaf · Tostrud Center",
-   "time": "Women 6K 11:00 a.m. CT · Men 8K 12:00 p.m. CT",
-   "why": "Men: No. 5 UW-La Crosse and No. 7 UW-Stevens Point. Women: No. 4 UW-La Crosse, No. 18 Carleton, No. 26 UW-Stevens Point and No. 27 UW-Eau Claire, on the course that hosts nationals a week later. Nationals bids are on the line for the NCAA D-III Championships on Nov. 21 in Northfield, Minn.",
-   "results": "https://live.herostiming.com/meets/79926",
-   "info": null,
-   "watch": [],
-   "recap": "No. 4 UW-La Crosse won the women’s race with 32 points, all five scorers in the top 11, ahead of No. 18 Carleton (106) and No. 26 UW-Stevens Point (114), whose Faith Wehrman won in 21:36.4. No. 5 UW-La Crosse also took the men’s title, 52 to 61 over No. 7 UW-Stevens Point, even as Stevens Point’s Mateo Alvarado Venegas (24:27.5) and Logan Murphy went 1-2, a tenth of a second apart."
-  },
-  {
-   "name": "NCAA D-III Mid-Atlantic Regional Cross Country Championships",
-   "lvl": "d3",
-   "conf": "D-III Mid-Atl.",
-   "day": "2026-11-14",
-   "where": "Lock Haven, PA · host Lock Haven · West Branch XC Course",
-   "time": "Women 6K 11:00 a.m. ET · Men 8K 12:00 p.m. ET",
-   "why": "Men: No. 2 Johns Hopkins and No. 10 Carnegie Mellon. Women: No. 5 Johns Hopkins and No. 10 Carnegie Mellon. Nationals bids are on the line for the NCAA D-III Championships on Nov. 21 in Northfield, Minn.",
-   "results": "https://lexicontiming.com/meets/76596",
-   "info": null,
-   "watch": [
-    [
-     "PSAC Sports Digital Network",
-     "https://psacsportsdigitalnetwork.com/golhu/?B=4750967"
-    ]
-   ],
-   "recap": "No. 5 Johns Hopkins won the women’s race with 37 points over No. 10 Carnegie Mellon (67) behind a 1-2 from Carter Brotherton (20:48.6) and Alexia Tubbs. No. 2 Johns Hopkins edged No. 10 Carnegie Mellon 39 to 41 for the men’s title, packing its scorers from fifth to 10th. Lebanon Valley’s Rory Lieberman won the men’s race in 24:56.8, 3.1 seconds ahead of Carnegie Mellon’s Matthew Short."
-  },
-  {
-   "name": "NCAA D-III East Regional Cross Country Championships",
-   "lvl": "d3",
-   "conf": "D-III East",
-   "day": "2026-11-14",
-   "where": "South Portland, ME · host Bates · Wainwright Sports Complex",
-   "time": "Women 6K 11:00 a.m. ET · Men 8K 12:00 p.m. ET",
-   "why": "Men: No. 9 MIT, No. 17 Tufts, No. 21 Bates, No. 23 Colby and No. 26 WPI. Women: No. 7 Tufts, No. 9 MIT, No. 21 Bates and No. 30 Colby. Nationals bids are on the line for the NCAA D-III Championships on Nov. 21 in Northfield, Minn.",
-   "results": "https://live.tylertiming.com/meet?meetId=2026-11-14-ncaa-division-iii-northeast-region-cross-country-championships-2026",
-   "info": null,
-   "watch": [],
-   "recap": "No. 9 MIT won the men’s race with 44 points over No. 23 Colby (65) and No. 17 Tufts (88), though Colby’s Stephen White won the race in 24:00.2, 0.8 seconds ahead of MIT’s Dylan Fiegener. No. 7 Tufts won the women’s title with 42 points ahead of No. 9 MIT (68) and No. 21 Bates (75), and Bates freshman Charlotte Crum won the women’s race in 21:08.2."
-  },
-  {
-   "name": "NCAA D-III Mideast Regional Cross Country Championships",
-   "lvl": "d3",
-   "conf": "D-III Mideast",
-   "day": "2026-11-14",
-   "where": "Manchester, CT · host Trinity · Wickham Park",
-   "time": "Women 6K 11:00 a.m. ET · Men 8K 12:00 p.m. ET",
-   "why": "Five ranked teams in each race. Women: No. 2 Williams, No. 3 Middlebury, No. 17 Vassar, No. 22 Connecticut College and No. 24 Wesleyan. Men: No. 6 RPI, No. 14 Amherst, No. 16 Williams, No. 18 Wesleyan and No. 24 Middlebury. Nationals bids are on the line for the NCAA D-III Championships on Nov. 21 in Northfield, Minn.",
-   "results": "https://live.pctiming.com/meets/80326",
-   "info": null,
-   "watch": [],
-   "recap": "No. 2 Williams won the women’s race with 33 points, ahead of No. 3 Middlebury (71) and No. 17 Vassar (142), whose Haley Schoenegge won in 21:36.3. No. 6 RPI took the men’s title with 33 points over No. 16 Williams (63) and No. 14 Amherst (82), led by race winner Colin Goldschmidt in 25:08.2."
-  },
-  {
-   "name": "NCAA D-III Niagara Regional Cross Country Championships",
-   "lvl": "d3",
-   "conf": "D-III Niagara",
-   "day": "2026-11-14",
-   "where": "Fredonia, NY · host SUNY Fredonia",
-   "time": "Women 6K 11:00 a.m. ET · Men 8K 12:00 p.m. ET",
-   "why": "No. 1 NYU women and No. 13 SUNY Geneseo women; No. 4 SUNY Geneseo and No. 8 NYU men. Nationals bids are on the line for the NCAA D-III Championships on Nov. 21 in Northfield, Minn.",
-   "results": "https://results.leonetiming.com/xc.html?mid=9301",
-   "info": null,
-   "watch": [],
-   "recap": "No. 4 SUNY Geneseo won the men’s race with 27 points over No. 8 NYU (52) as Emerson Comer (24:33.8) and James Tette went 1-2. No. 13 SUNY Geneseo also beat No. 1 NYU for the women’s title, 39 to 58, with its five scorers between fifth and 12th. RIT’s Kathryn Arbegast won the women’s race in 21:02.8, 15 seconds ahead of NYU’s Ashlyn Pallotta."
-  },
-  {
-   "name": "NCAA D-III Metro Regional Cross Country Championships",
-   "lvl": "d3",
-   "conf": "D-III Metro",
-   "day": "2026-11-14",
-   "where": "Bethlehem, PA · host Moravian · Lehigh Goodman Campus Course",
-   "time": "Women 6K 11:00 a.m. ET · Men 8K 12:00 p.m. ET",
-   "why": "No. 22 Haverford men. Nationals bids are on the line for the NCAA D-III Championships on Nov. 21 in Northfield, Minn.",
-   "results": "https://results.leonetiming.com/xc.html?mid=9300",
-   "info": null,
-   "watch": [],
-   "recap": "No. 22 Haverford won the men’s title with 23 points over TCNJ (57) behind a 1-2 from Owen Bluman (25:02.0) and Simon Lane. Swarthmore won the women’s race with 43 points ahead of TCNJ (83), and Swarthmore’s Charlotte Martin won by one second over DeSales’ Ellie Kozich in 21:49.8."
-  },
-  {
-   "name": "NCAA D-III Great Lakes Regional Cross Country Championships",
-   "lvl": "d3",
-   "conf": "D-III Gt. Lakes",
-   "day": "2026-11-14",
-   "where": "East Lansing, MI · host Olivet · Forest Akers East",
-   "time": "Women 6K 11:00 a.m. ET · Men 8K 12:00 p.m. ET",
-   "why": "Men: No. 20 Hope, No. 28 Case Western Reserve and No. 30 Calvin. Women: No. 15 Hope, No. 16 Calvin, No. 23 John Carroll and No. 28 Ohio Wesleyan. Nationals bids are on the line for the NCAA D-III Championships on Nov. 21 in Northfield, Minn.",
-   "results": "https://results.superiortiming.com/meets/80115",
-   "info": null,
-   "watch": [],
-   "recap": "No. 15 Hope edged No. 16 Calvin 84 to 85 for the women’s title, with No. 23 John Carroll third (120), as Rose-Hulman’s Jocelyn Onstot won in 21:52.9. No. 20 Hope swept the team titles by winning the men’s race with 82 points over No. 30 Calvin (111) and No. 28 Case Western Reserve (123). John Carroll’s Sam Su won the men’s race in 24:57.0, 10.2 seconds ahead of Case Western’s Jacob Slater."
-  },
-  {
-   "name": "NCAA D-III South Regional Cross Country Championships",
-   "lvl": "d3",
-   "conf": "D-III South",
-   "day": "2026-11-14",
-   "where": "Earlysville, VA · host Lynchburg · Panorama Farms",
-   "time": "First race 10:00 a.m. ET",
-   "why": "Men: No. 11 Washington and Lee and No. 27 Lynchburg, the host. Women: No. 14 Emory. Nationals bids are on the line for the NCAA D-III Championships on Nov. 21 in Northfield, Minn.",
-   "results": "https://blueridgetiming.live/meets/80211",
-   "info": null,
-   "watch": [],
-   "recap": "No. 11 Washington and Lee won the men’s race with 26 points, placing four in the top five, ahead of No. 27 Lynchburg (70); Matt Kelly (24:42.4) beat teammate Sam Daunt by a tenth of a second. No. 14 Emory won the women’s title with 59 points over Catholic (114) and Christopher Newport (123), and Batten’s Ester Zar won the women’s race by 38.8 seconds in 21:09.6."
-  },
-  {
-   "name": "NCAA D-III West Regional Cross Country Championships",
-   "lvl": "d3",
-   "conf": "D-III West",
-   "day": "2026-11-14",
-   "where": "Spokane Valley, WA · host Whitworth · The Course Spokane Valley",
-   "time": "Women 6K 11:00 a.m. PT · Men 8K 12:00 p.m. PT",
-   "why": "Men: No. 15 Pomona-Pitzer, No. 25 Claremont-Mudd-Scripps and No. 28 George Fox. Women: No. 11 Pomona-Pitzer, No. 12 Claremont-Mudd-Scripps, No. 19 George Fox, No. 25 Colorado College, No. 29 Whitworth (the host) and No. 30 Trinity (Texas). Nationals bids are on the line for the NCAA D-III Championships on Nov. 21 in Northfield, Minn.",
-   "results": "https://live.athletictiming.net/meets/76850",
-   "info": null,
-   "watch": [],
-   "recap": "No. 15 Pomona-Pitzer won the men’s race with 40 points over No. 25 Claremont-Mudd-Scripps (85) and Colorado College (144), led by race winner Jefferson Wright in 24:08.1. No. 11 Pomona-Pitzer also won the women’s title with 65 points, ahead of No. 30 Trinity (Texas) (98) and No. 12 Claremont-Mudd-Scripps (102). No. 25 Colorado College’s Charlie Flint won the women’s race in 21:08.9."
-  },
-  {
-   "name": "New Jersey NJSIAA Meet of Champions Cross Country",
-   "lvl": "hs",
-   "conf": "New Jersey",
-   "day": "2026-11-14",
-   "where": "Holmdel, NJ · Holmdel Park",
-   "time": "",
-   "why": "New Jersey's fastest runners from every group race together at Holmdel. No. 1 Union Catholic's girls, who scored a perfect 15 at last week's Group meet, go for a fifth straight Meet of Champions title, with No. 19 Ridgewood also in the field. Ocean Township's Leah Starkey, the No. 2 girl in the country, ran 16:45 on this course last week. In the boys race, Union Catholic and No. 16 CBA meet again a week after Union Catholic beat CBA for the Non-Public A title, and CBA's Gavin Schmitt won that race in 15:27.",
-   "results": "https://milesplit.live/meets/780716",
-   "info": null,
-   "watch": [
-    [
-     "Girls race replay",
-     "https://nj.milesplit.com/videos/824651"
-    ],
-    [
-     "Boys race replay",
-     "https://nj.milesplit.com/videos/824650"
-    ]
-   ],
-   "top": true,
-   "recap": "Ocean Township’s Leah Starkey, the No. 2 girl in the country, won by more than a minute in 16:38.21, faster than her 16:45 on the same course a week earlier. No. 1 Union Catholic won a fifth straight Meet of Champions girls title, led by Cayleigh Kaiser (second, 17:42.46) and Paige Sheppard (third). In the boys race, CBA’s Gavin Schmitt won in 15:17.61, 17.5 seconds ahead of West Windsor-Plainsboro North’s Agrim Jha."
-  },
-  {
-   "name": "Maryland MPSSAA State Cross Country Championships",
-   "lvl": "hs",
-   "conf": "Maryland",
-   "day": "2026-11-14",
-   "where": "Parkton, MD · Hereford High School",
-   "time": "",
-   "why": "Maryland's state final at Hereford High School.",
-   "results": "https://results.mdtimingllc.com/meets/80312",
-   "info": null,
-   "watch": [],
-   "recap": "In 4A, Urbana edged Crofton 134 to 138 for the boys title and Walt Whitman won the girls title (74), with Walt Whitman’s Jonah Greszler (15:50.5) and Clarksburg’s Madeline Kelly (18:32.3) winning the races. In 3A, Centennial (boys, 109) and Severna Park (girls, 44) won, with individual titles to Sherwood’s Dimitrios Rementelas (15:53.1) and North Hagerstown’s Mackenzie Philp (18:24.4). Host Hereford swept 2A (boys 104, girls 31) as Eli Aitken won in 16:03.5 and C. Milton Wright’s Brielle Deaner won the girls race (19:07.9), while Smithsburg (boys, 54) and Liberty (girls, 36) won 1A behind winners Dylan Herbst (15:59.8) and Ava Snyder (19:45.9)."
-  },
-  {
-   "name": "Arizona AIA State Cross Country Championships",
-   "lvl": "hs",
-   "conf": "Arizona",
-   "day": "2026-11-14",
-   "where": "Phoenix, AZ · Cave Creek Golf Course",
-   "time": "",
-   "why": "Arizona's state final at Cave Creek Golf Course.",
-   "results": "https://finishedresults.trackscoreboard.com/meets/14382",
-   "info": null,
-   "watch": [],
-   "recap": "Highland won the Division I boys title with 57 points over Mountain View Mesa (107), and Red Mountain’s Crew Comish won the race in 15:37.9. Mountain View Mesa won the D-I girls title, 74 to 93 over Highland, with Cassidy Long the winner in 18:38.6. Flagstaff (boys) and Ironwood Ridge (girls) won Division II, ALA-West Foothills (boys) and ALA-Queen Creek (girls) won Division III, and Hopi swept the Division IV team titles."
-  },
-  {
-   "name": "New England High School Cross Country Championships",
-   "lvl": "hs",
-   "conf": "New England",
-   "day": "2026-11-14",
-   "where": "Belfast, ME · Troy Howard Middle School",
-   "time": "",
-   "why": "The top teams and runners from all six New England states, a week after their state meets.",
-   "results": "https://milesplit.live/meets/789042",
-   "info": null,
-   "watch": [],
-   "recap": "Bishop Hendricken won the boys title by 93 points, 53 to Coe-Brown Northwood’s 146, as Colby Flynn won in 15:03.74 and teammate Shepherd Butler placed fourth. Cumberland edged Exeter 128 to 129 for the girls team title, and Hopkinton’s Madeleine Lane won the girls race in 16:42.10, 9.7 seconds ahead of Exeter’s Alexis Paterna."
-  },
-  {
-   "name": "New York NYSPHSAA State Cross Country Championships",
-   "lvl": "hs",
-   "conf": "New York",
-   "day": "2026-11-14",
-   "where": "Queensbury, NY · Queensbury High School",
-   "time": "First race 9:30 a.m. ET",
-   "why": "East Aurora's boys, No. 26 in DyeStat's national team rankings, go for a fourth straight Class C title. Shenendehowa's Riley Lynch (No. 15) and Ithaca's Tsadia Bercuvitz (No. 18) are among the top girls in the country.",
-   "results": "https://results.leonetiming.com/xc.html?mid=9302",
-   "info": null,
-   "watch": [],
-   "recap": "No. 26 East Aurora won the Class C boys title with 33 points, 39 ahead of Marcus Whitman, whose Desmond Hill won the race in 15:28.9; Horace Greeley’s Ryan Sykes ran the day’s fastest time, 14:57.6, to win Class B, and Corning’s Christopher Lawson won Class A in 15:07.5. Brighton (A, 75), Burnt Hills-Ballston Lake (B, 63) and Beaver River (D, 64) won the other boys team titles. Nottingham’s Delilah Pandori-Howell won girls Class A in 17:26.0 as Northport took the team title (53), with Ithaca’s Tsadia Bercuvitz third and Shenendehowa’s Riley Lynch seventh, and Sayville (B), Cold Spring Harbor (C) and South Lewis (D) won the other girls titles."
-  },
-  {
-   "name": "Delaware DIAA State Cross Country Championships",
-   "lvl": "hs",
-   "conf": "Delaware",
-   "day": "2026-11-14",
-   "where": "Felton, DE · Killens Pond State Park",
-   "time": "",
-   "why": "Delaware's state final at Killens Pond.",
-   "results": "https://milesplit.live/meets/793356",
-   "info": null,
-   "watch": [],
-   "recap": "St. Andrews’ Henry Bird ran the fastest time of the day, 15:11.90, to win the Division 2 boys race, and Salesianum’s James Dempsey won Division 1 in 15:49.90. Padua’s Paige Ballinger won the Division 1 girls race in 18:10.60, and Tatnall’s Lauryn Leech won Division 2 in 18:14.80."
-  },
-  {
-   "name": "South Carolina SCHSL State Cross Country Championships",
-   "lvl": "hs",
-   "conf": "S. Carolina",
-   "day": "2026-11-14",
-   "where": "Aiken, SC · Aiken Steeplechase",
-   "time": "",
-   "why": "South Carolina's state finals at the Aiken Steeplechase, with Classes 5A and 3A in one meet and 4A, 2A and 1A in the other.",
-   "results": "https://milesplit.live/meets/782178",
-   "info": null,
-   "watch": []
-  },
-  {
-   "name": "Virginia VISAA State Cross Country Championships",
-   "lvl": "hs",
-   "conf": "Virginia",
-   "day": "2026-11-12",
-   "where": "Earlysville, VA · Panorama Farms",
-   "time": "",
-   "why": "The state championship for Virginia's independent schools, Thursday at Panorama Farms.",
-   "results": "https://blueridgetiming.live/meets/80311",
-   "info": null,
-   "watch": [],
-   "recap": "Division I: Norfolk Academy won the boys title with 99 points over St. Stephen’s and St. Agnes (107) as Bishop Ireton’s Jason Day won in 15:36.4, and The Potomac School beat Collegiate 56-70 for the girls title as Collegiate’s Virginia Harris won in 18:43.6. Division II: North Cross swept both team titles with 39 points each, led by individual champions Finton Chaney (16:04.1) and Kaitlyn Perkins (19:27.7). Division III: Tandem Friends won the boys title (58) behind Hayes Buppert’s 15:41.0, and Trinity Academy Meadow View edged Timberlake Christian 75-79 for the girls title as Walsingham Academy’s Remington Freeman won in 18:58.2."
-  },
-  {
-   "name": "Nike Cross Regionals Heartland",
-   "lvl": "hs",
-   "conf": "NXR",
-   "day": "2026-11-15",
-   "where": "Sioux Falls, SD · Yankton Trail Park",
-   "time": "Girls 2:25 p.m. CT · Boys 2:55 p.m. CT",
-   "why": "A Nike Cross Nationals qualifier: the top two teams and top five individuals not on those teams advance. No. 6 Ava Claasen and No. 9 Ruby Ihmels lead the girls race with No. 11 Harrisburg (and No. 16 Brianna Reilly) and No. 17 Pella. No. 27 Sioux Falls Washington and No. 20 Preston Johnson lead the boys.",
-   "results": "https://results.wayzatatiming.com/meets/79759",
-   "info": null,
-   "watch": [
-    [
-     "RunnerSpace+",
-     "https://nxrhl.runnerspace.com/eprofile.php?event_id=300&do=videos&video_id=466278"
-    ]
-   ]
-  },
-  {
-   "name": "Nike Cross Regionals Midwest",
-   "lvl": "hs",
-   "conf": "NXR",
-   "day": "2026-11-15",
-   "where": "Terre Haute, IN · LaVern Gibson Championship Course",
-   "time": "Girls 12:30 p.m. ET · Boys 1:00 p.m. ET",
-   "why": "A Nike Cross Nationals qualifier on the NCAA championship course, with Indiana's Daphne Weller (No. 20 girls) in the field.",
-   "results": "https://mwt.live/meets/80403",
-   "info": null,
-   "watch": [
-    [
-     "RunnerSpace+",
-     "https://nxrmw.runnerspace.com/eprofile.php?event_id=298&do=videos&folder_id=5363"
-    ]
-   ]
-  },
   {
    "name": "NCAA Division I Cross Country Championships",
    "lvl": "d1",
    "conf": "NCAA",
    "day": "2026-11-21",
    "where": "Terre Haute, IN · LaVern Gibson Championship Course",
-   "time": "",
-   "why": "The national championship. Regionals are Nov. 13.",
+   "time": "Women 6K 10:20 a.m. ET · Men 10K 11:10 a.m. ET",
+   "why": "The national championship. Men: No. 1 New Mexico, No. 2 Colorado, defending champion No. 3 Oklahoma State and No. 4 Alabama lead 32 teams. Women: No. 1 BYU and defending champion No. 2 NC State, with Southeast champion Hannah Gapes, lead a field with No. 3 West Virginia, No. 4 Alabama and No. 5 Florida.",
    "results": null,
-   "info": null,
-   "watch": [],
-   "next": true
+   "info": "https://www.ncaa.com/news/cross-country-women/article/2026-11-14/2026-ncaa-cross-country-national-championships-date-time-tv-channel-history",
+   "watch": [
+    [
+     "ESPNU",
+     "https://www.espn.com/watch/"
+    ]
+   ],
+   "top": true,
+   "field": [
+    {
+     "h": "Men's teams (32)",
+     "items": [
+      "No. 1 New Mexico · Mountain champion",
+      "No. 2 Colorado · Mountain runner-up",
+      "No. 3 Oklahoma State · Midwest champion, defending national champion",
+      "No. 4 Alabama · South champion",
+      "No. 5 Oregon · West champion",
+      "No. 6 BYU · At-large",
+      "No. 7 Arkansas · South Central runner-up",
+      "No. 8 Florida · South runner-up",
+      "No. 9 Wake Forest · Southeast champion",
+      "No. 10 Iowa State · Midwest runner-up",
+      "No. 11 Harvard · Northeast runner-up",
+      "No. 12 Wisconsin · At-large",
+      "No. 13 Syracuse · Northeast champion",
+      "No. 14 Georgetown · Mid-Atlantic runner-up",
+      "No. 15 Virginia Tech · At-large",
+      "No. 16 Notre Dame · Great Lakes runner-up",
+      "No. 17 Villanova · Mid-Atlantic champion",
+      "No. 18 Eastern Kentucky · Southeast runner-up",
+      "No. 19 Stanford · At-large",
+      "No. 20 Northern Arizona · At-large",
+      "No. 21 Michigan State · At-large",
+      "No. 22 Minnesota · At-large",
+      "No. 24 Tennessee · At-large",
+      "No. 25 Tulane · South Central champion",
+      "No. 27 Arizona · At-large",
+      "No. 28 Michigan · At-large",
+      "No. 29 Butler · At-large",
+      "Toledo · Great Lakes champion",
+      "Washington · West runner-up",
+      "Portland · At-large",
+      "Princeton · At-large",
+      "Wichita State · At-large, first nationals in 51 years"
+     ]
+    },
+    {
+     "h": "Women's teams (32)",
+     "items": [
+      "No. 1 BYU · At-large",
+      "No. 2 NC State · Southeast champion, defending national champion",
+      "No. 3 West Virginia · Mid-Atlantic champion",
+      "No. 4 Alabama · South champion",
+      "No. 5 Florida · South runner-up",
+      "No. 6 Northern Arizona · Mountain runner-up",
+      "No. 7 New Mexico · Mountain champion",
+      "No. 8 Oklahoma State · Midwest runner-up",
+      "No. T-9 South Carolina · Southeast runner-up",
+      "No. T-9 Colorado · At-large",
+      "No. 11 Oregon · West champion",
+      "No. 12 Clemson · At-large",
+      "No. 13 Notre Dame · Great Lakes runner-up",
+      "No. 14 Virginia Tech · At-large",
+      "No. 15 Toledo · Great Lakes champion",
+      "No. 16 Utah · At-large",
+      "No. 17 Washington State · West runner-up",
+      "No. 18 North Carolina · At-large",
+      "No. 19 Duke · At-large",
+      "No. 20 Missouri · At-large",
+      "No. 21 Northwestern · At-large",
+      "No. 22 Virginia · At-large",
+      "No. 23 Arkansas · South Central champion",
+      "No. 24 Penn State · Mid-Atlantic runner-up",
+      "No. 25 Iowa State · Midwest champion",
+      "No. 27 Providence · Northeast runner-up",
+      "No. 28 Minnesota · At-large",
+      "No. 30 Boston College · Northeast champion",
+      "SMU · South Central runner-up",
+      "Indiana · At-large",
+      "Michigan · At-large",
+      "Syracuse · At-large"
+     ]
+    },
+    {
+     "h": "Men's regional champions",
+     "items": [
+      "Elsingi Kipruto, Louisville · Southeast, won by 16.5 seconds in 28:20.3",
+      "Solomon Kipchoge, Washington State · West, 28:37.6",
+      "Titus Kimaru, Texas Tech · Mountain, 28:41.9",
+      "Brian Musau, Oklahoma State · Midwest, 28:47.1, leading a 1-2 with Denis Kipngetich",
+      "Nick Busienei, Arkansas · South Central, 28:57.1",
+      "Kelvin Cheruiyot, Florida · South, 29:01.5",
+      "Bailey Habler, Villanova · Mid-Atlantic, 29:47.7",
+      "William Zegarski, Butler · Great Lakes, 29:55.0",
+      "Fredrick Kipkosgei, Hofstra · Northeast, 30:11.0"
+     ]
+    },
+    {
+     "h": "Women's regional champions",
+     "items": [
+      "Hannah Gapes, NC State · Southeast, 18:42.2, after a course record at Pre-Nationals on this course",
+      "Diana Cherotich, Oregon · West, 18:55.6",
+      "Elizabeth Khatevi, Texas A&M-Corpus Christi · South Central, 18:58.2",
+      "Pamela Kosgei, New Mexico · Mountain, 19:08.3, leading a New Mexico 1-2-3",
+      "Billah Jepkirui, Oklahoma State · Midwest, 19:18.9",
+      "Joy Naukot, West Virginia · Mid-Atlantic, 19:19.1, leading a West Virginia 1-2-3-4",
+      "Caren Kiplagat, Alabama · South, 19:20.6",
+      "Keira Rogan, Syracuse · Northeast, 19:46.9",
+      "Karina James, Toledo · Great Lakes, 19:55.2, leading a Toledo 1-2-3"
+     ]
+    }
+   ],
+   "picks": []
   },
   {
    "name": "NCAA Division III Cross Country Championships",
    "lvl": "d3",
    "conf": "NCAA",
    "day": "2026-11-21",
-   "where": "Northfield, MN · host Carleton",
+   "where": "Northfield, MN · host Carleton · Bill Huyck Championship Course",
+   "time": "Women 6K 1:00 p.m. ET · Men 8K 2:00 p.m. ET",
+   "why": "The D-III national championship. Men: No. 1 Wartburg, No. 2 Johns Hopkins and No. 3 North Central (Ill.), which beat Wartburg at the Midwest Regional, lead 32 teams. Women: No. 1 NYU, No. 2 Williams, No. 3 Middlebury and No. 4 UW-La Crosse, with host Carleton in the field.",
+   "results": null,
+   "info": "https://www.ncaa.com/news/cross-country-men/article/2026-11-15/ncaa-diii-mens-and-womens-cross-country-championship-qualifiers-announced",
+   "watch": [
+    [
+     "NCAA.com",
+     "https://www.ncaa.com/sports/cross-country-men/d3"
+    ]
+   ],
+   "top": true,
+   "field": [
+    {
+     "h": "Men's teams (32)",
+     "items": [
+      "No. 1 Wartburg · At-large",
+      "No. 2 Johns Hopkins · Mid-Atlantic champion",
+      "No. 3 North Central (Ill.) · Midwest champion",
+      "No. 4 SUNY Geneseo · Niagara champion",
+      "No. 5 UW-La Crosse · North champion",
+      "No. 6 RPI · Mideast champion",
+      "No. 7 UW-Stevens Point · At-large",
+      "No. 8 NYU · At-large",
+      "No. 9 MIT · East champion",
+      "No. 10 Carnegie Mellon · At-large",
+      "No. 11 Washington and Lee · South champion",
+      "No. 12 Chicago · At-large",
+      "No. 13 Washington (Mo.) · At-large",
+      "No. 14 Amherst · At-large",
+      "No. 15 Pomona-Pitzer · West champion",
+      "No. 16 Williams · At-large",
+      "No. 17 Tufts · At-large",
+      "No. 18 Wesleyan · At-large",
+      "No. 19 Central (Iowa) · At-large",
+      "No. 20 Hope · Great Lakes champion",
+      "No. 21 Bates · At-large",
+      "No. 22 Haverford · Metro champion",
+      "No. 23 Colby · At-large",
+      "No. 24 Middlebury · At-large",
+      "No. 25 Claremont-Mudd-Scripps · At-large",
+      "No. 26 WPI · At-large",
+      "No. 27 Lynchburg · At-large",
+      "No. 28 Case Western Reserve · At-large",
+      "No. 30 Calvin · At-large",
+      "Lebanon Valley · At-large",
+      "Pfeiffer · At-large",
+      "St. Olaf · At-large"
+     ]
+    },
+    {
+     "h": "Women's teams (32)",
+     "items": [
+      "No. 1 NYU · At-large",
+      "No. 2 Williams · Mideast champion",
+      "No. 3 Middlebury · At-large",
+      "No. 4 UW-La Crosse · North champion",
+      "No. 5 Johns Hopkins · Mid-Atlantic champion",
+      "No. 6 Chicago · Midwest champion",
+      "No. 7 Tufts · East champion",
+      "No. 8 Washington (Mo.) · At-large",
+      "No. 9 MIT · At-large",
+      "No. 10 Carnegie Mellon · At-large",
+      "No. 11 Pomona-Pitzer · West champion",
+      "No. 12 Claremont-Mudd-Scripps · At-large",
+      "No. 13 SUNY Geneseo · Niagara champion",
+      "No. 14 Emory · South champion",
+      "No. 15 Hope · Great Lakes champion",
+      "No. 16 Calvin · At-large",
+      "No. 17 Vassar · At-large",
+      "No. 18 Carleton · At-large, host",
+      "No. 19 George Fox · At-large",
+      "No. 20 Wartburg · At-large",
+      "No. 21 Bates · At-large",
+      "No. 22 Connecticut College · At-large",
+      "No. 23 John Carroll · At-large",
+      "No. 24 Wesleyan · At-large",
+      "No. 25 Colorado College · At-large",
+      "No. 26 UW-Stevens Point · At-large",
+      "No. 27 UW-Eau Claire · At-large",
+      "No. 28 Ohio Wesleyan · At-large",
+      "No. 30 Trinity (Texas) · At-large",
+      "Swarthmore · Metro champion",
+      "Amherst · At-large",
+      "Bowdoin · At-large"
+     ]
+    },
+    {
+     "h": "Men's regional champions",
+     "items": [
+      "Isaiah Hammerand, Wartburg · Midwest, 23:53.7",
+      "Stephen White, Colby · East, 24:00.2",
+      "Jefferson Wright, Pomona-Pitzer · West, 24:08.1",
+      "Mateo Alvarado Venegas, UW-Stevens Point · North, 24:27.5",
+      "Emerson Comer, SUNY Geneseo · Niagara, 24:33.8",
+      "Matt Kelly, Washington and Lee · South, 24:42.4",
+      "Rory Lieberman, Lebanon Valley · Mid-Atlantic, 24:56.8",
+      "Sam Su, John Carroll · Great Lakes, 24:57.0",
+      "Owen Bluman, Haverford · Metro, 25:02.0",
+      "Colin Goldschmidt, RPI · Mideast, 25:08.2"
+     ]
+    },
+    {
+     "h": "Women's regional champions",
+     "items": [
+      "Carter Brotherton, Johns Hopkins · Mid-Atlantic, 20:48.6, leading a Hopkins 1-2",
+      "Kathryn Arbegast, RIT · Niagara, 21:02.8",
+      "Lucinda Laughlin, Washington (Mo.) · Midwest, 21:04.6",
+      "Charlotte Crum, Bates · East, 21:08.2, as a freshman",
+      "Charlie Flint, Colorado College · West, 21:08.9",
+      "Ester Zar, Batten · South, won by 38.8 seconds in 21:09.6",
+      "Haley Schoenegge, Vassar · Mideast, 21:36.3",
+      "Faith Wehrman, UW-Stevens Point · North, 21:36.4",
+      "Charlotte Martin, Swarthmore · Metro, 21:49.8",
+      "Jocelyn Onstot, Rose-Hulman · Great Lakes, 21:52.9"
+     ]
+    },
+    {
+     "h": "East Region men's individual qualifiers",
+     "items": [
+      "Tyler Bolaske · Keene State",
+      "Albert Ferreras · UMass Boston",
+      "Paulino Guevara Mateo · Fitchburg State",
+      "Hugh Licklider · Brandeis",
+      "Brian Ronayne · Babson",
+      "Matthew Servin · Bowdoin",
+      "Nick Yacoub · Babson"
+     ]
+    },
+    {
+     "h": "East Region women's individual qualifiers",
+     "items": [
+      "Skye Goba · Fitchburg State",
+      "Ada Grant · Colby",
+      "Sadie Harrow · Brandeis",
+      "Lucy Huggett · Colby",
+      "Joely Klaristenfield · Brandeis",
+      "Sofia Moukaddem · Suffolk",
+      "Noe Nalavala · Colby"
+     ]
+    }
+   ],
+   "picks": []
+  },
+  {
+   "name": "Nike Cross Regionals Northwest",
+   "lvl": "hs",
+   "conf": "NXR",
+   "day": "2026-11-21",
+   "days": "Fri–Sat Nov 20–21",
+   "where": "Spokane Valley, WA · The Course Spokane Valley",
    "time": "",
-   "why": "The D-III national championship.",
+   "why": "A Nike Cross Nationals qualifier: the top two teams and top five individuals not on those teams advance.",
    "results": null,
    "info": null,
-   "watch": [],
-   "next": true
+   "watch": [
+    [
+     "RunnerSpace+",
+     "https://nxrnw.runnerspace.com/eprofile.php?do=news&event_id=248&news_id=675550"
+    ]
+   ]
+  },
+  {
+   "name": "Nike Cross Regionals Northeast",
+   "lvl": "hs",
+   "conf": "NXR",
+   "day": "2026-11-21",
+   "where": "Wappingers Falls, NY · Bowdoin Park",
+   "time": "Girls 12:35 p.m. ET · Boys 1:45 p.m. ET",
+   "why": "A Nike Cross Nationals qualifier for New York, New Jersey, Pennsylvania and New England, held with the New York State Federation championships: the top two teams and top five individuals not on those teams advance.",
+   "results": "https://ny.milesplit.com/meets/770577-nike-cross-nationals-northeast-regional-2026",
+   "info": null,
+   "watch": [
+    [
+     "RunnerSpace+",
+     "https://nxrne.runnerspace.com/eprofile.php?do=news&event_id=301&news_id=675552"
+    ]
+   ],
+   "top": true
+  },
+  {
+   "name": "Nike Cross Regionals Southwest",
+   "lvl": "hs",
+   "conf": "NXR",
+   "day": "2026-11-21",
+   "where": "Mesa, AZ · Toka Sticks Golf Club",
+   "time": "",
+   "why": "A Nike Cross Nationals qualifier: the top two teams and top five individuals not on those teams advance.",
+   "results": "https://finishedresults.trackscoreboard.com/meets/14386",
+   "info": null,
+   "watch": [
+    [
+     "RunnerSpace+",
+     "https://nxrsw.runnerspace.com/eprofile.php?event_id=302&do=videos&video_id=466281"
+    ]
+   ]
+  },
+  {
+   "name": "Massachusetts MIAA State Cross Country Championships",
+   "lvl": "hs",
+   "conf": "Massachusetts",
+   "day": "2026-11-21",
+   "where": "Devens, MA",
+   "time": "First race 11:00 a.m. ET · Division 1 girls 12:30 p.m., boys 1:15 p.m.",
+   "why": "Massachusetts' state championship at Devens, with Division 1, 2 and 3 races for girls and boys.",
+   "results": null,
+   "info": null,
+   "watch": []
+  },
+  {
+   "name": "Nike Cross Regionals South",
+   "lvl": "hs",
+   "conf": "NXR",
+   "day": "2026-11-22",
+   "where": "College Station, TX · Watts Cross Country Course",
+   "time": "",
+   "why": "A Nike Cross Nationals qualifier: the top two teams and top five individuals not on those teams advance.",
+   "results": "https://tx.milesplit.com/meets/789677-nxr-south-regional-championships-2026",
+   "info": null,
+   "watch": [
+    [
+     "RunnerSpace+",
+     "https://nxrso.runnerspace.com/eprofile.php?do=news&event_id=304&news_id=675554"
+    ]
+   ]
+  },
+  {
+   "name": "Nike Cross Regionals Southeast",
+   "lvl": "hs",
+   "conf": "NXR",
+   "day": "2026-11-22",
+   "where": "Cary, NC · WakeMed Soccer Park",
+   "time": "",
+   "why": "A Nike Cross Nationals qualifier for the Southeast: the top two teams and top five individuals not on those teams advance.",
+   "results": "https://nc.milesplit.com/meets/788979-nxr-southeast-regional-championships-2026",
+   "info": null,
+   "watch": [
+    [
+     "RunnerSpace+",
+     "https://nxrse.runnerspace.com/eprofile.php?event_id=303&do=videos&video_id=466283"
+    ]
+   ],
+   "top": true
   },
   {
    "name": "NCAA Division II Cross Country Championships",

@@ -3,17 +3,153 @@
  "kind": "meet",
  "lvl": "d3",
  "iso": "2026-11-21",
- "week": "Nov 9–15, 2026",
+ "week": "Nov 16–22, 2026",
  "name": "NCAA Division III Cross Country Championships",
  "date": "Nov. 21, 2026",
- "where": "Northfield, MN · host Carleton",
+ "where": "Northfield, MN · host Carleton · Bill Huyck Championship Course",
  "headline": "NCAA Division III Cross Country Championships",
  "status": "preview",
- "summary": "The D-III national championship.",
+ "summary": "The D-III national championship. Men: No. 1 Wartburg, No. 2 Johns Hopkins and No. 3 North Central (Ill.), which beat Wartburg at the Midwest Regional, lead 32 teams. Women: No. 1 NYU, No. 2 Williams, No. 3 Middlebury and No. 4 UW-La Crosse, with host Carleton in the field. · Women 6K 1:00 p.m. ET · Men 8K 2:00 p.m. ET",
  "results": null,
- "info": null,
- "watch": [],
+ "info": "https://www.ncaa.com/news/cross-country-men/article/2026-11-15/ncaa-diii-mens-and-womens-cross-country-championship-qualifiers-announced",
+ "watch": [
+  [
+   "NCAA.com",
+   "https://www.ncaa.com/sports/cross-country-men/d3"
+  ]
+ ],
  "lanes": [],
  "hub": "/championships/",
- "hubTitle": "NCAA Regionals Weekend"
+ "hubTitle": "NCAA Nationals & NXR Weekend",
+ "field": [
+  {
+   "h": "Men's teams (32)",
+   "items": [
+    "No. 1 Wartburg · At-large",
+    "No. 2 Johns Hopkins · Mid-Atlantic champion",
+    "No. 3 North Central (Ill.) · Midwest champion",
+    "No. 4 SUNY Geneseo · Niagara champion",
+    "No. 5 UW-La Crosse · North champion",
+    "No. 6 RPI · Mideast champion",
+    "No. 7 UW-Stevens Point · At-large",
+    "No. 8 NYU · At-large",
+    "No. 9 MIT · East champion",
+    "No. 10 Carnegie Mellon · At-large",
+    "No. 11 Washington and Lee · South champion",
+    "No. 12 Chicago · At-large",
+    "No. 13 Washington (Mo.) · At-large",
+    "No. 14 Amherst · At-large",
+    "No. 15 Pomona-Pitzer · West champion",
+    "No. 16 Williams · At-large",
+    "No. 17 Tufts · At-large",
+    "No. 18 Wesleyan · At-large",
+    "No. 19 Central (Iowa) · At-large",
+    "No. 20 Hope · Great Lakes champion",
+    "No. 21 Bates · At-large",
+    "No. 22 Haverford · Metro champion",
+    "No. 23 Colby · At-large",
+    "No. 24 Middlebury · At-large",
+    "No. 25 Claremont-Mudd-Scripps · At-large",
+    "No. 26 WPI · At-large",
+    "No. 27 Lynchburg · At-large",
+    "No. 28 Case Western Reserve · At-large",
+    "No. 30 Calvin · At-large",
+    "Lebanon Valley · At-large",
+    "Pfeiffer · At-large",
+    "St. Olaf · At-large"
+   ]
+  },
+  {
+   "h": "Women's teams (32)",
+   "items": [
+    "No. 1 NYU · At-large",
+    "No. 2 Williams · Mideast champion",
+    "No. 3 Middlebury · At-large",
+    "No. 4 UW-La Crosse · North champion",
+    "No. 5 Johns Hopkins · Mid-Atlantic champion",
+    "No. 6 Chicago · Midwest champion",
+    "No. 7 Tufts · East champion",
+    "No. 8 Washington (Mo.) · At-large",
+    "No. 9 MIT · At-large",
+    "No. 10 Carnegie Mellon · At-large",
+    "No. 11 Pomona-Pitzer · West champion",
+    "No. 12 Claremont-Mudd-Scripps · At-large",
+    "No. 13 SUNY Geneseo · Niagara champion",
+    "No. 14 Emory · South champion",
+    "No. 15 Hope · Great Lakes champion",
+    "No. 16 Calvin · At-large",
+    "No. 17 Vassar · At-large",
+    "No. 18 Carleton · At-large, host",
+    "No. 19 George Fox · At-large",
+    "No. 20 Wartburg · At-large",
+    "No. 21 Bates · At-large",
+    "No. 22 Connecticut College · At-large",
+    "No. 23 John Carroll · At-large",
+    "No. 24 Wesleyan · At-large",
+    "No. 25 Colorado College · At-large",
+    "No. 26 UW-Stevens Point · At-large",
+    "No. 27 UW-Eau Claire · At-large",
+    "No. 28 Ohio Wesleyan · At-large",
+    "No. 30 Trinity (Texas) · At-large",
+    "Swarthmore · Metro champion",
+    "Amherst · At-large",
+    "Bowdoin · At-large"
+   ]
+  },
+  {
+   "h": "Men's regional champions",
+   "items": [
+    "Isaiah Hammerand, Wartburg · Midwest, 23:53.7",
+    "Stephen White, Colby · East, 24:00.2",
+    "Jefferson Wright, Pomona-Pitzer · West, 24:08.1",
+    "Mateo Alvarado Venegas, UW-Stevens Point · North, 24:27.5",
+    "Emerson Comer, SUNY Geneseo · Niagara, 24:33.8",
+    "Matt Kelly, Washington and Lee · South, 24:42.4",
+    "Rory Lieberman, Lebanon Valley · Mid-Atlantic, 24:56.8",
+    "Sam Su, John Carroll · Great Lakes, 24:57.0",
+    "Owen Bluman, Haverford · Metro, 25:02.0",
+    "Colin Goldschmidt, RPI · Mideast, 25:08.2"
+   ]
+  },
+  {
+   "h": "Women's regional champions",
+   "items": [
+    "Carter Brotherton, Johns Hopkins · Mid-Atlantic, 20:48.6, leading a Hopkins 1-2",
+    "Kathryn Arbegast, RIT · Niagara, 21:02.8",
+    "Lucinda Laughlin, Washington (Mo.) · Midwest, 21:04.6",
+    "Charlotte Crum, Bates · East, 21:08.2, as a freshman",
+    "Charlie Flint, Colorado College · West, 21:08.9",
+    "Ester Zar, Batten · South, won by 38.8 seconds in 21:09.6",
+    "Haley Schoenegge, Vassar · Mideast, 21:36.3",
+    "Faith Wehrman, UW-Stevens Point · North, 21:36.4",
+    "Charlotte Martin, Swarthmore · Metro, 21:49.8",
+    "Jocelyn Onstot, Rose-Hulman · Great Lakes, 21:52.9"
+   ]
+  },
+  {
+   "h": "East Region men's individual qualifiers",
+   "items": [
+    "Tyler Bolaske · Keene State",
+    "Albert Ferreras · UMass Boston",
+    "Paulino Guevara Mateo · Fitchburg State",
+    "Hugh Licklider · Brandeis",
+    "Brian Ronayne · Babson",
+    "Matthew Servin · Bowdoin",
+    "Nick Yacoub · Babson"
+   ]
+  },
+  {
+   "h": "East Region women's individual qualifiers",
+   "items": [
+    "Skye Goba · Fitchburg State",
+    "Ada Grant · Colby",
+    "Sadie Harrow · Brandeis",
+    "Lucy Huggett · Colby",
+    "Joely Klaristenfield · Brandeis",
+    "Sofia Moukaddem · Suffolk",
+    "Noe Nalavala · Colby"
+   ]
+  }
+ ],
+ "picks": []
 }

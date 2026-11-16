@@ -10,13 +10,24 @@
 const fs = require("fs"), path = require("path"), vm = require("vm");
 const root = path.join(__dirname, ".."), dir = path.join(root, "data/meets"), pdir = path.join(root, "data/meet-pages");
 const SITE = "https://startlineweekly.com";
-const tpl = fs.readFileSync(path.join(__dirname, "meet-template.html"), "utf8");
+let tpl = fs.readFileSync(path.join(__dirname, "meet-template.html"), "utf8");
 const esc = s => String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
 const strip = s => String(s || "").replace(/<[^>]+>/g, "").replace(/&amp;/g, "&").replace(/&rsquo;/g, "’").replace(/&ndash;/g, "–");
 const slugify = s => strip(s).toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 const MON = { Jan: 1, Feb: 2, Mar: 3, Apr: 4, May: 5, Jun: 6, Jul: 7, Aug: 8, Sep: 9, Sept: 9, Oct: 10, Nov: 11, Dec: 12 };
 const FULLMON = ["", "Jan.", "Feb.", "March", "April", "May", "June", "July", "Aug.", "Sept.", "Oct.", "Nov.", "Dec."];
 const longDate = iso => { const [y, m, d] = iso.split("-").map(Number); return `${FULLMON[m]} ${d}, ${y}`; };
+
+// ---- newsletter (data/newsletter.json) ----
+// One red bar above the header on every page, plus one signup box per page. Edit the JSON each week to name that
+// week's issue; the build writes it into every generated page and into index.html.
+const nlFile = path.join(root, "data/newsletter.json");
+const NL = Object.assign({ bar: "The weekend's races, in your inbox every Thursday", eyebrow: "Free · Every Thursday",
+  title: "The weekend's races, in your inbox", text: "The biggest meets, matchups, rankings and live links before every race weekend." },
+  fs.existsSync(nlFile) ? JSON.parse(fs.readFileSync(nlFile, "utf8")) : {});
+const NL_URL = c => `https://startlineweekly.beehiiv.com/subscribe?utm_source=startlineweekly&amp;utm_medium=site&amp;utm_campaign=${c}`;
+const NL_BAR = `<a class="nlbar" href="${NL_URL("topbar")}" target="_blank" rel="noopener">${esc(NL.bar)} <b>Get it free →</b></a>`;
+tpl = tpl.replace(/<!--nlbar-->[\s\S]*?<!--\/nlbar-->\n?/, "").replace('<header class="top">', `<!--nlbar-->${NL_BAR}<!--/nlbar-->\n<header class="top">`);
 
 // ---- homepage data (MEETS) ----
 const home = fs.readFileSync(path.join(root, "index.html"), "utf8");
@@ -55,7 +66,8 @@ for (const W of CHA.concat(CH ? [CH] : [])) for (const m of W.meets) {
   const rec = { slug: slugify(m.name), kind: "meet", lvl: m.lvl, iso: m.day, week: W.week, name: strip(m.name), date: longDate(m.day),
     where: m.where, headline: strip(m.name), status: m.recap ? "final" : "preview",
     summary: m.recap ? "Final: " + m.recap : ([m.why, m.days, m.time].filter(Boolean).join(" · ") || `${strip(m.name)}, ${longDate(m.day)}, in ${m.where.split(" · ")[0]}.`),
-    results: m.results || null, info: m.info || null, watch: m.watch || [], lanes: m.lanes || [], hub: W.hub, hubTitle: W.title };
+    results: m.results || null, info: m.info || null, watch: m.watch || [], lanes: m.lanes || [], hub: W.hub, hubTitle: W.title,
+    ...(m.field ? { field: m.field } : {}), ...(m.picks ? { picks: m.picks } : {}) };
   fs.writeFileSync(path.join(pdir, rec.slug + ".json"), JSON.stringify(rec, null, 1) + "\n");
 }
 
@@ -69,7 +81,23 @@ const meets = fs.readdirSync(dir).filter(f => f.endsWith(".json")).map(f => {
 const pages = fs.readdirSync(pdir).filter(f => f.endsWith(".json")).map(f => JSON.parse(fs.readFileSync(path.join(pdir, f), "utf8")));
 
 // Newsletter signup: on-brand box linking to the Beehiiv signup page (Beehiiv's embed form can't be styled)
-const NL_BOX = where => `<section class="nl" aria-label="Newsletter"><div><span class="eyebrow">Free · Every Thursday</span><b>The weekend's races, in your inbox</b><small>The biggest meets, matchups, rankings and live links before every race weekend.</small></div><a class="nl-go" href="https://startlineweekly.beehiiv.com/subscribe?utm_source=startlineweekly&amp;utm_medium=site&amp;utm_campaign=${where}" target="_blank" rel="noopener">Get the free email →</a></section>`;
+const NL_BOX = where => `<section class="nl" aria-label="Newsletter"><div><span class="eyebrow">✉ ${esc(NL.eyebrow)}</span><b>${esc(NL.title)}</b><small>${esc(NL.text)}</small></div><a class="nl-go" href="${NL_URL(where)}" target="_blank" rel="noopener">Get the free email →</a></section>`;
+
+// Championship entries can carry `field` (every qualified team / individual) and `picks` (Connor's predictions),
+// each a list of {h, items}. Items written "Team · note" show the part before the first " · " in bold.
+const FLD_CSS = `<style>.fld h2{margin:0}.fld .fg{margin-top:18px}.fld h3{font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--red-ink);margin:0 0 6px}
+.fld ol{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:0 22px}
+.fld li{font-size:15px;line-height:1.4;padding:8px 0;border-bottom:1px solid var(--line)}.fld li .n{display:inline-block;min-width:28px;font:700 15px var(--display);color:var(--red-ink)}
+.fld li small{color:var(--muted);font-size:14px}.fld.picks{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--red);padding:18px}</style>`;
+const fitem = (x, i, num) => { const k = x.indexOf(" · "); const a = k < 0 ? x : x.slice(0, k), b = k < 0 ? "" : x.slice(k + 3);
+  return `<li>${num ? `<span class="n">${i + 1}</span>` : ""}<b>${esc(a)}</b>${b ? ` <small>· ${esc(b)}</small>` : ""}</li>`; };
+const fgroups = (gs, num) => gs.filter(g => g && g.items && g.items.length).map(g => `<div class="fg"><h3>${esc(g.h)}</h3><ol>${g.items.map((x, i) => fitem(x, i, num)).join("")}</ol></div>`).join("");
+const fieldHtml = m => {
+  const pk = (m.picks || []).filter(g => g && g.items && g.items.length), fl = (m.field || []).filter(g => g && g.items && g.items.length);
+  if (!pk.length && !fl.length) return "";
+  return FLD_CSS + (pk.length ? `<section class="fld picks" aria-labelledby="picks"><h2 id="picks">Connor's picks</h2>${fgroups(pk, true)}</section>` : "")
+    + (fl.length ? `<section class="fld" aria-labelledby="field"><h2 id="field">The field</h2>${fgroups(fl, false)}</section>` : "");
+};
 
 // Page body is written into the HTML at build time (no client-side rendering), so search engines see it right away.
 const LVN = { d1: "Division I", d2: "Division II", d3: "Division III", hs: "High school" };
@@ -106,6 +134,7 @@ function body(m) {
 <div class="meta">${m.name} · ${m.where}</div><p class="sum">${m.summary}</p>${m.hub ? `<p style="margin:14px 0 0"><a href="${m.hub}" style="font-weight:700;color:var(--red-ink)">← All ${hubName(m)} meets</a></p>` : ""}</section>
 ${lanes}${btns ? `<div class="btns">${btns}</div>` : ""}
 ${NL_BOX("meet-page")}
+${fieldHtml(m)}
 ${related(m)}`;
 }
 
@@ -155,10 +184,11 @@ function renderHub(CH, outRel, canon, earlier, earlierLabel) {
     if (!b.length) b.push(`<a href="/meets/${slugify(m.name)}/">Meet page →</a>`);
     return b.join("");
   };
+  const fieldLink = m => (m.field && m.field.length) || (m.picks && m.picks.length) ? `<p class="why" style="margin-top:8px"><a href="/meets/${slugify(m.name)}/#${m.picks && m.picks.length ? "picks" : "field"}" style="font-weight:700;color:var(--red-ink)">${m.picks && m.picks.length ? "Connor's picks + every qualified team" : "Every qualified team"} →</a></p>` : "";
   const row = m => `<article class="cm" data-lvl="${m.lvl}"><div class="cf">${esc(m.conf)}</div><div class="cb">
 <h3><a href="/meets/${slugify(m.name)}/">${esc(strip(m.name))}</a>${m.recap ? '<span class="fin">Final</span>' : ""}</h3>
 <div class="meta">${esc(m.where)}${m.days ? " · " + esc(m.days) : ""}${m.time ? " · " + esc(m.time) : ""}</div>
-${m.recap ? `<p class="why"><b>Final:</b> ${esc(m.recap)}</p>` : m.why ? `<p class="why">${esc(m.why)}</p>` : ""}</div><div class="ca">${btns(m)}</div></article>`;
+${m.recap ? `<p class="why"><b>Final:</b> ${esc(m.recap)}</p>` : m.why ? `<p class="why">${esc(m.why)}</p>` : ""}${fieldLink(m)}</div><div class="ca">${btns(m)}</div></article>`;
   const now = CH.meets.filter(m => !m.next), next = CH.meets.filter(m => m.next);
   const days = [...new Set(now.map(m => m.day))].sort();
   const cnt = l => now.filter(m => m.lvl === l).length;
@@ -201,7 +231,7 @@ ${m.recap ? `<p class="why"><b>Final:</b> ${esc(m.recap)}</p>` : m.why ? `<p cla
 <p>${esc(CH.blurb || "This week's championships, with live results and streams in one place.")}</p>
 <div class="stats">${stats}</div></section>
 ${NL_BOX("hub")}
-${tops.length ? `<section aria-labelledby="dm"><h2 id="dm" style="margin-bottom:12px">Don't miss</h2><div class="tops">${tops.map(m => `<div class="top4" data-lvl="${m.lvl}"><div class="eyebrow">${shortDay(m.day)} · ${SH[m.lvl]}</div><h3><a href="/meets/${slugify(m.name)}/">${esc(strip(m.name))}</a></h3><div class="meta">${esc(m.where.split(" · ")[0])}${m.time ? " · " + esc(m.time) : ""}</div><p>${esc(m.recap ? "Final: " + m.recap : m.why)}</p><div class="btns">${btns(m)}</div></div>`).join("")}</div></section>` : ""}
+${tops.length ? `<section aria-labelledby="dm"><h2 id="dm" style="margin-bottom:12px">Don't miss</h2><div class="tops">${tops.map(m => `<div class="top4" data-lvl="${m.lvl}"><div class="eyebrow">${shortDay(m.day)} · ${SH[m.lvl]}</div><h3><a href="/meets/${slugify(m.name)}/">${esc(strip(m.name))}</a></h3><div class="meta">${esc(m.where.split(" · ")[0])}${m.time ? " · " + esc(m.time) : ""}</div><p>${esc(m.recap ? "Final: " + m.recap : m.why)}</p>${fieldLink(m)}<div class="btns">${btns(m)}</div></div>`).join("")}</div></section>` : ""}
 <nav class="jump" aria-label="Jump to day">${days.map(d => `<a href="#d-${d}">${shortDay(d)}</a>`).join("")}${next.length ? `<a href="#next">Coming next</a>` : ""}</nav>
 <nav class="cfil" aria-label="Filter by level"><button type="button" data-f="all" aria-pressed="true">All</button>${lvls.filter(cnt).map(l => `<button type="button" data-f="${l}" aria-pressed="false">${SH[l]}</button>`).join("")}</nav>
 ${days.map(d => `<section class="day" id="d-${d}"><h2>${dayLabel(d)}</h2>${group(now.filter(m => m.day === d))}</section>`).join("")}
@@ -219,6 +249,12 @@ document.querySelectorAll(".day:not(#next)").forEach(s=>s.hidden=![...s.querySel
 }
 if (CH) renderHub(CH, "championships", `${SITE}/championships/`, CHA.slice().reverse(), "Earlier this postseason");
 for (const a of CHA) renderHub(Object.assign({}, a, { meets: a.meets.filter(m => !m.next) }), `championships/${a.slug}`, `${SITE}${a.hub}`, CH ? [CH] : [], "This week");
+
+// ---- homepage newsletter bar + box (index.html) ----
+{ const hp = path.join(root, "index.html"); let H = fs.readFileSync(hp, "utf8"); const H0 = H;
+  H = H.replace(/<!--nlbar-->[\s\S]*?<!--\/nlbar-->\n?/, "").replace('<header class="top">', `<!--nlbar-->${NL_BAR}<!--/nlbar-->\n<header class="top">`);
+  H = H.replace(/<section class="nl"[\s\S]*?<\/section>/, () => NL_BOX("homepage"));
+  if (H !== H0) fs.writeFileSync(hp, H); }
 
 // ---- sitemap + robots ----
 const today = new Date().toISOString().slice(0, 10);

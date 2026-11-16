@@ -3,17 +3,127 @@
  "kind": "meet",
  "lvl": "d1",
  "iso": "2026-11-21",
- "week": "Nov 9–15, 2026",
+ "week": "Nov 16–22, 2026",
  "name": "NCAA Division I Cross Country Championships",
  "date": "Nov. 21, 2026",
  "where": "Terre Haute, IN · LaVern Gibson Championship Course",
  "headline": "NCAA Division I Cross Country Championships",
  "status": "preview",
- "summary": "The national championship. Regionals are Nov. 13.",
+ "summary": "The national championship. Men: No. 1 New Mexico, No. 2 Colorado, defending champion No. 3 Oklahoma State and No. 4 Alabama lead 32 teams. Women: No. 1 BYU and defending champion No. 2 NC State, with Southeast champion Hannah Gapes, lead a field with No. 3 West Virginia, No. 4 Alabama and No. 5 Florida. · Women 6K 10:20 a.m. ET · Men 10K 11:10 a.m. ET",
  "results": null,
- "info": null,
- "watch": [],
+ "info": "https://www.ncaa.com/news/cross-country-women/article/2026-11-14/2026-ncaa-cross-country-national-championships-date-time-tv-channel-history",
+ "watch": [
+  [
+   "ESPNU",
+   "https://www.espn.com/watch/"
+  ]
+ ],
  "lanes": [],
  "hub": "/championships/",
- "hubTitle": "NCAA Regionals Weekend"
+ "hubTitle": "NCAA Nationals & NXR Weekend",
+ "field": [
+  {
+   "h": "Men's teams (32)",
+   "items": [
+    "No. 1 New Mexico · Mountain champion",
+    "No. 2 Colorado · Mountain runner-up",
+    "No. 3 Oklahoma State · Midwest champion, defending national champion",
+    "No. 4 Alabama · South champion",
+    "No. 5 Oregon · West champion",
+    "No. 6 BYU · At-large",
+    "No. 7 Arkansas · South Central runner-up",
+    "No. 8 Florida · South runner-up",
+    "No. 9 Wake Forest · Southeast champion",
+    "No. 10 Iowa State · Midwest runner-up",
+    "No. 11 Harvard · Northeast runner-up",
+    "No. 12 Wisconsin · At-large",
+    "No. 13 Syracuse · Northeast champion",
+    "No. 14 Georgetown · Mid-Atlantic runner-up",
+    "No. 15 Virginia Tech · At-large",
+    "No. 16 Notre Dame · Great Lakes runner-up",
+    "No. 17 Villanova · Mid-Atlantic champion",
+    "No. 18 Eastern Kentucky · Southeast runner-up",
+    "No. 19 Stanford · At-large",
+    "No. 20 Northern Arizona · At-large",
+    "No. 21 Michigan State · At-large",
+    "No. 22 Minnesota · At-large",
+    "No. 24 Tennessee · At-large",
+    "No. 25 Tulane · South Central champion",
+    "No. 27 Arizona · At-large",
+    "No. 28 Michigan · At-large",
+    "No. 29 Butler · At-large",
+    "Toledo · Great Lakes champion",
+    "Washington · West runner-up",
+    "Portland · At-large",
+    "Princeton · At-large",
+    "Wichita State · At-large, first nationals in 51 years"
+   ]
+  },
+  {
+   "h": "Women's teams (32)",
+   "items": [
+    "No. 1 BYU · At-large",
+    "No. 2 NC State · Southeast champion, defending national champion",
+    "No. 3 West Virginia · Mid-Atlantic champion",
+    "No. 4 Alabama · South champion",
+    "No. 5 Florida · South runner-up",
+    "No. 6 Northern Arizona · Mountain runner-up",
+    "No. 7 New Mexico · Mountain champion",
+    "No. 8 Oklahoma State · Midwest runner-up",
+    "No. T-9 South Carolina · Southeast runner-up",
+    "No. T-9 Colorado · At-large",
+    "No. 11 Oregon · West champion",
+    "No. 12 Clemson · At-large",
+    "No. 13 Notre Dame · Great Lakes runner-up",
+    "No. 14 Virginia Tech · At-large",
+    "No. 15 Toledo · Great Lakes champion",
+    "No. 16 Utah · At-large",
+    "No. 17 Washington State · West runner-up",
+    "No. 18 North Carolina · At-large",
+    "No. 19 Duke · At-large",
+    "No. 20 Missouri · At-large",
+    "No. 21 Northwestern · At-large",
+    "No. 22 Virginia · At-large",
+    "No. 23 Arkansas · South Central champion",
+    "No. 24 Penn State · Mid-Atlantic runner-up",
+    "No. 25 Iowa State · Midwest champion",
+    "No. 27 Providence · Northeast runner-up",
+    "No. 28 Minnesota · At-large",
+    "No. 30 Boston College · Northeast champion",
+    "SMU · South Central runner-up",
+    "Indiana · At-large",
+    "Michigan · At-large",
+    "Syracuse · At-large"
+   ]
+  },
+  {
+   "h": "Men's regional champions",
+   "items": [
+    "Elsingi Kipruto, Louisville · Southeast, won by 16.5 seconds in 28:20.3",
+    "Solomon Kipchoge, Washington State · West, 28:37.6",
+    "Titus Kimaru, Texas Tech · Mountain, 28:41.9",
+    "Brian Musau, Oklahoma State · Midwest, 28:47.1, leading a 1-2 with Denis Kipngetich",
+    "Nick Busienei, Arkansas · South Central, 28:57.1",
+    "Kelvin Cheruiyot, Florida · South, 29:01.5",
+    "Bailey Habler, Villanova · Mid-Atlantic, 29:47.7",
+    "William Zegarski, Butler · Great Lakes, 29:55.0",
+    "Fredrick Kipkosgei, Hofstra · Northeast, 30:11.0"
+   ]
+  },
+  {
+   "h": "Women's regional champions",
+   "items": [
+    "Hannah Gapes, NC State · Southeast, 18:42.2, after a course record at Pre-Nationals on this course",
+    "Diana Cherotich, Oregon · West, 18:55.6",
+    "Elizabeth Khatevi, Texas A&M-Corpus Christi · South Central, 18:58.2",
+    "Pamela Kosgei, New Mexico · Mountain, 19:08.3, leading a New Mexico 1-2-3",
+    "Billah Jepkirui, Oklahoma State · Midwest, 19:18.9",
+    "Joy Naukot, West Virginia · Mid-Atlantic, 19:19.1, leading a West Virginia 1-2-3-4",
+    "Caren Kiplagat, Alabama · South, 19:20.6",
+    "Keira Rogan, Syracuse · Northeast, 19:46.9",
+    "Karina James, Toledo · Great Lakes, 19:55.2, leading a Toledo 1-2-3"
+   ]
+  }
+ ],
+ "picks": []
 }
