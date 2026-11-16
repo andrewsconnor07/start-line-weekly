@@ -102,6 +102,7 @@
 - Never change `form` or `expert`: they're Connor's. Never change `lock`.
 - Wednesday Nov 18 build (and Thursday if they weren't posted yet): when the NCAA D-I and D-III entry lists are posted (TFRRS or NCAA.com), add every entered runner to that race's `runners` as [name, school], keeping the names already there. Keep `teams` and `ranks` as they are.
 - Monday Nov 23, when the hub rolls to the next week, set `"cta": false`.
+- A runner entry can carry a third value: a season best (e.g. "23:05.1"), shown in the runner list, or "WC" (Connor's wildcard tag). When adding entries, keep Nick Griggs as ["Nick Griggs","Oregon","WC"] at No. 15 in the D-I men's list unless he isn't in the official entries.
 
 ## This week: NCAA Nationals & NXR Weekend (Nov 16–22, 2026)
 - The hub was rolled to this week on Monday Nov 16; NCAA Regionals Weekend is archived at /championships/2026-ncaa-regionals-weekend/. The Wednesday Nov 18 build must NOT roll the hub again.
