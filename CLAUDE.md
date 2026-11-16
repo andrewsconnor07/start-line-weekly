@@ -96,6 +96,13 @@
 - Rolling to a new week (Monday or the Wednesday build, whichever comes first): copy data/championships.json to data/championships-archive/<year>-<title-slug>.json with a `slug` field and without its `next` entries, then rewrite data/championships.json for the new week (move that week's entries out of `next`, keep later `next` entries, add the new week's meets), update the `a.champ` banner text under `.mast` in index.html, and rebuild. Keep the NCAA Championships entries under `next` until their week.
 - Each week, add every high school state final racing that week (check the state associations' sites) and every conference championship. Use the same "why" style as the rest (who's ranked, what's at stake, nothing about sources).
 
+## Nationals Pick'em (/pickem/)
+- `data/pickem.json` drives /pickem/, which `node tools/build-meets.js` builds from tools/pickem.html. Fans pick the top 10 teams and top 25 runners for each race and submit to Connor's Google Form (`form`: the formResponse URL and entry ids). Fields: `title, lock (UTC time picks close), lockLabel, form, races [{id, tab, race, page (championship meet slug), teams, ranks, runners [[name, school]]}], expert {raceId: {teams, runners}}`, plus optional `cta` (false hides the pick'em boxes).
+- The build also shows a "Nationals Pick'em" box on the homepage (under the newsletter box, between `<!--pickem-->` markers), on the hub and on the two championship pages, and shows `expert` as "Expert picks: Connor Andrews" on those pages.
+- Never change `form` or `expert`: they're Connor's. Never change `lock`.
+- Wednesday Nov 18 build (and Thursday if they weren't posted yet): when the NCAA D-I and D-III entry lists are posted (TFRRS or NCAA.com), add every entered runner to that race's `runners` as [name, school], keeping the names already there. Keep `teams` and `ranks` as they are.
+- Monday Nov 23, when the hub rolls to the next week, set `"cta": false`.
+
 ## This week: NCAA Nationals & NXR Weekend (Nov 16–22, 2026)
 - The hub was rolled to this week on Monday Nov 16; NCAA Regionals Weekend is archived at /championships/2026-ncaa-regionals-weekend/. The Wednesday Nov 18 build must NOT roll the hub again.
 - The NCAA Division I and Division III Championships entries carry `field` (every qualified team with its USTFCCCA ranking and how it qualified, plus the regional champions). Keep the field lists as they are; only fix a team or name if it's wrong. Leave `picks` alone (Connor adds them).

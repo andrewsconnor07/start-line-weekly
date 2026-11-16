@@ -1,0 +1,1130 @@
+{
+ "title": "Nationals Pick'em",
+ "lock": "2026-11-21T15:00:00Z",
+ "lockLabel": "Saturday, Nov. 21 at 10 a.m. ET",
+ "form": {
+  "url": "",
+  "name": "",
+  "email": "",
+  "insta": "",
+  "race": "",
+  "teams": "",
+  "runners": ""
+ },
+ "races": [
+  {
+   "id": "d1m",
+   "tab": "D-I Men",
+   "race": "10K · Sat 11:10 a.m. ET · Terre Haute",
+   "teams": [
+    "New Mexico",
+    "Colorado",
+    "Oklahoma State",
+    "Alabama",
+    "Oregon",
+    "BYU",
+    "Arkansas",
+    "Florida",
+    "Wake Forest",
+    "Iowa State",
+    "Harvard",
+    "Wisconsin",
+    "Syracuse",
+    "Georgetown",
+    "Virginia Tech",
+    "Notre Dame",
+    "Villanova",
+    "Eastern Kentucky",
+    "Stanford",
+    "Northern Arizona",
+    "Michigan State",
+    "Minnesota",
+    "Tennessee",
+    "Tulane",
+    "Arizona",
+    "Michigan",
+    "Butler",
+    "Toledo",
+    "Washington",
+    "Portland",
+    "Princeton",
+    "Wichita State"
+   ],
+   "ranks": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "24",
+    "25",
+    "27",
+    "28",
+    "29",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "runners": [
+    [
+     "Elsingi Kipruto",
+     "Louisville"
+    ],
+    [
+     "Solomon Kipchoge",
+     "Washington State"
+    ],
+    [
+     "Titus Kimaru",
+     "Texas Tech"
+    ],
+    [
+     "Brian Musau",
+     "Oklahoma State"
+    ],
+    [
+     "Nick Busienei",
+     "Arkansas"
+    ],
+    [
+     "Kelvin Cheruiyot",
+     "Florida"
+    ],
+    [
+     "Bailey Habler",
+     "Villanova"
+    ],
+    [
+     "William Zegarski",
+     "Butler"
+    ],
+    [
+     "Fredrick Kipkosgei",
+     "Hofstra"
+    ],
+    [
+     "Denis Kipngetich",
+     "Oklahoma State"
+    ],
+    [
+     "Dennis Kipruto",
+     "Alabama"
+    ],
+    [
+     "Evans Kurui",
+     "Washington State"
+    ],
+    [
+     "Ernest Cheruiyot",
+     "Arkansas"
+    ],
+    [
+     "CJ Sullivan",
+     "Villanova"
+    ],
+    [
+     "Silas Kiptanui",
+     "Tulane"
+    ]
+   ],
+   "page": "ncaa-division-i-cross-country-championships"
+  },
+  {
+   "id": "d1w",
+   "tab": "D-I Women",
+   "race": "6K · Sat 10:20 a.m. ET · Terre Haute",
+   "teams": [
+    "BYU",
+    "NC State",
+    "West Virginia",
+    "Alabama",
+    "Florida",
+    "Northern Arizona",
+    "New Mexico",
+    "Oklahoma State",
+    "South Carolina",
+    "Colorado",
+    "Oregon",
+    "Clemson",
+    "Notre Dame",
+    "Virginia Tech",
+    "Toledo",
+    "Utah",
+    "Washington State",
+    "North Carolina",
+    "Duke",
+    "Missouri",
+    "Northwestern",
+    "Virginia",
+    "Arkansas",
+    "Penn State",
+    "Iowa State",
+    "Providence",
+    "Minnesota",
+    "Boston College",
+    "SMU",
+    "Indiana",
+    "Michigan",
+    "Syracuse"
+   ],
+   "ranks": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "T-9",
+    "T-9",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "27",
+    "28",
+    "30",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "runners": [
+    [
+     "Hannah Gapes",
+     "NC State"
+    ],
+    [
+     "Diana Cherotich",
+     "Oregon"
+    ],
+    [
+     "Elizabeth Khatevi",
+     "Texas A&M-Corpus Christi"
+    ],
+    [
+     "Pamela Kosgei",
+     "New Mexico"
+    ],
+    [
+     "Billah Jepkirui",
+     "Oklahoma State"
+    ],
+    [
+     "Joy Naukot",
+     "West Virginia"
+    ],
+    [
+     "Caren Kiplagat",
+     "Alabama"
+    ],
+    [
+     "Keira Rogan",
+     "Syracuse"
+    ],
+    [
+     "Karina James",
+     "Toledo"
+    ],
+    [
+     "Jane Hedengren",
+     "BYU"
+    ],
+    [
+     "Mercy Kirarei",
+     "New Mexico"
+    ],
+    [
+     "Marion Jepngetich",
+     "New Mexico"
+    ],
+    [
+     "Cynthia Jemutai",
+     "Alabama"
+    ],
+    [
+     "Betty Kipkore",
+     "Iowa State"
+    ],
+    [
+     "Rosemary Longisa",
+     "Iowa State"
+    ]
+   ],
+   "page": "ncaa-division-i-cross-country-championships"
+  },
+  {
+   "id": "d3m",
+   "tab": "D-III Men",
+   "race": "8K · Sat 2:00 p.m. ET · Northfield",
+   "teams": [
+    "Wartburg",
+    "Johns Hopkins",
+    "North Central (Ill.)",
+    "SUNY Geneseo",
+    "UW-La Crosse",
+    "RPI",
+    "UW-Stevens Point",
+    "NYU",
+    "MIT",
+    "Carnegie Mellon",
+    "Washington and Lee",
+    "Chicago",
+    "Washington (Mo.)",
+    "Amherst",
+    "Pomona-Pitzer",
+    "Williams",
+    "Tufts",
+    "Wesleyan",
+    "Central (Iowa)",
+    "Hope",
+    "Bates",
+    "Haverford",
+    "Colby",
+    "Middlebury",
+    "Claremont-Mudd-Scripps",
+    "WPI",
+    "Lynchburg",
+    "Case Western Reserve",
+    "Calvin",
+    "Lebanon Valley",
+    "Pfeiffer",
+    "St. Olaf"
+   ],
+   "ranks": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "30",
+    "",
+    "",
+    ""
+   ],
+   "runners": [
+    [
+     "Isaiah Hammerand",
+     "Wartburg"
+    ],
+    [
+     "Stephen White",
+     "Colby"
+    ],
+    [
+     "Jefferson Wright",
+     "Pomona-Pitzer"
+    ],
+    [
+     "Mateo Alvarado Venegas",
+     "UW-Stevens Point"
+    ],
+    [
+     "Emerson Comer",
+     "SUNY Geneseo"
+    ],
+    [
+     "Matt Kelly",
+     "Washington and Lee"
+    ],
+    [
+     "Rory Lieberman",
+     "Lebanon Valley"
+    ],
+    [
+     "Sam Su",
+     "John Carroll"
+    ],
+    [
+     "Owen Bluman",
+     "Haverford"
+    ],
+    [
+     "Colin Goldschmidt",
+     "RPI"
+    ],
+    [
+     "Daniel Kasperan",
+     "North Central (Ill.)"
+    ],
+    [
+     "BJ Sorg",
+     "North Central (Ill.)"
+    ],
+    [
+     "Dylan Fiegener",
+     "MIT"
+    ],
+    [
+     "Logan Murphy",
+     "UW-Stevens Point"
+    ],
+    [
+     "James Tette",
+     "SUNY Geneseo"
+    ],
+    [
+     "Sam Daunt",
+     "Washington and Lee"
+    ],
+    [
+     "Simon Lane",
+     "Haverford"
+    ],
+    [
+     "Matthew Short",
+     "Carnegie Mellon"
+    ],
+    [
+     "Jacob Slater",
+     "Case Western Reserve"
+    ],
+    [
+     "Tyler Bolaske",
+     "Keene State"
+    ],
+    [
+     "Albert Ferreras",
+     "UMass Boston"
+    ],
+    [
+     "Paulino Guevara Mateo",
+     "Fitchburg State"
+    ],
+    [
+     "Hugh Licklider",
+     "Brandeis"
+    ],
+    [
+     "Brian Ronayne",
+     "Babson"
+    ],
+    [
+     "Matthew Servin",
+     "Bowdoin"
+    ],
+    [
+     "Nick Yacoub",
+     "Babson"
+    ],
+    [
+     "Nico Conathan-Leach",
+     "St. Lawrence"
+    ],
+    [
+     "Brendan Fant",
+     "Coast Guard"
+    ],
+    [
+     "Max Frazee",
+     "Vassar"
+    ],
+    [
+     "Ellis Iurilli-Hough",
+     "Connecticut College"
+    ],
+    [
+     "Owen Klein",
+     "Hartford"
+    ],
+    [
+     "Sean Miller",
+     "Vassar"
+    ],
+    [
+     "Brody Richardson",
+     "Union (N.Y.)"
+    ],
+    [
+     "Killian Bauer",
+     "Utica"
+    ],
+    [
+     "Joe Berry",
+     "Rochester"
+    ],
+    [
+     "Bennett Melita",
+     "Utica"
+    ],
+    [
+     "Noah Melita",
+     "Oswego State"
+    ],
+    [
+     "Chase Miller",
+     "SUNY Maritime"
+    ],
+    [
+     "Elliott Painting",
+     "Ithaca"
+    ],
+    [
+     "Liam Sakakeeny",
+     "Rochester"
+    ],
+    [
+     "Derick Blair",
+     "Susquehanna"
+    ],
+    [
+     "Brayden Clarke",
+     "Scranton"
+    ],
+    [
+     "Dom Flitcraft",
+     "Washington and Jefferson"
+    ],
+    [
+     "Zach Houff",
+     "Franklin and Marshall"
+    ],
+    [
+     "Kaleb Kabakjian",
+     "Messiah"
+    ],
+    [
+     "Luke Knestout",
+     "Dickinson"
+    ],
+    [
+     "Matt Otto",
+     "Geneva"
+    ],
+    [
+     "Gavin Hefferan",
+     "Moravian"
+    ],
+    [
+     "Cohen Manges",
+     "Swarthmore"
+    ],
+    [
+     "Nathan Moore",
+     "Moravian"
+    ],
+    [
+     "Phil Pace",
+     "TCNJ"
+    ],
+    [
+     "Kenneth Relovsky",
+     "Swarthmore"
+    ],
+    [
+     "Joshua Santiago",
+     "TCNJ"
+    ],
+    [
+     "Joey Wilson",
+     "DeSales"
+    ],
+    [
+     "Kolin Brake",
+     "Capital"
+    ],
+    [
+     "Houston Brooks",
+     "Centre"
+    ],
+    [
+     "Austin Johnson",
+     "Manchester"
+    ],
+    [
+     "Lukas Rieben",
+     "Wittenberg"
+    ],
+    [
+     "Nicholas Spielman",
+     "Trine"
+    ],
+    [
+     "Sam Vaught",
+     "Wabash"
+    ],
+    [
+     "Parker Blosser",
+     "Roanoke"
+    ],
+    [
+     "Jack Collins",
+     "Sewanee"
+    ],
+    [
+     "T Harris",
+     "Berry"
+    ],
+    [
+     "Andrew Janetsky",
+     "Christopher Newport"
+    ],
+    [
+     "Joseph Locke",
+     "Catholic"
+    ],
+    [
+     "Nathaniel Orban",
+     "Roanoke"
+    ],
+    [
+     "Ryan Van de Berghe",
+     "Emory"
+    ],
+    [
+     "Hootie Hage",
+     "Bethel (Minn.)"
+    ],
+    [
+     "Nick Hansen",
+     "Lawrence"
+    ],
+    [
+     "Wyatt Johnson",
+     "UW-River Falls"
+    ],
+    [
+     "Isaiah Lubner",
+     "Concordia (Wis.)"
+    ],
+    [
+     "Kyan Lynts",
+     "St. Norbert"
+    ],
+    [
+     "Samuel McPeak",
+     "MSOE"
+    ],
+    [
+     "Cole Stencel",
+     "Saint John's (Minn.)"
+    ],
+    [
+     "Jacob Bach",
+     "Cornell College"
+    ],
+    [
+     "Cameron Gotto",
+     "Loras"
+    ],
+    [
+     "Adam Gray",
+     "Luther"
+    ],
+    [
+     "Michel Heinrich",
+     "Luther"
+    ],
+    [
+     "James Johnson",
+     "Simpson"
+    ],
+    [
+     "Ryan McGrath",
+     "Loras"
+    ],
+    [
+     "Noah Thomas",
+     "Nebraska Wesleyan"
+    ],
+    [
+     "Stian Asper",
+     "Redlands"
+    ],
+    [
+     "Eli Bliss",
+     "Trinity (Texas)"
+    ],
+    [
+     "Jack Elfenbaum",
+     "Occidental"
+    ],
+    [
+     "London Haley",
+     "Whitworth"
+    ],
+    [
+     "Vincent Mangat",
+     "Colorado College"
+    ],
+    [
+     "Emil Miller",
+     "Lewis and Clark"
+    ],
+    [
+     "Andrew Mysliwiec",
+     "UC Santa Cruz"
+    ]
+   ],
+   "page": "ncaa-division-iii-cross-country-championships"
+  },
+  {
+   "id": "d3w",
+   "tab": "D-III Women",
+   "race": "6K · Sat 1:00 p.m. ET · Northfield",
+   "teams": [
+    "NYU",
+    "Williams",
+    "Middlebury",
+    "UW-La Crosse",
+    "Johns Hopkins",
+    "Chicago",
+    "Tufts",
+    "Washington (Mo.)",
+    "MIT",
+    "Carnegie Mellon",
+    "Pomona-Pitzer",
+    "Claremont-Mudd-Scripps",
+    "SUNY Geneseo",
+    "Emory",
+    "Hope",
+    "Calvin",
+    "Vassar",
+    "Carleton",
+    "George Fox",
+    "Wartburg",
+    "Bates",
+    "Connecticut College",
+    "John Carroll",
+    "Wesleyan",
+    "Colorado College",
+    "UW-Stevens Point",
+    "UW-Eau Claire",
+    "Ohio Wesleyan",
+    "Trinity (Texas)",
+    "Swarthmore",
+    "Amherst",
+    "Bowdoin"
+   ],
+   "ranks": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "30",
+    "",
+    "",
+    ""
+   ],
+   "runners": [
+    [
+     "Carter Brotherton",
+     "Johns Hopkins"
+    ],
+    [
+     "Kathryn Arbegast",
+     "RIT"
+    ],
+    [
+     "Lucinda Laughlin",
+     "Washington (Mo.)"
+    ],
+    [
+     "Charlotte Crum",
+     "Bates"
+    ],
+    [
+     "Charlie Flint",
+     "Colorado College"
+    ],
+    [
+     "Ester Zar",
+     "Batten"
+    ],
+    [
+     "Haley Schoenegge",
+     "Vassar"
+    ],
+    [
+     "Faith Wehrman",
+     "UW-Stevens Point"
+    ],
+    [
+     "Charlotte Martin",
+     "Swarthmore"
+    ],
+    [
+     "Jocelyn Onstot",
+     "Rose-Hulman"
+    ],
+    [
+     "Audrey MacLean",
+     "Middlebury"
+    ],
+    [
+     "Alexia Tubbs",
+     "Johns Hopkins"
+    ],
+    [
+     "Ashlyn Pallotta",
+     "NYU"
+    ],
+    [
+     "Ellie Kozich",
+     "DeSales"
+    ],
+    [
+     "Skye Goba",
+     "Fitchburg State"
+    ],
+    [
+     "Ada Grant",
+     "Colby"
+    ],
+    [
+     "Sadie Harrow",
+     "Brandeis"
+    ],
+    [
+     "Lucy Huggett",
+     "Colby"
+    ],
+    [
+     "Joely Klaristenfield",
+     "Brandeis"
+    ],
+    [
+     "Sofia Moukaddem",
+     "Suffolk"
+    ],
+    [
+     "Noe Nalavala",
+     "Colby"
+    ],
+    [
+     "Avery Blanchard",
+     "St. Lawrence"
+    ],
+    [
+     "Kevyn Fish",
+     "Coast Guard"
+    ],
+    [
+     "Isabella Hastings",
+     "Salve Regina"
+    ],
+    [
+     "Amanda Intrieri",
+     "Johnson & Wales"
+    ],
+    [
+     "Paige Jaenicke",
+     "Trinity (Conn.)"
+    ],
+    [
+     "Lucy Kreipke",
+     "Smith"
+    ],
+    [
+     "Reese Stevens",
+     "Westfield State"
+    ],
+    [
+     "Ella Blau",
+     "Rochester"
+    ],
+    [
+     "Therese Georgia",
+     "RIT"
+    ],
+    [
+     "Melissa Innocent",
+     "Cortland"
+    ],
+    [
+     "Kyra Pellegrino",
+     "Oswego State"
+    ],
+    [
+     "Natalia Sweat",
+     "Oneonta"
+    ],
+    [
+     "Charlotte Warner",
+     "SUNY Delhi"
+    ],
+    [
+     "Maren Blanks",
+     "Franklin and Marshall"
+    ],
+    [
+     "Anna Bodmer",
+     "Salisbury"
+    ],
+    [
+     "Madison Hedglin",
+     "Misericordia"
+    ],
+    [
+     "Kyrianna Nemitz",
+     "Scranton"
+    ],
+    [
+     "Grace Neubert",
+     "Saint Vincent"
+    ],
+    [
+     "Tara Silverman",
+     "Franklin and Marshall"
+    ],
+    [
+     "Delaney Turk",
+     "Messiah"
+    ],
+    [
+     "Jezena Aponte",
+     "Rowan"
+    ],
+    [
+     "Isabella Gabay",
+     "Stevens"
+    ],
+    [
+     "Anastasia Jaycobs",
+     "Haverford"
+    ],
+    [
+     "Ryley Schwalm",
+     "Cedar Crest"
+    ],
+    [
+     "Teagan Walker",
+     "TCNJ"
+    ],
+    [
+     "Allyson Wernik",
+     "Rowan"
+    ],
+    [
+     "Kensington Black",
+     "Ohio Northern"
+    ],
+    [
+     "Grace Dubsky",
+     "Trine"
+    ],
+    [
+     "Grace Flores",
+     "DePauw"
+    ],
+    [
+     "Adelaide Lulich",
+     "Saint Mary's (Ind.)"
+    ],
+    [
+     "Courtney Study",
+     "Trine"
+    ],
+    [
+     "Halina Tompkins",
+     "Case Western Reserve"
+    ],
+    [
+     "Bayleigh Armstrong",
+     "Southern Virginia"
+    ],
+    [
+     "Saffron Blume",
+     "Catholic"
+    ],
+    [
+     "Sasha Braddy",
+     "Southern Virginia"
+    ],
+    [
+     "Adelaide Ellis",
+     "Washington and Lee"
+    ],
+    [
+     "Elena Gentry",
+     "Rhodes"
+    ],
+    [
+     "Lily Hoffman",
+     "Mary Washington"
+    ],
+    [
+     "Gabby Allard",
+     "Ripon"
+    ],
+    [
+     "Joley Berger",
+     "Ripon"
+    ],
+    [
+     "Kate Fox",
+     "Macalester"
+    ],
+    [
+     "Louisa Lamarre",
+     "St. Olaf"
+    ],
+    [
+     "Claudia Lasiowski",
+     "UW-Stout"
+    ],
+    [
+     "Lehna Mitchell",
+     "UW-Oshkosh"
+    ],
+    [
+     "Ingrid Norquist",
+     "Macalester"
+    ],
+    [
+     "Lidia Dahlman",
+     "Cornell College"
+    ],
+    [
+     "Delisha Davis",
+     "Dubuque"
+    ],
+    [
+     "Aubrey Dummermuth",
+     "Central"
+    ],
+    [
+     "Keelee Leitzen",
+     "Loras"
+    ],
+    [
+     "Teah Miller",
+     "Central"
+    ],
+    [
+     "Jessica Solar",
+     "Elmhurst"
+    ],
+    [
+     "Maddy Stevens",
+     "Central"
+    ],
+    [
+     "Ria Gill",
+     "Pacific (Ore.)"
+    ],
+    [
+     "Lily Jones",
+     "Whitworth"
+    ],
+    [
+     "Renee Khuong",
+     "UC Santa Cruz"
+    ],
+    [
+     "Emily Moore",
+     "Puget Sound"
+    ],
+    [
+     "Elena Stanciu",
+     "UC Santa Cruz"
+    ],
+    [
+     "Kezlie Thygesen",
+     "Whitworth"
+    ],
+    [
+     "Fiona Wolf",
+     "UC Santa Cruz"
+    ]
+   ],
+   "page": "ncaa-division-iii-cross-country-championships"
+  }
+ ],
+ "expert": {
+  "d1m": {
+   "teams": [],
+   "runners": []
+  },
+  "d1w": {
+   "teams": [],
+   "runners": []
+  },
+  "d3m": {
+   "teams": [],
+   "runners": []
+  },
+  "d3w": {
+   "teams": [],
+   "runners": []
+  }
+ }
+}

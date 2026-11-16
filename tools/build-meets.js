@@ -27,6 +27,23 @@ const NL = Object.assign({ bar: "The weekend's races, in your inbox every Thursd
   fs.existsSync(nlFile) ? JSON.parse(fs.readFileSync(nlFile, "utf8")) : {});
 const NL_URL = c => `https://startlineweekly.beehiiv.com/subscribe?utm_source=startlineweekly&amp;utm_medium=site&amp;utm_campaign=${c}`;
 const NL_BAR = `<a class="nlbar" href="${NL_URL("topbar")}" target="_blank" rel="noopener">${esc(NL.bar)} <b>Get it free →</b></a>`;
+// ---- pick'em (data/pickem.json) ----
+// /pickem/ page: fans pick top 10 teams + top 25 runners per race and submit to a Google Form. `expert` holds
+// Connor's picks per race id; they also show on the matching championship meet pages (`page` = meet slug).
+const pkFile = path.join(root, "data/pickem.json");
+const PK = fs.existsSync(pkFile) ? JSON.parse(fs.readFileSync(pkFile, "utf8")) : null;
+const PK_ON = !!(PK && PK.cta !== false);
+const PK_CTA = PK_ON ? `<a class="pkcta" href="/pickem/" style="display:grid;gap:4px;text-decoration:none;background:var(--navy);color:#fff;border-left:8px solid var(--red);padding:16px 18px;margin:0 0 18px"><span style="font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#FF8A99">${esc(PK.ctaEyebrow || "Free to play · Leaderboard Sunday")}</span><b style="font:700 clamp(20px,2.6vw,26px)/1.1 var(--display);text-transform:uppercase">${esc(PK.ctaTitle || PK.title)}</b><span style="color:var(--on-navy-muted)">${esc(PK.ctaText || "Pick the top 10 teams and top 25 runners. See Connor's expert picks, then try to beat them →")}</span></a>` : "";
+const expertFor = slug => {
+  if (!PK || !PK.expert) return null;
+  const out = [];
+  for (const r of PK.races.filter(r => r.page === slug)) {
+    const e = PK.expert[r.id] || {}, sex = /Women/.test(r.tab) ? "Women's" : "Men's";
+    if (e.teams && e.teams.length) out.push({ h: `${sex} top 10 teams`, items: e.teams });
+    if (e.runners && e.runners.length) out.push({ h: `${sex} top 25 runners`, items: e.runners.map(x => `${x[0]} · ${x[1]}`) });
+  }
+  return out.length ? out : null;
+};
 tpl = tpl.replace(/<!--nlbar-->[\s\S]*?<!--\/nlbar-->\n?/, "").replace('<header class="top">', `<!--nlbar-->${NL_BAR}<!--/nlbar-->\n<header class="top">`);
 
 // ---- homepage data (MEETS) ----
@@ -67,7 +84,7 @@ for (const W of CHA.concat(CH ? [CH] : [])) for (const m of W.meets) {
     where: m.where, headline: strip(m.name), status: m.recap ? "final" : "preview",
     summary: m.recap ? "Final: " + m.recap : ([m.why, m.days, m.time].filter(Boolean).join(" · ") || `${strip(m.name)}, ${longDate(m.day)}, in ${m.where.split(" · ")[0]}.`),
     results: m.results || null, info: m.info || null, watch: m.watch || [], lanes: m.lanes || [], hub: W.hub, hubTitle: W.title,
-    ...(m.field ? { field: m.field } : {}), ...(m.picks ? { picks: m.picks } : {}) };
+    ...(m.field ? { field: m.field } : {}), ...((m.picks && m.picks.length) || expertFor(slugify(m.name)) ? { picks: (m.picks && m.picks.length) ? m.picks : expertFor(slugify(m.name)) } : {}) };
   fs.writeFileSync(path.join(pdir, rec.slug + ".json"), JSON.stringify(rec, null, 1) + "\n");
 }
 
@@ -95,7 +112,7 @@ const fgroups = (gs, num) => gs.filter(g => g && g.items && g.items.length).map(
 const fieldHtml = m => {
   const pk = (m.picks || []).filter(g => g && g.items && g.items.length), fl = (m.field || []).filter(g => g && g.items && g.items.length);
   if (!pk.length && !fl.length) return "";
-  return FLD_CSS + (pk.length ? `<section class="fld picks" aria-labelledby="picks"><h2 id="picks">Connor's picks</h2>${fgroups(pk, true)}</section>` : "")
+  return FLD_CSS + (pk.length ? `<section class="fld picks" aria-labelledby="picks"><h2 id="picks">Expert picks: Connor Andrews</h2>${fgroups(pk, true)}${PK_ON ? `<p style="margin:14px 0 0"><a href="/pickem/" style="font-weight:700;color:var(--red-ink)">Think you can beat him? Make your picks →</a></p>` : ""}</section>` : "")
     + (fl.length ? `<section class="fld" aria-labelledby="field"><h2 id="field">The field</h2>${fgroups(fl, false)}</section>` : "");
 };
 
@@ -134,6 +151,7 @@ function body(m) {
 <div class="meta">${m.name} · ${m.where}</div><p class="sum">${m.summary}</p>${m.hub ? `<p style="margin:14px 0 0"><a href="${m.hub}" style="font-weight:700;color:var(--red-ink)">← All ${hubName(m)} meets</a></p>` : ""}</section>
 ${lanes}${btns ? `<div class="btns">${btns}</div>` : ""}
 ${NL_BOX("meet-page")}
+${PK_ON && PK.races.some(r => r.page === m.slug) ? PK_CTA : ""}
 ${fieldHtml(m)}
 ${related(m)}`;
 }
@@ -184,7 +202,7 @@ function renderHub(CH, outRel, canon, earlier, earlierLabel) {
     if (!b.length) b.push(`<a href="/meets/${slugify(m.name)}/">Meet page →</a>`);
     return b.join("");
   };
-  const fieldLink = m => (m.field && m.field.length) || (m.picks && m.picks.length) ? `<p class="why" style="margin-top:8px"><a href="/meets/${slugify(m.name)}/#${m.picks && m.picks.length ? "picks" : "field"}" style="font-weight:700;color:var(--red-ink)">${m.picks && m.picks.length ? "Connor's picks + every qualified team" : "Every qualified team"} →</a></p>` : "";
+  const fieldLink = m => (m.field && m.field.length) || (m.picks && m.picks.length) ? `<p class="why" style="margin-top:8px"><a href="/meets/${slugify(m.name)}/#${m.picks && m.picks.length ? "picks" : "field"}" style="font-weight:700;color:var(--red-ink)">${m.picks && m.picks.length ? "Expert picks + every qualified team" : "Every qualified team"} →</a></p>` : "";
   const row = m => `<article class="cm" data-lvl="${m.lvl}"><div class="cf">${esc(m.conf)}</div><div class="cb">
 <h3><a href="/meets/${slugify(m.name)}/">${esc(strip(m.name))}</a>${m.recap ? '<span class="fin">Final</span>' : ""}</h3>
 <div class="meta">${esc(m.where)}${m.days ? " · " + esc(m.days) : ""}${m.time ? " · " + esc(m.time) : ""}</div>
@@ -231,6 +249,7 @@ ${m.recap ? `<p class="why"><b>Final:</b> ${esc(m.recap)}</p>` : m.why ? `<p cla
 <p>${esc(CH.blurb || "This week's championships, with live results and streams in one place.")}</p>
 <div class="stats">${stats}</div></section>
 ${NL_BOX("hub")}
+${outRel === "championships" ? PK_CTA : ""}
 ${tops.length ? `<section aria-labelledby="dm"><h2 id="dm" style="margin-bottom:12px">Don't miss</h2><div class="tops">${tops.map(m => `<div class="top4" data-lvl="${m.lvl}"><div class="eyebrow">${shortDay(m.day)} · ${SH[m.lvl]}</div><h3><a href="/meets/${slugify(m.name)}/">${esc(strip(m.name))}</a></h3><div class="meta">${esc(m.where.split(" · ")[0])}${m.time ? " · " + esc(m.time) : ""}</div><p>${esc(m.recap ? "Final: " + m.recap : m.why)}</p>${fieldLink(m)}<div class="btns">${btns(m)}</div></div>`).join("")}</div></section>` : ""}
 <nav class="jump" aria-label="Jump to day">${days.map(d => `<a href="#d-${d}">${shortDay(d)}</a>`).join("")}${next.length ? `<a href="#next">Coming next</a>` : ""}</nav>
 <nav class="cfil" aria-label="Filter by level"><button type="button" data-f="all" aria-pressed="true">All</button>${lvls.filter(cnt).map(l => `<button type="button" data-f="${l}" aria-pressed="false">${SH[l]}</button>`).join("")}</nav>
@@ -250,15 +269,34 @@ document.querySelectorAll(".day:not(#next)").forEach(s=>s.hidden=![...s.querySel
 if (CH) renderHub(CH, "championships", `${SITE}/championships/`, CHA.slice().reverse(), "Earlier this postseason");
 for (const a of CHA) renderHub(Object.assign({}, a, { meets: a.meets.filter(m => !m.next) }), `championships/${a.slug}`, `${SITE}${a.hub}`, CH ? [CH] : [], "This week");
 
+// ---- pick'em page ----
+if (PK) {
+  const frag = fs.readFileSync(path.join(__dirname, "pickem.html"), "utf8");
+  const li = (a, b) => `<li>${esc(a)}${b ? ` <small>· ${esc(b)}</small>` : ""}</li>`;
+  const xp = PK.races.map(r => { const e = PK.expert[r.id] || {}; if (!(e.teams || []).length && !(e.runners || []).length) return "";
+    return `<details${r === PK.races[0] ? " open" : ""}><summary>${esc(r.tab)}</summary>${(e.teams || []).length ? `<h4>Top 10 teams</h4><ol>${e.teams.map(t => li(t)).join("")}</ol>` : ""}${(e.runners || []).length ? `<h4>Top 25 runners</h4><ol>${e.runners.map(x => li(x[0], x[1])).join("")}</ol>` : ""}</details>`; }).join("");
+  const expertHtml = xp ? `<div class="xp">${xp}</div>` : `<p class="meta">Connor's picks drop before the races. Make yours now, then come back and compare.</p>`;
+  const ptitle = `${PK.seoTitle || "NCAA Cross Country Nationals Pick'em 2026"} | Start Line Weekly`;
+  const pdesc = PK.desc || "Pick the top 10 teams and top 25 runners for the 2026 NCAA D-I and D-III cross country championships, see Connor Andrews' expert picks, and climb the leaderboard.";
+  const phead = tpl.split("<main")[0].replaceAll("{{TITLE}}", esc(ptitle)).replaceAll("{{OGTITLE}}", esc(PK.title)).replaceAll("{{DESC}}", esc(pdesc))
+    .replaceAll("{{CANON}}", `${SITE}/pickem/`).replace("{{LD}}", "");
+  const pbody = frag.replace("{{EXPERT}}", () => expertHtml).replace("{{LOCK}}", () => esc(PK.lockLabel || ""))
+    .replace("{{DATA}}", () => JSON.stringify({ lock: PK.lock, lockLabel: PK.lockLabel, form: PK.form, races: PK.races.map(r => ({ id: r.id, tab: r.tab, race: r.race, teams: r.teams, ranks: r.ranks, runners: r.runners })) }).replace(/</g, "\\u003c"));
+  fs.mkdirSync(path.join(root, "pickem"), { recursive: true });
+  fs.writeFileSync(path.join(root, "pickem/index.html"), phead + `<main style="display:grid;gap:24px">${pbody}</main><footer>Start Line Weekly is built and edited by Connor Andrews. <a href="/archive/">Past weeks →</a></footer></div></body></html>\n`);
+}
+
 // ---- homepage newsletter bar + box (index.html) ----
 { const hp = path.join(root, "index.html"); let H = fs.readFileSync(hp, "utf8"); const H0 = H;
   H = H.replace(/<!--nlbar-->[\s\S]*?<!--\/nlbar-->\n?/, "").replace('<header class="top">', `<!--nlbar-->${NL_BAR}<!--/nlbar-->\n<header class="top">`);
   H = H.replace(/<section class="nl"[\s\S]*?<\/section>/, () => NL_BOX("homepage"));
+  H = H.replace(/<!--pickem-->[\s\S]*?<!--\/pickem-->\n?/, "");
+  if (PK_CTA) H = H.replace(/(<section class="nl"[\s\S]*?<\/section>)/, (m0) => `${m0}\n<!--pickem-->${PK_CTA}<!--/pickem-->`);
   if (H !== H0) fs.writeFileSync(hp, H); }
 
 // ---- sitemap + robots ----
 const today = new Date().toISOString().slice(0, 10);
-const urls = [[`${SITE}/`, today, "daily"], [`${SITE}/archive/`, today, "weekly"]].concat(CH ? [[`${SITE}/championships/`, today, "daily"]] : []).concat(CHA.map(a => [`${SITE}${a.hub}`, today, "monthly"]))
+const urls = [[`${SITE}/`, today, "daily"], [`${SITE}/archive/`, today, "weekly"]].concat(CH ? [[`${SITE}/championships/`, today, "daily"]] : []).concat(CHA.map(a => [`${SITE}${a.hub}`, today, "monthly"])).concat(PK ? [[`${SITE}/pickem/`, today, "daily"]] : [])
   .concat(fs.readdirSync(path.join(root, "meets"), { withFileTypes: true }).filter(d => d.isDirectory()).map(d => {
     const f = path.join(root, "meets", d.name, "index.html"); return [`${SITE}/meets/${d.name}/`, fs.statSync(f).mtime.toISOString().slice(0, 10), "weekly"];
   }));
