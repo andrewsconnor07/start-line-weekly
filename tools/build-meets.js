@@ -281,7 +281,7 @@ if (PK) {
   const phead = tpl.split("<main")[0].replaceAll("{{TITLE}}", esc(ptitle)).replaceAll("{{OGTITLE}}", esc(PK.title)).replaceAll("{{DESC}}", esc(pdesc))
     .replaceAll("{{CANON}}", `${SITE}/pickem/`).replace("{{LD}}", "");
   const pbody = frag.replace("{{EXPERT}}", () => expertHtml).replace("{{LOCK}}", () => esc(PK.lockLabel || ""))
-    .replace("{{DATA}}", () => JSON.stringify({ lock: PK.lock, lockLabel: PK.lockLabel, form: PK.form, races: PK.races.map(r => ({ id: r.id, tab: r.tab, race: r.race, teams: r.teams, ranks: r.ranks, runners: r.runners })) }).replace(/</g, "\\u003c"));
+    .replace("{{DATA}}", () => JSON.stringify({ lock: PK.lock, lockLabel: PK.lockLabel, form: PK.form, races: PK.races.map(r => ({ id: r.id, tab: r.tab, race: r.race, teams: r.teams, ranks: r.ranks, runners: r.runners, listLabel: r.listLabel || "" })) }).replace(/</g, "\\u003c"));
   fs.mkdirSync(path.join(root, "pickem"), { recursive: true });
   fs.writeFileSync(path.join(root, "pickem/index.html"), phead + `<main style="display:grid;gap:24px">${pbody}</main><footer>Start Line Weekly is built and edited by Connor Andrews. <a href="/archive/">Past weeks →</a></footer></div></body></html>\n`);
 }
