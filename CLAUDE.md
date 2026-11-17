@@ -102,6 +102,7 @@
 - Never change `form` or `expert`: they're Connor's. Never change `lock`.
 - `runners` holds every runner from the qualified teams plus the individual qualifiers, ranked by regional finish; the third value is the regional place label (e.g. "MTN 2nd") or "WC" (Connor's wildcard: keep Nick Griggs at No. 15 in D-I men). When the official NCAA D-I and D-III entry lists are posted (TFRRS or NCAA.com), add any entered runner who's missing and remove anyone who isn't entered. A missing runner who skipped regionals (teams rest their stars) goes in among the runners with the same place number as their conference finish, labeled with that finish (e.g. "B12 1st"), and is listed in the run summary for Connor; anyone else missing goes at the end as [name, school], except Nick Griggs if he is entered. Keep the order and labels otherwise, and keep `teams` and `ranks` as they are.
 - Monday Nov 23, when the hub rolls to the next week, set `"cta": false`.
+- A runner's third value can also be a conference finish (e.g. "ACC 2nd", "B12 4th") for runners who skipped regionals; the list is sorted by that place number.
 - A runner entry can carry a third value: a season best (e.g. "23:05.1"), shown in the runner list, or "WC" (Connor's wildcard tag). When adding entries, keep Nick Griggs as ["Nick Griggs","Oregon","WC"] at No. 15 in the D-I men's list unless he isn't in the official entries.
 
 ## This week: NCAA Nationals & NXR Weekend (Nov 16–22, 2026)
