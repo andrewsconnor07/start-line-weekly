@@ -1,11 +1,15 @@
 {
  "week": "Nov 16–22, 2026",
  "title": "NCAA Nationals & NXR Weekend",
- "blurb": "The D-I and D-III national championships on Saturday, plus five Nike Cross Regionals and the Massachusetts state meet, with live results and streams in one place.",
+ "blurb": "The D-I and D-III national championships and all eight D-II regionals on Saturday, plus five Nike Cross Regionals and the Florida and Massachusetts state meets, with live results and streams in one place.",
  "stats": [
   [
    "d1",
    "D-I national championship"
+  ],
+  [
+   "d2",
+   "D-II regionals"
   ],
   [
    "d3",
@@ -17,7 +21,7 @@
   ]
  ],
  "seo": "NCAA Cross Country Championships & NXR Live Results & Streams",
- "desc": "Live results and streams for the 2026 NCAA Division I cross country championships in Terre Haute and Division III championships in Northfield (Nov. 21), with every qualified team, plus Nike Cross Regionals Northeast, Northwest, Southwest, South and Southeast.",
+ "desc": "Live results and streams for the 2026 NCAA Division I cross country championships in Terre Haute and Division III championships in Northfield (Nov. 21), the eight NCAA Division II regionals, Nike Cross Regionals Northeast, Northwest, Southwest, South and Southeast, and the Florida and Massachusetts state meets.",
  "meets": [
   {
    "name": "NCAA Division I Cross Country Championships",
@@ -292,15 +296,134 @@
    "picks": []
   },
   {
+   "name": "NCAA D-II South Central Regional Cross Country Championships",
+   "lvl": "d2",
+   "conf": "D-II",
+   "day": "2026-11-21",
+   "where": "Lubbock, TX · Chaparral Ridge · host Lubbock Christian",
+   "time": "Men 10K 9:00 a.m. CT · Women 6K 10:15 a.m. CT",
+   "why": "The deepest D-II regional, with 17 ranked teams. Men: No. 2 Adams State, No. 3 Colorado School of Mines, No. 6 West Texas A&M, No. 8 Western Colorado, No. 13 UC-Colorado Springs, No. 19 Fort Lewis, No. 21 CSU Pueblo and No. 23 Colorado Christian. Women: No. 2 Western Colorado, No. 3 Adams State, No. 4 Colorado School of Mines, No. 7 UC-Colorado Springs, No. 9 West Texas A&M, No. 17 Colorado Mesa, No. T-19 Colorado Christian and No. T-25 CSU Pueblo and Fort Lewis.",
+   "results": "https://results.ntxtiming.com/meets/80315",
+   "info": null,
+   "watch": [
+    [
+     "NCAA.com Championship Pass",
+     "https://www.ncaa.com/champs-pass?C=..%2FNCAAChampionshipsPassD2&B=4845009"
+    ]
+   ],
+   "top": true
+  },
+  {
+   "name": "NCAA D-II Central Regional Cross Country Championships",
+   "lvl": "d2",
+   "conf": "D-II",
+   "day": "2026-11-21",
+   "where": "Sioux Falls, SD · Yankton Trail Park · host Augustana (S.D.)",
+   "time": "Men 10K 10:00 a.m. CT · Women 6K 11:15 a.m. CT",
+   "why": "Men: No. 10 Washburn, No. 11 Pittsburg State, No. 15 Augustana (S.D.) and No. 18 Nebraska-Kearney. Women: No. 8 East Central (Okla.), No. 11 Missouri Southern, No. 12 Winona State, No. 13 Rogers State, No. 14 Pittsburg State and No. 23 Nebraska-Kearney.",
+   "results": "https://dakotatiming.anet.live/meets/76064",
+   "info": null,
+   "watch": []
+  },
+  {
+   "name": "NCAA D-II West Regional Cross Country Championships",
+   "lvl": "d2",
+   "conf": "D-II",
+   "day": "2026-11-21",
+   "where": "Sacramento, CA · Arcade Creek · host CCAA",
+   "time": "Men 10K 9:00 a.m. PT · Women 6K 10:15 a.m. PT",
+   "why": "Men: No. 7 Chico State, No. 9 Western Washington and No. 16 Cal Poly Pomona. Women: No. 5 Chico State, No. 10 Stanislaus State, No. 16 Biola, No. 22 Western Washington and No. 24 Cal Poly Pomona.",
+   "results": "https://rtspt.com/events/ncaa/d2westxc26/",
+   "info": null,
+   "watch": []
+  },
+  {
+   "name": "NCAA D-II Midwest Regional Cross Country Championships",
+   "lvl": "d2",
+   "conf": "D-II",
+   "day": "2026-11-21",
+   "where": "Kenosha, WI · Wayne E. Dannehl National Course · host Wisconsin-Parkside",
+   "time": "Men 10K 9:30 a.m. CT",
+   "why": "Men: No. 5 Grand Valley State, No. 12 Findlay, No. 22 Lewis and No. 24 Missouri S&T. Women: No. 6 Grand Valley State and No. T-19 Lewis.",
+   "results": "https://wisconsinrunner.com/results/2026/Midwest_Regional/",
+   "info": null,
+   "watch": []
+  },
+  {
+   "name": "NCAA D-II South Regional Cross Country Championships",
+   "lvl": "d2",
+   "conf": "D-II",
+   "day": "2026-11-21",
+   "where": "Huntsville, AL · John Hunt Park · host Alabama-Huntsville",
+   "time": "",
+   "why": "Men: No. 4 Lee (Tenn.), No. 17 Tampa, No. 20 Embry-Riddle (Fla.) and No. 25 Florida Southern. Women: No. 18 Tampa and No. 21 Lee (Tenn.).",
+   "results": "https://live.xpresstiming.com/meets/79804",
+   "info": null,
+   "watch": []
+  },
+  {
+   "name": "NCAA D-II Southeast Regional Cross Country Championships",
+   "lvl": "d2",
+   "conf": "D-II",
+   "day": "2026-11-21",
+   "where": "Spartanburg, SC · Milliken Research Park · host Converse",
+   "time": "Men 10K 9:30 a.m. ET · Women 6K 10:45 a.m. ET",
+   "why": "No. 1 Wingate is the top-ranked team in both D-II polls, men and women. No. 15 Catawba women are also ranked.",
+   "results": "https://live.timinginc.com/meets/80085",
+   "info": null,
+   "watch": []
+  },
+  {
+   "name": "NCAA D-II Atlantic Regional Cross Country Championships",
+   "lvl": "d2",
+   "conf": "D-II",
+   "day": "2026-11-21",
+   "where": "Kernersville, NC · Ivey M. Redmon Sports Complex · host Winston-Salem State",
+   "time": "",
+   "why": "The Atlantic Region's NCAA qualifier, led by No. 14 Charleston (W.Va.) men.",
+   "results": "https://live.rrtiming.com/meets/79541",
+   "info": null,
+   "watch": []
+  },
+  {
+   "name": "NCAA D-II East Regional Cross Country Championships",
+   "lvl": "d2",
+   "conf": "D-II",
+   "day": "2026-11-21",
+   "where": "Bethpage, NY · Bethpage State Park · host Adelphi",
+   "time": "Men 10K 11:00 a.m. ET · Women 6K 12:30 p.m. ET",
+   "why": "The East Region's NCAA qualifier at Bethpage, with team and individual berths to the D-II championship in Lawrence, Kansas.",
+   "results": "https://elitefeats.com/xc-Results/?ID=25613",
+   "info": null,
+   "watch": []
+  },
+  {
+   "name": "Florida FHSAA State Cross Country Championships",
+   "lvl": "hs",
+   "conf": "Florida",
+   "day": "2026-11-20",
+   "where": "Tallahassee, FL · Apalachee Regional Park",
+   "time": "Eight races, Class 1A to 4A",
+   "why": "Florida's state championship. Belen Jesuit, No. 5 in DyeStat's boys team rankings, chases a 10th straight Class 3A title behind Marcelo Mantecon, the No. 1 boy in the country.",
+   "results": "https://live.pttiming.com/xc-ptt.html?mid=9305",
+   "info": "https://fhsaa.com/news/2026/11/16/2026-cross-country-state-championships-know-before-you-go.aspx",
+   "watch": [
+    [
+     "NFHS Network",
+     "https://www.nfhsnetwork.com/playoffs/state/florida"
+    ]
+   ]
+  },
+  {
    "name": "Nike Cross Regionals Northwest",
    "lvl": "hs",
    "conf": "NXR",
    "day": "2026-11-21",
    "days": "Fri–Sat Nov 20–21",
    "where": "Spokane Valley, WA · The Course Spokane Valley",
-   "time": "",
+   "time": "Championship races Saturday: girls 2:15 p.m. PT, boys 2:55 p.m. PT",
    "why": "A Nike Cross Nationals qualifier: the top two teams and top five individuals not on those teams advance.",
-   "results": null,
+   "results": "https://live.athletictiming.net/meets/80481",
    "info": null,
    "watch": [
     [
@@ -333,7 +456,7 @@
    "conf": "NXR",
    "day": "2026-11-21",
    "where": "Mesa, AZ · Toka Sticks Golf Club",
-   "time": "",
+   "time": "Boys 11:00 a.m. MT · Girls 11:30 a.m. MT",
    "why": "A Nike Cross Nationals qualifier: the top two teams and top five individuals not on those teams advance.",
    "results": "https://finishedresults.trackscoreboard.com/meets/14386",
    "info": null,
@@ -352,7 +475,7 @@
    "where": "Devens, MA",
    "time": "First race 11:00 a.m. ET · Division 1 girls 12:30 p.m., boys 1:15 p.m.",
    "why": "Massachusetts' state championship at Devens, with Division 1, 2 and 3 races for girls and boys.",
-   "results": null,
+   "results": "https://ma.milesplit.com/meets/794786-moc-2026-2026",
    "info": null,
    "watch": []
   },
@@ -362,9 +485,9 @@
    "conf": "NXR",
    "day": "2026-11-22",
    "where": "College Station, TX · Watts Cross Country Course",
-   "time": "",
+   "time": "Girls 10:10 a.m. CT · Boys 10:45 a.m. CT",
    "why": "A Nike Cross Nationals qualifier: the top two teams and top five individuals not on those teams advance.",
-   "results": "https://tx.milesplit.com/meets/789677-nxr-south-regional-championships-2026",
+   "results": "https://live.runfarusa.com/meets/80389",
    "info": null,
    "watch": [
     [
@@ -379,7 +502,7 @@
    "conf": "NXR",
    "day": "2026-11-22",
    "where": "Cary, NC · WakeMed Soccer Park",
-   "time": "",
+   "time": "Girls 12:05 p.m. ET · Boys 12:45 p.m. ET",
    "why": "A Nike Cross Nationals qualifier for the Southeast: the top two teams and top five individuals not on those teams advance.",
    "results": "https://nc.milesplit.com/meets/788979-nxr-southeast-regional-championships-2026",
    "info": null,
