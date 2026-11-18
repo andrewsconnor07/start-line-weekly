@@ -53,8 +53,8 @@ button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visi
 </style>
 <section class="pk-hero"><div class="eyebrow">Sat, Nov. 21 · NCAA D-I &amp; D-III Championships</div>
 <h1>Nationals Pick'em</h1>
-<p>Pick the top 10 teams and top 25 runners in any of the four national championship races. Entries lock {{LOCK}}. We score every entry and post the leaderboard Sunday.</p>
-<div class="pk-rules"><span><b>Teams</b> 2 pts in the top 10, +3 exact place</span><span><b>Runners</b> 1 pt in the top 25, +2 exact place</span><span><b>Tiebreak</b> picking the winner</span><span><b>Leaderboards</b> separate for D-I and D-III</span></div></section>
+<p>Pick the top 10 teams and top 15 runners in any of the four national championship races. Entries lock {{LOCK}}. We score every entry and post the leaderboard Sunday.</p>
+<div class="pk-rules"><span><b>Teams</b> 2 pts in the top 10, +3 exact place</span><span><b>Runners</b> 1 pt in the top 15, +2 exact place</span><span><b>Tiebreak</b> picking the winner</span><span><b>Leaderboards</b> separate for D-I and D-III</span></div></section>
 <section class="pk-sec" aria-labelledby="xp-h"><h2 id="xp-h">Expert picks: Connor Andrews</h2><p class="meta">Start Line Weekly's founder makes his calls. Think you can beat him?</p>{{EXPERT}}</section>
 <section class="pk-sec" id="play" aria-labelledby="play-h"><h2 id="play-h">Make your picks</h2><p class="meta">Play one race or all four. Each race is entered separately; if you enter a race twice, your last entry counts.</p>
 <div id="pk-app"><p class="meta">Loading the pick'em…</p></div></section>
@@ -77,14 +77,14 @@ const rk=(r,t)=>{const v=r.ranks[r.teams.indexOf(t)];return v?"No. "+v:"NR"};
 function view(){
  const r=R(),s=S[cur];
  if(locked()){app.innerHTML=`<div class="pk-done"><h3>Picks are locked</h3><p>Entries closed ${esc(P.lockLabel)}. Check back Sunday for the leaderboard.</p></div>`;return}
- const tabs=`<nav class="pk-tabs" role="tablist" aria-label="Race">${P.races.map(x=>`<button type="button" role="tab" data-tab="${x.id}" aria-selected="${x.id===cur}">${x.tab}<small>${S.sent[x.id]?"Entered ✓":S[x.id].teams.length+"/10 · "+S[x.id].runners.length+"/25"}</small></button>`).join("")}</nav>`;
+ const tabs=`<nav class="pk-tabs" role="tablist" aria-label="Race">${P.races.map(x=>`<button type="button" role="tab" data-tab="${x.id}" aria-selected="${x.id===cur}">${x.tab}<small>${S.sent[x.id]?"Entered ✓":S[x.id].teams.length+"/10 · "+S[x.id].runners.length+"/15"}</small></button>`).join("")}</nav>`;
  const ctl=(k,i,n)=>`<span class="pk-ctl"><button type="button" data-k="${k}" data-i="${i}" data-d="-1" aria-label="Move up" ${i?"":"disabled"}>↑</button><button type="button" data-k="${k}" data-i="${i}" data-d="1" aria-label="Move down" ${i<n-1?"":"disabled"}>↓</button><button type="button" data-k="${k}" data-i="${i}" data-x="1" aria-label="Remove">×</button></span>`;
  const tl=s.teams.map((t,i)=>`<li><span class="pk-n">${i+1}</span><span class="pk-nm"><b>${esc(t)}</b></span>${ctl("teams",i,s.teams.length)}</li>`).join("")+(s.teams.length<10?`<li class="empty"><span class="pk-n">${s.teams.length+1}</span><span>Tap + next to a team</span><span></span></li>`:"");
  const rows=r.teams.map(t=>{const k=s.teams.indexOf(t);return `<div class="pk-row"><span class="rk">${rk(r,t)}</span><b>${esc(t)}</b><button type="button" class="pk-add ${k>=0?"on":""}" data-team="${esc(t)}" aria-label="${k>=0?"Remove":"Add"} ${esc(t)}" ${k<0&&s.teams.length>=10?"disabled":""}>${k>=0?"#"+(k+1):"+"}</button></div>`}).join("");
- const rl=s.runners.map((p,i)=>`<li><span class="pk-n">${i+1}</span><span class="pk-nm"><b>${esc(p[0])}</b><small>${esc(p[1])}</small></span>${ctl("runners",i,s.runners.length)}</li>`).join("")+(s.runners.length<25?`<li class="empty"><span class="pk-n">${s.runners.length+1}</span><span>Search for a runner</span><span></span></li>`:"");
+ const rl=s.runners.map((p,i)=>`<li><span class="pk-n">${i+1}</span><span class="pk-nm"><b>${esc(p[0])}</b><small>${esc(p[1])}</small></span>${ctl("runners",i,s.runners.length)}</li>`).join("")+(s.runners.length<15?`<li class="empty"><span class="pk-n">${s.runners.length+1}</span><span>Search for a runner</span><span></span></li>`:"");
  app.innerHTML=tabs+`<p class="meta" style="margin:10px 0 0">${esc(r.race)}</p>
 <div class="pk-grid"><div class="pk-box"><h3>Top 10 teams <span>${s.teams.length}/10</span></h3><ol class="pk-list">${tl}</ol><div class="pk-teams">${rows}</div></div>
-<div class="pk-box"><h3>Top 25 runners <span>${s.runners.length}/25</span></h3><ol class="pk-list">${rl}</ol>
+<div class="pk-box"><h3>Top 15 runners <span>${s.runners.length}/15</span></h3><ol class="pk-list">${rl}</ol>
 <div class="pk-search"><label for="pk-q" class="meta">Search runners by name or school</label><input id="pk-q" type="search" autocomplete="off" placeholder="Start typing a name" value="${esc(q)}"><div id="pk-sugg"></div></div>
 <p class="meta" style="margin:12px 0 6px">${esc(r.listLabel||"Runners to know")}</p><div class="pk-teams" id="pk-browse"></div></div></div>
 <div class="pk-box" style="margin-top:16px"><h3>Your entry</h3><div class="pk-form">
@@ -102,10 +102,10 @@ function sugg(){
  const idx=p=>s.runners.findIndex(x=>norm(x[0])===norm(p[0]));
  const list=r.runners.filter(p=>!t||norm(p[0]).includes(t)||norm(p[1]).includes(t));
  const hasSB=r.runners.some(p=>p[2]&&p[2]!=="WC");br.classList.toggle("nosb",!hasSB);
- br.innerHTML=list.length?list.map(p=>{const k=idx(p),wc=p[2]==="WC";return `<div class="pk-row">${hasSB?`<span class="rk">${wc?"":esc(p[2]||"")}</span>`:""}<span class="pk-nm"><b>${esc(p[0])}</b>${wc?'<span class="wc" title="Wildcard">WC</span>':""}<small>${esc(p[1])}</small></span><button type="button" class="pk-add ${k>=0?"on":""}" data-run="${esc(JSON.stringify([p[0],p[1]]))}" aria-label="${k>=0?"Remove":"Add"} ${esc(p[0])}" ${k<0&&s.runners.length>=25?"disabled":""}>${k>=0?"#"+(k+1):"+"}</button></div>`}).join(""):`<p class="meta" style="padding:8px 4px;margin:0">No runner by that name in the list yet. Add them below.</p>`;
- box.innerHTML=(typed.length>2&&!r.runners.some(p=>norm(p[0])===t)&&s.runners.length<25?`<div class="pk-own"><select id="pk-school" aria-label="School for ${esc(typed)}"><option value="">School for “${esc(typed)}”…</option>${r.teams.map(x=>`<option>${esc(x)}</option>`).join("")}<option value="Individual qualifier">Individual qualifier (other school)</option></select><button type="button" class="pk-add" id="pk-addown" style="padding:0 10px">Add</button></div>`:"");
+ br.innerHTML=list.length?list.map(p=>{const k=idx(p),wc=p[2]==="WC";return `<div class="pk-row">${hasSB?`<span class="rk">${wc?"":esc(p[2]||"")}</span>`:""}<span class="pk-nm"><b>${esc(p[0])}</b>${wc?'<span class="wc" title="Wildcard">WC</span>':""}<small>${esc(p[1])}</small></span><button type="button" class="pk-add ${k>=0?"on":""}" data-run="${esc(JSON.stringify([p[0],p[1]]))}" aria-label="${k>=0?"Remove":"Add"} ${esc(p[0])}" ${k<0&&s.runners.length>=15?"disabled":""}>${k>=0?"#"+(k+1):"+"}</button></div>`}).join(""):`<p class="meta" style="padding:8px 4px;margin:0">No runner by that name in the list yet. Add them below.</p>`;
+ box.innerHTML=(typed.length>2&&!r.runners.some(p=>norm(p[0])===t)&&s.runners.length<15?`<div class="pk-own"><select id="pk-school" aria-label="School for ${esc(typed)}"><option value="">School for “${esc(typed)}”…</option>${r.teams.map(x=>`<option>${esc(x)}</option>`).join("")}<option value="Individual qualifier">Individual qualifier (other school)</option></select><button type="button" class="pk-add" id="pk-addown" style="padding:0 10px">Add</button></div>`:"");
 }
-function addRunner(p,toggle){const s=S[cur],k=s.runners.findIndex(x=>norm(x[0])===norm(p[0]));if(k>=0){if(toggle){s.runners.splice(k,1);view()}return}if(s.runners.length>=25)return;s.runners.push(p);if(!toggle)q="";const y=window.scrollY,bt=document.getElementById("pk-browse"),st=bt?bt.scrollTop:0;view();const nb=document.getElementById("pk-browse");if(nb)nb.scrollTop=st;window.scrollTo(0,y)}
+function addRunner(p,toggle){const s=S[cur],k=s.runners.findIndex(x=>norm(x[0])===norm(p[0]));if(k>=0){if(toggle){s.runners.splice(k,1);view()}return}if(s.runners.length>=15)return;s.runners.push(p);if(!toggle)q="";const y=window.scrollY,bt=document.getElementById("pk-browse"),st=bt?bt.scrollTop:0;view();const nb=document.getElementById("pk-browse");if(nb)nb.scrollTop=st;window.scrollTo(0,y)}
 app.addEventListener("input",e=>{if(e.target.id==="pk-q"){q=e.target.value;sugg()}
  if(["pk-name","pk-email","pk-insta"].includes(e.target.id)){S.me[e.target.id.slice(3)]=e.target.value;save()}});
 app.addEventListener("click",e=>{
@@ -122,7 +122,7 @@ function submit(){
  const r=R(),s=S[cur],msg=document.getElementById("pk-msg");msg.className="pk-msg err";
  const nm=S.me.name.trim(),em=S.me.email.trim();
  if(s.teams.length<10){msg.textContent=`Pick ${10-s.teams.length} more team${s.teams.length===9?"":"s"} to finish your top 10.`;return}
- if(s.runners.length<25){msg.textContent=`Pick ${25-s.runners.length} more runner${s.runners.length===24?"":"s"} to finish your top 25.`;return}
+ if(s.runners.length<15){msg.textContent=`Pick ${15-s.runners.length} more runner${s.runners.length===14?"":"s"} to finish your top 15.`;return}
  if(!nm){msg.textContent="Add your name so we can put you on the leaderboard.";return}
  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){msg.textContent="Add a valid email so we can reach you if you win.";return}
  if(locked()){view();return}

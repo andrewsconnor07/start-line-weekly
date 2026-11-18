@@ -28,19 +28,19 @@ const NL = Object.assign({ bar: "The weekend's races, in your inbox every Thursd
 const NL_URL = c => `https://startlineweekly.beehiiv.com/subscribe?utm_source=startlineweekly&amp;utm_medium=site&amp;utm_campaign=${c}`;
 const NL_BAR = `<a class="nlbar" href="${NL_URL("topbar")}" target="_blank" rel="noopener">${esc(NL.bar)} <b>Get it free →</b></a>`;
 // ---- pick'em (data/pickem.json) ----
-// /pickem/ page: fans pick top 10 teams + top 25 runners per race and submit to a Google Form. `expert` holds
+// /pickem/ page: fans pick top 10 teams + top 15 runners per race and submit to a Google Form. `expert` holds
 // Connor's picks per race id; they also show on the matching championship meet pages (`page` = meet slug).
 const pkFile = path.join(root, "data/pickem.json");
 const PK = fs.existsSync(pkFile) ? JSON.parse(fs.readFileSync(pkFile, "utf8")) : null;
 const PK_ON = !!(PK && PK.cta !== false);
-const PK_CTA = PK_ON ? `<a class="pkcta" href="/pickem/" style="display:grid;gap:4px;text-decoration:none;background:var(--navy);color:#fff;border-left:8px solid var(--red);padding:16px 18px;margin:0 0 18px"><span style="font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#FF8A99">${esc(PK.ctaEyebrow || "Free to play · Leaderboard Sunday")}</span><b style="font:700 clamp(20px,2.6vw,26px)/1.1 var(--display);text-transform:uppercase">${esc(PK.ctaTitle || PK.title)}</b><span style="color:var(--on-navy-muted)">${esc(PK.ctaText || "Pick the top 10 teams and top 25 runners. See Connor's expert picks, then try to beat them →")}</span></a>` : "";
+const PK_CTA = PK_ON ? `<a class="pkcta" href="/pickem/" style="display:grid;gap:4px;text-decoration:none;background:var(--navy);color:#fff;border-left:8px solid var(--red);padding:16px 18px;margin:0 0 18px"><span style="font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#FF8A99">${esc(PK.ctaEyebrow || "Free to play · Leaderboard Sunday")}</span><b style="font:700 clamp(20px,2.6vw,26px)/1.1 var(--display);text-transform:uppercase">${esc(PK.ctaTitle || PK.title)}</b><span style="color:var(--on-navy-muted)">${esc(PK.ctaText || "Pick the top 10 teams and top 15 runners. See Connor's expert picks, then try to beat them →")}</span></a>` : "";
 const expertFor = slug => {
   if (!PK || !PK.expert) return null;
   const out = [];
   for (const r of PK.races.filter(r => r.page === slug)) {
     const e = PK.expert[r.id] || {}, sex = /Women/.test(r.tab) ? "Women's" : "Men's";
     if (e.teams && e.teams.length) out.push({ h: `${sex} top 10 teams`, items: e.teams });
-    if (e.runners && e.runners.length) out.push({ h: `${sex} top 25 runners`, items: e.runners.map(x => `${x[0]} · ${x[1]}`) });
+    if (e.runners && e.runners.length) out.push({ h: `${sex} top ${e.runners.length} runners`, items: e.runners.map(x => `${x[0]} · ${x[1]}`) });
   }
   return out.length ? out : null;
 };
@@ -150,8 +150,8 @@ function body(m) {
 <h1>${m.headline}${fin ? '<span class="status">Final</span>' : ""}</h1>
 <div class="meta">${m.name} · ${m.where}</div><p class="sum">${m.summary}</p>${m.hub ? `<p style="margin:14px 0 0"><a href="${m.hub}" style="font-weight:700;color:var(--red-ink)">← All ${hubName(m)} meets</a></p>` : ""}</section>
 ${lanes}${btns ? `<div class="btns">${btns}</div>` : ""}
-${NL_BOX("meet-page")}
 ${PK_ON && PK.races.some(r => r.page === m.slug) ? PK_CTA : ""}
+${NL_BOX("meet-page")}
 ${fieldHtml(m)}
 ${related(m)}`;
 }
@@ -248,8 +248,8 @@ ${m.recap ? `<p class="why"><b>Final:</b> ${esc(m.recap)}</p>` : m.why ? `<p cla
 <section class="chero"><div class="eyebrow">${esc(CH.week)}</div><h1>${esc(CH.title)}</h1>
 <p>${esc(CH.blurb || "This week's championships, with live results and streams in one place.")}</p>
 <div class="stats">${stats}</div></section>
-${NL_BOX("hub")}
 ${outRel === "championships" ? PK_CTA : ""}
+${NL_BOX("hub")}
 ${tops.length ? `<section aria-labelledby="dm"><h2 id="dm" style="margin-bottom:12px">Don't miss</h2><div class="tops">${tops.map(m => `<div class="top4" data-lvl="${m.lvl}"><div class="eyebrow">${shortDay(m.day)} · ${SH[m.lvl]}</div><h3><a href="/meets/${slugify(m.name)}/">${esc(strip(m.name))}</a></h3><div class="meta">${esc(m.where.split(" · ")[0])}${m.time ? " · " + esc(m.time) : ""}</div><p>${esc(m.recap ? "Final: " + m.recap : m.why)}</p>${fieldLink(m)}<div class="btns">${btns(m)}</div></div>`).join("")}</div></section>` : ""}
 <nav class="jump" aria-label="Jump to day">${days.map(d => `<a href="#d-${d}">${shortDay(d)}</a>`).join("")}${next.length ? `<a href="#next">Coming next</a>` : ""}</nav>
 <nav class="cfil" aria-label="Filter by level"><button type="button" data-f="all" aria-pressed="true">All</button>${lvls.filter(cnt).map(l => `<button type="button" data-f="${l}" aria-pressed="false">${SH[l]}</button>`).join("")}</nav>
@@ -274,10 +274,10 @@ if (PK) {
   const frag = fs.readFileSync(path.join(__dirname, "pickem.html"), "utf8");
   const li = (a, b) => `<li>${esc(a)}${b ? ` <small>· ${esc(b)}</small>` : ""}</li>`;
   const xp = PK.races.map(r => { const e = PK.expert[r.id] || {}; if (!(e.teams || []).length && !(e.runners || []).length) return "";
-    return `<details${r === PK.races[0] ? " open" : ""}><summary>${esc(r.tab)}</summary>${(e.teams || []).length ? `<h4>Top 10 teams</h4><ol>${e.teams.map(t => li(t)).join("")}</ol>` : ""}${(e.runners || []).length ? `<h4>Top 25 runners</h4><ol>${e.runners.map(x => li(x[0], x[1])).join("")}</ol>` : ""}</details>`; }).join("");
+    return `<details${r === PK.races[0] ? " open" : ""}><summary>${esc(r.tab)}</summary>${(e.teams || []).length ? `<h4>Top 10 teams</h4><ol>${e.teams.map(t => li(t)).join("")}</ol>` : ""}${(e.runners || []).length ? `<h4>Top ${e.runners.length} runners</h4><ol>${e.runners.map(x => li(x[0], x[1])).join("")}</ol>` : ""}</details>`; }).join("");
   const expertHtml = xp ? `<div class="xp">${xp}</div>` : `<p class="meta">Connor's picks drop before the races. Make yours now, then come back and compare.</p>`;
   const ptitle = `${PK.seoTitle || "NCAA Cross Country Nationals Pick'em 2026"} | Start Line Weekly`;
-  const pdesc = PK.desc || "Pick the top 10 teams and top 25 runners for the 2026 NCAA D-I and D-III cross country championships, see Connor Andrews' expert picks, and climb the leaderboard.";
+  const pdesc = PK.desc || "Pick the top 10 teams and top 15 runners for the 2026 NCAA D-I and D-III cross country championships, see Connor Andrews' expert picks, and climb the leaderboard.";
   const phead = tpl.split("<main")[0].replaceAll("{{TITLE}}", esc(ptitle)).replaceAll("{{OGTITLE}}", esc(PK.title)).replaceAll("{{DESC}}", esc(pdesc))
     .replaceAll("{{CANON}}", `${SITE}/pickem/`).replace("{{LD}}", "");
   const pbody = frag.replace("{{EXPERT}}", () => expertHtml).replace("{{LOCK}}", () => esc(PK.lockLabel || ""))
@@ -291,7 +291,7 @@ if (PK) {
   H = H.replace(/<!--nlbar-->[\s\S]*?<!--\/nlbar-->\n?/, "").replace('<header class="top">', `<!--nlbar-->${NL_BAR}<!--/nlbar-->\n<header class="top">`);
   H = H.replace(/<section class="nl"[\s\S]*?<\/section>/, () => NL_BOX("homepage"));
   H = H.replace(/<!--pickem-->[\s\S]*?<!--\/pickem-->\n?/, "");
-  if (PK_CTA) H = H.replace(/(<section class="nl"[\s\S]*?<\/section>)/, (m0) => `${m0}\n<!--pickem-->${PK_CTA}<!--/pickem-->`);
+  if (PK_CTA) H = H.replace(/(<section class="nl"[\s\S]*?<\/section>)/, (m0) => `<!--pickem-->${PK_CTA}<!--/pickem-->\n${m0}`);
   if (H !== H0) fs.writeFileSync(hp, H); }
 
 // ---- sitemap + robots ----
