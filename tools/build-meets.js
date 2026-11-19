@@ -33,9 +33,10 @@ const NL_BAR = `<a class="nlbar" href="${NL_URL("topbar")}" target="_blank" rel=
 const pkFile = path.join(root, "data/pickem.json");
 const PK = fs.existsSync(pkFile) ? JSON.parse(fs.readFileSync(pkFile, "utf8")) : null;
 const PK_ON = !!(PK && PK.cta !== false);
-const PK_CTA = PK_ON ? `<a class="pkcta" href="/pickem/" style="display:grid;gap:4px;text-decoration:none;background:var(--navy);color:#fff;border-left:8px solid var(--red);padding:16px 18px;margin:0 0 18px"><span style="font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#FF8A99">${esc(PK.ctaEyebrow || "Free to play · Leaderboard Sunday")}</span><b style="font:700 clamp(20px,2.6vw,26px)/1.1 var(--display);text-transform:uppercase">${esc(PK.ctaTitle || PK.title)}</b><span style="color:var(--on-navy-muted)">${esc(PK.ctaText || "Pick the top 10 teams and top 15 runners. See Connor's expert picks, then try to beat them →")}</span></a>` : "";
+const PK_XP = !!(PK && PK.showExpert !== false); // false hides Connor's picks on the site (kept in the JSON for scoring)
+const PK_CTA = PK_ON ? `<a class="pkcta" href="/pickem/" style="display:grid;gap:4px;text-decoration:none;background:var(--navy);color:#fff;border-left:8px solid var(--red);padding:16px 18px;margin:0 0 18px"><span style="font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#FF8A99">${esc(PK.ctaEyebrow || "Free to play · Leaderboard Sunday")}</span><b style="font:700 clamp(20px,2.6vw,26px)/1.1 var(--display);text-transform:uppercase">${esc(PK.ctaTitle || PK.title)}</b><span style="color:var(--on-navy-muted)">${esc(PK.ctaText || "Pick the top 10 teams and top 15 runners. Think you know cross country? Make your picks →")}</span></a>` : "";
 const expertFor = slug => {
-  if (!PK || !PK.expert) return null;
+  if (!PK || !PK.expert || !PK_XP) return null;
   const out = [];
   for (const r of PK.races.filter(r => r.page === slug)) {
     const e = PK.expert[r.id] || {}, sex = /Women/.test(r.tab) ? "Women's" : "Men's";
@@ -277,10 +278,10 @@ if (PK) {
     return `<details${r === PK.races[0] ? " open" : ""}><summary>${esc(r.tab)}</summary>${(e.teams || []).length ? `<h4>Top 10 teams</h4><ol>${e.teams.map(t => li(t)).join("")}</ol>` : ""}${(e.runners || []).length ? `<h4>Top ${e.runners.length} runners</h4><ol>${e.runners.map(x => li(x[0], x[1])).join("")}</ol>` : ""}</details>`; }).join("");
   const expertHtml = xp ? `<div class="xp">${xp}</div>` : `<p class="meta">Connor's picks drop before the races. Make yours now, then come back and compare.</p>`;
   const ptitle = `${PK.seoTitle || "NCAA Cross Country Nationals Pick'em 2026"} | Start Line Weekly`;
-  const pdesc = PK.desc || "Pick the top 10 teams and top 15 runners for the 2026 NCAA D-I and D-III cross country championships, see Connor Andrews' expert picks, and climb the leaderboard.";
+  const pdesc = PK.desc || "Pick the top 10 teams and top 15 runners for the 2026 NCAA D-I and D-III cross country championships and climb the leaderboard.";
   const phead = tpl.split("<main")[0].replaceAll("{{TITLE}}", esc(ptitle)).replaceAll("{{OGTITLE}}", esc(PK.title)).replaceAll("{{DESC}}", esc(pdesc))
     .replaceAll("{{CANON}}", `${SITE}/pickem/`).replace("{{LD}}", "");
-  const pbody = frag.replace("{{EXPERT}}", () => expertHtml).replace("{{LOCK}}", () => esc(PK.lockLabel || ""))
+  const pbody = (PK_XP ? frag : frag.replace(/<section class="pk-sec" aria-labelledby="xp-h">[\s\S]*?<\/section>/, "")).replace("{{EXPERT}}", () => expertHtml).replace("{{LOCK}}", () => esc(PK.lockLabel || ""))
     .replace("{{DATA}}", () => JSON.stringify({ lock: PK.lock, lockLabel: PK.lockLabel, form: PK.form, races: PK.races.map(r => ({ id: r.id, tab: r.tab, race: r.race, teams: r.teams, ranks: r.ranks, runners: r.runners, listLabel: r.listLabel || "" })) }).replace(/</g, "\\u003c"));
   fs.mkdirSync(path.join(root, "pickem"), { recursive: true });
   fs.writeFileSync(path.join(root, "pickem/index.html"), phead + `<main style="display:grid;gap:24px">${pbody}</main><footer>Start Line Weekly is built and edited by Connor Andrews. <a href="/archive/">Past weeks →</a></footer></div></body></html>\n`);

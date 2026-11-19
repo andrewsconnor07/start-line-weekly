@@ -2,6 +2,7 @@
  "title": "Nationals Pick'em",
  "lock": "2026-11-21T15:00:00Z",
  "lockLabel": "Saturday, Nov. 21 at 10 a.m. ET",
+ "showExpert": false,
  "form": {
   "url": "https://docs.google.com/forms/d/e/1FAIpQLScIOLI6CopkUydmIAM6slSbAvgBhMwNCiLZqjMqPqwoW9aAoQ/formResponse",
   "name": "entry.2145157922",
